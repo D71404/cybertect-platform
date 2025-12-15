@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualytics | Truth in Data</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Cybertect Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <style>
+        :root { 
+            --blue: #007BFF;
+            --green: #00C853;
+            --yellow: #FFB800;
+            --red: #FF3D00;
+            --dark-gray: #1F2937;
+            --light-gray: #F8F9FA;
+            --text-dark: #111827;
+            --text-gray: #6B7280;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--white);
+            background-image: 
+                radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+            background-size: 24px 24px;
+            background-position: 0 0;
+            color: var(--text-dark); 
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+
+        .logo-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--text-gray);
+            letter-spacing: -0.5px;
+        }
+
+        .top-menu {
+            display: flex;
+            gap: 18px;
+            margin: 0 32px;
+            flex: 1;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tool-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-gray);
+            text-decoration: none;
+            padding-bottom: 6px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .tool-link:hover {
+            color: var(--text-dark);
+        }
+
+        .tool-link.active {
+            color: var(--blue);
+            border-color: var(--blue);
+        }
+
+        .nav-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 8px 18px;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.18);
+        }
+
+        .nav-pill:hover,
+        .nav-pill:focus-visible {
+            background: var(--light-gray);
+            border-color: var(--text-gray);
+        }
+
+        .nav-pill-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .nav-pill-link.active {
+            border-color: var(--blue);
+            color: var(--blue);
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 8px 18px;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .dropdown-toggle:hover,
+        .dropdown-toggle:focus-visible {
+            background: var(--light-gray);
+            border-color: var(--text-gray);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            display: none;
+            flex-direction: column;
+            min-width: 260px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 20px 30px rgba(15, 23, 42, 0.12);
+            z-index: 20;
+        }
+
+        .dropdown-menu.show {
+            display: flex;
+        }
+
+        .dropdown-menu .tool-link {
+            padding: 8px 12px;
+            border-radius: 10px;
+            border-bottom: none;
+        }
+
+        .dropdown-menu .tool-link:hover,
+        .dropdown-menu .tool-link.active {
+            background: var(--light-gray);
+            color: var(--text-dark);
+        }
+
+        /* Cybertect Logo Styles */
+        .cybertect-logo {
+            display: inline-flex;
+            align-items: baseline;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            letter-spacing: -0.5px;
+            line-height: 1;
+        }
+
+        .cyber-text {
+            background: linear-gradient(to bottom, #1F2937, #111827);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+        }
+
+        .tect-text {
+            background: linear-gradient(to bottom, #60A5FA, #3B82F6, #1E40AF, #1E3A8A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 2px 4px rgba(59, 130, 246, 0.3));
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+
+        .com-text {
+            background: linear-gradient(to bottom, #1F2937, #111827);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 22px;
+            margin-left: 2px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
+        }
+
+        .sign-in-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            padding: 8px 20px;
+            border-radius: 24px;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .sign-in-btn:hover {
+            background: var(--light-gray);
+            border-color: var(--text-gray);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .hero-text h1 {
+            font-size: 56px;
+            font-weight: 400;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-visual img {
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Floating Geometric Shapes */
+        .shape {
+            position: absolute;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
+        }
+
+        .shape-blue {
+            width: 80px;
+            height: 80px;
+            background: var(--blue);
+            top: 20%;
+            left: 10%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape-red {
+            width: 60px;
+            height: 100px;
+            background: var(--red);
+            top: 50%;
+            right: 15%;
+            border-radius: 30px;
+            animation: float 8s ease-in-out infinite 1s;
+        }
+
+        .shape-yellow {
+            width: 100px;
+            height: 60px;
+            background: var(--yellow);
+            bottom: 20%;
+            left: 20%;
+            border-radius: 30px;
+            animation: float 7s ease-in-out infinite 0.5s;
+        }
+
+        .shape-green {
+            width: 70px;
+            height: 70px;
+            background: var(--green);
+            top: 10%;
+            right: 25%;
+            border-radius: 50%;
+            animation: float 9s ease-in-out infinite 1.5s;
+        }
+
+        .chart-shape {
+            width: 120px;
+            height: 80px;
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            bottom: 15%;
+            right: 10%;
+            padding: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            animation: float 10s ease-in-out infinite 2s;
+        }
+
+        .chart-bars {
+            display: flex;
+            gap: 6px;
+            align-items: flex-end;
+            height: 100%;
+        }
+
+        .chart-bar {
+            flex: 1;
+            border-radius: 2px;
+        }
+
+        .chart-bar-1 { height: 60%; background: var(--blue); }
+        .chart-bar-2 { height: 80%; background: var(--green); }
+        .chart-bar-3 { height: 40%; background: var(--yellow); }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .scanner-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .input-label {
+            font-weight: 500;
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: 'Inter', monospace;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            resize: vertical;
+            transition: all 0.2s;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+        }
+
+        .action-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .scan-btn {
+            background: var(--blue);
+            color: var(--white);
+        }
+
+        .scan-btn:hover {
+            background: #0066CC;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.12);
+            transform: translateY(-1px);
+        }
+
+        .scan-btn:disabled {
+            background: #9CA3AF;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .export-btn {
+            background: var(--green);
+            color: var(--white);
+            margin-left: auto;
+        }
+
+        .export-btn:hover {
+            background: #00B844;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.12);
+            transform: translateY(-1px);
+        }
+
+        #loader {
+            display: none;
+            color: var(--blue);
+            font-weight: 500;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Table Section */
+        .results-section {
+            max-width: 1400px;
+            margin: 60px auto;
+            padding: 0 40px;
+            display: none;
+        }
+
+        .table-container {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            border: 1px solid var(--border);
+            max-height: 640px;
+            overflow: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        th {
+            background: var(--light-gray);
+            text-align: left;
+            padding: 16px 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+
+        .badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .badge-green {
+            background: rgba(0, 200, 83, 0.1);
+            color: var(--green);
+        }
+
+        .badge-yellow {
+            background: rgba(255, 184, 0, 0.1);
+            color: var(--yellow);
+        }
+
+        .badge-red {
+            background: rgba(255, 61, 0, 0.1);
+            color: var(--red);
+        }
+
+        .badge-blue {
+            background: rgba(0, 123, 255, 0.1);
+            color: var(--blue);
+        }
+
+        .badge-shared {
+            background: var(--red);
+            color: var(--white);
+            box-shadow: 0 1px 3px rgba(255, 61, 0, 0.3);
+        }
+
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            left: 50%;
+            bottom: 120%;
+            transform: translateX(-50%);
+            background: var(--dark-gray);
+            color: var(--white);
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            line-height: 1.4;
+            white-space: normal;
+            min-width: 160px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.15s ease;
+            z-index: 5;
+        }
+
+        .tooltip:hover::after {
+            opacity: 0.95;
+        }
+
+        .expand-btn {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+
+        .expand-btn:hover {
+            background: rgba(15, 23, 42, 0.08);
+        }
+
+        .expand-btn .material-icons {
+            font-size: 20px;
+            transition: transform 0.2s;
+        }
+
+        .expand-btn.open .material-icons {
+            transform: rotate(180deg);
+        }
+
+        .detail-row {
+            display: none;
+        }
+
+        .detail-cell {
+            background: var(--light-gray);
+            padding: 0;
+        }
+
+        .detail-wrapper {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .detail-card h5 {
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        .detail-card p {
+            font-size: 13px;
+            color: var(--text-gray);
+            margin: 0 0 6px 0;
+        }
+
+        .detail-card ul {
+            list-style: disc;
+            padding-left: 18px;
+            color: var(--text-gray);
+            font-size: 13px;
+        }
+
+        .detail-card ul li {
+            margin-bottom: 6px;
+        }
+
+        /* Algorithm Panel */
+        .algo-panel {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 40px;
+        }
+
+        .algo-header {
+            background: var(--light-gray);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            box-shadow: 0 20px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        .algo-header h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .algo-header p {
+            color: var(--text-gray);
+            max-width: 520px;
+        }
+
+        .algo-summary {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .metric {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 14px 18px;
+            text-align: center;
+            min-width: 120px;
+            border: 1px solid var(--border);
+        }
+
+        .metric-value {
+            font-size: 28px;
+            font-weight: 600;
+            display: block;
+            color: var(--text-dark);
+        }
+
+        .metric-label {
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+
+        .algo-grid {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .algo-card {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            background: var(--white);
+            box-shadow: 0 12px 32px rgba(59, 130, 246, 0.1);
+        }
+
+        .algo-card h4 {
+            margin-bottom: 6px;
+            font-size: 18px;
+        }
+
+        .algo-card p {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .fraud-row {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 6px;
+        }
+
+        .id-source {
+            display: inline-block;
+            margin-left: 6px;
+            padding: 2px 6px;
+            border-radius: 6px;
+            background: var(--border);
+            color: var(--text-gray);
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+
+        .issuesRow {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+        }
+
+        .issueCard {
+            flex: 0 0 340px;
+        }
+
+        .fraud-row small {
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        .signature-block {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .id-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .id-row label {
+            font-weight: 600;
+            color: var(--text-gray);
+            min-width: 70px;
+            text-transform: uppercase;
+        }
+
+        .badge-gray {
+            background: var(--border);
+            color: var(--text-gray);
+        }
+
+        .lookup-panel {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 40px;
+        }
+
+        .lookup-card {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: var(--white);
+            padding: 24px;
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .lookup-card h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .lookup-card p {
+            color: var(--text-gray);
+            margin-bottom: 18px;
+        }
+
+        .lookup-controls {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .lookup-controls select,
+        .lookup-controls input {
+            flex: 1;
+            min-width: 160px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 14px;
+        }
+
+        .lookup-controls button {
+            background: var(--blue);
+            border: none;
+            color: var(--white);
+            border-radius: 12px;
+            padding: 12px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.25);
+        }
+
+        .lookup-results {
+            border: 1px dashed var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            background: var(--light-gray);
+            min-height: 120px;
+        }
+
+        .lookup-results h4 {
+            margin-bottom: 8px;
+        }
+
+        .lookup-results ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .lookup-results li {
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .lookup-results li:last-child {
+            border-bottom: none;
+        }
+
+        .advertiser-panel {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 40px;
+        }
+
+        .advertiser-card {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            background: var(--white);
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+        }
+
+        .advertiser-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .advertiser-table th,
+        .advertiser-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .advertiser-table th {
+            font-size: 12px;
+            color: var(--text-gray);
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+            .top-menu {
+                justify-content: flex-start;
+            }
+            .dropdown {
+                width: 100%;
+            }
+            .dropdown-toggle {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                margin-top: 8px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <div class="cybertect-logo">
+                <span class="cyber-text">cyber</span>
+                <span class="tect-text">tect</span>
+                <span class="com-text">.com</span>
+            </div>
+        </div>
+        <nav class="top-menu">
+            <a class="nav-pill nav-pill-link" href="/online-waste/" data-route="/online-waste">Online Waste</a>
+            <div class="dropdown" data-dropdown>
+                <button class="dropdown-toggle nav-pill" type="button" aria-haspopup="true" aria-expanded="false">
+                    Waste Detection Tools
+                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <a class="tool-link" href="/tools/cms-level-data-monitor/" data-route="/tools/cms-level-data-monitor">CMS Output Monitor</a>
+                    <a class="tool-link" href="/tools/ad-level-impression-verification/" data-route="/tools/ad-level-impression-verification">Ad Impression Verification</a>
+                    <a class="tool-link" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
+                    <a class="tool-link" href="/tools/reverse-analytics-search/" data-route="/tools/reverse-analytics-search">Reverse Analytics Search</a>
+                </div>
+            </div>
+        </nav>
+        <button class="sign-in-btn">Sign in</button>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>We Measure Bad Data</h1>
+                <p>Most fraud tools chase bots. Cybertect follows the numbers—and exposes where your ad spend and ROI evaporates.</p>
+            </div>
+            <div class="hero-visual">
+                <img 
+                    src="/assets/images/hero-house.png" 
+                    alt="Cybertect hero illustration"
+                />
+            </div>
+        </div>
+
+        <div class="scanner-card">
+            <label class="input-label">Enter Target URLs (One per line)</label>
+            <textarea id="urlInput" placeholder="https://example.com"></textarea>
+            
+            <div class="action-row">
+                <button type="button" onclick="startScan()" id="scanBtn" class="scan-btn">
+                    <span class="material-icons" style="font-size: 18px;">radar</span> Start Forensic Scan
+                </button>
+                
+                <span id="loader" style="display:none; color:var(--blue); font-weight:500;">
+                    <span class="material-icons" style="font-size:18px; vertical-align:middle; animation:spin 1s infinite linear;">autorenew</span> 
+                    Scanning...
+                </span>
+
+                <button type="button" onclick="exportToCSV()" id="exportBtn" class="export-btn" style="display:none;">
+                    <span class="material-icons" style="font-size: 18px;">download</span> Save Report
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <section class="advertiser-panel">
+        <div class="advertiser-card">
+            <h3>Affected Advertisers</h3>
+            <p>Live count of ad slots that fired impressions during the scan, including vendor tags reported to advertisers.</p>
+            <table class="advertiser-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">ADVERTISER (HOST)</th>
+                        <th style="width: 35%;">AD SLOT / TAG ID</th>
+                        <th style="width: 10%;">IMPRESSIONS</th>
+                        <th style="width: 15%;">FIRST SEEN</th>
+                        <th style="width: 15%;">LAST SEEN</th>
+                    </tr>
+                </thead>
+                <tbody id="advertiserBody">
+                    <tr><td colspan="5" style="color:var(--text-gray);">Run a scan to populate advertiser impact.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="algo-panel">
+        <div class="algo-header">
+            <div>
+                <h2>Publisher Forensics Engine</h2>
+                <p>Every crawl maps iframe dimensions, CSS visibility, and network telemetry to expose fraud mechanics like stacked ad slots and 1x1 stuffing pixels. The logic below updates live as you scan new publishers.</p>
+            </div>
+            <div class="algo-summary" id="forensicSummary">
+                <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Scans Logged</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Stacking Alerts</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Pixel Stuffers</span>
+                </div>
+            </div>
+        </div>
+        <div class="algo-grid">
+            <div class="algo-card">
+                <h4>Stacking Radar</h4>
+                <p>Cross-compares every iframe bounding box over 40px to detect overlaps ≥60% of a slot and tags both URLs with evidence.</p>
+            </div>
+            <div class="algo-card">
+                <h4>Pixel Stuffing Sniffer</h4>
+                <p>Flags frames ≤1px or ≤4px², ignoring known sync pixels, and records the offender URL for proof.</p>
+            </div>
+            <div class="algo-card">
+                <h4>Visibility Forensics</h4>
+                <p>Captures computed CSS (display, visibility, opacity) so forced-hidden ad slots are reported as "Hidden/Tiny Frame" fraud.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="results-section" id="resultsSection">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 5%;">DETAILS</th>
+                        <th style="width: 15%;">DOMAIN</th>
+                        <th style="width: 10%;">RISK LEVEL</th>
+                        <th style="width: 25%;">DIGITAL SIGNATURE (Analytics IDs)</th>
+                        <th style="width: 20%;">ISSUES FOUND</th>
+                        <th style="width: 8%;">PAGEVIEWS / SESSION</th>
+                        <th style="width: 25%;">NETWORK & IMPACT ANALYSIS</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const definitions = {
+            "Ad Inflation / Churning": "PERFORMANCE DRAIN: Rapidly refreshing ad slots to charge advertisers for ads the user never saw.",
+            "Auto-Refresh / Inflation": "PERFORMANCE DRAIN: Reloading the entire page automatically to artificially inflate Page View metrics.",
+            "Inflated Page Views": "PERFORMANCE DRAIN: Firing multiple 'page_view' signals to Google Analytics for a single load.",
+            "Shared ID": "NETWORK EVIDENCE: This ID appears on multiple DIFFERENT domains in your list."
+        };
+
+        const GA4_REGEX = /^G-[A-Z0-9]{10}$/;
+        const UA_REGEX = /^UA-\d{8,10}-\d{1,2}$/;
+
+        function getAnalyticsEntries(result) {
+            const detailed = result.tagInventoryDetailed;
+            if (detailed && ((detailed.ga4 && detailed.ga4.length) || (detailed.ua && detailed.ua.length))) {
+                const entries = [
+                    ...(detailed.ga4 || []),
+                    ...(detailed.ua || [])
+                ];
+                return entries
+                    .filter(entry => entry && entry.id && isValidAnalyticsId(entry.id))
+                    .map(entry => ({
+                        id: entry.id.toUpperCase(),
+                        source: entry.source || '',
+                        type: (entry.type || '').toUpperCase() || (entry.id.startsWith('UA-') ? 'UA' : 'GA4')
+                    }));
+            }
+            const fallback = result.analyticsIds 
+                || (result.tagInventory ? result.tagInventory.analyticsIds : null)
+                || (result.metrics ? result.metrics.uniqueMeasurementIds : null)
+                || [];
+            return fallback
+                .filter(id => isValidAnalyticsId(id))
+                .map(id => ({
+                    id: id.toUpperCase(),
+                    source: '',
+                    type: id.toUpperCase().startsWith('UA-') ? 'UA' : 'GA4'
+                }));
+        }
+
+        function isValidAnalyticsId(id) {
+            if (!id) return false;
+            const upper = id.toUpperCase();
+            return GA4_REGEX.test(upper) || UA_REGEX.test(upper);
+        }
+
+        function formatSourceLabel(source) {
+            if (!source) return '';
+            const labels = {
+                network_collect: 'collect',
+                network_script_src: 'script',
+                dom_inline_script: 'inline',
+                dom_html: 'html'
+            };
+            return labels[source] || source;
+        }
+
+        // GLOBAL HISTORY (Keeps track of everything you scan)
+        let globalHistory = [];
+        let advertiserImpacts = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            hydrateFromServer();
+            setActiveNav();
+            initDropdowns();
+        });
+
+        async function hydrateFromServer() {
+            try {
+                const res = await fetch('/api/results');
+                if (!res.ok) return;
+                const data = await res.json();
+                if (Array.isArray(data) && data.length) {
+                    renderTable(data, false);
+                    document.getElementById('resultsSection').style.display = 'block';
+                }
+            } catch (err) {
+                console.warn('Could not hydrate previous scans', err);
+            }
+        }
+
+        async function startScan() {
+            const input = document.getElementById('urlInput');
+            const btn = document.getElementById('scanBtn');
+            const loader = document.getElementById('loader');
+            const resultSection = document.getElementById('resultsSection');
+
+            const rawInput = input.value;
+            if (!rawInput.trim()) return alert("Please enter URLs");
+
+            // LOCK UI
+            btn.disabled = true;
+            loader.style.display = "inline-flex";
+            
+            const urls = rawInput.split(/[\n,]+/).map(u => u.trim()).filter(u => u.length > 0);
+
+            try {
+                const res = await fetch('/api/scan', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ urls })
+                });
+                const data = await res.json();
+                
+                // Show table and render
+                resultSection.style.display = "block";
+                renderTable(data.results, true); // Append new results
+
+                // Refresh summary panel with latest totals
+                updateFraudSummary();
+
+            } catch (err) {
+                alert("Connection Error: " + err.message);
+            }
+
+            // UNLOCK UI (Do NOT clear input)
+            btn.disabled = false;
+            loader.style.display = "none";
+        }
+
+        function renderTable(newResults, append) {
+            document.getElementById('exportBtn').style.display = "flex";
+
+            if (append) globalHistory = [...globalHistory, ...newResults];
+            else globalHistory = newResults;
+
+            // 1. DEDUPLICATE (Fixes the "Double Row" bug)
+            const uniqueMap = new Map();
+            globalHistory.forEach(item => uniqueMap.set(item.url, item));
+            globalHistory = Array.from(uniqueMap.values());
+
+            rebuildLookupMaps();
+
+            // 2. NETWORK DETECTION
+            const idToHosts = {};
+            globalHistory.forEach(r => {
+                if (!r.url) return;
+                let host;
+                try {
+                    host = new URL(r.url).hostname;
+                } catch (err) {
+                    host = r.url;
+                }
+                const entries = getAnalyticsEntries(r);
+                entries.forEach(entry => {
+                    if (!entry.id) return;
+                    const key = entry.id.toUpperCase();
+                    if (!idToHosts[key]) idToHosts[key] = new Set();
+                    idToHosts[key].add(host);
+                });
+            });
+
+            // 3. RENDER
+            const tbody = document.getElementById('resultsBody');
+            tbody.innerHTML = "";
+
+            globalHistory.forEach((r, index) => {
+                if (r.error) {
+                    tbody.innerHTML += `<tr><td colspan="7" style="color:var(--red)">Scan Failed: ${r.url}</td></tr>`;
+                    return;
+                }
+
+                let host;
+                try {
+                    host = new URL(r.url).hostname;
+                } catch (e) {
+                    host = r.url;
+                }
+                let sharedIdFound = false;
+
+                // IDs
+                const idsBlock = buildSignatureBlock(r, idToHosts);
+
+                // Fraud
+                const fraudWarningsList = Array.isArray(r.fraudWarnings) ? r.fraudWarnings : [];
+                const issueBlocks = [];
+                if (fraudWarningsList.length) {
+                    issueBlocks.push(...fraudWarningsList.map(f => `
+                        <div class="fraud-row issueCard">
+                            <span class="badge badge-red tooltip" data-tooltip="${escapeHtml(definitions[f.type] || 'Suspicious telemetry pattern')}">${f.type}</span>
+                            <small>${escapeHtml(f.details || '')}</small>
+                        </div>
+                    `));
+                }
+                if (r.sessionInflation) {
+                    issueBlocks.push(`
+                        <div class="fraud-row issueCard">
+                            <span class="badge badge-red tooltip" data-tooltip="Multiple page_view hits fired without navigation.">Session Inflation</span>
+                            <small>Multiple page_view hits on one load.</small>
+                        </div>
+                    `);
+                }
+
+                const issuesHtml = issueBlocks.length
+                    ? `<div class="issuesRow">${issueBlocks.join("")}</div>`
+                    : '<span class="badge badge-green">Clean</span>';
+                
+                // Waste
+                const waste = Math.max(1, Math.round(r.networkEventsCount / 50));
+                const analyticsEntries = getAnalyticsEntries(r);
+
+                if (analyticsEntries.length) {
+                    sharedIdFound = analyticsEntries.some(entry => {
+                        if (!entry.id) return false;
+                        const key = entry.id.toUpperCase();
+                        return idToHosts[key] && idToHosts[key].size > 1;
+                    });
+                }
+                let analysis = "";
+                if (sharedIdFound) analysis += `<div style="color:var(--red); font-weight:600;">⚠ Shared Network</div>`;
+                if (waste > 2) analysis += `<div>💸 ${waste}x Budget Drain</div>`;
+                if (r.sessionInflation) analysis += `<div style="color:var(--red);">🔥 Pageview Inflation</div>`;
+                const gaInsight = formatGaInflation(r.gaInflation);
+                if (gaInsight) analysis += gaInsight;
+
+                const fraudCount = fraudWarningsList.length;
+
+                tbody.innerHTML += `
+                    <tr>
+                        <td style="text-align:center;">
+                            <button class="expand-btn" id="toggle-${index}" aria-expanded="false" aria-controls="detail-${index}" onclick="toggleDetails(${index})">
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                        </td>
+                        <td style="font-weight:500; color:var(--text-dark)">${host}</td>
+                        <td>${fraudCount > 0 ? '<span class="badge badge-red">🔴 High</span>' : '<span class="badge badge-green">🟢 Low</span>'}</td>
+                        <td>${idsBlock}</td>
+                        <td>${issuesHtml}</td>
+                        <td style="text-align:center; font-weight:600;">
+                            ${r.pageViewCount || 0}
+                            ${r.sessionInflation ? '<span style="color:var(--red); font-size:11px; display:block;">inflated</span>' : ''}
+                        </td>
+                        <td style="font-size:13px;">${analysis || "-"}</td>
+                    </tr>
+                    <tr class="detail-row" id="detail-${index}">
+                        <td colspan="7" class="detail-cell">${buildDetailContent(r)}</td>
+                    </tr>
+                `;
+            });
+
+            updateFraudSummary();
+            updateAdvertiserPanel();
+        }
+
+        function csvCell(value) {
+            const str = String(value ?? '');
+            return `"${str.replace(/"/g, '""')}"`;
+        }
+
+        function exportToCSV() {
+            if (globalHistory.length === 0) return alert("No data");
+            const headers = ["Domain", "Risk", "Fraud", "IDs", "Views", "Waste", "GA Inflation"];
+            const rows = globalHistory.map(r => {
+                let host;
+                try {
+                    host = new URL(r.url).hostname;
+                } catch (e) {
+                    host = r.url;
+                }
+                const fraudWarns = Array.isArray(r.fraudWarnings) ? r.fraudWarnings : [];
+                const risk = fraudWarns.length > 0 ? "High" : "Low";
+                const fraud = fraudWarns.map(f => f.type || '').join("; ");
+                const ids = getAnalyticsEntries(r).map(entry => entry.id).join("; ");
+                const netCount = Number(r.networkEventsCount) || 0;
+                const waste = Math.max(1, Math.round(netCount / 50)) + "x";
+                const gaVerdict = r.gaInflation && !r.gaInflation.error ? r.gaInflation.verdict : "N/A";
+                return [host, risk, csvCell(fraud), csvCell(ids), r.pageViewCount || 0, waste, gaVerdict];
+            });
+            const csv = "data:text/csv;charset=utf-8," + [headers, ...rows].map(e => e.join(",")).join("\n");
+            const link = document.createElement("a");
+            link.href = encodeURI(csv);
+            link.download = `Qualytics_Audit_${new Date().toISOString().slice(0,10)}.csv`;
+            document.body.appendChild(link);
+            link.click();
+        }
+
+        function buildSignatureBlock(result, idToHosts) {
+            const analyticsEntries = getAnalyticsEntries(result);
+            const gaEntries = analyticsEntries.filter(entry => entry.type === 'GA4');
+            const uaEntries = analyticsEntries.filter(entry => entry.type === 'UA');
+
+            const gtmEntries = (result.tagInventoryDetailed && result.tagInventoryDetailed.gtm && result.tagInventoryDetailed.gtm.length)
+                ? result.tagInventoryDetailed.gtm
+                : (result.gtmContainers || (result.tagInventory ? result.tagInventory.gtmContainers : null) || []);
+
+            const fbEntries = (result.tagInventoryDetailed && result.tagInventoryDetailed.fb && result.tagInventoryDetailed.fb.length)
+                ? result.tagInventoryDetailed.fb
+                : (result.facebookPixels || (result.tagInventory ? result.tagInventory.facebookPixels : null) || []);
+
+            if (!gaEntries.length && !uaEntries.length && (!gtmEntries.length) && (!fbEntries.length)) {
+                return '<span class="badge badge-gray">No IDs</span>';
+            }
+
+            const renderList = (label, values, highlightShared) => {
+                if (!values.length) return '';
+                const chips = values.map(id => {
+                    const entry = typeof id === 'string' ? { id } : id || {};
+                    if (!entry.id) return '';
+                    const key = entry.id.toUpperCase();
+                    let chipClass = 'badge badge-blue';
+                    let title = 'Unique';
+                    if (highlightShared && idToHosts[key] && idToHosts[key].size > 1) {
+                        chipClass = 'badge badge-shared';
+                        title = 'Duplicate across publishers';
+                    }
+                    const sourceLabel = entry.source ? `<span class="id-source">${escapeHtml(formatSourceLabel(entry.source))}</span>` : '';
+                    return `<span class="${chipClass} tooltip" data-tooltip="${escapeHtml(title)}" data-id="${entry.id}" data-type="${label.toLowerCase()}">${entry.id}${sourceLabel}</span>`;
+                }).join(' ');
+
+                return `
+                    <div class="id-row">
+                        <label>${label}</label>
+                        <div class="signature-chips">${chips}</div>
+                    </div>`;
+            };
+
+            return `<div class="signature-block">
+                ${renderList('GA4', gaEntries, true)}
+                ${renderList('UA', uaEntries, true)}
+                ${renderList('GTM', Array.isArray(gtmEntries) ? gtmEntries : [], false)}
+                ${renderList('FB', Array.isArray(fbEntries) ? fbEntries : [], false)}
+            </div>`;
+        }
+
+        function buildDetailContent(result) {
+            const fraudItems = (result.fraudWarnings || []).map(f => {
+                const note = f.details ? ` - ${escapeHtml(f.details)}` : '';
+                return `<li><strong>${escapeHtml(f.type)}</strong>${note}</li>`;
+            }).join('') || '<li>No fraud alerts detected.</li>';
+
+            const advertiserItems = (result.advertiserImpacts || []).slice(0, 3).map(impact => {
+                const adId = impact.adId ? ` · ${escapeHtml(impact.adId)}` : '';
+                return `<li><strong>${escapeHtml(impact.advertiser || 'Unknown')}</strong>${adId} (${impact.impressions} imps)</li>`;
+            }).join('') || '<li>No ad-tag impressions captured.</li>';
+
+            const gaBlock = buildGaDetailBlock(result.gaInflation);
+
+            return `
+                <div class="detail-wrapper">
+                    <div class="detail-card">
+                        <h5>Fraud Signals</h5>
+                        <ul>${fraudItems}</ul>
+                    </div>
+                    <div class="detail-card">
+                        <h5>GA Inflation</h5>
+                        ${gaBlock}
+                    </div>
+                    <div class="detail-card">
+                        <h5>Advertiser Slots</h5>
+                        <ul>${advertiserItems}</ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateFraudSummary() {
+            const summary = document.getElementById('forensicSummary');
+            if (!summary) return;
+
+            const totalScans = globalHistory.length;
+            let stacking = 0;
+            let pixel = 0;
+            let gaAlerts = 0;
+
+            globalHistory.forEach(r => {
+                (r.fraudWarnings || []).forEach(w => {
+                    if (w.type.toLowerCase().includes('stack')) stacking++;
+                    if (w.type.toLowerCase().includes('pixel')) pixel++;
+                });
+                const verdict = r.gaInflation && !r.gaInflation.error ? r.gaInflation.verdict : null;
+                if (verdict === 'SUSPICIOUS' || verdict === 'HIGH_RISK') gaAlerts++;
+            });
+
+            summary.innerHTML = `
+                <div class="metric">
+                    <span class="metric-value">${totalScans}</span>
+                    <span class="metric-label">Scans Logged</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">${stacking}</span>
+                    <span class="metric-label">Stacking Alerts</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">${pixel}</span>
+                    <span class="metric-label">Pixel Stuffers</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">${gaAlerts}</span>
+                    <span class="metric-label">GA Inflation Alerts</span>
+                </div>
+            `;
+        }
+
+        function rebuildLookupMaps() {
+            advertiserImpacts = [];
+            globalHistory.forEach(result => {
+                let host;
+                try {
+                    host = new URL(result.url).hostname;
+                } catch (e) {
+                    host = result.url;
+                }
+
+                if (result.advertiserImpacts) {
+                    result.advertiserImpacts.forEach(impact => {
+                        advertiserImpacts.push({
+                            publisher: host,
+                            advertiser: impact.advertiser,
+                            adId: impact.adId,
+                            impressions: impact.impressions,
+                            firstSeen: impact.firstSeen,
+                            lastSeen: impact.lastSeen
+                        });
+                    });
+                }
+            });
+        }
+
+document.addEventListener('click', evt => {
+    const target = evt.target;
+    if (!(target instanceof HTMLElement)) return;
+    const badge = target.closest('[data-id][data-type]');
+    if (!(badge instanceof HTMLElement)) return;
+    const id = badge.dataset.id;
+    const dataType = badge.dataset.type;
+    if (!id || !dataType) return;
+
+    const url = new URL('/tools/reverse-analytics-search/', window.location.origin);
+    url.searchParams.set('type', dataType);
+    url.searchParams.set('id', id);
+    window.location.href = url.pathname + url.search;
+});
+
+        function formatGaInflation(ga) {
+            if (!ga) return '';
+            if (ga.error) {
+                return `<div style="color:var(--text-gray);">📈 GA Inflation: <span style="color:var(--red);">Error - ${ga.error.message}</span></div>`;
+            }
+            const verdict = ga.verdict || 'PASS';
+            const score = typeof ga.risk_score === 'number' ? ga.risk_score : 0;
+            let color = 'var(--green)';
+            if (verdict === 'HIGH_RISK') color = 'var(--red)';
+            else if (verdict === 'SUSPICIOUS') color = 'var(--yellow)';
+
+            let html = `<div style="color:${color}; font-weight:600;">📈 GA Inflation: ${verdict} (score ${score})</div>`;
+            if (ga.metrics) {
+                const total = ga.metrics.total_ad_impression ?? 0;
+                const seconds = ga.metrics.observed_seconds ?? 12;
+                html += `<div style="font-size:12px; color:var(--text-gray);">Impressions: ${total} in ${seconds}s</div>`;
+            }
+            if (ga.signals && ga.signals.length) {
+                const summary = ga.signals.slice(0, 2).map(s => s.detail).join(' • ');
+                if (summary) {
+                    html += `<div style="font-size:12px; color:var(--text-gray);">${summary}</div>`;
+                }
+            }
+            return html;
+        }
+
+        function setActiveNav() {
+            const current = window.location.pathname.replace(/\/$/, '');
+            document.querySelectorAll('[data-route]').forEach(link => {
+                const route = (link.dataset.route || '').replace(/\/$/, '');
+                if (route && route === current) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        function initDropdowns() {
+            const dropdowns = document.querySelectorAll('[data-dropdown]');
+            if (!dropdowns.length) return;
+
+            const closeAll = () => {
+                dropdowns.forEach(dropdown => {
+                    const menu = dropdown.querySelector('.dropdown-menu');
+                    const toggle = dropdown.querySelector('.dropdown-toggle');
+                    if (menu) menu.classList.remove('show');
+                    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+                });
+            };
+
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                const menu = dropdown.querySelector('.dropdown-menu');
+                if (!toggle || !menu) return;
+                toggle.addEventListener('click', event => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    const isOpen = menu.classList.toggle('show');
+                    toggle.setAttribute('aria-expanded', String(isOpen));
+                    if (isOpen) {
+                        dropdowns.forEach(other => {
+                            if (other === dropdown) return;
+                            const otherMenu = other.querySelector('.dropdown-menu');
+                            const otherToggle = other.querySelector('.dropdown-toggle');
+                            if (otherMenu) otherMenu.classList.remove('show');
+                            if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
+                        });
+                    }
+                });
+            });
+
+            document.addEventListener('click', event => {
+                const target = event.target;
+                if (!(target instanceof Element)) return;
+                if (!target.closest('[data-dropdown]')) {
+                    closeAll();
+                }
+            });
+
+            document.addEventListener('keyup', event => {
+                if (event.key === 'Escape') {
+                    closeAll();
+                }
+            });
+        }
+
+        function buildGaDetailBlock(ga) {
+            if (!ga) {
+                return '<p>No GA inflation telemetry captured.</p>';
+            }
+            if (ga.error) {
+                return `<p style="color:var(--red);">Error: ${escapeHtml(ga.error.message || 'Unknown')}</p>`;
+            }
+            const score = typeof ga.risk_score === 'number' ? ga.risk_score : 0;
+            const metrics = ga.metrics || {};
+            const items = [
+                `Ad impressions: ${metrics.total_ad_impression ?? 0}`,
+                `Query IDs: ${metrics.unique_query_id_count ?? 0}`,
+                `Measurement IDs: ${metrics.unique_tid_count ?? 0}`,
+                `Viewability params: ${metrics.has_viewability_params ? 'present' : 'missing'}`,
+                `Self-referrer: ${metrics.self_referrer ? 'yes' : 'no'}`
+            ];
+            const queryIds = (ga.evidence && ga.evidence.ad_impression_query_ids)
+                ? ga.evidence.ad_impression_query_ids.slice(0, 5)
+                : [];
+            const evidence = queryIds.length ? `<p>Sample query IDs: ${queryIds.join(', ')}</p>` : '';
+            return `
+                <p><strong>${ga.verdict || 'PASS'}</strong> · Score ${score}</p>
+                <ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>
+                ${evidence}
+            `;
+        }
+
+        function toggleDetails(index) {
+            const row = document.getElementById(`detail-${index}`);
+            const btn = document.getElementById(`toggle-${index}`);
+            if (!row || !btn) return;
+            const isOpen = row.style.display === 'table-row';
+            row.style.display = isOpen ? 'none' : 'table-row';
+            btn.classList.toggle('open', !isOpen);
+            btn.setAttribute('aria-expanded', String(!isOpen));
+        }
+
+        function escapeHtml(str) {
+            return String(str || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function updateAdvertiserPanel() {
+            const tbody = document.getElementById('advertiserBody');
+            if (!tbody) return;
+
+            if (advertiserImpacts.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" style="color:var(--text-gray);">Run a scan to populate advertiser impact.</td></tr>';
+                return;
+            }
+
+            const rows = advertiserImpacts
+                .sort((a, b) => b.impressions - a.impressions)
+                .slice(0, 20)
+                .map(impact => `
+                    <tr>
+                        <td>${impact.advertiser}</td>
+                        <td>${impact.adId}</td>
+                        <td>${impact.impressions}</td>
+                        <td>${new Date(impact.firstSeen).toLocaleTimeString()}</td>
+                        <td>${new Date(impact.lastSeen).toLocaleTimeString()}</td>
+                    </tr>`)
+                .join('');
+            tbody.innerHTML = rows;
+        }
+    </script>
+</body>
+</html>

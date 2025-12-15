@@ -1,0 +1,24 @@
+{
+  "url": "https://www.infobae.com/",
+  "scanTimestamp": "2025-12-14T22:10:03.095Z",
+  "analyticsIds": [
+    "AW-967466772",
+    "G-Q2J791G3GV",
+    "G-FVWZ0RM4DH"
+  ],
+  "inflationReloads": 0,
+  "fraudWarnings": [
+    {
+      "type": "Inflated Page Views",
+      "details": "Site fired 2 pageview events for a single load.",
+      "url": "Google Analytics Endpoint"
+    },
+    {
+      "type": "Ad Inflation / Churning",
+      "details": "Excessive ad requests (30+) detected in short timeframe.",
+      "url": "Multiple Sources (Google/Amazon/etc)"
+    }
+  ],
+  "networkEventsCount": 211,
+  "pageViewCount": 2
+}

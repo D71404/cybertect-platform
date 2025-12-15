@@ -1,0 +1,9 @@
+# Query: headless
+# ContextLines: 1
+
+1 result - 1 file
+
+scanner.js:
+  49    try {
+  50:     browser = await chromium.launch({ headless: false }); // Set false to watch it work
+  51      const page = await browser.newPage();

@@ -1,0 +1,33 @@
+{
+  "name": "cybertect-scan",
+  "version": "1.0.0",
+  "description": "Read-only Cybertect CMS telemetry monitor with Playwright",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "tsc --noEmit",
+    "dev": "node --loader ts-node/esm src/cli.ts scan --url https://example.com --report-dir reports"
+  },
+  "bin": {
+    "cybertect-scan": "./dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "js-yaml": "^4.1.0",
+    "node-html-parser": "^6.1.13",
+    "pino": "^9.2.0",
+    "playwright": "^1.42.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.15"
+  }
+}

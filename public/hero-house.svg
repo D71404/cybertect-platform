@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="822" height="562" viewBox="0 0 822 562" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgFade" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fb"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f3f4f7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#e6e8ee" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="822" height="562" fill="url(#bgFade)"/>
+  <g opacity="0.55">
+    <polygon points="70,470 200,200 330,470" fill="url(#mountain)"/>
+    <polygon points="520,470 670,180 820,470" fill="url(#mountain)"/>
+  </g>
+  <g transform="translate(130 80)">
+    <rect x="120" y="400" width="420" height="14" fill="#d4d8de"/>
+    <g>
+      <rect x="0" y="40" width="520" height="320" rx="6" fill="#e7eaef"/>
+      <rect x="200" y="0" width="320" height="360" rx="6" fill="#dde1e8"/>
+      <rect x="220" y="80" width="120" height="120" fill="#f6f7fa"/>
+      <rect x="380" y="80" width="120" height="120" fill="#f6f7fa"/>
+      <rect x="220" y="230" width="120" height="120" fill="#f6f7fa"/>
+      <rect x="30" y="90" width="110" height="110" fill="#f6f7fa"/>
+      <rect x="30" y="220" width="110" height="110" fill="#f6f7fa"/>
+      <rect x="240" y="270" width="80" height="120" fill="#1263d8"/>
+      <rect x="255" y="285" width="50" height="85" fill="#1f6fe0"/>
+      <circle cx="270" cy="330" r="4" fill="#fdbf4b"/>
+      <circle cx="270" cy="350" r="3" fill="#fdbf4b"/>
+      <polyline points="390,90 450,150 420,200 470,240" fill="none" stroke="#9da3b0" stroke-width="4"/>
+      <polyline points="430,230 470,280 440,320 470,360" fill="none" stroke="#9da3b0" stroke-width="4"/>
+      <polyline points="120,250 80,300 110,330 90,360" fill="none" stroke="#9da3b0" stroke-width="4"/>
+      <polyline points="360,260 340,320 370,360" fill="none" stroke="#9da3b0" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

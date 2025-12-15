@@ -1,0 +1,9 @@
+env: live
+allowedVendors:
+  - google-analytics
+  - gtm
+allowedIds:
+  google-analytics:
+    - G-EXAMPLE1234
+allowedDomains:
+  - analytics.example.com
