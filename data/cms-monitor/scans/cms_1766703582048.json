@@ -1,0 +1,2047 @@
+{
+  "scanResult": {
+    "scanId": "cms_1766703582048",
+    "scanTimestamp": "2025-12-25T22:59:46.205Z",
+    "buildLabel": null,
+    "baseUrl": "https://www.telemetro.com",
+    "pagesScanned": [
+      "https://www.telemetro.com"
+    ],
+    "pageResults": [
+      {
+        "url": "https://www.telemetro.com",
+        "scanTimestamp": "2025-12-25T22:59:45.978Z",
+        "scripts": [
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-87H47ZBK03&cx=c&gtm=4e5ca1",
+            "hash": "p33le9",
+            "measurementIds": {
+              "ga4": [
+                "G-87H47ZBK03"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-KJDN886XWW&cx=c&gtm=4e5ca1",
+            "hash": "5mre1s",
+            "measurementIds": {
+              "ga4": [
+                "G-KJDN886XWW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.google-analytics.com/analytics.js",
+            "hash": "lf6qr9",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://sdk.mrf.io/statics/marfeel-sdk.es5.js?id=2117",
+            "hash": "349vqg",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2117",
+            "hash": "xg9no1",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://scdn.cxense.com/cx.js",
+            "hash": "ktj8hn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtm.js?id=GTM-PV8PZCBS",
+            "hash": "auephz",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [
+                "GTM-PV8PZCBS"
+              ],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtm.js?id=GTM-KW267TX",
+            "hash": "ybllsq",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [
+                "GTM-KW267TX"
+              ],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://certify-js.alexametrics.com/atrk.js",
+            "hash": "e4hndc",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "loeqhz",
+            "content": "[{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"WebSite\",\"name\":\"\\u00daltimas Noticias de Panam\\u00e1 y el Mundo | Telemetro\",\"url\":\"https:\\/\\/www.telemetro.com\\/\"}]",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.telemetro.com/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766635736.js",
+            "hash": "b4des1",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "kt1hgy",
+            "content": " window.arrCMSRegions = {  region1 : 'block' , region2 : 'block' , region3 : 'block' , region4 : 'block' , region5 : 'block' , region6 : 'block' , region7 : 'block' , region8 : 'none'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "aayxbw",
+            "content": "\n        _atrk_opts = { atrk_acct:\"zLbXj1acFH00MV\", domain:\"telemetro.com\",dynamic: true};\n        (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = \"https://certify-js.alexametrics.com/atrk.js\"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();\n    ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=UA-1294817-1",
+            "hash": "np1if1",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "y8mz8a",
+            "content": " window.dataLayer = window.dataLayer || [];\n\n        function gtag() {\n          dataLayer.push(arguments);\n        }\n\n        gtag('js', new Date());\n\n        gtag('config', 'UA-1294817-1');\n        ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-KJDN886XWW",
+            "hash": "rphuun",
+            "measurementIds": {
+              "ga4": [
+                "G-KJDN886XWW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "r3eq7g",
+            "content": "\nwindow.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\n\ngtag('config', 'G-KJDN886XWW');\n",
+            "measurementIds": {
+              "ga4": [
+                "G-KJDN886XWW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "q4vciq",
+            "content": "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-KW267TX');",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [
+                "GTM-KW267TX"
+              ],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "m75bjj",
+            "content": "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-PV8PZCBS');",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [
+                "GTM-PV8PZCBS"
+              ],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ihkanl",
+            "content": "\nvar cX = cX || {}; cX.callQueue = cX.callQueue || [];\ncX.callQueue.push(['setSiteId', '1137362052063233939']);\ncX.callQueue.push(['sendPageViewEvent']);\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "cvfflu",
+            "content": "\n(function(d,s,e,t){e=d.createElement(s);e.type='text/java'+s;e.async='async';\ne.src='http'+('https:'===location.protocol?'s://s':'://')+'cdn.cxense.com/cx.js';\nt=d.getElementsByTagName(s)[0];t.parentNode.insertBefore(e,t);})(document,'script');\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "vw55z",
+            "content": " window.teads_analytics = window.teads_analytics || {};\n  window.teads_analytics.analytics_tag_id = \"PUB_24939\";\n  window.teads_analytics.share = window.teads_analytics.share || function() {\n    ;(window.teads_analytics.shared_data = window.teads_analytics.shared_data || []).push(arguments)\n  };\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://a.teads.tv/analytics/tag.js",
+            "hash": "v9tnxk",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "md9u5b",
+            "content": "\n\tfunction e(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],c=document.createElement(\"script\");c.src=e,t?c.type=\"module\":(c.async=!0,c.type=\"text/javascript\",c.setAttribute(\"nomodule\",\"\"));var n=document.getElementsByTagName(\"script\")[0];n.parentNode.insertBefore(c,n)}function t(t,c,n){var a,o,r;null!==(a=t.marfeel)&&void 0!==a||(t.marfeel={}),null!==(o=(r=t.marfeel).cmd)&&void 0!==o||(r.cmd=[]),t.marfeel.config=n,t.marfeel.config.accountId=c;var i=\"https://sdk.mrf.io/static",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "bylql5",
+            "content": " var adzone = adzone||{}; \n  window.googletag = window.googletag || {cmd: []};\n  (function(adzone) { \n    adzone.c=[]; adzone.m=function(e) { if(e.data && e.data.m ==\"adzone\") { adzone.c.push({ m: e }); adzone.r && adzone.r(); } }; \n    window.addEventListener ? window.addEventListener(\"message\", adzone.m, !1) : window.attachEvent && window.attachEvent(\"message\", adzone.m); \n    googletag.cmd.push(function() { googletag.pubads().addEventListener(\"slotRenderEnded\", function(e) { adzone.c.push({r:",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://s1.adzonestatic.com/c/122_medcom.js",
+            "hash": "czr3hy",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "hash": "tihp7c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "2a3tk3",
+            "content": " window.googletag = window.googletag || {cmd: []};\n  googletag.cmd.push(function() {\n  \n    googletag.defineSlot('/114258785/telemetro/inicio_desktop_300x250x1', [[250, 250], [300, 250]], 'inicio_desktop_300x250x1').addService(googletag.pubads());\n    googletag.defineSlot('/114258785/telemetro/inicio_desktop_300x250x2', [[250, 250], [300, 250]], 'inicio_desktop_300x250x2').addService(googletag.pubads());\n    googletag.defineSlot('/114258785/telemetro/inicio_desktop_300x250x3', [[250, 250], [300,",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "kh4b2v",
+            "content": "\n{\n    \"prefetch\": [\n        {\n            \"source\": \"document\",\n            \"where\": {\n                \"and\": [\n                    { \"href_matches\": \"https://www.telemetro.com/*\" },\n                    { \"not\": { \"selector_matches\": \"[rel~='nofollow']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noreferrer']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noopener']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noindex']\" } }\n            ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-KJDN886XWW",
+            "hash": "rphuun",
+            "measurementIds": {
+              "ga4": [
+                "G-KJDN886XWW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "j382ph",
+            "content": " window.dataLayer = window.dataLayer || [];\n    function gtag() { dataLayer.push(arguments); }\n    gtag('js', new Date());\n    gtag('config', 'G-KJDN886XWW');\n    gtag('set',\n        {\n            'dimension1': '&Uacute;ltimas Noticias de Panam&aacute; y el Mundo | Telemetro',\n            'dimension2': '',\n            'dimension3': 'page',\n            'dimension4': '',\n            'dimension5': '',\n            'dimension6': '',\n            'dimension7': '',\n            'dimension8': '',\n        ",
+            "measurementIds": {
+              "ga4": [
+                "G-KJDN886XWW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "n4o3oj",
+            "content": "window.TdOneSingalSetup = {\"appId\":\"60981a03-f094-4dc2-a08d-4f24c3a44370\",\"autoRegister\":false,\"promptOptions\":{\"actionMessage\":\"Nos gustar\\u00eda mostrarle las \\u00faltimas noticias.\",\"exampleNotificationTitleDesktop\":\"Notificaci\\u00f3n de ejemplo\",\"exampleNotificationMessageDesktop\":\"As\\u00ed aparecer\\u00e1n las notificaciones\",\"exampleNotificationCaption\":\"Pod\\u00e9s desuscribirte en cualquier momento\",\"acceptButtonText\":\"SUSCRIBIRME\",\"cancelButtonText\":\"NO, GRACIAS\"},\"welcomeNotification\":{\"",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "huuqgc",
+            "content": "window.promptNotificationsPage = \"home\";",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.telemetro.com/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766635531.js",
+            "hash": "yuzt9z",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "hash": "smp2ab",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://sdk.mrf.io/statics/compass-multimedia-sdk.js?version=2219",
+            "hash": "ahmga3",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "multimedia",
+              "selector": "#multimedia"
+            },
+            "selector": "#multimedia"
+          },
+          {
+            "type": "external",
+            "src": "https://sdk.mrf.io/statics/compass-multimedia-sdk.es5.js?version=2219",
+            "hash": "kdjqkk",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "multimedia",
+              "selector": "#multimedia"
+            },
+            "selector": "#multimedia"
+          },
+          {
+            "type": "external",
+            "src": "https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?id=AC_Ta7Ly0KJSBur_2N16uJzyg&experimentType=HeadlineAB&version=esnext",
+            "hash": "ue3zvq",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?id=AC_Ta7Ly0KJSBur_2N16uJzyg&experimentType=HeadlineAB&version=legacy",
+            "hash": "xhlnym",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://s1.adzonestatic.com/c/10003_adzone.23.22.js?b120448",
+            "hash": "rxh6xs",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "hash": "xfhw4c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "hash": "o80o3r",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/i/114258785?ers=3",
+            "hash": "8k9a9n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "1onohh",
+            "content": " //Evita busqueda si no hay contenido\n                        const searchForm = document.querySelector('.navbar__hidden-nav-search-form');\n\n                        searchForm.addEventListener('submit', function (event) {\n                            event.preventDefault();\n                            const value = document.querySelector('#search-form').value;\n                            if (!value) {\n                                return false;\n                            }\n                    ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "pvn32e",
+            "content": " document.addEventListener(\"DOMContentLoaded\", function () {\n                            const menuWrapper = document.querySelector('.navbar__hidden-nav-menu-wrapper');\n                            // whenever we hover over a menu item that has a submenu\n                            document.querySelectorAll('.navbar__hidden-nav-item').forEach(function (menuItem) {\n                                menuItem.addEventListener('mouseover', function () {\n                                    let submenuWr",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "v5mo2o",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x1'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_970x90x1",
+              "selector": "#inicio_desktop_970x90x1"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "l58dh",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x1'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_300x250x1",
+              "selector": "#inicio_desktop_300x250x1"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "a5mhcx",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x2'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_970x90x2",
+              "selector": "#inicio_desktop_970x90x2"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ub04x0",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x2'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_300x250x2",
+              "selector": "#inicio_desktop_300x250x2"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "jk8f6m",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x3'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_970x90x3",
+              "selector": "#inicio_desktop_970x90x3"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "lr0q8z",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x4'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_970x90x4",
+              "selector": "#inicio_desktop_970x90x4"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7yu6ak",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x5'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_970x90x5",
+              "selector": "#inicio_desktop_970x90x5"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "3kcniw",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_megalateralx1'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_megalateralx1",
+              "selector": "#inicio_desktop_megalateralx1"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "xcez51",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x6'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_970x90x6",
+              "selector": "#inicio_desktop_970x90x6"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "b090il",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x3'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_300x250x3",
+              "selector": "#inicio_desktop_300x250x3"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "iplw0y",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x4'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_300x250x4",
+              "selector": "#inicio_desktop_300x250x4"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "mln9en",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x5'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_300x250x5",
+              "selector": "#inicio_desktop_300x250x5"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "q5i90n",
+            "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_megalateralx2'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "inicio_desktop_megalateralx2",
+              "selector": "#inicio_desktop_megalateralx2"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "n85xq9",
+            "content": " function loadTdDefererJs(i){\n      var s = document.createElement(\"script\");\n      s.setAttribute(\"type\", \"text/javascript\");\n      if(i >= window.defererList.length){\n        return false;\n      }\n\n      if(typeof(window.defererList[i].src) != \"undefined\" && window.defererList[i].src != \"\"){\n        //console.log(\"Add SRC =>\",window.defererList[i].src);\n        s.onload = function() {\n          i++;\n          loadTdDefererJs(i);\n        };\n        s.onerror = function() {\n          i++;\n      ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "dndbcm",
+            "content": "(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'9b3bf3564a2cddb1',t:'MTc2NjcwMzU4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "97q9g2",
+            "content": "(function(){if(window.dailymotion){var h=dailymotion.getAllPlayers();h.forEach(function(a){a.then(function(c){DM_GTM_INIT(c)},function(c){console.error(\"GTM:Dailymotion\",c)})})}var g=[],k=function(a,c,f){if(!g.includes(c)){g.push(c);var b={event:\"fast_video\",video_provider:\"Dailymotion player (client-side)\",player_source_id:c,player_id:f};a.on(dailymotion.events.PLAYER_VIDEOCHANGE,function(d){b.event_name=\"player_videochange\";b.video_title=d.videoTitle;e(b)});a.on(dailymotion.events.PLAYER_START",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "gtm-dailymotion-tracking",
+              "selector": "#gtm-dailymotion-tracking"
+            },
+            "selector": "#gtm-dailymotion-tracking"
+          }
+        ],
+        "pixels": [
+          {
+            "type": "noscript",
+            "src": "<img src=\"https://www.telemetro.com/css-custom/311/lazy.svg\" data-td-src-property=\"https://certify.alexametrics.com/atrk.gif?account=zLbXj1acFH00MV\"  style=\"display:none\" height=\"1\" width=\"1\" alt=\"\"/>",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "noscript"
+          },
+          {
+            "type": "noscript",
+            "src": "<iframe src=\"about:blank\" data-td-src-property=\"https://www.googletagmanager.com/ns.html?id=GTM-PV8PZCBS\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [
+                "GTM-PV8PZCBS"
+              ],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "noscript"
+          }
+        ],
+        "networkRequests": [
+          {
+            "url": "https://www.telemetro.com/",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766703583333
+          },
+          {
+            "url": "https://www.telemetro.com/tdcss-2abdc096caa9d9142d0e37d57d2fc623bc1c012a-99",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766703583637
+          },
+          {
+            "url": "https://www.telemetro.com/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766635736.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583637
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/fonts/roboto/roboto-v20-latin-300.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766703583637
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/fonts/roboto/roboto-v20-latin-regular.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766703583637
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/fonts/roboto/roboto-v20-latin-700.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766703583637
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=UA-1294817-1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-KJDN886XWW",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://a.teads.tv/analytics/tag.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://s1.adzonestatic.com/c/122_medcom.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://www.telemetro.com/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766635531.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/lazy.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://www.telemetro.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583638
+          },
+          {
+            "url": "https://certify-js.alexametrics.com/atrk.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583701
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KW267TX",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583701
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PV8PZCBS",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583702
+          },
+          {
+            "url": "https://scdn.cxense.com/cx.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583702
+          },
+          {
+            "url": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2117",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583702
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/icons/search-solid-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583770
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/icons/chevron-right-solid-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583770
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/icons/facebook-square-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583770
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/icons/twitter-brands-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583770
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/icons/instagram-brands-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583770
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/icons/rss-solid-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583770
+          },
+          {
+            "url": "https://www.telemetro.com/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583774
+          },
+          {
+            "url": "https://www.telemetro.com/css-custom/311/images/logo-311.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583792
+          },
+          {
+            "url": "https://media.telemetro.com/p/3faf1f60aff1d74f4ce6f32eeeb8734b/adjuntos/311/imagenes/018/983/0018983652/1200x675/smart/panama-felicita-nasry-asfura-presidente-honduras.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583792
+          },
+          {
+            "url": "https://media.telemetro.com/p/3e7cbbf5fa4151dd1791705667fb51d1/adjuntos/311/imagenes/018/983/0018983653/525x295/smart/20251225_160257.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583793
+          },
+          {
+            "url": "https://media.telemetro.com/p/0e6e765c0b4a436a45119904b89ea32f/adjuntos/311/imagenes/018/964/0018964390/525x295/smart/sorteo-la-loteria-fiscal.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583793
+          },
+          {
+            "url": "https://media.telemetro.com/p/fcdf33482f82b740dfae7057e5dd73df/adjuntos/311/imagenes/018/806/0018806860/525x295/smart/jubilados-y-pensionados-achjpg.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766703583793
+          },
+          {
+            "url": "https://www.telemetro.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/d39f91d70ce1/main.js?",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583830
+          },
+          {
+            "url": "https://static.teads.tv/analytics/tag.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703583903
+          },
+          {
+            "url": "https://www.telemetro.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/d39f91d70ce1/0.39843405037285196:1766701536:yy8sYXwDDTaDtOpSBBH66bMrAmld_u5nxnfv5opv5YA/9b3bf3564a2cddb1",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766703585370
+          },
+          {
+            "url": "https://events.newsroom.bi/ingest.php",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766703585398
+          },
+          {
+            "url": "https://sdk.mrf.io/statics/compass-multimedia-sdk.js?version=2219",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585399
+          },
+          {
+            "url": "https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?id=AC_Ta7Ly0KJSBur_2N16uJzyg&experimentType=HeadlineAB&version=esnext",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585399
+          },
+          {
+            "url": "https://s1.adzonestatic.com/c/10003_adzone.23.22.js?b120448",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585401
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585401
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585413
+          },
+          {
+            "url": "https://www.google-analytics.com/analytics.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585433
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-KJDN886XWW&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585433
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-87H47ZBK03&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585445
+          },
+          {
+            "url": "https://cdn.cxense.com/sp1.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766703585464
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-KJDN886XWW&gtm=45je5ca1v877536943z8813348419za200&_p=1766703583690&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=513496774.1766703585&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1766703585&sct=1&seg=0&dl=https%3A%2F%2Fwww.telemetro.com%2F&dt=%C3%9Altimas%20Noticias%20de%20Panam%C3%A1%20y%20el%20Mundo%20%7C%20Telemetro&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2159",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766703585499,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%C3%",
+              "%20Noticias%",
+              "%20Panam%",
+              "%A1%",
+              "%20el%",
+              "%20%"
+            ]
+          },
+          {
+            "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-KJDN886XWW&cid=513496774.1766703585&gtm=45je5ca1v877536943z8813348419za200&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940",
+            "method": "POST",
+            "resourceType": "ping",
+            "timestamp": 1766703585499
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-KJDN886XWW&gtm=45je5ca1v877536943z8813348419za200&_p=1766703583690&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=513496774.1766703585&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAACAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1766703585&sct=1&seg=1&dl=https%3A%2F%2Fwww.telemetro.com%2F&dt=%C3%9Altimas%20Noticias%20de%20Panam%C3%A1%20y%20el%20Mundo%20%7C%20Telemetro&en=page_view&_et=3&tfd=2163",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766703585500,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%C3%",
+              "%20Noticias%",
+              "%20Panam%",
+              "%A1%",
+              "%20el%",
+              "%20%"
+            ]
+          },
+          {
+            "url": "https://at.teads.tv/fpc?analytics_tag_id=PUB_24939&tfpvi=&gdpr_status=22&gdpr_reason=220&gdpr_consent=&ccpa_consent=&shared_ids=&sv=d656f4a&",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766703585508
+          },
+          {
+            "url": "https://api.onesignal.com/sync/60981a03-f094-4dc2-a08d-4f24c3a44370/web?callback=__jp0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585515
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766703585515
+          },
+          {
+            "url": "https://sdk.mrf.io/statics/ffee652b1d6b4f23bdc4.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585598
+          },
+          {
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-87H47ZBK03&gtm=45je5ca1v9120759008z89193626522za20gzb9193626522zd9193626522&_p=1766703583690&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=513496774.1766703585&ul=en-us&sr=1280x720&ir=1&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_eu=EA&_s=1&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1766703585&sct=1&seg=0&dl=https%3A%2F%2Fwww.telemetro.com%2F&dt=%C3%9Altimas%20Noticias%20de%20Panam%C3%A1%20y%20el%20Mundo%20%7C%20Telemetro&en=page_view&_fv=1&_ss=1&ep.debug_mode=true&tfd=2324",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766703585670,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%C3%",
+              "%20Noticias%",
+              "%20Panam%",
+              "%A1%",
+              "%20el%",
+              "%20%"
+            ]
+          },
+          {
+            "url": "https://cdn.cxense.com/cx.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585676
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/i/114258785?ers=3",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585791
+          },
+          {
+            "url": "https://p1cluster.cxense.com/p1.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766703585812
+          },
+          {
+            "url": "https://onesignal.com/sdks/web/v16/OneSignalSDK.page.styles.css?v=160510",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766703585832
+          }
+        ],
+        "measurementIds": {
+          "ga4": [
+            "G-KJDN886XWW",
+            "G-87H47ZBK03"
+          ],
+          "ua": [],
+          "gtm": [
+            "GTM-KW267TX",
+            "GTM-PV8PZCBS"
+          ],
+          "aw": [],
+          "fb": []
+        },
+        "widgetMap": {
+          "id:multimedia": {
+            "widget": "multimedia",
+            "attribute": "id",
+            "selector": "#multimedia",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "https://sdk.mrf.io/statics/compass-multimedia-sdk.js?version=2219",
+                "hash": "ahmga3",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "multimedia",
+                  "selector": "#multimedia"
+                },
+                "selector": "#multimedia"
+              },
+              {
+                "type": "external",
+                "src": "https://sdk.mrf.io/statics/compass-multimedia-sdk.es5.js?version=2219",
+                "hash": "kdjqkk",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "multimedia",
+                  "selector": "#multimedia"
+                },
+                "selector": "#multimedia"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_970x90x1": {
+            "widget": "inicio_desktop_970x90x1",
+            "attribute": "id",
+            "selector": "#inicio_desktop_970x90x1",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "v5mo2o",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x1'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_970x90x1",
+                  "selector": "#inicio_desktop_970x90x1"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_300x250x1": {
+            "widget": "inicio_desktop_300x250x1",
+            "attribute": "id",
+            "selector": "#inicio_desktop_300x250x1",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "l58dh",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x1'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_300x250x1",
+                  "selector": "#inicio_desktop_300x250x1"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_970x90x2": {
+            "widget": "inicio_desktop_970x90x2",
+            "attribute": "id",
+            "selector": "#inicio_desktop_970x90x2",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "a5mhcx",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x2'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_970x90x2",
+                  "selector": "#inicio_desktop_970x90x2"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_300x250x2": {
+            "widget": "inicio_desktop_300x250x2",
+            "attribute": "id",
+            "selector": "#inicio_desktop_300x250x2",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "ub04x0",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x2'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_300x250x2",
+                  "selector": "#inicio_desktop_300x250x2"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_970x90x3": {
+            "widget": "inicio_desktop_970x90x3",
+            "attribute": "id",
+            "selector": "#inicio_desktop_970x90x3",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "jk8f6m",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x3'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_970x90x3",
+                  "selector": "#inicio_desktop_970x90x3"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_970x90x4": {
+            "widget": "inicio_desktop_970x90x4",
+            "attribute": "id",
+            "selector": "#inicio_desktop_970x90x4",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "lr0q8z",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x4'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_970x90x4",
+                  "selector": "#inicio_desktop_970x90x4"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_970x90x5": {
+            "widget": "inicio_desktop_970x90x5",
+            "attribute": "id",
+            "selector": "#inicio_desktop_970x90x5",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "7yu6ak",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x5'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_970x90x5",
+                  "selector": "#inicio_desktop_970x90x5"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_megalateralx1": {
+            "widget": "inicio_desktop_megalateralx1",
+            "attribute": "id",
+            "selector": "#inicio_desktop_megalateralx1",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "3kcniw",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_megalateralx1'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_megalateralx1",
+                  "selector": "#inicio_desktop_megalateralx1"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_970x90x6": {
+            "widget": "inicio_desktop_970x90x6",
+            "attribute": "id",
+            "selector": "#inicio_desktop_970x90x6",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "xcez51",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_970x90x6'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_970x90x6",
+                  "selector": "#inicio_desktop_970x90x6"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_300x250x3": {
+            "widget": "inicio_desktop_300x250x3",
+            "attribute": "id",
+            "selector": "#inicio_desktop_300x250x3",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "b090il",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x3'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_300x250x3",
+                  "selector": "#inicio_desktop_300x250x3"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_300x250x4": {
+            "widget": "inicio_desktop_300x250x4",
+            "attribute": "id",
+            "selector": "#inicio_desktop_300x250x4",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "iplw0y",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x4'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_300x250x4",
+                  "selector": "#inicio_desktop_300x250x4"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_300x250x5": {
+            "widget": "inicio_desktop_300x250x5",
+            "attribute": "id",
+            "selector": "#inicio_desktop_300x250x5",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "mln9en",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_300x250x5'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_300x250x5",
+                  "selector": "#inicio_desktop_300x250x5"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:inicio_desktop_megalateralx2": {
+            "widget": "inicio_desktop_megalateralx2",
+            "attribute": "id",
+            "selector": "#inicio_desktop_megalateralx2",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "q5i90n",
+                "content": " googletag.cmd.push(function() { googletag.display('inicio_desktop_megalateralx2'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "inicio_desktop_megalateralx2",
+                  "selector": "#inicio_desktop_megalateralx2"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:gtm-dailymotion-tracking": {
+            "widget": "gtm-dailymotion-tracking",
+            "attribute": "id",
+            "selector": "#gtm-dailymotion-tracking",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "97q9g2",
+                "content": "(function(){if(window.dailymotion){var h=dailymotion.getAllPlayers();h.forEach(function(a){a.then(function(c){DM_GTM_INIT(c)},function(c){console.error(\"GTM:Dailymotion\",c)})})}var g=[],k=function(a,c,f){if(!g.includes(c)){g.push(c);var b={event:\"fast_video\",video_provider:\"Dailymotion player (client-side)\",player_source_id:c,player_id:f};a.on(dailymotion.events.PLAYER_VIDEOCHANGE,function(d){b.event_name=\"player_videochange\";b.video_title=d.videoTitle;e(b)});a.on(dailymotion.events.PLAYER_START",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "gtm-dailymotion-tracking",
+                  "selector": "#gtm-dailymotion-tracking"
+                },
+                "selector": "#gtm-dailymotion-tracking"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          }
+        }
+      }
+    ],
+    "duplicates": {
+      "duplicateIds": {},
+      "duplicateScripts": {
+        "rphuun": 2
+      },
+      "duplicateLibraries": {
+        "www.googletagmanager.com/js": 5,
+        "www.googletagmanager.com/gtm.js": 2,
+        "marfeelexperimentsexperienceengine.mrf.io/render": 2
+      }
+    },
+    "unauthorized": [
+      {
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-87H47ZBK03&cx=c&gtm=4e5ca1",
+        "domain": "googletagmanager.com",
+        "page": "https://www.telemetro.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.telemetro.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.telemetro.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-1294817-1",
+        "domain": "googletagmanager.com",
+        "page": "https://www.telemetro.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.telemetro.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.telemetro.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-KJDN886XWW&cid=513496774.1766703585&gtm=45je5ca1v877536943z8813348419za200&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940",
+        "domain": "stats.g.doubleclick.net",
+        "page": "https://www.telemetro.com",
+        "reason": "Not in allowed partners list"
+      }
+    ],
+    "injectedScripts": [],
+    "screenshots": [
+      "/Users/pablogimenez/Desktop/DeDuper.io/data/cms-monitor/screenshots/cms-monitor-screenshot-cms_1766703582048-0.png"
+    ],
+    "summary": {
+      "totalPages": 1,
+      "totalScripts": 61,
+      "totalPixels": 2,
+      "duplicateIdsCount": 0,
+      "duplicateScriptsCount": 1,
+      "unauthorizedCount": 7,
+      "injectedScriptsCount": 0
+    }
+  },
+  "baselineDiff": null
+}

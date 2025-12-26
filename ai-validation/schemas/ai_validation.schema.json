@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Validation Result",
+  "description": "Schema for AI validation output from evidence pack analysis",
+  "type": "object",
+  "required": [
+    "verdict",
+    "findings",
+    "duplicates",
+    "limitations",
+    "model_used",
+    "prompt_version",
+    "input_fingerprint",
+    "output_fingerprint"
+  ],
+  "properties": {
+    "verdict": {
+      "type": "object",
+      "required": ["label", "confidence", "rationale"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": ["PASS", "WARN", "FAIL"]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "mechanism", "evidence", "risk", "recommended_next_steps"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mechanism": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "object",
+            "required": ["counts", "examples"],
+            "properties": {
+              "counts": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          },
+          "risk": {
+            "type": "string",
+            "enum": ["HIGH", "MEDIUM", "LOW"]
+          },
+          "recommended_next_steps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "duplicates": {
+      "type": "object",
+      "required": ["exact_url_duplicates", "top_endpoints"],
+      "properties": {
+        "exact_url_duplicates": {
+          "type": "number",
+          "minimum": 0
+        },
+        "top_endpoints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["endpoint", "count"],
+            "properties": {
+              "endpoint": {
+                "type": "string"
+              },
+              "count": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "model_used": {
+      "type": "object",
+      "required": ["provider", "model", "run_at"],
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "run_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "prompt_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_fingerprint": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "output_fingerprint": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}
+

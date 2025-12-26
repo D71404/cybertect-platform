@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Case Brief",
+  "description": "Canonical evidence pack summary for AI validation",
+  "type": "object",
+  "required": [
+    "site",
+    "timestamp",
+    "scan_window",
+    "total_events"
+  ],
+  "properties": {
+    "site": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scan_window": {
+      "type": "string"
+    },
+    "total_events": {
+      "type": "number",
+      "minimum": 0
+    },
+    "endpoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["endpoint", "count"],
+        "properties": {
+          "endpoint": {
+            "type": "string"
+          },
+          "count": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "exact_duplicate_urls_count": {
+      "type": "number",
+      "minimum": 0
+    },
+    "iframe_anomalies": {
+      "type": "object",
+      "properties": {
+        "offscreen": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "iframeId": {"type": "string"},
+              "rect": {"type": "object"},
+              "reason": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "tiny": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "hidden": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "gpt_events": {
+      "type": "object",
+      "properties": {
+        "slotRender": {"type": "number"},
+        "viewable": {"type": "number"}
+      }
+    },
+    "impression_beacons": {
+      "type": "object",
+      "properties": {
+        "count": {"type": "number"},
+        "key_endpoints": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "id_sync": {
+      "type": "object",
+      "properties": {
+        "count": {"type": "number"},
+        "counterparties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "domain": {"type": "string"},
+              "count": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "tag_library_loads": {
+      "type": "number",
+      "minimum": 0
+    },
+    "analytics_ids": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "ad_client_ids": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "cms_monitor": {
+      "type": "object",
+      "properties": {
+        "total_scripts": {"type": "number"},
+        "unauthorized_count": {"type": "number"},
+        "injected_scripts_count": {"type": "number"}
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}
+

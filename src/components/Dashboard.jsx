@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShieldCheck, AlertTriangle, Banknote, Search, RefreshCw, AlertOctagon, CheckCircle2 } from 'lucide-react';
+import Footer from './Footer';
 
 const Dashboard = () => {
   const [url, setUrl] = useState('');
@@ -273,6 +274,7 @@ const Dashboard = () => {
           })}
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

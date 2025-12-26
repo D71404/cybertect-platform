@@ -70,3 +70,58 @@ npm test
 docker build -t cybertect-scan .
 docker run --rm cybertect-scan scan --url https://example.com
 ```
+
+## AI Validation Module
+
+The AI Validation module provides automated validation of evidence packs using AI models (OpenAI ChatGPT, Google Gemini, Perplexity). It generates schema-validated JSON results and deterministic PDF evidence summaries.
+
+### Features
+
+- **Multi-Provider Support**: OpenAI ChatGPT, Google Gemini, and Perplexity
+- **Schema Validation**: Strict JSON schema enforcement for all AI outputs
+- **Deterministic PDF Generation**: One-page evidence summaries generated from structured JSON
+- **Evidence Pack Parsing**: Automatic extraction and analysis of ZIP evidence packs
+- **Fingerprinting**: SHA256 fingerprints for input and output traceability
+- **Redaction Mode**: Optional URL token/ID removal for privacy
+- **Template System**: Extensible validation templates for different fraud types
+
+### Quick Start
+
+1. **Set Environment Variables**
+
+```bash
+# Choose one or more providers
+export OPENAI_API_KEY="sk-..."
+export GEMINI_API_KEY="..."
+export PERPLEXITY_API_KEY="pplx-..."
+```
+
+2. **Start Server**
+
+```bash
+npm run start:server
+```
+
+3. **Access UI**
+
+Navigate to: `http://localhost:3000/ai-validation`
+
+### Available Templates
+
+- **Ad Impression Inflation** - Detects hidden/offscreen iframes and impression gaps
+- **Analytics Inflation** - Detects duplicate pageviews and event inflation
+- **Consent & Tag Governance** - Validates unauthorized scripts and consent violations
+- **ID Sync Storm** - Detects excessive ID sync activity
+
+### Documentation
+
+Full documentation available in: [`ai-validation/README.md`](ai-validation/README.md)
+
+Topics covered:
+- API endpoints
+- Evidence pack format
+- Adding new templates
+- Output schema
+- Programmatic usage
+- Testing
+- Troubleshooting

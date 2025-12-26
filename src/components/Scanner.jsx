@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ShieldCheck, AlertTriangle, Banknote, Search, RefreshCw, AlertOctagon, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, AlertTriangle, Banknote, Search, RefreshCw, AlertOctagon, CheckCircle2, Sparkles } from 'lucide-react';
+import Footer from './Footer';
 
 const Scanner = () => {
   const [url, setUrl] = useState('');
@@ -8,6 +9,9 @@ const Scanner = () => {
   const [adSpend, setAdSpend] = useState(1000);
   // Per-row ad spend state (keyed by index)
   const [rowAdSpend, setRowAdSpend] = useState({}); 
+  // AI Validation state
+  const [aiValidating, setAiValidating] = useState({});
+  const [aiResults, setAiResults] = useState({}); 
 
   // Mock Data matching the new card style
   const [data, setData] = useState([
@@ -68,6 +72,14 @@ const Scanner = () => {
             // Keep original URL if parsing fails
           }
 
+          // Extract Tag Parity Detection results
+          const tagParity = scanResult.tagParity || {};
+          const ga4Ids = tagParity.ga4_ids || scanResult.tagInventory?.analyticsIds?.filter(id => id.startsWith('G-')) || [];
+          const gtmIds = tagParity.gtm_containers || scanResult.tagInventory?.gtmContainers || [];
+          const awIds = tagParity.gads_aw_ids || scanResult.tagInventory?.googleAdsIds || [];
+          const fbIds = tagParity.fb_pixel_ids || scanResult.tagInventory?.facebookPixels || [];
+          const flags = tagParity.flags || [];
+
           // Determine risk level from verdict and riskScore
           // Check for page_view duplication issues before marking as Clean
           const hitsById = scanResult.hitsById || {};
@@ -76,9 +88,19 @@ const Scanner = () => {
             return pageViewCount > 1;
           });
           
+          // Check flags for risk indicators
+          const hasMultipleFlags = flags.some(f => f.startsWith('MULTIPLE_'));
+          const hasTagsButNoBeacons = flags.includes('TAGS_PRESENT_NO_BEACONS');
+          
           const isHighRisk = scanResult.verdict === 'HIGH_RISK' || (scanResult.riskScore && scanResult.riskScore >= 60);
-          const isMediumRisk = scanResult.verdict === 'SUSPICIOUS' || (scanResult.riskScore && scanResult.riskScore >= 30);
-          const isClean = scanResult.verdict === 'PASS' && (!scanResult.riskScore || scanResult.riskScore < 30) && !hasDuplicatePageViews;
+          const isMediumRisk = scanResult.verdict === 'SUSPICIOUS' || 
+                               (scanResult.riskScore && scanResult.riskScore >= 30) ||
+                               hasMultipleFlags; // Multiple tags = at least Medium risk
+          const isClean = scanResult.verdict === 'PASS' && 
+                         (!scanResult.riskScore || scanResult.riskScore < 30) && 
+                         !hasDuplicatePageViews &&
+                         !hasMultipleFlags && // No multiple tags
+                         (ga4Ids.length === 0 && gtmIds.length === 0 && awIds.length === 0 && fbIds.length === 0); // No IDs detected
           
           // Get fraud warnings count
           const fraudCount = scanResult.fraudWarnings ? scanResult.fraudWarnings.length : 0;
@@ -88,12 +110,10 @@ const Scanner = () => {
           const networkEvents = scanResult.metrics?.adRequestCount || scanResult.networkEventsCount || 0;
           const wasteFactor = networkEvents > 50 ? '6x' : networkEvents > 30 ? '5x' : networkEvents > 10 ? '3x' : '1x';
 
-          // Extract analytics IDs (GA/UA) and Google Ads IDs (AW)
-          const analyticsIds = scanResult.analyticsIds || scanResult.tagInventory?.analyticsIds || [];
-          const googleAdsIds = scanResult.googleAdsIds || scanResult.tagInventory?.googleAdsIds || [];
+          // Format tag counts for display (compact badge format)
+          const tagCountsDisplay = `GA4: ${ga4Ids.length} | GTM: ${gtmIds.length} | FB: ${fbIds.length} | AW: ${awIds.length}`;
           
           // Format IDs for display with Hits Sent data (Tag Assistant-style)
-          const hitsById = scanResult.hitsById || {};
           const hitsDisplay = Object.keys(hitsById).map(tid => {
             const hitData = hitsById[tid];
             const eventCounts = Object.entries(hitData.events || {})
@@ -101,11 +121,6 @@ const Scanner = () => {
               .join(', ');
             return `${tid} (${hitData.total} hits${eventCounts ? `: ${eventCounts}` : ''})`;
           }).join('; ');
-          
-          const allIds = [...analyticsIds, ...googleAdsIds];
-          const idsDisplay = allIds.length > 0 
-            ? `IDs: ${allIds.join(', ')}` 
-            : '';
           
           // Build details string
           let detailsText = '';
@@ -115,8 +130,16 @@ const Scanner = () => {
             detailsText = `Analysis complete. Risk Score: ${scanResult.riskScore || 0}`;
           }
           
-          if (idsDisplay) {
-            detailsText += `. ${idsDisplay}`;
+          // Add tag counts (replace "No IDs" with actual counts)
+          if (ga4Ids.length > 0 || gtmIds.length > 0 || awIds.length > 0 || fbIds.length > 0) {
+            detailsText += `. ${tagCountsDisplay}`;
+          } else {
+            detailsText += `. No IDs detected`;
+          }
+          
+          // Add flags if present
+          if (flags.length > 0) {
+            detailsText += `. Flags: ${flags.join(', ')}`;
           }
           
           // Add Hits Sent information
@@ -124,9 +147,12 @@ const Scanner = () => {
             detailsText += `. Hits Sent: ${hitsDisplay}`;
           }
           
-          // Store hitsById for display in card
+          // Store data for display in card
           scanResult._hitsById = hitsById;
           scanResult._hitsDisplay = hitsDisplay;
+          scanResult._tagParity = tagParity;
+          scanResult._tagCountsDisplay = tagCountsDisplay;
+          scanResult._flags = flags;
 
           const newResult = {
             domain: domain,
@@ -137,7 +163,14 @@ const Scanner = () => {
             waste: wasteFactor,
             colorTheme: hasFraud ? 'red' : (isClean ? 'green' : 'yellow'),
             _hitsById: hitsById,
-            _hitsDisplay: hitsDisplay
+            _hitsDisplay: hitsDisplay,
+            _tagParity: tagParity,
+            _tagCountsDisplay: tagCountsDisplay,
+            _flags: flags,
+            _ga4Ids: ga4Ids,
+            _gtmIds: gtmIds,
+            _awIds: awIds,
+            _fbIds: fbIds
           };
 
           setData(prev => [newResult, ...prev]);
@@ -173,6 +206,76 @@ const Scanner = () => {
       case 'yellow': return <AlertTriangle className="text-yellow-600" size={20} />;
       case 'green': return <CheckCircle2 className="text-green-600" size={20} />;
       default: return <ShieldCheck size={20} />;
+    }
+  };
+
+  const handleAIValidation = async (row, index) => {
+    setAiValidating(prev => ({ ...prev, [index]: true }));
+    try {
+      // Create evidence pack from scan data
+      const evidencePack = {
+        site: row.domain,
+        timestamp: new Date().toISOString(),
+        scan_window: '30s',
+        total_events: row._hitsById ? Object.values(row._hitsById).reduce((sum, h) => sum + h.total, 0) : 0,
+        endpoints: [],
+        ga4_ids: row._ga4Ids || [],
+        gtm_containers: row._gtmIds || [],
+        gads_aw_ids: row._awIds || [],
+        fb_pixel_ids: row._fbIds || [],
+        flags: row._flags || [],
+        hitsById: row._hitsById || {},
+        verdict: row.status,
+        riskLevel: row.riskLevel,
+        details: row.details
+      };
+
+      // Send to AI validation API (all 3 providers in parallel)
+      const providers = ['openai', 'gemini', 'perplexity'];
+      const validationPromises = providers.map(async (provider) => {
+        const response = await fetch('http://localhost:3000/api/ai-validation/run', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            caseBrief: evidencePack,
+            provider: provider,
+            template: 'ad-impression-inflation',
+            redactionMode: false
+          })
+        });
+        
+        if (!response.ok) {
+          throw new Error(`${provider} validation failed`);
+        }
+        
+        const result = await response.json();
+        return { provider, result };
+      });
+
+      const results = await Promise.allSettled(validationPromises);
+      
+      // Process results
+      const aiValidationResults = {
+        timestamp: new Date().toISOString(),
+        providers: {}
+      };
+
+      results.forEach((result, idx) => {
+        const provider = providers[idx];
+        if (result.status === 'fulfilled') {
+          aiValidationResults.providers[provider] = result.value.result;
+        } else {
+          aiValidationResults.providers[provider] = { error: result.reason?.message || 'Validation failed' };
+        }
+      });
+
+      setAiResults(prev => ({ ...prev, [index]: aiValidationResults }));
+      
+    } catch (error) {
+      console.error('AI Validation error:', error);
+      alert('AI Validation failed: ' + error.message);
+    } finally {
+      setAiValidating(prev => ({ ...prev, [index]: false }));
     }
   };
 
@@ -272,6 +375,52 @@ const Scanner = () => {
                      <p className="text-sm text-slate-500 font-medium mb-1">Analysis Details</p>
                      <p className="text-slate-700 text-sm leading-relaxed">{row.details}</p>
                   </div>
+
+                  {/* Tag Counts Badge */}
+                  {(row._ga4Ids?.length > 0 || row._gtmIds?.length > 0 || row._awIds?.length > 0 || row._fbIds?.length > 0) ? (
+                    <div className="bg-white bg-opacity-60 p-3 rounded-xl border border-slate-100">
+                      <p className="text-sm text-slate-500 font-medium mb-2">Detected Tags</p>
+                      <div className="flex flex-wrap gap-2">
+                        {row._ga4Ids?.length > 0 && (
+                          <span className="px-2.5 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-semibold">
+                            GA4: {row._ga4Ids.length}
+                          </span>
+                        )}
+                        {row._gtmIds?.length > 0 && (
+                          <span className="px-2.5 py-1 bg-purple-100 text-purple-800 rounded-md text-xs font-semibold">
+                            GTM: {row._gtmIds.length}
+                          </span>
+                        )}
+                        {row._fbIds?.length > 0 && (
+                          <span className="px-2.5 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-semibold">
+                            FB: {row._fbIds.length}
+                          </span>
+                        )}
+                        {row._awIds?.length > 0 && (
+                          <span className="px-2.5 py-1 bg-green-100 text-green-800 rounded-md text-xs font-semibold">
+                            AW: {row._awIds.length}
+                          </span>
+                        )}
+                      </div>
+                      {row._flags && row._flags.length > 0 && (
+                        <div className="mt-2 pt-2 border-t border-slate-200">
+                          <p className="text-xs text-slate-500 mb-1">Flags:</p>
+                          <div className="flex flex-wrap gap-1">
+                            {row._flags.map((flag, idx) => (
+                              <span key={idx} className="px-2 py-0.5 bg-orange-100 text-orange-700 rounded text-xs">
+                                {flag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="bg-white bg-opacity-60 p-3 rounded-xl border border-slate-100">
+                      <p className="text-sm text-slate-500 font-medium mb-1">Detected Tags</p>
+                      <p className="text-xs text-slate-400">No IDs detected</p>
+                    </div>
+                  )}
                   
                   {/* Tag Assistant-style Hits Sent */}
                   {row._hitsById && Object.keys(row._hitsById).length > 0 && (
@@ -349,12 +498,89 @@ const Scanner = () => {
                       {row.action}
                     </span>
                   </div>
+
+                  {/* AI Validation Button */}
+                  <div className="pt-4 border-t border-slate-200">
+                    <button
+                      onClick={() => handleAIValidation(row, index)}
+                      disabled={aiValidating[index]}
+                      className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition shadow-md flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {aiValidating[index] ? (
+                        <>
+                          <RefreshCw className="animate-spin" size={18}/>
+                          AI Validating...
+                        </>
+                      ) : (
+                        <>
+                          <Sparkles size={18}/>
+                          Send to AI Validator
+                        </>
+                      )}
+                    </button>
+
+                    {/* AI Validation Results */}
+                    {aiResults[index] && (
+                      <div className="mt-4 space-y-3">
+                        <p className="text-sm text-slate-500 font-medium flex items-center gap-2">
+                          <Sparkles size={14} className="text-purple-600"/>
+                          AI Validation Results
+                        </p>
+                        
+                        {Object.entries(aiResults[index].providers).map(([provider, result]) => (
+                          <div key={provider} className="bg-white bg-opacity-80 p-3 rounded-lg border border-slate-200">
+                            <div className="flex items-center justify-between mb-2">
+                              <span className="text-xs font-bold uppercase text-slate-600">
+                                {provider === 'openai' ? 'ChatGPT' : provider === 'gemini' ? 'Gemini' : 'Perplexity'}
+                              </span>
+                              {result.error ? (
+                                <span className="text-xs text-red-600 bg-red-50 px-2 py-1 rounded">Error</span>
+                              ) : result.verdict ? (
+                                <span className={`text-xs font-bold px-2 py-1 rounded ${
+                                  result.verdict.label === 'FAIL' ? 'bg-red-100 text-red-700' :
+                                  result.verdict.label === 'WARN' ? 'bg-yellow-100 text-yellow-700' :
+                                  'bg-green-100 text-green-700'
+                                }`}>
+                                  {result.verdict.label} ({result.verdict.confidence}%)
+                                </span>
+                              ) : null}
+                            </div>
+                            
+                            {result.error ? (
+                              <p className="text-xs text-red-600">{result.error}</p>
+                            ) : result.verdict ? (
+                              <>
+                                <p className="text-xs text-slate-700 mb-2">{result.verdict.rationale}</p>
+                                {result.findings && result.findings.length > 0 && (
+                                  <div className="mt-2 pt-2 border-t border-slate-100">
+                                    <p className="text-xs font-semibold text-slate-600 mb-1">Key Findings:</p>
+                                    <ul className="text-xs text-slate-600 space-y-1">
+                                      {result.findings.slice(0, 2).map((finding, idx) => (
+                                        <li key={idx} className="flex items-start gap-1">
+                                          <span className="text-purple-600">•</span>
+                                          <span>{finding.title}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+                              </>
+                            ) : (
+                              <p className="text-xs text-slate-500">Processing...</p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
                 </div>
               </div>
             );
           })}
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

@@ -940,6 +940,7 @@
                     <a class="tool-link" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
                     <a class="tool-link" href="/tools/injected-telemetry-monitor/" data-route="/tools/injected-telemetry-monitor">Injected Telemetry Monitor</a>
                     <a class="tool-link" href="/tools/reverse-analytics-search/" data-route="/tools/reverse-analytics-search">Reverse Analytics Search</a>
+                    <a class="tool-link" href="/ai-validation" data-route="/ai-validation">AI Validation</a>
                     <a class="tool-link" href="/videotect" data-route="/videotect">Videotect</a>
                 </div>
             </div>
@@ -1394,6 +1395,8 @@
             }).join('') || '<li>No ad-tag impressions captured.</li>';
 
             const gaBlock = buildGaDetailBlock(result.gaInflation);
+            
+            const urlForAI = result.url || '';
 
             return `
                 <div class="detail-wrapper">
@@ -1408,6 +1411,25 @@
                     <div class="detail-card">
                         <h5>Advertiser Slots</h5>
                         <ul>${advertiserItems}</ul>
+                    </div>
+                    <div class="detail-card" style="grid-column: 1 / -1;">
+                        <h5>AI Validation</h5>
+                        <p style="font-size:13px; color:var(--text-gray); margin-bottom:12px;">
+                            Send this evidence pack to ChatGPT, Gemini, and Perplexity for instant AI verification.
+                        </p>
+                        <div class="mock-mode-banner" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px; border-radius: 12px; margin-bottom: 12px; font-size: 13px; align-items: center; gap: 8px;">
+                            <span class="material-icons" style="font-size: 18px;">science</span>
+                            <span><strong>Mock Mode Active:</strong> Using simulated AI responses (no API keys required)</span>
+                        </div>
+                        <button 
+                            onclick="sendToAIValidator('${escapeHtml(urlForAI)}')" 
+                            style="background: linear-gradient(to right, #9333EA, #3B82F6); color: white; padding: 10px 20px; border-radius: 24px; cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);"
+                            id="ai-btn-${escapeHtml(urlForAI)}"
+                        >
+                            <span class="material-icons" style="font-size:18px;">psychology</span>
+                            Send to AI Validator
+                        </button>
+                        <div id="ai-results-${escapeHtml(urlForAI)}" style="margin-top: 16px;"></div>
                     </div>
                 </div>
             `;
@@ -1647,6 +1669,142 @@ document.addEventListener('click', evt => {
                     </tr>`)
                 .join('');
             tbody.innerHTML = rows;
+        }
+
+        async function sendToAIValidator(url) {
+            const btnId = `ai-btn-${url}`;
+            const resultsId = `ai-results-${url}`;
+            const btn = document.getElementById(btnId);
+            const resultsDiv = document.getElementById(resultsId);
+            
+            if (!btn || !resultsDiv) return;
+            
+            // Show mock mode banner if applicable
+            const mockBanners = document.querySelectorAll('.mock-mode-banner');
+            mockBanners.forEach(banner => {
+                banner.style.display = 'flex';
+            });
+            
+            // Find the scan result for this URL
+            const scanResult = globalHistory.find(r => r.url === url);
+            if (!scanResult) {
+                alert('Scan result not found');
+                return;
+            }
+
+            // Disable button and show loading
+            btn.disabled = true;
+            btn.innerHTML = '<span class="material-icons" style="font-size:18px; animation: spin 1s infinite linear;">autorenew</span> Validating with AI...';
+
+            // Create evidence pack
+            const analyticsEntries = getAnalyticsEntries(scanResult);
+            const evidencePack = {
+                site: url,
+                timestamp: new Date().toISOString(),
+                scan_window: '30s',
+                total_events: scanResult.networkEventsCount || 0,
+                ga4_ids: analyticsEntries.filter(e => e.type === 'GA4').map(e => e.id),
+                gtm_containers: (scanResult.gtmContainers || []),
+                gads_aw_ids: [],
+                fb_pixel_ids: (scanResult.facebookPixels || []),
+                flags: (scanResult.fraudWarnings || []).map(f => f.type),
+                verdict: scanResult.fraudWarnings?.length > 0 ? 'HIGH_RISK' : 'PASS',
+                riskScore: scanResult.fraudWarnings?.length * 20,
+                details: (scanResult.fraudWarnings || []).map(f => f.details).join(' | ')
+            };
+
+            try {
+                // Call all 3 AI providers in parallel
+                const providers = ['openai', 'gemini', 'perplexity'];
+                const promises = providers.map(async (provider) => {
+                    try {
+                        const response = await fetch('/api/ai-validation/run', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                caseBrief: evidencePack,
+                                provider: provider,
+                                template: 'ad-impression-inflation',
+                                redactionMode: false
+                            })
+                        });
+                        
+                        if (!response.ok) {
+                            throw new Error(`${provider} validation failed`);
+                        }
+                        
+                        const result = await response.json();
+                        return { provider, result: result.result || result, error: null };
+                    } catch (error) {
+                        return { provider, result: null, error: error.message };
+                    }
+                });
+
+                const results = await Promise.all(promises);
+                
+                // Display results
+                let html = '<div style="display: grid; gap: 12px; margin-top: 12px;">';
+                
+                results.forEach(({ provider, result, error }) => {
+                    const providerName = provider === 'openai' ? 'ChatGPT' : provider === 'gemini' ? 'Gemini' : 'Perplexity';
+                    
+                    if (error || !result) {
+                        html += `
+                            <div style="background: rgba(255, 61, 0, 0.1); padding: 12px; border-radius: 12px; border: 1px solid rgba(255, 61, 0, 0.2);">
+                                <div style="font-weight: 600; font-size: 12px; text-transform: uppercase; color: var(--text-gray); margin-bottom: 4px;">${providerName}</div>
+                                <div style="color: var(--red); font-size: 13px;">Error: ${error || 'Unknown error'}</div>
+                            </div>
+                        `;
+                    } else {
+                        const verdict = result.verdict || {};
+                        const label = verdict.label || 'UNKNOWN';
+                        const confidence = verdict.confidence || 0;
+                        const rationale = verdict.rationale || 'No rationale provided';
+                        
+                        let bgColor = 'rgba(0, 200, 83, 0.1)';
+                        let borderColor = 'rgba(0, 200, 83, 0.2)';
+                        let labelColor = 'var(--green)';
+                        
+                        if (label === 'FAIL') {
+                            bgColor = 'rgba(255, 61, 0, 0.1)';
+                            borderColor = 'rgba(255, 61, 0, 0.2)';
+                            labelColor = 'var(--red)';
+                        } else if (label === 'WARN') {
+                            bgColor = 'rgba(255, 184, 0, 0.1)';
+                            borderColor = 'rgba(255, 184, 0, 0.2)';
+                            labelColor = 'var(--yellow)';
+                        }
+                        
+                        html += `
+                            <div style="background: ${bgColor}; padding: 12px; border-radius: 12px; border: 1px solid ${borderColor};">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                    <div style="font-weight: 600; font-size: 12px; text-transform: uppercase; color: var(--text-gray);">${providerName}</div>
+                                    <div style="font-weight: 600; font-size: 14px; color: ${labelColor};">${label} (${confidence}%)</div>
+                                </div>
+                                <div style="font-size: 13px; color: var(--text-dark); line-height: 1.5;">${escapeHtml(rationale)}</div>
+                                ${result.findings && result.findings.length > 0 ? `
+                                    <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid ${borderColor};">
+                                        <div style="font-size: 12px; font-weight: 600; color: var(--text-gray); margin-bottom: 4px;">Key Findings:</div>
+                                        <ul style="font-size: 12px; margin: 0; padding-left: 18px;">
+                                            ${result.findings.slice(0, 2).map(f => `<li>${escapeHtml(f.title || f.mechanism)}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `;
+                    }
+                });
+                
+                html += '</div>';
+                resultsDiv.innerHTML = html;
+                
+            } catch (error) {
+                resultsDiv.innerHTML = `<div style="color: var(--red); padding: 12px; background: rgba(255, 61, 0, 0.1); border-radius: 8px;">Error: ${escapeHtml(error.message)}</div>`;
+            } finally {
+                // Re-enable button
+                btn.disabled = false;
+                btn.innerHTML = '<span class="material-icons" style="font-size:18px;">psychology</span> Send to AI Validator';
+            }
         }
     </script>
 

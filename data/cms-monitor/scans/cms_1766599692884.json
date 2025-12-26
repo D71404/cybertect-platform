@@ -1,0 +1,3170 @@
+{
+  "scanResult": {
+    "scanId": "cms_1766599692884",
+    "scanTimestamp": "2025-12-24T18:08:18.262Z",
+    "buildLabel": null,
+    "baseUrl": "https://www.tiempodesanjuan.com",
+    "pagesScanned": [
+      "https://www.tiempodesanjuan.com"
+    ],
+    "pageResults": [
+      {
+        "url": "https://www.tiempodesanjuan.com",
+        "scanTimestamp": "2025-12-24T18:08:18.161Z",
+        "scripts": [
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl_page_level_ads.js",
+            "hash": "glepvn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-52808TQ3MP&cx=c&gtm=4e5ca1",
+            "hash": "4a8ggb",
+            "measurementIds": {
+              "ga4": [
+                "G-52808TQ3MP"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.google-analytics.com/analytics.js",
+            "hash": "lf6qr9",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://sb.scorecardresearch.com/cs/39123862/beacon.js",
+            "hash": "95b22k",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "sz5efh",
+            "content": " var _comscore = _comscore || [];\n  _comscore.push({\n    c1: \"2\", c2: \"39123862\",\n    options: {\n      enableFirstPartyCookie: true,\n      bypassUserConsentRequirementFor1PCookie: true\n    }\n  });\n(function () {\n    var s = document.createElement(\"script\"), el = document.getElementsByTagName(\"script\")[0]; s.async = true;\n    s.src = \"https://sb.scorecardresearch.com/cs/39123862/beacon.js\";\n    el.parentNode.insertBefore(s, el);\n  })();\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=UA-26100988-1",
+            "hash": "dugpzh",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [
+                "UA-26100988-1"
+              ],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "nqhupu",
+            "content": " window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-26100988-1');\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [
+                "UA-26100988-1"
+              ],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-52808TQ3MP",
+            "hash": "uum5cq",
+            "measurementIds": {
+              "ga4": [
+                "G-52808TQ3MP"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "gxi8tp",
+            "content": " window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-52808TQ3MP');\n",
+            "measurementIds": {
+              "ga4": [
+                "G-52808TQ3MP"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "1euu4s",
+            "content": " var adzone = adzone||{}; \n  window.googletag = window.googletag || {cmd: []};\n  (function(adzone) { \n    adzone.c=[]; adzone.m=function(e) { if(e.data && e.data.m ==\"adzone\") { adzone.c.push({ m: e }); adzone.r && adzone.r(); } }; \n    window.addEventListener ? window.addEventListener(\"message\", adzone.m, !1) : window.attachEvent && window.attachEvent(\"message\", adzone.m); \n    googletag.cmd.push(function() { googletag.pubads().addEventListener(\"slotRenderEnded\", function(e) { adzone.c.push({r:",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://s-adzone.com/c/10009_tiempodesanjuan.js",
+            "hash": "t8tt1t",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "hipucv",
+            "content": " var googletag = googletag || {};\n  googletag.cmd = googletag.cmd || [];\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "taauwi",
+            "content": "\tgoogletag.cmd.push(function() {\n  googletag.defineSlot('/110268595/pre_banner', [[800, 600], [1, 1]], 'div-pre_banner').addService(googletag.pubads());\n\tgoogletag.defineSlot('/110268595/home_horizontal(1)', [[1, 1],[360,165],[555,130],[262,165],[1140,100],[940,100],[1140,150],[1140,200],[970,250],[555,360],[555,60],[728,90],[970,90]], 'div-gpt-ad-home_horizontal(1)').addService(googletag.pubads());\n\tgoogletag.defineSlot('/110268595/home_vertical(1)', [[1, 1],[262,360],[262,450],[300,600]], 'div",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "xsdiej",
+            "content": "\n{\n    \"prefetch\": [\n        {\n            \"source\": \"document\",\n            \"where\": {\n                \"and\": [\n                    { \"href_matches\": \"https://www.tiempodesanjuan.com/*\" },\n                    { \"not\": { \"selector_matches\": \"[rel~='nofollow']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noreferrer']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noopener']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noindex']\" } }\n      ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7oyubl",
+            "content": "window.TdOneSingalSetup = {\"appId\":\"8228e9ef-6829-409d-9755-07cb31ca8abc\",\"autoRegister\":false,\"promptOptions\":{\"actionMessage\":\"Nos gustar\\u00eda mostrarle las \\u00faltimas noticias.\",\"exampleNotificationTitleDesktop\":\"Notificaci\\u00f3n de ejemplo\",\"exampleNotificationMessageDesktop\":\"As\\u00ed aparecer\\u00e1n las notificaciones\",\"exampleNotificationCaption\":\"Pod\\u00e9s desuscribirte en cualquier momento\",\"acceptButtonText\":\"SUSCRIBIRME\",\"cancelButtonText\":\"NO, GRACIAS\"},\"welcomeNotification\":{\"",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.tiempodesanjuan.com/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766549215.js",
+            "hash": "sxpvsk",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "hash": "smp2ab",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.tiempodesanjuan.com/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766549444.js",
+            "hash": "b5o1ob",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ia0fts",
+            "content": " window.arrCMSRegions = {  region1 : 'block' , region2 : 'block' , region3 : 'block' , region4 : 'none' , region5 : 'block'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "hash": "xfhw4c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "hash": "o80o3r",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/i/110268595?ers=3",
+            "hash": "1an5b5",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxVdFiWMfWZEqwExIaPzpvdKEdwzwSXiAwf_Y0rDbqsjpw5ryyAJE0dpSFcMSieAJo2TWQtK50wdpNjJZ33p2uyVeGi1JKcmJkILosO_O6F48I1xXgXJc-WmIRyhR17Eq-mxROQTFQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk5Njk1LDYzODAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cudGllbXBvZGVzYW5qdWFuLmNvbS8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "hash": "ja8mka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxXc4C5e9g2V9KkoMPi5yQV2JOtRq5O2pb34WTMOb7uO4USpovcTV932JQFG2e06dO4HRc9ZfGh-ZE-tfYTdSNoIZ2Ol8UQ3tesQh-X3kSUYtS7LUGsyRpjHibE6C3szA-7e3L1zpQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk5Njk1LDc5MjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vd3d3LnRpZW1wb2Rlc2FuanVhbi5jb20vIixudWxsLFtbOCwic0NoTkg1T3NhazAiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+            "hash": "ytm7zu",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?fcd=true",
+            "hash": "sj3h1s",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.tiempodesanjuan.com//js-custom/xpress/header_desktop-min-version-1766549245.js",
+            "hash": "vyykmx",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "47xmsx",
+            "content": " //Evita busqueda si no hay contenido\n                    const searchForm = document.querySelector('.hidden-nav__search-form');\n                    \n                    searchForm.addEventListener('submit', function (event) {\n                        event.preventDefault();\n                        const value = document.querySelector('.hidden-nav__search-box').value;\n                        if (!value) {\n                            return false;\n                        }\n                        ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "8969w5",
+            "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-top1'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-top1",
+              "selector": "#div-gpt-ad-top1"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "1p4ac5",
+            "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(1)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(1)",
+              "selector": "#div-gpt-ad-home_horizontal(1)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "kragaa",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(1)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(1)",
+              "selector": "#div-gpt-ad-home_rectangle(1)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "e9aipc",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(3)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(3)",
+              "selector": "#div-gpt-ad-home_rectangle(3)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "3ehcbm",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(2)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(2)",
+              "selector": "#div-gpt-ad-home_horizontal(2)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "6nhb43",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(3)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(3)",
+              "selector": "#div-gpt-ad-home_horizontal(3)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "20yo7g",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_vertical(2)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_vertical(2)",
+              "selector": "#div-gpt-ad-home_vertical(2)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "9wh9wk",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(4)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(4)",
+              "selector": "#div-gpt-ad-home_horizontal(4)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "b0ajwv",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(4)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(4)",
+              "selector": "#div-gpt-ad-home_rectangle(4)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7ral4e",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(5)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(5)",
+              "selector": "#div-gpt-ad-home_rectangle(5)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "4iambx",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(6)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(6)",
+              "selector": "#div-gpt-ad-home_rectangle(6)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "d5h8p1",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(5)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(5)",
+              "selector": "#div-gpt-ad-home_horizontal(5)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "geh7hi",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(6)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(6)",
+              "selector": "#div-gpt-ad-home_horizontal(6)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "19anjg",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(7)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(7)",
+              "selector": "#div-gpt-ad-home_rectangle(7)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "1zpb91",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(8)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(8)",
+              "selector": "#div-gpt-ad-home_rectangle(8)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "58pa1i",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(9)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(9)",
+              "selector": "#div-gpt-ad-home_rectangle(9)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "181al1",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_vertical(3)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_vertical(3)",
+              "selector": "#div-gpt-ad-home_vertical(3)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "jnh69z",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(7)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(7)",
+              "selector": "#div-gpt-ad-home_horizontal(7)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "mwh52g",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(8)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_horizontal(8)",
+              "selector": "#div-gpt-ad-home_horizontal(8)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "xlhu3w",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(10)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(10)",
+              "selector": "#div-gpt-ad-home_rectangle(10)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "y6m92r",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(11)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(11)",
+              "selector": "#div-gpt-ad-home_rectangle(11)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "uxmaaa",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(12)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(12)",
+              "selector": "#div-gpt-ad-home_rectangle(12)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "86miqz",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(19)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(19)",
+              "selector": "#div-gpt-ad-home_rectangle(19)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://feed.mikle.com/js/fw-loader.js",
+            "hash": "hqtwdj",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "qurofw",
+            "content": " function onClickBack(self,iframeid,id){var iframe=this.document.getElementById(iframeid);if(iframe){iframe.src=('https:'==location.protocol?'https:':'http:')+'//feed.mikle.com/widget/v2/'+id+'?id='+iframeid;} self.setAttribute(\"class\",\"fw-preview-button\");}",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7prbbp",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(20)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_rectangle(20)",
+              "selector": "#div-gpt-ad-home_rectangle(20)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "89zkr7",
+            "content": " window._taboola = window._taboola || [];\n  _taboola.push({\n    mode: 'thumbnails-b',\n    container: 'taboola-below-article-thumbnails_homepage',\n    placement: 'Below Article Thumbnails_Homepage',\n    target_type: 'mix'\n  });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "vdcup",
+            "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-sticky-desktop'); });\n                    ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-sticky-desktop",
+              "selector": "#div-gpt-ad-sticky-desktop"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "59ymzx",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_vertical(1)'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-home_vertical(1)",
+              "selector": "#div-gpt-ad-home_vertical(1)"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.tiempodesanjuan.com/js-custom/xpress/residual-banner-min-version-1766549245.js",
+            "hash": "tz3hw",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "m24koh",
+            "content": " googletag.cmd.push(function() { googletag.display('div-pre_banner'); });",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-pre_banner",
+              "selector": "#div-pre_banner"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "v52wwp",
+            "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-sticky-desktop'); }); ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-sticky-desktop",
+              "selector": "#div-gpt-ad-sticky-desktop"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "n85xq9",
+            "content": " function loadTdDefererJs(i){\n      var s = document.createElement(\"script\");\n      s.setAttribute(\"type\", \"text/javascript\");\n      if(i >= window.defererList.length){\n        return false;\n      }\n\n      if(typeof(window.defererList[i].src) != \"undefined\" && window.defererList[i].src != \"\"){\n        //console.log(\"Add SRC =>\",window.defererList[i].src);\n        s.onload = function() {\n          i++;\n          loadTdDefererJs(i);\n        };\n        s.onerror = function() {\n          i++;\n      ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          }
+        ],
+        "pixels": [
+          {
+            "type": "noscript",
+            "src": "  <img src=\"https://sb.scorecardresearch.com/p?c1=2&amp;c2=39123862&amp;cv=4.4.0&amp;cj=1\"> \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "noscript"
+          }
+        ],
+        "networkRequests": [
+          {
+            "url": "https://www.tiempodesanjuan.com/",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766599694001
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/tdcss-974fa48edd785035143983ad8ffb42496743e967-1",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766599694438
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/fonts/rubik/rubik-v14-latin-regular.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766599694438
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/fonts/rubik/rubik-v14-latin-300.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766599694438
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/fonts/rubik/rubik-v14-latin-700.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766599694438
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=UA-26100988-1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694438
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-52808TQ3MP",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://s-adzone.com/c/10009_tiempodesanjuan.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://www.googletagservices.com/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766549215.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766549444.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/331/lazy.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com//js-custom/xpress/header_desktop-min-version-1766549245.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694439
+          },
+          {
+            "url": "https://feed.mikle.com/js/fw-loader.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694444
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/js-custom/xpress/residual-banner-min-version-1766549245.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694444
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/cs/39123862/beacon.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694556
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/facebook-f.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694634
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/twitter-v2.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694634
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/instagram.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694634
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/youtube.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694637
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/menu.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694637
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/search.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694637
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/chevron-right.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694637
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/fonts/rubik/rubik-v14-latin-500.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766599694637
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694824
+          },
+          {
+            "url": "https://feed.mikle.com/js/fw-widget.js?v=1.2",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694837
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/icons/map-marker.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694854
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/fonts/roboto/roboto-v29-latin-300.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766599694866
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/internal-cs/default/beacon.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694868
+          },
+          {
+            "url": "https://www.tiempodesanjuan.com/css-custom/xpress/images/header-logo.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694868
+          },
+          {
+            "url": "https://media.tiempodesanjuan.com/p/c51c49b3b004fee06970b60d1a40faae/adjuntos/331/imagenes/000/846/0000846136/486x273/smart/image.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694868
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599694966
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766599694969
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/b?c1=2&c2=39123862&cs_fpcu=41ba24df1d36403ba87351a625cc59fa&cs_it=b1&cv=4.13.1%2B2508250908&ns__t=1766599694971&ns_c=UTF-8&cs_cfg=1111110&c7=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&c8=Tiempo%20de%20San%20Juan&c9=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599694973,
+            "macros": [
+              "%3A%",
+              "%20de%"
+            ]
+          },
+          {
+            "url": "https://feed.mikle.com/widget/v2/171137/?id=fw-iframe171137&preloader-text=Cargando%E2%80%A6",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766599694984,
+            "macros": [
+              "%E2%"
+            ]
+          },
+          {
+            "url": "https://api.onesignal.com/sync/8228e9ef-6829-409d-9755-07cb31ca8abc/web?callback=__jp0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599695050
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/b2?c1=2&c2=39123862&cs_fpcu=41ba24df1d36403ba87351a625cc59fa&cs_it=b1&cv=4.13.1%2B2508250908&ns__t=1766599694971&ns_c=UTF-8&cs_cfg=1111110&c7=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&c8=Tiempo%20de%20San%20Juan&c9=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599695050,
+            "macros": [
+              "%3A%",
+              "%20de%"
+            ]
+          },
+          {
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599695066
+          },
+          {
+            "url": "https://feed.mikle.com/images/squares.svg?v=1740152449",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599695066
+          },
+          {
+            "url": "https://www.google-analytics.com/analytics.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599695078
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-52808TQ3MP&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599695078
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-52808TQ3MP&gtm=45je5ca1v869792708za200&_p=1766599694557&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2041151040.1766599695&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940&sid=1766599695&sct=1&seg=0&dl=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&dt=Tiempo%20de%20San%20Juan&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1164",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766599695164,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%20de%"
+            ]
+          },
+          {
+            "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-52808TQ3MP&cid=2041151040.1766599695&gtm=45je5ca1v869792708za200&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940",
+            "method": "POST",
+            "resourceType": "ping",
+            "timestamp": 1766599695164
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/i/110268595?ers=3",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599695325
+          },
+          {
+            "url": "https://feed.mikle.com/api/widget/read/body/?widget_id=171137&ig_access_token=undefined&locale=undefined",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766599695359
+          },
+          {
+            "url": "https://onesignal.com/sdks/web/v16/OneSignalSDK.page.styles.css?v=160510",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766599695370
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfDwP3es-_p48WH8l2Nw9pZdEMs_ih901cJ-ZtseHxYrcHEmApbVRT5m8uBRDfF78-7ANwIYmOEIrybbG3rU09GMQNt0w49YTVogARu0vPYrFyhDY6t15BkuOCMAU7JVja5KdVsw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599695634
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfDwP3es-_p48WH8l2Nw9pZdEMs_ih901cJ-ZtseHxYrcHEmApbVRT5m8uBRDfF78-7ANwIYmOEIrybbG3rU09GMQNt0w49YTVogARu0vPYrFyhDY6t15BkuOCMAU7JVja5KdVsw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599695634
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxVdFiWMfWZEqwExIaPzpvdKEdwzwSXiAwf_Y0rDbqsjpw5ryyAJE0dpSFcMSieAJo2TWQtK50wdpNjJZ33p2uyVeGi1JKcmJkILosO_O6F48I1xXgXJc-WmIRyhR17Eq-mxROQTFQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk5Njk1LDYzODAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cudGllbXBvZGVzYW5qdWFuLmNvbS8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599695678
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Ctop1&enc_prev_ius=%2F0%2F1&prev_iu_szs=940x80%7C970x90%7C728x90&ifi=1&dids=div-gpt-ad-top1&adfs=2980130316&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695660&lmt=1766599649&adxs=155&adys=190&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=0&ucis=1&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=1904564821&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695679,
+            "macros": [
+              "%2F0%",
+              "%7C970x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(1)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=2&dids=div-gpt-ad-home_horizontal(1)&adfs=1430834723&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695666&lmt=1766599649&adxs=155&adys=735&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=1&ucis=2&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=1406240027&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695680,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(1)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=3&dids=div-gpt-ad-home_rectangle(1)&adfs=3551794884&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695668&lmt=1766599649&adxs=124&adys=1154&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=2&ucis=3&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=0x-1&msz=320x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3802832220&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695680,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(2)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=4&dids=div-gpt-ad-home_rectangle(2)&adfs=2872216821&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695669&lmt=1766599649&adxs=482&adys=1154&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=3&ucis=4&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=336x-1&msz=336x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3192383008&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695680,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(3)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=5&dids=div-gpt-ad-home_rectangle(3)&adfs=407256874&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695670&lmt=1766599649&adxs=856&adys=1154&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=4&ucis=5&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=2453510981&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695680,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2CSticky_Desktop&enc_prev_ius=%2F0%2F1&prev_iu_szs=728x90&ifi=6&dids=div-gpt-ad-sticky-desktop&adfs=3610543214&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695670&lmt=1766599649&adxs=10&adys=625&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=0&ucis=6&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=1260x-1&msz=1260x-1&fws=516&ohw=1260&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=2279723669&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695680,
+            "macros": [
+              "%2F0%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_vertical(1)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x360%7C262x450%7C300x600&ifi=7&dids=div-gpt-ad-home_vertical(1)&adfs=1865670641&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695673&lmt=1766599649&adxs=-12245933&adys=-12245933&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=-1&ucis=7&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=0x-1&msz=0x-1&fws=644&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=1333979736&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695680,
+            "macros": [
+              "%2F0%",
+              "%7C262x360%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://21fa4dabb93afaf84ab91254293c9ae2.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766599695680
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(2)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=8&dids=div-gpt-ad-home_horizontal(2)&adfs=3831626934&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695678&lmt=1766599649&adxs=155&adys=1901&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=5&ucis=8&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=2979761879&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695680,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(3)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=9&dids=div-gpt-ad-home_horizontal(3)&adfs=3912077714&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695679&lmt=1766599649&adxs=155&adys=2270&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=6&ucis=9&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=1937551359&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695681,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_vertical(2)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x360%7C262x450%7C300x600&ifi=10&dids=div-gpt-ad-home_vertical(2)&adfs=421539068&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695680&lmt=1766599649&adxs=857&adys=2368&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=7&ucis=a&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3564295196&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695682,
+            "macros": [
+              "%2F0%",
+              "%7C262x360%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(4)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=11&dids=div-gpt-ad-home_horizontal(4)&adfs=920206189&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695682&lmt=1766599649&adxs=155&adys=3351&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=8&ucis=b&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=1501559916&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695683,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(4)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=12&dids=div-gpt-ad-home_rectangle(4)&adfs=2741868767&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695683&lmt=1766599649&adxs=133&adys=3699&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=9&ucis=c&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=2363195598&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695684,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(5)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=13&dids=div-gpt-ad-home_rectangle(5)&adfs=3587944074&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695684&lmt=1766599649&adxs=490&adys=3699&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=10&ucis=d&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=1044912038&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695685,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(6)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=14&dids=div-gpt-ad-home_rectangle(6)&adfs=2795086075&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695685&lmt=1766599649&adxs=847&adys=3699&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=11&ucis=e&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3243278091&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695686,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(5)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=15&dids=div-gpt-ad-home_horizontal(5)&adfs=1861901603&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695685&lmt=1766599649&adxs=155&adys=4387&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=12&ucis=f&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=237676164&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695687,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(6)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=16&dids=div-gpt-ad-home_horizontal(6)&adfs=16656381&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695686&lmt=1766599649&adxs=155&adys=6321&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=13&ucis=g&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=1201567861&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695688,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(7)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=17&dids=div-gpt-ad-home_rectangle(7)&adfs=2583102890&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695687&lmt=1766599649&adxs=133&adys=6717&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=14&ucis=h&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x0&msz=300x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=16516826&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695688,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(8)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=18&dids=div-gpt-ad-home_rectangle(8)&adfs=1992142883&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695688&lmt=1766599649&adxs=490&adys=6717&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=15&ucis=i&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x0&msz=300x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=837940245&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695689,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(9)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=19&dids=div-gpt-ad-home_rectangle(9)&adfs=1397669930&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695689&lmt=1766599649&adxs=847&adys=6717&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=16&ucis=j&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x0&msz=300x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=2853730197&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695690,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_vertical(3)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x360%7C262x450%7C360x555%7C300x600&ifi=20&dids=div-gpt-ad-home_vertical(3)&adfs=4012951800&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695690&lmt=1766599649&adxs=857&adys=7529&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=17&ucis=k&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=850020697&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695691,
+            "macros": [
+              "%2F0%",
+              "%7C262x360%",
+              "%7C360x555%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(7)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=21&dids=div-gpt-ad-home_horizontal(7)&adfs=2443560604&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695691&lmt=1766599649&adxs=155&adys=9206&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=18&ucis=l&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=145201080&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695692,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_horizontal(8)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C360x165%7C555x130%7C262x165%7C1140x100%7C940x100%7C1140x150%7C1140x200%7C970x250%7C555x360%7C555x60%7C728x90%7C970x90&ifi=22&dids=div-gpt-ad-home_horizontal(8)&adfs=2350102654&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695692&lmt=1766599649&adxs=155&adys=9256&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=19&ucis=m&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=970x0&msz=970x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=280271040&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695693,
+            "macros": [
+              "%2F0%",
+              "%7C360x165%",
+              "%7C262x165%",
+              "%7C940x100%",
+              "%7C1140x200%",
+              "%7C555x360%",
+              "%7C728x90%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(10)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=23&dids=div-gpt-ad-home_rectangle(10)&adfs=927545800&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695693&lmt=1766599649&adxs=115&adys=9625&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=20&ucis=n&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=336x0&msz=336x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3856592805&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695694,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(11)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=24&dids=div-gpt-ad-home_rectangle(11)&adfs=2324262682&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695694&lmt=1766599649&adxs=472&adys=9625&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=21&ucis=o&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=336x0&msz=336x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3426601977&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695695,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(12)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=25&dids=div-gpt-ad-home_rectangle(12)&adfs=1979690680&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695695&lmt=1766599649&adxs=829&adys=9625&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=22&ucis=p&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=336x0&msz=336x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=678098343&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695697,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(19)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=26&dids=div-gpt-ad-home_rectangle(19)&adfs=3955938334&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695696&lmt=1766599649&adxs=490&adys=12528&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=23&ucis=q&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=2337270216&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695698,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Chome_rectangle(20)&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1%7C262x210%7C300x250&ifi=27&dids=div-gpt-ad-home_rectangle(20)&adfs=3630814736&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695697&lmt=1766599649&adxs=857&adys=15638&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=24&ucis=r&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3817538836&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695698,
+            "macros": [
+              "%2F0%",
+              "%7C262x210%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Cpre_banner&enc_prev_ius=%2F0%2F1&prev_iu_szs=800x600%7C1x1&ifi=28&dids=div-pre_banner&adfs=4225252448&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766599695698&lmt=1766599649&adxs=0&adys=19339&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=25&ucis=s&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=1280x19338&msz=1280x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=3804160175&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599695699,
+            "macros": [
+              "%2F0%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%"
+            ]
+          },
+          {
+            "url": "https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu&display=swap",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766599695744
+          },
+          {
+            "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766599695744
+          },
+          {
+            "url": "https://sisanjuan.b-cdn.net/media/xt-adaptive-images/480/images/logos/SISJ_logo_H_positivo.webp",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599695744
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVO6Pa8BNWG0judSXk87p7z6MxL-c3EAlBw5wcSEiIIBE1CDys9kyct7K-CDIcuMoiH0599eifms9e86fFzH1M9oeuFa1fMPIG5VG09655WhZ9x_3Xf2-M_lwdRgngz3a28XWzMJQ==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599695793
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXc4C5e9g2V9KkoMPi5yQV2JOtRq5O2pb34WTMOb7uO4USpovcTV932JQFG2e06dO4HRc9ZfGh-ZE-tfYTdSNoIZ2Ol8UQ3tesQh-X3kSUYtS7LUGsyRpjHibE6C3szA-7e3L1zpQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk5Njk1LDc5MjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vd3d3LnRpZW1wb2Rlc2FuanVhbi5jb20vIixudWxsLFtbOCwic0NoTkg1T3NhazAiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599695793
+          },
+          {
+            "url": "https://sisanjuan.b-cdn.net/media/k2/items/cache/3f08ffe541494073875d18e2ba9223e4_M.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599695853
+          },
+          {
+            "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202512040101&st=env&sjk=5965412280402667",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766599696063
+          },
+          {
+            "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766599696181
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/ubuntu/v21/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766599696181
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssEvXiPASIXYiwm13ZK3TdymD-sZ0BW7u8Kk9Uq2fufGR2E9VUCq6gEvgY3d9Ik3RokuVvsw5ucB4kwuGGAK0iRSXBhasDP5UDoc8x4CPpSFewg2-6jWqqU_pqyc5x-VqqAGkaAAew57JhBe8xL5BaIGGY2P-MwpnmK_ExHHkvGwRRENSJVchae7fKXG0vepx4yG7mynQC03jOHAT4TpzQZssH_DQKAXj37ch-CC2SipgLg_Yy43xC_1t0O9-K3RQI2CzDa5OiLvHlmC9Z-Ten4d2pXAaSnQVLnnfmDLOprq-uLpCOmy8J4fIXQlYbsN2eoTYQYZ8k4S0IIM9u4DuU2wYxJNB0Qi1NgBhL6RRmlz59lYf1iIHZ5yDdC7eZgiuOPSYVbrR6I8OmHM-ANfgkzqmj3Lq4N_pgR9g5B298khtTGo7NMgaGYTmzJqPGLK0AEJw&sai=AMfl-YTgrJRAPKVctTGDiD5_F-6cbnMODIXJbOwNoXcf40MgahajxU2BdzTHUDkDX9AoUQUIeJNEpzypkEtosHBZHJ7Mi0hXiJT79JXP0ptcw_qBDa9ma4MEmHRHYj04sqfEl4MLtU1d5RVDRt6TLQ-Gu8GXUhcKfTtUOtzhtTcmGWnef34OwtSgrTod9-tHAjyJ8OsLhOaAF5Qnj4UGX_ODMb1ncyl1V3xAtLQnsHDyim0IDbxsBDXHZYfm8j6wzomx7JdIQKsibWSqhnxna0Yx27uBEZQkNV9esKqC2wHsDzrpx38&sig=Cg0ArKJSzCOT2g9itKthEAE&uach_m=%5BUACH%5D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599696197,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/client/window_focus.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696197
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696197
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/simgad/11364771039855686954",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599696197
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5965412280402667&correlator=3540580355601279&eid=31095252%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=110268595%2Citt_desktop&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1&ifi=29&dids=gpt_unit_%2F110268595%2Fitt_deskto&sfv=1-0-45&ists=1&fas=8&fsapi=1&sc=1&cookie=ID%3D447269ab9de19668%3AT%3D1766599695%3ART%3D1766599695%3AS%3DALNI_MZMg9Sef-u9pTahN2GncsrldFOeBA&gpic=UID%3D000012deb378adb4%3AT%3D1766599695%3ART%3D1766599695%3AS%3DALNI_Mbf56z7uTwf7c0fofr45Oho5jLzrA&abxe=1&dt=1766599696194&lmt=1766599649&adxs=-9&adys=-9&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=-1&ucis=t&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.tiempodesanjuan.com%2F&vis=1&psz=0x-1&msz=0x-1&fws=2&ohw=0&psts=AOrYGslXqzWxZnMwa10HhsoG5C0a%2CAOrYGsnQmx1f2UA604vwK7c5fT-ejh0R12NXKJifFqBc8QgSq0tyg-fHjNfRXCMu0Cxasn718QrOoKAydoTG6ufHoFEyRAf1K-_8HY1_fg&psd=WzMxLFtdXQ..&dlt=1766599694425&idt=860&cust_params=sitio%3Dtiempo-de-san-juan%26tipo%3Dhome%26seccion%3Dhome&adks=53022473&frm=20&is_cau=1&no_cau_info=1&eo_id_str=ID%3D239e4472ce2d7988%3AT%3D1766599695%3ART%3D1766599695%3AS%3DAA-AfjaP-BKFpArmmOY0v7Mg4Y5x&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599696197,
+            "macros": [
+              "%2F0%",
+              "%2F110268595%",
+              "%3D447269ab9de19668%",
+              "%3D1766599695%",
+              "%3D000012deb378adb4%",
+              "%3A%",
+              "%26tipo%",
+              "%26seccion%",
+              "%3D239e4472ce2d7988%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl_page_level_ads.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696197
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696593
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUKA_kVr4f17-LHlqidvdR_MTpaXpiyKzlGNCGXPkeJ6pIEuIz5j7kBYyR8_Rk_MlqRi7Q2TH0p8GizsA9heQRIzz10YD4pwqBgwnQL-wAAqK0ORVjFIdD9RsJx6ELf7dZJqAUpfvrrjL6Jmk1LeUX5WzuxZ89v_F3PWehXQwaNhwTRycp1x_0vUB0o/_/requestmyspacead./ads/728./getsponslinksauto./adremote./728by90_",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696612
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?fcd=true",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696612
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfDwP3es-_p48WH8l2Nw9pZdEMs_ih901cJ-ZtseHxYrcHEmApbVRT5m8uBRDfF78-7ANwIYmOEIrybbG3rU09GMQNt0w49YTVogARu0vPYrFyhDY6t15BkuOCMAU7JVja5KdVsw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599696612
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766599696642
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfDwP3es-_p48WH8l2Nw9pZdEMs_ih901cJ-ZtseHxYrcHEmApbVRT5m8uBRDfF78-7ANwIYmOEIrybbG3rU09GMQNt0w49YTVogARu0vPYrFyhDY6t15BkuOCMAU7JVja5KdVsw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599696695
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2/237/runner.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766599696838
+          },
+          {
+            "url": "https://www.google.com/recaptcha/api2/aframe",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766599696839
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599696883
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599696883
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssvE0mThWQynXy_eTIhgNDTmGSew5RlpS-AhK9uy3uV2nJt19GcsKbXv7n3lZOZfNvZBq6ippxP7vlmLOP8ofziGiejcpOjUeqwleImy47CBhHBEg_ac_UCRTkM8PSOk1PGjwrcur_Ax7pD3UTWmCORofS0oWx3AcPfVH8fXZyNeg2PAqIHqREOEexsHRvt7Ao5hW3b055z0F45QoeJ6Nd50LfG8vCRhr7ZswVGvjnEH40Q8C-IyXphRKFtjfsiJPVqHGrMgMspIiuYrArLp4JSyxqmijld9gBCYthlL79ottaMcYVJsO-frBPruyO6AwS99oRcUU-J5ivf6RWM91N3_8SZ4F7hKu3M1jhGeTFtT9NmoqMOgVvwS7hRIXZ7foxGeWr6BwpUzA16hPLayzSnqvkDxMt-DAxTL2ocNWwsSdeJ5gXq7Q47UWdqlS-z47GfdyR9&sai=AMfl-YRPLzr9Ifd2KSF6BSSuIMvSoPE6eR0Df5HPR9oIpDdTx-dM8DyTyvMwqNvvyIEEjNU7c9yM3aBuC2rq_CmPznQHv66cWrwlT-SGFkyxpiRd5QwOz6B7cU39PIJ_mi9dBb9OSKu5EisjTVIg23Y4p-hQo_OtBNeEsb064q4mlctYLnFYqevgycukv-9Am92PSgahwoNupvRDG6fo3142tM5OeMS8-V8rAelGJyL4ZU7wa8ZMBXSI4q1sWQAbDj0O5iQ4u-g2P1vOS2u5Vt3OHWGy3zAn43XloaoN-SV3-YMMd-4&sig=Cg0ArKJSzOFPo5I9TgbmEAE&uach_m=%5BUACH%5D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599696883,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766599696891
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/bg/vKVxIeXH0QGTDDOwiqpaTKZp5NNzUAHYSL8enmE7PZA.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696907
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfDwP3es-_p48WH8l2Nw9pZdEMs_ih901cJ-ZtseHxYrcHEmApbVRT5m8uBRDfF78-7ANwIYmOEIrybbG3rU09GMQNt0w49YTVogARu0vPYrFyhDY6t15BkuOCMAU7JVja5KdVsw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599696994
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfDwP3es-_p48WH8l2Nw9pZdEMs_ih901cJ-ZtseHxYrcHEmApbVRT5m8uBRDfF78-7ANwIYmOEIrybbG3rU09GMQNt0w49YTVogARu0vPYrFyhDY6t15BkuOCMAU7JVja5KdVsw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599696994
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxVTojMe7m1GavV8nwDiLIyTsGGSE46117RPWKgzsNhsrvJaSBWF1_hP63kG4cSiZSAXSyfkcK2TlKEXr8Zj3bu0S6IDnaNozX5zPWV53DtR_vh45uQESMtrhxshDlpskxTP7pJGVA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk5Njk2LDk5MzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cudGllbXBvZGVzYW5qdWFuLmNvbS8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766599696994
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/generate_204?MGVAqw",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599698101
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWaFh9t510r0RK3Uq-VYi0yMUCa7tx7yoI0n9y-F-QwzFa3RscH-GLK5fQttahiQ_c0gIzo--iIZ5f2iHsN7uBDeHYst9H0Y-Cvy1_4HFJUdwRZSLfAqsOMHcxDysQZeOgP9MFHPA==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766599698102
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=237&li=gpt_m202512040101&jk=5965412280402667&rc=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766599698113
+          }
+        ],
+        "measurementIds": {
+          "ga4": [
+            "G-52808TQ3MP",
+            "G-FHJNFRXCMU"
+          ],
+          "ua": [
+            "UA-26100988-1"
+          ],
+          "gtm": [],
+          "aw": [],
+          "fb": []
+        },
+        "widgetMap": {
+          "id:div-gpt-ad-top1": {
+            "widget": "div-gpt-ad-top1",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-top1",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "8969w5",
+                "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-top1'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-top1",
+                  "selector": "#div-gpt-ad-top1"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(1)": {
+            "widget": "div-gpt-ad-home_horizontal(1)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(1)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "1p4ac5",
+                "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(1)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(1)",
+                  "selector": "#div-gpt-ad-home_horizontal(1)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(1)": {
+            "widget": "div-gpt-ad-home_rectangle(1)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(1)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "kragaa",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(1)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(1)",
+                  "selector": "#div-gpt-ad-home_rectangle(1)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(3)": {
+            "widget": "div-gpt-ad-home_rectangle(3)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(3)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "e9aipc",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(3)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(3)",
+                  "selector": "#div-gpt-ad-home_rectangle(3)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(2)": {
+            "widget": "div-gpt-ad-home_horizontal(2)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(2)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "3ehcbm",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(2)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(2)",
+                  "selector": "#div-gpt-ad-home_horizontal(2)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(3)": {
+            "widget": "div-gpt-ad-home_horizontal(3)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(3)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "6nhb43",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(3)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(3)",
+                  "selector": "#div-gpt-ad-home_horizontal(3)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_vertical(2)": {
+            "widget": "div-gpt-ad-home_vertical(2)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_vertical(2)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "20yo7g",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_vertical(2)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_vertical(2)",
+                  "selector": "#div-gpt-ad-home_vertical(2)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(4)": {
+            "widget": "div-gpt-ad-home_horizontal(4)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(4)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "9wh9wk",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(4)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(4)",
+                  "selector": "#div-gpt-ad-home_horizontal(4)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(4)": {
+            "widget": "div-gpt-ad-home_rectangle(4)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(4)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "b0ajwv",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(4)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(4)",
+                  "selector": "#div-gpt-ad-home_rectangle(4)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(5)": {
+            "widget": "div-gpt-ad-home_rectangle(5)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(5)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "7ral4e",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(5)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(5)",
+                  "selector": "#div-gpt-ad-home_rectangle(5)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(6)": {
+            "widget": "div-gpt-ad-home_rectangle(6)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(6)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "4iambx",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(6)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(6)",
+                  "selector": "#div-gpt-ad-home_rectangle(6)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(5)": {
+            "widget": "div-gpt-ad-home_horizontal(5)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(5)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "d5h8p1",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(5)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(5)",
+                  "selector": "#div-gpt-ad-home_horizontal(5)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(6)": {
+            "widget": "div-gpt-ad-home_horizontal(6)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(6)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "geh7hi",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(6)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(6)",
+                  "selector": "#div-gpt-ad-home_horizontal(6)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(7)": {
+            "widget": "div-gpt-ad-home_rectangle(7)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(7)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "19anjg",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(7)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(7)",
+                  "selector": "#div-gpt-ad-home_rectangle(7)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(8)": {
+            "widget": "div-gpt-ad-home_rectangle(8)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(8)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "1zpb91",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(8)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(8)",
+                  "selector": "#div-gpt-ad-home_rectangle(8)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(9)": {
+            "widget": "div-gpt-ad-home_rectangle(9)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(9)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "58pa1i",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(9)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(9)",
+                  "selector": "#div-gpt-ad-home_rectangle(9)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_vertical(3)": {
+            "widget": "div-gpt-ad-home_vertical(3)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_vertical(3)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "181al1",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_vertical(3)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_vertical(3)",
+                  "selector": "#div-gpt-ad-home_vertical(3)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(7)": {
+            "widget": "div-gpt-ad-home_horizontal(7)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(7)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "jnh69z",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(7)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(7)",
+                  "selector": "#div-gpt-ad-home_horizontal(7)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_horizontal(8)": {
+            "widget": "div-gpt-ad-home_horizontal(8)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_horizontal(8)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "mwh52g",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_horizontal(8)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_horizontal(8)",
+                  "selector": "#div-gpt-ad-home_horizontal(8)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(10)": {
+            "widget": "div-gpt-ad-home_rectangle(10)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(10)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "xlhu3w",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(10)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(10)",
+                  "selector": "#div-gpt-ad-home_rectangle(10)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(11)": {
+            "widget": "div-gpt-ad-home_rectangle(11)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(11)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "y6m92r",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(11)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(11)",
+                  "selector": "#div-gpt-ad-home_rectangle(11)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(12)": {
+            "widget": "div-gpt-ad-home_rectangle(12)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(12)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "uxmaaa",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(12)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(12)",
+                  "selector": "#div-gpt-ad-home_rectangle(12)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(19)": {
+            "widget": "div-gpt-ad-home_rectangle(19)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(19)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "86miqz",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(19)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(19)",
+                  "selector": "#div-gpt-ad-home_rectangle(19)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "class:standard-widget": {
+            "widget": "standard-widget",
+            "attribute": "class",
+            "selector": ".standard-widget",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "https://feed.mikle.com/js/fw-loader.js",
+                "hash": "hqtwdj",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "qurofw",
+                "content": " function onClickBack(self,iframeid,id){var iframe=this.document.getElementById(iframeid);if(iframe){iframe.src=('https:'==location.protocol?'https:':'http:')+'//feed.mikle.com/widget/v2/'+id+'?id='+iframeid;} self.setAttribute(\"class\",\"fw-preview-button\");}",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "89zkr7",
+                "content": " window._taboola = window._taboola || [];\n  _taboola.push({\n    mode: 'thumbnails-b',\n    container: 'taboola-below-article-thumbnails_homepage',\n    placement: 'Below Article Thumbnails_Homepage',\n    target_type: 'mix'\n  });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_rectangle(20)": {
+            "widget": "div-gpt-ad-home_rectangle(20)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_rectangle(20)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "7prbbp",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_rectangle(20)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_rectangle(20)",
+                  "selector": "#div-gpt-ad-home_rectangle(20)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-sticky-desktop": {
+            "widget": "div-gpt-ad-sticky-desktop",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-sticky-desktop",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "vdcup",
+                "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-sticky-desktop'); });\n                    ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-sticky-desktop",
+                  "selector": "#div-gpt-ad-sticky-desktop"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "v52wwp",
+                "content": " googletag.cmd.push(function() { googletag.display('div-gpt-ad-sticky-desktop'); }); ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-sticky-desktop",
+                  "selector": "#div-gpt-ad-sticky-desktop"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-home_vertical(1)": {
+            "widget": "div-gpt-ad-home_vertical(1)",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-home_vertical(1)",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "59ymzx",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-home_vertical(1)'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-home_vertical(1)",
+                  "selector": "#div-gpt-ad-home_vertical(1)"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-pre_banner": {
+            "widget": "div-pre_banner",
+            "attribute": "id",
+            "selector": "#div-pre_banner",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "m24koh",
+                "content": " googletag.cmd.push(function() { googletag.display('div-pre_banner'); });",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-pre_banner",
+                  "selector": "#div-pre_banner"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          }
+        }
+      }
+    ],
+    "duplicates": {
+      "duplicateIds": {},
+      "duplicateScripts": {},
+      "duplicateLibraries": {
+        "www.googletagmanager.com/js": 3
+      }
+    },
+    "unauthorized": [
+      {
+        "type": "script",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl_page_level_ads.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-52808TQ3MP&cx=c&gtm=4e5ca1",
+        "domain": "googletagmanager.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://sb.scorecardresearch.com/cs/39123862/beacon.js",
+        "domain": "sb.scorecardresearch.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?fcd=true",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-26100988-1",
+        "domain": "googletagmanager.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://sb.scorecardresearch.com/cs/39123862/beacon.js",
+        "domain": "sb.scorecardresearch.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-52808TQ3MP&cid=2041151040.1766599695&gtm=45je5ca1v869792708za200&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940",
+        "domain": "stats.g.doubleclick.net",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://21fa4dabb93afaf84ab91254293c9ae2.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+        "domain": "21fa4dabb93afaf84ab91254293c9ae2.safeframe.googlesyndication.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/client/window_focus.js",
+        "domain": "tpc.googlesyndication.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.tiempodesanjuan.com",
+        "reason": "Not in allowed partners list"
+      }
+    ],
+    "injectedScripts": [],
+    "screenshots": [
+      "/Users/pablogimenez/Desktop/DeDuper.io/data/cms-monitor/screenshots/cms-monitor-screenshot-cms_1766599692884-0.png"
+    ],
+    "summary": {
+      "totalPages": 1,
+      "totalScripts": 61,
+      "totalPixels": 1,
+      "duplicateIdsCount": 0,
+      "duplicateScriptsCount": 0,
+      "unauthorizedCount": 13,
+      "injectedScriptsCount": 0
+    }
+  },
+  "baselineDiff": null
+}

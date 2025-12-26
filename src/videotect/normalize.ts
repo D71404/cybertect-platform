@@ -13,7 +13,7 @@ export interface NormalizedUrl {
 export function normalizeYouTubeUrl(url: string): NormalizedUrl {
   const originalUrl = url.trim();
   
-  if (!url) {
+  if (!originalUrl) {
     return {
       type: 'other',
       canonicalUrl: originalUrl,

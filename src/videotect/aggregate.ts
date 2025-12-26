@@ -1,5 +1,5 @@
 import { normalizeYouTubeUrl } from './normalize';
-import { scorePlacement, Metrics, calculateMedians } from './scoring';
+import { scorePlacement, Metrics } from './scoring';
 import { ParsedRow } from './csv-parser';
 
 export interface AggregatedItem {
@@ -106,19 +106,12 @@ export function scoreAggregatedItems(
   aggregated: Map<string, AggregatedItem>
 ): Map<string, AggregatedItem & { score: number; reasons: string[] }> {
   const allUrls = Array.from(aggregated.values()).map(item => item.canonicalUrl);
-  
-  // Calculate medians for relative scoring
-  const allMetrics = Array.from(aggregated.values()).map(item => item.metrics);
-  const medians = calculateMedians(allMetrics);
 
   const scored = new Map<string, AggregatedItem & { score: number; reasons: string[] }>();
 
   for (const [key, item] of aggregated.entries()) {
-    // Adjust metrics for median comparison
-    const adjustedMetrics = { ...item.metrics };
-    
     // Score the item
-    const scoringResult = scorePlacement(item.canonicalUrl, adjustedMetrics, allUrls);
+    const scoringResult = scorePlacement(item.canonicalUrl, item.metrics, allUrls);
     
     scored.set(key, {
       ...item,

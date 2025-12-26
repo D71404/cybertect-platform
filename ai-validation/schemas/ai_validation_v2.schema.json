@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Validation Result v2",
+  "description": "Strict schema for AI validation JSON response",
+  "type": "object",
+  "required": [
+    "verdict",
+    "confidence",
+    "key_findings",
+    "duplicate_assessment",
+    "inflation_signals",
+    "recommended_actions",
+    "missing_data_requests"
+  ],
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": ["verified", "inconclusive", "likely_inflation", "needs_more_data"]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "key_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "detail", "confidence", "evidence_refs"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "detail": { "type": "string", "minLength": 1 },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence_refs": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "default": []
+    },
+    "duplicate_assessment": {
+      "type": "object",
+      "required": ["has_duplicates", "likely_tool_error", "notes"],
+      "properties": {
+        "has_duplicates": { "type": "boolean" },
+        "likely_tool_error": { "type": "boolean" },
+        "notes": { "type": "string" }
+      }
+    },
+    "inflation_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signal", "strength", "evidence_refs"],
+        "properties": {
+          "signal": { "type": "string" },
+          "strength": { "type": "string", "enum": ["weak", "moderate", "strong"] },
+          "evidence_refs": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "default": []
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "missing_data_requests": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  },
+  "additionalProperties": false
+}
+

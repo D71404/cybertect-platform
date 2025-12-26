@@ -158,6 +158,14 @@ function generateImpressionDedupeKey(beacon) {
 }
 
 /**
+ * Generate dedupe key for any network event
+ * Uses URL without cachebusters + event type
+ */
+function generateNetworkEventDedupeKey(beacon) {
+  return stripCacheBusters(beacon.requestUrl) + '|' + beacon.type;
+}
+
+/**
  * Strip common cachebuster parameters from URL
  * Removes: cb, cachebust, _, ord, rnd, t, timestamp, etc.
  */
@@ -591,7 +599,9 @@ async function scanAdImpressions(options) {
   const gptDedupe = new DedupeHelper();
   const impressionDedupe = new DedupeHelper();
   const viewableDedupe = new DedupeHelper(); // Optional dedupe for GPT_VIEWABLE
-  
+  // ADD: Global dedupe helper for all network events
+  const networkEventDedupe = new DedupeHelper();
+
   // Initialize slot timeline tracker for verified impression correlation
   const slotTracker = new SlotTimelineTracker();
   
@@ -747,39 +757,13 @@ async function scanAdImpressions(options) {
       if (beacon) {
         const now = Date.now();
         
-        // Apply deduplication for IMPRESSION_BEACON
-        if (beacon.type === 'IMPRESSION_BEACON') {
-          const dedupeKey = generateImpressionDedupeKey(beacon);
-          if (!impressionDedupe.shouldCount(dedupeKey, now)) {
-            // Duplicate within TTL - skip adding to sequences
-            return;
-          }
-        }
-        
-        // Track GAM_AD_REQUEST for slot correlation
+        // Track GAM_AD_REQUEST for slot correlation (but don't add to sequences yet)
         if (beacon.type === 'GAM_AD_REQUEST') {
           slotTracker.recordGamRequest({ ...beacon, ts: now });
         }
         
-        // For CLICK_REDIRECT, check if there was a user click within 0-1500ms before
-        if (beacon.type === 'CLICK_REDIRECT') {
-          const clickTime = beacon.ts;
-          const correlatedClick = userClicks.find(click => {
-            const timeDiff = clickTime - click.timestamp;
-            return timeDiff >= 0 && timeDiff <= 1500;
-          });
-          
-          if (!correlatedClick) {
-            // No user click correlation - mark as SUSPECT_CLICK
-            beacon.type = 'SUSPECT_CLICK';
-            beacon.confidence = 0.3;
-          }
-        }
-        
-        sequences.push({
-          ...beacon,
-          status: 'pending'
-        });
+        // DON'T add to sequences here - wait for response handler
+        // This prevents duplicates from request + response handlers
       }
     });
     
@@ -791,48 +775,58 @@ async function scanAdImpressions(options) {
       const beacon = processBeacon(request, frameUrl, url);
       
       if (beacon) {
-        const existing = sequences.find(s => 
-          s.requestUrl === beacon.requestUrl && Math.abs(s.ts - beacon.ts) < 100
-        );
+        const now = Date.now();
         
-        if (existing) {
-          existing.status = response.status();
+        // Generate dedupe key for ALL event types (not just IMPRESSION_BEACON)
+        let dedupeKey;
+        if (beacon.type === 'IMPRESSION_BEACON') {
+          dedupeKey = generateImpressionDedupeKey(beacon);
+        } else if (beacon.type === 'GPT_SLOT_RENDER' || beacon.type === 'GPT_VIEWABLE') {
+          // These are handled separately, skip here
+          return;
         } else {
-          const now = Date.now();
-          
-          // Track GAM_AD_REQUEST for slot correlation
-          if (beacon.type === 'GAM_AD_REQUEST') {
-            slotTracker.recordGamRequest({ ...beacon, ts: now });
-          }
-          
-          // Apply deduplication for IMPRESSION_BEACON
-          if (beacon.type === 'IMPRESSION_BEACON') {
-            const dedupeKey = generateImpressionDedupeKey(beacon);
-            if (!impressionDedupe.shouldCount(dedupeKey, now)) {
-              // Duplicate within TTL - skip adding to sequences
-              return;
-            }
-          }
-          
-          // For CLICK_REDIRECT, check correlation
-          if (beacon.type === 'CLICK_REDIRECT') {
-            const clickTime = beacon.ts;
-            const correlatedClick = userClicks.find(click => {
-              const timeDiff = clickTime - click.timestamp;
-              return timeDiff >= 0 && timeDiff <= 1500;
-            });
-            
-            if (!correlatedClick) {
-              beacon.type = 'SUSPECT_CLICK';
-              beacon.confidence = 0.3;
-            }
-          }
-          
-          sequences.push({
-            ...beacon,
-            status: response.status()
-          });
+          // For all other types, use URL without cachebusters as dedupe key
+          dedupeKey = generateNetworkEventDedupeKey(beacon);
         }
+        
+        // Apply deduplication for ALL event types
+        if (!networkEventDedupe.shouldCount(dedupeKey, now)) {
+          // Duplicate within TTL - skip adding to sequences
+          return;
+        }
+        
+        // Track GAM_AD_REQUEST for slot correlation
+        if (beacon.type === 'GAM_AD_REQUEST') {
+          slotTracker.recordGamRequest({ ...beacon, ts: now });
+        }
+        
+        // Apply IMPRESSION_BEACON specific deduplication (in addition to global)
+        if (beacon.type === 'IMPRESSION_BEACON') {
+          const impressionKey = generateImpressionDedupeKey(beacon);
+          if (!impressionDedupe.shouldCount(impressionKey, now)) {
+            return;
+          }
+        }
+        
+        // For CLICK_REDIRECT, check correlation
+        if (beacon.type === 'CLICK_REDIRECT') {
+          const clickTime = beacon.ts;
+          const correlatedClick = userClicks.find(click => {
+            const timeDiff = clickTime - click.timestamp;
+            return timeDiff >= 0 && timeDiff <= 1500;
+          });
+          
+          if (!correlatedClick) {
+            beacon.type = 'SUSPECT_CLICK';
+            beacon.confidence = 0.3;
+          }
+        }
+        
+        // Add to sequences ONCE (only in response handler)
+        sequences.push({
+          ...beacon,
+          status: response.status()
+        });
       }
     });
     
@@ -1048,21 +1042,39 @@ async function scanAdImpressions(options) {
     const idSyncEvents = sequences.filter(s => s.type === 'ID_SYNC');
     const adRequests = sequences.filter(s => s.type === 'AD_REQUEST');
     const gamAdRequests = sequences.filter(s => s.type === 'GAM_AD_REQUEST');
-    const impressionBeacons = sequences.filter(s => s.type === 'IMPRESSION_BEACON'); // Already deduped
+    const impressionBeaconsRaw = sequences.filter(s => s.type === 'IMPRESSION_BEACON');
     const gptSlotRenders = sequences.filter(s => s.type === 'GPT_SLOT_RENDER' && !s.isEmpty); // Already deduped
     const gptViewable = sequences.filter(s => s.type === 'GPT_VIEWABLE'); // Already deduped
     const clickRedirects = sequences.filter(s => s.type === 'CLICK_REDIRECT'); // Only verified clicks
     const suspectClicks = sequences.filter(s => s.type === 'SUSPECT_CLICK');
-    
+
+    // CRITICAL: Apply deduplication AGAIN to impressionBeacons to catch any duplicates
+    // that slipped through (due to cachebusters, timing, etc.)
+    const impressionBeaconsDeduped = [];
+    const impressionBeaconsSeen = new Set();
+    // Reuse 'now' from earlier in function scope
+
+    impressionBeaconsRaw.forEach(beacon => {
+      const dedupeKey = generateImpressionDedupeKey(beacon);
+      const keyWithTime = `${dedupeKey}|${Math.floor(beacon.ts / DEDUPE_TTL_MS)}`; // Group by time window
+      
+      if (!impressionBeaconsSeen.has(keyWithTime)) {
+        impressionBeaconsSeen.add(keyWithTime);
+        impressionBeaconsDeduped.push(beacon);
+      }
+    });
+
+    const impressionBeacons = impressionBeaconsDeduped; // Use deduped version
+
     // Calculate verified impressions with strict correlation requirements
     // A) GPT_SLOT_RENDER (non-empty) counts as verified (served proof)
     const verifiedFromGPT = gptSlotRenders.length;
-    
+
     // B) GAM_AD_REQUEST -> GPT_SLOT_RENDER correlation (within 5s)
     const verifiedFromGamCorrelation = gamAdRequests.filter(gamReq => {
       return slotTracker.canCorrelateGamRequest(gamReq);
     }).length;
-    
+
     // C) IMPRESSION_BEACON mapped to slot render (must have creativeId/lineItemId)
     const verifiedFromBeacons = impressionBeacons.filter(beacon => {
       // Exclude ID_SYNC (already filtered above, but double-check)
@@ -1077,6 +1089,23 @@ async function scanAdImpressions(options) {
       return !slotTracker.canMapToSlotRender(beacon);
     }).length;
     
+    // Also deduplicate SUSPECT_CLICK and CLICK_REDIRECT events
+    const clickEventsDeduped = [];
+    const clickEventsSeen = new Set();
+
+    [...clickRedirects, ...suspectClicks].forEach(click => {
+      // Use creativeId + timestamp window as dedupe key
+      const dedupeKey = `${click.creativeId || click.requestUrl}|${Math.floor(click.ts / DEDUPE_TTL_MS)}`;
+      if (!clickEventsSeen.has(dedupeKey)) {
+        clickEventsSeen.add(dedupeKey);
+        if (click.type === 'CLICK_REDIRECT') {
+          clickRedirects.push(click);
+        } else {
+          suspectClicks.push(click);
+        }
+      }
+    });
+
     // Split impressions metrics
     const servedImpressions = verifiedFromGPT; // GPT_SLOT_RENDER (non-empty, deduped) - "served proxy"
     const verifiedImpressions = verifiedFromGPT + verifiedFromGamCorrelation + verifiedFromBeacons; // Strict correlation required

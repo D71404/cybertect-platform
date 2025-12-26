@@ -1,0 +1,3882 @@
+{
+  "scanResult": {
+    "scanId": "cms_1766110324086",
+    "scanTimestamp": "2025-12-19T02:12:08.650Z",
+    "buildLabel": null,
+    "baseUrl": "https://www.diariolasamericas.com/",
+    "pagesScanned": [
+      "https://www.diariolasamericas.com/"
+    ],
+    "pageResults": [
+      {
+        "url": "https://www.diariolasamericas.com/",
+        "scanTimestamp": "2025-12-19T02:12:08.507Z",
+        "scripts": [
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://sdk.mrf.io/statics/marfeel-sdk.es5.js?id=2602",
+            "hash": "349s1z",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2602",
+            "hash": "xg9rci",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//static.ads-twitter.com/uwt.js",
+            "hash": "gn12qz",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://connect.facebook.net/signals/config/365455823800903?v=2.9.248&r=stable&domain=www.diariolasamericas.com&hme=17590b9a2e1b26755cdc9ecb401f9f46bca979d3ccce95d786db0936167af731&ex_m=94%2C156%2C134%2C20%2C67%2C68%2C127%2C63%2C43%2C128%2C72%2C62%2C10%2C141%2C80%2C15%2C93%2C28%2C122%2C115%2C70%2C73%2C121%2C138%2C102%2C143%2C7%2C3%2C4%2C6%2C5%2C2%2C81%2C91%2C144%2C224%2C167%2C57%2C226%2C227%2C50%2C183%2C27%2C69%2C232%2C231%2C170%2C30%2C56%2C9%2C59%2C87%2C88%2C89%2C95%2C118%2C29%2C26%2C120%2C117%2C116%2C135%2C71%2C137%2C136%2C45%2C55%2C111%2C14%2C140%2C40%2C213%2C215%2C177%2C23%2C24%2C25%2C17%2C18%2C39%2C35%2C37%2C36%2C76%2C82%2C86%2C100%2C126%2C129%2C41%2C101%2C21%2C19%2C107%2C64%2C33%2C131%2C130%2C132%2C123%2C22%2C32%2C54%2C99%2C139%2C65%2C16%2C133%2C104%2C31%2C193%2C163%2C284%2C211%2C154%2C196%2C189%2C164%2C97%2C119%2C75%2C109%2C49%2C44%2C103%2C42%2C108%2C114%2C53%2C60%2C113%2C48%2C51%2C47%2C90%2C142%2C0%2C112%2C13%2C110%2C11%2C1%2C52%2C83%2C58%2C61%2C106%2C79%2C78%2C145%2C146%2C84%2C85%2C8%2C92%2C46%2C124%2C77%2C74%2C66%2C105%2C96%2C38%2C125%2C34%2C98%2C12%2C147",
+            "hash": "juobtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [
+              "%2C156%",
+              "%2C20%",
+              "%2C68%",
+              "%2C63%",
+              "%2C128%",
+              "%2C62%",
+              "%2C141%",
+              "%2C15%",
+              "%2C28%",
+              "%2C115%",
+              "%2C73%",
+              "%2C138%",
+              "%2C143%",
+              "%2C3%",
+              "%2C6%",
+              "%2C2%",
+              "%2C91%",
+              "%2C224%",
+              "%2C57%",
+              "%2C227%",
+              "%2C183%",
+              "%2C69%",
+              "%2C231%",
+              "%2C30%",
+              "%2C9%",
+              "%2C87%",
+              "%2C89%",
+              "%2C118%",
+              "%2C26%",
+              "%2C117%",
+              "%2C135%",
+              "%2C137%",
+              "%2C45%",
+              "%2C111%",
+              "%2C140%",
+              "%2C213%",
+              "%2C177%",
+              "%2C24%",
+              "%2C17%",
+              "%2C39%",
+              "%2C37%",
+              "%2C76%",
+              "%2C86%",
+              "%2C126%",
+              "%2C41%",
+              "%2C21%",
+              "%2C107%",
+              "%2C33%",
+              "%2C130%",
+              "%2C123%",
+              "%2C32%",
+              "%2C99%",
+              "%2C65%",
+              "%2C133%",
+              "%2C31%",
+              "%2C163%",
+              "%2C211%",
+              "%2C196%",
+              "%2C164%",
+              "%2C119%",
+              "%2C109%",
+              "%2C44%",
+              "%2C42%",
+              "%2C114%",
+              "%2C60%",
+              "%2C48%",
+              "%2C47%",
+              "%2C142%",
+              "%2C112%",
+              "%2C110%",
+              "%2C1%",
+              "%2C83%",
+              "%2C61%",
+              "%2C79%",
+              "%2C145%",
+              "%2C84%",
+              "%2C8%",
+              "%2C46%",
+              "%2C77%",
+              "%2C66%",
+              "%2C96%",
+              "%2C125%",
+              "%2C98%"
+            ],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://connect.facebook.net/en_US/fbevents.js",
+            "hash": "uzrw68",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "aqdfdd",
+            "content": "[{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"WebSite\",\"name\":\"Home - Diario Las Am\\u00e9ricas\",\"url\":\"https:\\/\\/www.diariolasamericas.com\\/\"}]",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "8ijxi5",
+            "content": "function loadScript(a){var b=document.getElementsByTagName(\"head\")[0],c=document.createElement(\"script\");c.type=\"text/javascript\",c.src=\"https://tracker.metricool.com/resources/be.js\",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:\"12f8b28da6b97192293300a21f39d24b\"})});",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://tracker.metricool.com/resources/be.js",
+            "hash": "9kax23",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "acbfoq",
+            "content": "\n!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '365455823800903'); // Insert your pixel ID here.\nfbq('track', 'PageView');\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": [
+                "365455823800903"
+              ]
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "hash": "o80o3r",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "gpt-impl-0.8670843899193758",
+              "selector": "#gpt-impl-0.8670843899193758"
+            },
+            "selector": "#gpt-impl-0.8670843899193758"
+          },
+          {
+            "type": "external",
+            "src": "https://oa.openxcdn.net/esp.js",
+            "hash": "a8csrt",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://static.criteo.net/js/ld/publishertag.ids.js",
+            "hash": "sn6t8t",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://dmp.im-apps.net/secure-signal/provider.js",
+            "hash": "7dgbvq",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js",
+            "hash": "83x7kz",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.id5-sync.com/api/1.0/esp.js",
+            "hash": "3dbg4k",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://tags.crwdcntrl.net/lt/c/16589/sync.min.js",
+            "hash": "jhk5ly",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.prod.uidapi.com/uid2SecureSignal.js",
+            "hash": "h8fx2j",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://connectid.analytics.yahoo.com/connectId-gpt.js",
+            "hash": "m9xbsg",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.prod.euid.eu/euidSecureSignal.js",
+            "hash": "5ev9vu",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js",
+            "hash": "qlobah",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.mgaru.dev/static/myGaruStandalone.js",
+            "hash": "n4ryja",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://ads.pubmatic.com/AdServer/js/google-esp.js",
+            "hash": "6slszq",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_US.4m87Xm8lYNM.O/am=AAAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfoBqgfvalA3jH1uGPITv4a4G5SAPQ/m=el_main",
+            "hash": "87hwtq",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "hash": "xfhw4c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "g5of2k",
+            "content": " !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');\n  // Insert Twitter Pixel ID and Standard Event data below\n  twq('init','o7pdg');\n  twq('track','PageView');\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7ys6qw",
+            "content": "\tfunction e(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],c=document.createElement(\"script\");c.src=e,t?c.type=\"module\":(c.async=!0,c.type=\"text/javascript\",c.setAttribute(\"nomodule\",\"\"));var n=document.getElementsByTagName(\"script\")[0];n.parentNode.insertBefore(c,n)}function t(t,c,n){var a,o,r;null!==(a=t.marfeel)&&void 0!==a||(t.marfeel={}),null!==(o=(r=t.marfeel).cmd)&&void 0!==o||(r.cmd=[]),t.marfeel.config=n,t.marfeel.config.accountId=c;var i=\"https://sdk.mrf.io/statics",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.ampproject.org/v0/amp-analytics-0.1.js",
+            "hash": "y9rt91",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-XQ7XWPTD48",
+            "hash": "agmsad",
+            "measurementIds": {
+              "ga4": [
+                "G-XQ7XWPTD48"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "f2151e",
+            "content": "\n<!-- SE COMENTA PARA VERIFICAR USO DE TAGMANAGER  -->\n/* \nwindow.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-XQ7XWPTD48');\n*/\n",
+            "measurementIds": {
+              "ga4": [
+                "G-XQ7XWPTD48"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "lclgnz",
+            "content": "\n{\n    \"prefetch\": [\n        {\n            \"source\": \"document\",\n            \"where\": {\n                \"and\": [\n                    { \"href_matches\": \"https://www.diariolasamericas.com/*\" },\n                    { \"not\": { \"selector_matches\": \"[rel~='nofollow']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noreferrer']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noopener']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noindex']\" } }\n    ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-XQ7XWPTD48",
+            "hash": "agmsad",
+            "measurementIds": {
+              "ga4": [
+                "G-XQ7XWPTD48"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "8o1gcd",
+            "content": " window.dataLayer = window.dataLayer || [];\n    function gtag() { dataLayer.push(arguments); }\n    gtag('js', new Date());\n    gtag('config', 'G-XQ7XWPTD48');\n    gtag('set',\n        {\n            'dimension1': 'Home - Diario Las Am&eacute;ricas',\n            'dimension2': '',\n            'dimension3': 'page',\n            'dimension4': '',\n            'dimension5': '',\n            'dimension6': '',\n            'dimension7': '',\n            'dimension8': '',\n            'dimension9': '',\n        ",
+            "measurementIds": {
+              "ga4": [
+                "G-XQ7XWPTD48"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "y5caem",
+            "content": "window.TdOneSingalSetup = {\"appId\":\"2813e302-2467-4a0e-b34b-7f83e9e6121f\",\"autoRegister\":false,\"promptOptions\":{\"actionMessage\":\"Nos gustar\\u00eda mostrarle las \\u00faltimas noticias.\",\"exampleNotificationTitleDesktop\":\"Notificaci\\u00f3n de ejemplo\",\"exampleNotificationMessageDesktop\":\"As\\u00ed aparecer\\u00e1n las notificaciones\",\"exampleNotificationCaption\":\"Pod\\u00e9s desuscribirte en cualquier momento\",\"acceptButtonText\":\"SUSCRIBIRME\",\"cancelButtonText\":\"NO, GRACIAS\"},\"welcomeNotification\":{\"",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "huuqgc",
+            "content": "window.promptNotificationsPage = \"home\";",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.diariolasamericas.com/libs/OneSignalSDKFiles/TdWebPushv16-min-version-1765944347.js",
+            "hash": "21eqpr",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "hash": "smp2ab",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.diariolasamericas.com/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1765944495.js",
+            "hash": "ot4x7",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "8p1u62",
+            "content": " window.arrCMSRegions = {  region1 : 'block' , region2 : 'block' , region3 : 'none' , region4 : 'block'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "yw0uv9",
+            "content": "\n\t{\n\t\t\"vars\" : {\n\t\t\t\"accountId\": \"2602\"\n\t\t}\n\t}\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "yr90w2",
+            "content": "\nfunction googleTranslateElementInit() {\n  new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');\n}\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+            "hash": "xjpglv",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.diariolasamericas.com//js-custom/xpress/header_desktop-min-version-1765944363.js",
+            "hash": "bg02ta",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.diariolasamericas.com//js-custom/xpress/search-min-version-1765944363.js",
+            "hash": "3dmgvw",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7h03fl",
+            "content": " var googletag = googletag || {};\n googletag.cmd = googletag.cmd || [];\n (function() {\n   var gads = document.createElement('script');\n   gads.async = true;\n   var useSSL = 'https:' == document.location.protocol;\n   gads.src = (useSSL ? 'https:' : 'http:') +\n       '//www.googletagservices.com/tag/js/gpt.js';\n   var node = document.getElementsByTagName('script')[0];\n   node.parentNode.insertBefore(gads, node);\n })();\n\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "w68de1",
+            "content": " var gptAdSlots = [];\n googletag.cmd.push(function() {\n\n   var mapping = googletag.sizeMapping().\n   addSize([750, 200], [160, 600]). \n   addSize([1050, 200], [160, 600]).build();\n\n   gptAdSlots[0] = googletag.defineSlot('/62691402/Portada_160x600_right', [160, 600], 'ad-slot').\n       defineSizeMapping(mapping).\n       addService(googletag.pubads());\n   googletag.pubads().setTargeting(\"test\",\"responsive\");\n\n   googletag.enableServices();\n });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7h03fl",
+            "content": " var googletag = googletag || {};\n googletag.cmd = googletag.cmd || [];\n (function() {\n   var gads = document.createElement('script');\n   gads.async = true;\n   var useSSL = 'https:' == document.location.protocol;\n   gads.src = (useSSL ? 'https:' : 'http:') +\n       '//www.googletagservices.com/tag/js/gpt.js';\n   var node = document.getElementsByTagName('script')[0];\n   node.parentNode.insertBefore(gads, node);\n })();\n\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "residualBanner",
+              "selector": "#residualBanner"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "k9whn3",
+            "content": " var gptAdSlots = [];\n googletag.cmd.push(function() {\n\n   var mapping = googletag.sizeMapping().\n   addSize([750, 200], [160, 600]). \n   addSize([1050, 200], [160, 600]).build();\n\n   gptAdSlots[0] = googletag.defineSlot('/62691402/Portada_160x600_left', [160, 600], 'ad-slot-izq').\n       defineSizeMapping(mapping).\n       addService(googletag.pubads());\n   googletag.pubads().setTargeting(\"test\",\"responsive\");\n\n   googletag.enableServices();\n });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "residualBanner",
+              "selector": "#residualBanner"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.diariolasamericas.com/js-custom/xpress/residual-banner-min-version-1765944363.js",
+            "hash": "sg4i0t",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "x3q5k1",
+            "content": "\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') +\n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "luv0ss",
+            "content": "\nvar gptAdSlots = [];\ngoogletag.cmd.push(function() {\nvar mapping = googletag.sizeMapping().\naddSize([0, 0], [320, 50]).\naddSize([100, 100], [320, 50]).\naddSize([320, 400], [320, 50]).\naddSize([320, 700], [320, 50]).\naddSize([750, 200], [[728, 90],[970, 250]]).\naddSize([1050, 200], [[728, 90],[970, 250]]).build();\ngptAdSlots[0] = googletag.defineSlot('/62691402/Portada_728x90', [[320, 50], [728, 90], [970,250]], 'ad-slot').\ndefineSizeMapping(mapping).\naddService(googletag.pubads());\ngoogletag.pu",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ttd40d",
+            "content": "\ngoogletag.cmd.push(function() {\ngoogletag.display('ad-slot');\n});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "ad-slot",
+              "selector": "#ad-slot"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "x3q5k1",
+            "content": "\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') +\n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "x34csg",
+            "content": "\nvar gptAdSlots = [];\ngoogletag.cmd.push(function() {\nvar mapping = googletag.sizeMapping().\naddSize([0, 0], [320, 50]).\naddSize([100, 100], [320, 50]).\naddSize([320, 400], [320, 50]).\naddSize([320, 700], [320, 50]).\naddSize([750, 200], [[728, 90],[970, 250]]).\naddSize([1050, 200], [[728, 90],[970, 250]]).build();\ngptAdSlots[0] = googletag.defineSlot('/62691402/florida_728x90_Middle', [[320, 50], [728, 90], [970,250]], 'ad-slot145').\ndefineSizeMapping(mapping).\naddService(googletag.pubads());\ngo",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "x3q5k1",
+            "content": "\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') +\n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "d3uq6s",
+            "content": "\nvar gptAdSlots = [];\ngoogletag.cmd.push(function() {\nvar mapping = googletag.sizeMapping().\naddSize([0, 0], [320, 50]).\naddSize([100, 100], [320, 50]).\naddSize([320, 400], [320, 50]).\naddSize([320, 700], [320, 50]).\naddSize([750, 200], [[728, 90],[970, 250]]).\naddSize([1050, 200], [[728, 90],[970, 250]]).build();\ngptAdSlots[0] = googletag.defineSlot('/62691402/Portada_728x90_Middle2', [[320, 50], [728, 90], [970,250]], 'ad-slot4').\ndefineSizeMapping(mapping).\naddService(googletag.pubads());\ngoo",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "xlfy1z",
+            "content": "\n  var googletag = googletag || {};\n  googletag.cmd = googletag.cmd || [];\n  (function() {\n    var gads = document.createElement('script');\n    gads.async = true;\n    gads.type = 'text/javascript';\n    var useSSL = 'https:' == document.location.protocol;\n    gads.src = (useSSL ? 'https:' : 'http:') +\n      '//www.googletagservices.com/tag/js/gpt.js';\n    var node = document.getElementsByTagName('script')[0];\n    node.parentNode.insertBefore(gads, node);\n  })();\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "gt7t2k",
+            "content": " googletag.cmd.push(function() {\n    googletag.defineSlot('/62691402/Portada_300x250_Middle1', [300, 250], 'div-gpt-ad-1447708477280-0').addService(googletag.pubads());\n    googletag.pubads().enableSingleRequest();\n    googletag.enableServices();\n  });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "9s4z65",
+            "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-1447708477280-0'); });\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-gpt-ad-1447708477280-0",
+              "selector": "#div-gpt-ad-1447708477280-0"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagservices.com/tag/js/gpt.js",
+            "hash": "9xlgka",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "standard-widget",
+              "selector": ".standard-widget"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "n85xq9",
+            "content": " function loadTdDefererJs(i){\n      var s = document.createElement(\"script\");\n      s.setAttribute(\"type\", \"text/javascript\");\n      if(i >= window.defererList.length){\n        return false;\n      }\n\n      if(typeof(window.defererList[i].src) != \"undefined\" && window.defererList[i].src != \"\"){\n        //console.log(\"Add SRC =>\",window.defererList[i].src);\n        s.onload = function() {\n          i++;\n          loadTdDefererJs(i);\n        };\n        s.onerror = function() {\n          i++;\n      ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+            "hash": "fwq47a",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://client.aps.amazon-adsystem.com/publisher.js",
+            "hash": "am6khy",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://s3.amazonaws.com/script-tags/hcmprebid.js",
+            "hash": "577ysf",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "d45ygg",
+            "content": "invokeVideoPlayer = function(url) {console.log('updating tag');console.log(url);var jwDataStore=window.jwDataStore||{custom:{}};jwDataStore.custom.e6iBx79Y= { firstPlay: firstPlay.toString(),jwadbidtag : url};window.jwDataStore = jwDataStore;if (firstPlay) {firstPlay = false; var hcmprebidscript=document.createElement('script');hcmprebidscript.src='https://cdn.jwplayer.com/v2/sites/pD3nruy3/placements/e6iBx79Y/embed.js';window.top.document.getElementById('HCTV').appendChild(hcmprebidscript);}};w",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          }
+        ],
+        "pixels": [
+          {
+            "type": "noscript",
+            "src": "<img height=\"1\" width=\"1\" style=\"display:none\" src=\"https://www.diariolasamericas.com/css-custom/216/lazy.svg\" data-td-src-property=\"https://www.facebook.com/tr?id=365455823800903&ev=PageView&noscript=1\" />",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "noscript"
+          }
+        ],
+        "networkRequests": [
+          {
+            "url": "https://www.diariolasamericas.com/",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766110324829
+          },
+          {
+            "url": "https://www.diariolasamericas.com/tdcss-6636d7ba248079f9ad9d6dbd72c624dc556693f0-1",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766110325096
+          },
+          {
+            "url": "https://media.diariolasamericas.com/p/9c47867e8d79f6aceea43d17848b154a/adjuntos/216/imagenes/100/233/0100233881/marines-eeuu.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110325096
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/fonts/merriweather/merriweather-regular.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766110325096
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/fonts/merriweather/merriweather-light.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766110325096
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/fonts/merriweather/merriweather-bold.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766110325096
+          },
+          {
+            "url": "https://www.googletagservices.com/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325097
+          },
+          {
+            "url": "https://cdn.ampproject.org/v0/amp-analytics-0.1.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325097
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-XQ7XWPTD48",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325097
+          },
+          {
+            "url": "https://www.diariolasamericas.com/libs/OneSignalSDKFiles/TdWebPushv16-min-version-1765944347.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325100
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325100
+          },
+          {
+            "url": "https://www.diariolasamericas.com/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1765944495.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325100
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/216/lazy.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110325101
+          },
+          {
+            "url": "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325101
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/images/logo-header.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110325101
+          },
+          {
+            "url": "https://www.diariolasamericas.com//js-custom/xpress/header_desktop-min-version-1765944363.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325101
+          },
+          {
+            "url": "https://www.diariolasamericas.com//js-custom/xpress/search-min-version-1765944363.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325101
+          },
+          {
+            "url": "https://www.diariolasamericas.com/js-custom/xpress/residual-banner-min-version-1765944363.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325112
+          },
+          {
+            "url": "https://tracker.metricool.com/resources/be.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325237
+          },
+          {
+            "url": "https://connect.facebook.net/en_US/fbevents.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325241
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110325419
+          },
+          {
+            "url": "https://oa.openxcdn.net/esp.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326103
+          },
+          {
+            "url": "https://static.criteo.net/js/ld/publishertag.ids.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326103
+          },
+          {
+            "url": "https://dmp.im-apps.net/secure-signal/provider.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326103
+          },
+          {
+            "url": "https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326103
+          },
+          {
+            "url": "https://cdn.id5-sync.com/api/1.0/esp.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326103
+          },
+          {
+            "url": "https://tags.crwdcntrl.net/lt/c/16589/sync.min.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326104
+          },
+          {
+            "url": "https://cdn.prod.uidapi.com/uid2SecureSignal.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326104
+          },
+          {
+            "url": "https://connectid.analytics.yahoo.com/connectId-gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326104
+          },
+          {
+            "url": "https://cdn.prod.euid.eu/euidSecureSignal.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326104
+          },
+          {
+            "url": "https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326104
+          },
+          {
+            "url": "https://cdn.mgaru.dev/static/myGaruStandalone.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326104
+          },
+          {
+            "url": "https://ads.pubmatic.com/AdServer/js/google-esp.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326104
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2C1_1x1&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1&ifi=1&didk=4035040463&dids=gpt_unit_%2F62691402%2F1_1x1_1&adfs=548604049&sfv=1-0-45&eri=2&sc=1&cookie_enabled=1&abxe=1&dt=1766110326094&lmt=1766109839&adxs=0&adys=0&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=0&ucis=1&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=1280x0&msz=1280x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&adks=2277988595&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326104,
+            "macros": [
+              "%2F0%",
+              "%2F62691402%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://1c4b802d852b9b23fa35cb15f2b21cdd.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766110326105
+          },
+          {
+            "url": "https://static.ads-twitter.com/uwt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326150
+          },
+          {
+            "url": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2602",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326151
+          },
+          {
+            "url": "https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.2f3WBw8L4SI.L.W.O/am=AAQD/d=0/rs=AN8SPfrXXtxuFpMMBoYgp93jo68L3iC3ZQ/m=el_main_css",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_US.4m87Xm8lYNM.O/am=AAAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfoBqgfvalA3jH1uGPITv4a4G5SAPQ/m=el_main",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/chevron-down.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/facebook-f.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/twitter-logo.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/instagram.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/youtube.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/threads.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/tiktok.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/menu.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/search.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/person-login.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/chevron-right.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/fonts/roboto/roboto-v29-latin-regular.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/fonts/roboto/roboto-v29-latin-700.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766110326152
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2CPortada_160x600_right&enc_prev_ius=%2F0%2F1&prev_iu_szs=160x600&ifi=2&didk=2507868291&dids=ad-slot&adfs=2139815303&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766110326146&lmt=1766109839&adxs=-12245933&adys=-12245933&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=-1&ucis=2&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=0x0&msz=0x0&fws=132&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=1086464055&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326152,
+            "macros": [
+              "%2F0%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2CPortada_160x600_left&enc_prev_ius=%2F0%2F1&prev_iu_szs=160x600&ifi=3&didk=3860942165&dids=ad-slot-izq&adfs=1217466393&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766110326156&lmt=1766109839&adxs=-12245933&adys=-12245933&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=-1&ucis=3&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=0x0&msz=0x0&fws=132&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=2851722615&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326158,
+            "macros": [
+              "%2F0%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2C1_300x250_bottom&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250&ifi=4&didk=3861337633&dids=gpt_unit_%2F62691402%2F1_300x250_b&adfs=2975984788&sfv=1-0-45&eri=2&sc=1&cookie_enabled=1&abxe=1&dt=1766110326166&lmt=1766109839&adxs=840&adys=977&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=1&ucis=4&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=3984907322&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326168,
+            "macros": [
+              "%2F0%",
+              "%2F62691402%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2C1_300x250_bottom&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250&ifi=5&didk=3861337638&dids=gpt_unit_%2F62691402%2F1_300x250_b&adfs=1685675373&sfv=1-0-45&eri=2&sc=1&cookie_enabled=1&abxe=1&dt=1766110326181&lmt=1766109839&adxs=840&adys=1699&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=2&ucis=5&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=3984907321&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326182,
+            "macros": [
+              "%2F0%",
+              "%2F62691402%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2C1_300x250_bottom&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250&ifi=6&didk=3861337639&dids=gpt_unit_%2F62691402%2F1_300x250_b&adfs=3015673950&sfv=1-0-45&eri=2&sc=1&cookie_enabled=1&abxe=1&dt=1766110326182&lmt=1766109839&adxs=840&adys=1999&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=3&ucis=6&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=300x-1&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=3984907320&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326183,
+            "macros": [
+              "%2F0%",
+              "%2F62691402%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2Cflorida_728x90_Middle&enc_prev_ius=%2F0%2F1&prev_iu_szs=728x90%7C970x250&ifi=7&didk=529512307&dids=ad-slot145&adfs=1035466155&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766110326183&lmt=1766109839&adxs=276&adys=2299&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=4&ucis=7&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=728x0&msz=728x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=332541792&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326184,
+            "macros": [
+              "%2F0%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2CPortada_728x90_Middle2&enc_prev_ius=%2F0%2F1&prev_iu_szs=728x90%7C970x250&ifi=8&didk=29678135&dids=ad-slot4&adfs=1656215382&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766110326184&lmt=1766109839&adxs=276&adys=5312&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=5&ucis=8&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=970x-1&msz=970x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=2389630780&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326185,
+            "macros": [
+              "%2F0%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/fonts/merriweather/merriweather-black.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766110326201
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2CPortada_300x250_Middle&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250%7C300x250&ifi=9&didk=4268738171&dids=gpt_unit_%2F62691402%2FPortada_300&adfs=158688905&sfv=1-0-45&eri=2&sc=1&cookie_enabled=1&abxe=1&dt=1766110326201&lmt=1766109839&adxs=840&adys=7559&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=6&ucis=9&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=300x0&msz=300x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=307862438&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326203,
+            "macros": [
+              "%2F0%",
+              "%2F62691402%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2CPortada_300x250_Middle1&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250&ifi=10&didk=3017009304&dids=div-gpt-ad-1447708477280-0&adfs=492824448&sfv=1-0-45&sc=1&cookie_enabled=1&abxe=1&dt=1766110326203&lmt=1766109839&adxs=840&adys=7609&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=7&ucis=a&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=300x250&msz=300x-1&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=2201550976&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326204,
+            "macros": [
+              "%2F0%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2CPortada_300x600&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x600&ifi=11&didk=1903359232&dids=gpt_unit_%2F62691402%2FPortada_300&adfs=3275673774&sfv=1-0-45&eri=2&sc=1&cookie_enabled=1&abxe=1&dt=1766110326204&lmt=1766109839&adxs=840&adys=9043&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=8&ucis=b&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=300x0&msz=300x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=254021706&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326204,
+            "macros": [
+              "%2F0%",
+              "%2F62691402%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/fonts/roboto/roboto-v29-latin-300.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766110326215
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=5538918204406856&correlator=2711329110819894&eid=83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=62691402%2CPortada_300x250_Bottom&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250&ifi=12&didk=485539766&dids=gpt_unit_%2F62691402%2FPortada_300&adfs=3211635203&sfv=1-0-45&eri=2&sc=1&cookie_enabled=1&abxe=1&dt=1766110326213&lmt=1766109839&adxs=490&adys=11333&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=9&ucis=c&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&vis=1&psz=300x0&msz=300x0&fws=4&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766110325087&idt=937&cust_params=test%3Dresponsive&adks=3794059071&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326215,
+            "macros": [
+              "%2F0%",
+              "%2F62691402%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://media.diariolasamericas.com/adjuntos/216/banners/100/082/0100082176.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326225
+          },
+          {
+            "url": "https://www.diariolasamericas.com/assets/img/216/clima/svg/.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326225
+          },
+          {
+            "url": "https://www.diariolasamericas.com/css-custom/xpress/icons/DLA-top.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326225
+          },
+          {
+            "url": "https://media.diariolasamericas.com/p/1cbccaf427752ebadb5e4e7e64e6727d/adjuntos/216/imagenes/001/685/0001685607/375x211/smart/mia-aeropuerto-tsa.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326225
+          },
+          {
+            "url": "https://media.diariolasamericas.com/p/ea02b2c5ccfaf1575598e3335ea1d2e3/adjuntos/216/imagenes/100/209/0100209694/375x211/smart/consumo-ed-afpjpg-2025.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326225
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-XQ7XWPTD48&gtm=45je5ca1v871065344za200zd871065344&_p=1766110326109&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1091941623.1766110326&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1766110326&sct=1&seg=0&dl=https%3A%2F%2Fwww.diariolasamericas.com%2F&dt=Home%20-%20Diario%20Las%20Am%C3%A9ricas&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1414",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110326244,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%20Diario%",
+              "%20Am%"
+            ]
+          },
+          {
+            "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-XQ7XWPTD48&cid=1091941623.1766110326&gtm=45je5ca1v871065344za200zd871065344&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940",
+            "method": "POST",
+            "resourceType": "ping",
+            "timestamp": 1766110326244
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766110326252
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326436
+          },
+          {
+            "url": "https://tracker.metricool.com/c3po.jpg?hash=12f8b28da6b97192293300a21f39d24b&u=https%3A%2F%2Fwww.diariolasamericas.com%2F&bw=1280&bh=720",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110326436,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://sync6.im-apps.net/9001/pid?ref=null&page=https://www.diariolasamericas.com/",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110326615
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsutUqI44TSyM8vwPBqCARh89jCAmDeNiiF2vWXAeCD4bmpgfBwMMs0lu-QZ-readx2CrCgAM-XyCNunmoGjffBlZ5FNmqBNATkzZgtEjtEaE2aSeSQA-AzstrSpzne3GYFt9PVqQcvdKty5PU3uo0Nd1Odriizc3ZkylvCexiAhtiuBm-yAixsiJOb3Ovv9gUSKHH8cacikVQU8EadCXy0UyajmYrDhHaM5ZhxLOhYNs2-FaY5UyW0pVZ1bhMRHa02zBpbPm1xxCZG46JF9xXX47YnKbSxuQmfXq8gRNKVnPg6jSfpPYVF1zbkbcP_Jo4ZQQgkbEc7FnQG8MTdZhJFIWBcybmaER7BUkeDX5sggCpUn5PNlFc891gCE_-R6PE56UGMxtVlH4i5P7_MEygzwHQOX_I72WwE&sai=AMfl-YQr18NLJxqHXfkRQw8bFlVCkVDq8xClS6R77FPjhHCyPM38iPzkopYRBBTOP0GK61bcd7Z7i4YPOWcSUMVY9V-d3KZlz8-y9l3eGff6VE1MsQP96Ku_E-hkJGQXkBnNFOqcKB7Wgn87TKGJ8HQ0Lax17Tv30uN2vN3R6U-vMztW7ptfYgS70TUpcBmW06X32SSwJkaXeVRYLtY-zdtoJbxYTcbrJAcCl1K7zfAhy1K39TLivFsHzMLSSb-ItCYBoSPcNTjaffVwFe5V0RCBg1wQnX8Ct-WZ-poI0l333CKwkXA&sig=Cg0ArKJSzCE3EtvYc8wvEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326634,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326634
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326634
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsuEi9PR_PiqPempWJGLSo6dINbJ1Mk9AeMoLzFLr0qoU6hjTCSMTg9cjpZp8togpzSeRJ93rNeezB3BIeaBXkH3nj-Y6iO-4Eiu08b-STTqY0KroYnsPykunCkiFdHtR3TYsmdTYOMi_618W4yQJ59HbaBKvozy6zGKiX6gUdQFb8I0Hn1SRSVwMadT6luRLxKbA6iqo-6GW7_PqOb49LAgxI7lSozCskU4J9g3PBovqwFPEcjNPF9Oeae2j2_XG4JN5GIB0GV9toZQQlIkpdVVbcWDtp7tgf69GbIuTGq285Q3MuGhpH42KjGXrVQpmP6rLZn7cAzFw8iYDQiTj_RrfDASC83sbmVMdo5VWqdJ8LyEWDEVba9jo5hxhjOrw-LFMOZ7ZcopvbtrVTSpmoC-aXHttU5zSaAQsHh-08byCEyHeig-7wl2K8hYSdbHrN9VEQxUxAMK&sai=AMfl-YQNY4dTXo1j02SInt4qdSRZ2BqeSU_3eNvmRMNPxwxf2M_sJRGXrdMynBID2agSA0HLO4OAbW6ROyC2t6eBbcvftp8iqEFqUeg3YIe7ASXkwtfzA1UB2N1TcvXgacMFMaDySu-CaOv7W2EqMu6mbrSs1j56F-FJGDWmRVc1YQ28IawLabsFFVdeLqWvwZa_WvgEIEie1Sxz724XKe2asbrCUwwVR8lCp2795wGr9M-A16NRP9DPgAUWUTaWyplZaeNmRWUOU9t-shvXCgALzChV0E1mX-yTsU6izsxrAn4spyU&sig=Cg0ArKJSzHCJYSYPllfEEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326654,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326654
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326654
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssse4vi6pPxRqlTl0ZfPpT51_1Xk3R3EZj-5mxrUOtrWYKJDqS1K4UE8Zz0n6OE3gr6-PBxNb-meUbhNtpi99GcVNlN_PDIn3YcV9qAKP6y78B1OV-qefmlH8ixFEfROtR_46GDYFok64-f8GGmx_1rJLilw4km6Cb0IpTPSNGuaww5JeLluIHvG0Ur1QZamU-YOPYAG5VxPxthpSaiBbkBCBOltq5dSKVHMHbs_z59Hq29v4QKrHTtNqnzckL5_EW6dzG5CnQsNR_sTJ8x7HQJ6ee0_-rZil7uaUaC2RBG2L5xZf5k_c9SDrQuPTFmeIET3a6Eq8ORitmNiPRifCZkcWU94mMkVtLutV1uDnc7yybCFcKhP4YEarndHtlKMoh0xuh5e4GV_qwHWCjBhTZZnbr7GaQ4Hyx51AXaCQb5Cg&sai=AMfl-YRwVTrClhQff2UbO33wOHKT4CJd7zR3h3zYiZ1FXa_h5AnedaCq_GWiP7StXk40eXkcFE6giWPSZWtA3sLCwa-hhuyULVJqMf-sO0sQOKjQrBxtgqWcCYgXEocEqIiRPsAH4_22mZX2qjVaptSJ82lNoy6pyxqb7dB7LcAFRkY7hMS73p7Dldju49StMrBpnOLHspdFJLNM5xaMH0A0ky9JE_qKIvW9wDj6hn0yYwPBgNa-49XU_oEHpVGbKPfEWcKGX1CyqbpxZYBVWXhUc4YislBqe6gkPeyvongFfeHbXjk&sig=Cg0ArKJSzFk5BEe5Y9igEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326658,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8658546022677347",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326658
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326658
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjstHlTMsUSMd3k_ZqzzEPJ2Z59tafEFQaCDWnRv6WPZ12AjwK0UU6UGo-JN8eowwHi7MxrB3d77t1a_mgbT3wlqGeNiTGJzeAlq4cZR0skNY9ltJ-Ikp-rhJtRg-RVI_1KF9pMj8w1dHyC0nWi_3T-5-5QOhtM1ryUX_PcbIf5PL7L8epv1xCm9-JJWRSPgCM-PfNtCG926EFS6k3Jy25QID-42953GzppvzxIcALfMuwEiDsCl0QuxRI-k-pguukeAyEUJtLunHk8mTfltqzDMStfieaiv48FB1a6nblk_BjAd7IazDOTXJLT5OtG5nQMrSlLrJ-pzE9Uj-vT-dh-CapXvS9M3FMGm07rU6DgxT8Qir9ttq8x4vPwt7-I1vfk8vDmXZZNqPGdpHRvZx5USwSpgFutuDowAYN8et3Vq10eqM3je7aRKCb_ogjnutnhA0JTzk-2YpNEXOWtCf8yqS72m0mO2M&sai=AMfl-YQWO9KU2yffK3BHCszD7Me-MA3PGaVrDJHt8M-utFqDPOzpsOkTMP-5vUIWbM7BY0OKO5rGV--KENbCOPBi3zIZlZw74WPXgYTtqmWMilUKA3yh21KtO-S0fHqCGvXePh91tkIpMkwbcgbO6AVMySo73WIcGddE219ZcrPO-9_S0IkUtrWcsMUUvJ4cmtsPMo1k2w7mHB9ZtDk6A_Xlvi92-bxqobSLzU3kdt7RWh_8CsHjT7MhuA6EhNydcpEPebWwHTT074n8Ge_w7w58gjKIckk1tSvAX3bRYXrYQ6dlK-Q&sig=Cg0ArKJSzHSrCivB9aIFEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326674,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326674
+          },
+          {
+            "url": "https://ads.pubmatic.com/AdServer/js/pwt/157163/4629/pwt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326674
+          },
+          {
+            "url": "https://s3.amazonaws.com/script-tags/owHCMR.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326674
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326674
+          },
+          {
+            "url": "https://events.newsroom.bi/ingest.php",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110326690
+          },
+          {
+            "url": "https://oajs.openx.net/esp?url=https%3A%2F%2Fwww.diariolasamericas.com%2F&rid=esp",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110326700,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://api.onesignal.com/sync/2813e302-2467-4a0e-b34b-7f83e9e6121f/web?callback=__jp0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110326707
+          },
+          {
+            "url": "https://bcp.crwdcntrl.net/6/map?xcid=16589",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766110326920
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjss5E7NOdvz6y4_qGyOCJyMPNqhymEGaKZDa4fsfCCVg_wE-Zu873OvidqV62Pev2pDQJYiPJ8XNpuhclkjDxdHzcJkDdryEipv8ewPzG1sL25Hw4yJhQ_nSSI1jmhlD6WwosSqQ9_UlP_2KNRUIMf87yAF-5Ucj4y1zkmkKm6Bzu2nIZZGPhqK8afg8oZwuJyPcWVvMH9s4-nc3ksTa2U5zxVmt4Ft3c8ImzVeX6isCi0cMkUsnjqaEvPR8F4iqd_xzU1eJOtjHQAGRFyAMHj018_M_9oV7rdyxsvBXdGrv_992xxex2EW5gTCGC-J229L7PFDEsoVZCCsiosJXfUY0x5SZ_LA0UmI-m5SlFNxDdYjg-l2k1phL8ZixyVKNegNZiMWmQK1294V77eRJU20gw80vKyVLySqG5frpmwFctuglSDYhmIg37KY1B27ogbN1xBhCRJDgpuXmBmaPyC3wnjS4p8DD&sai=AMfl-YRgUUXLx1jPyGT15cH7hOVSjIMojUt3BoD0_idWnZ0NXcC41rGZDkyGC5C2nWa8IU7aQtS0NGObTRtoCor6jDli0H6X0yPiiFgZ8bF7LOpvvVDMUgCPirXdymTj7yLbmX8ZqWJg6Vh_VlpnneBGiZI9D8Y5iL-iE3PL_kGT6w0K43B0UxSAgpXKWKuRpsdBk42FfthBtkC3b4jOQV6DOdbStxEjsIoxR5S_TLBkI8qvEY5HHb4SO5RPvcqIgnjbhVuSr-s9h_oJdtDq9aC2DOkl5qHI-UdcPpgJZRDh7oohX8Y&sig=Cg0ArKJSzGedBLev9zp2EAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327026,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327026
+          },
+          {
+            "url": "https://ads.pubmatic.com/AdServer/js/pwt/157163/4629/pwt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327026
+          },
+          {
+            "url": "https://s3.amazonaws.com/script-tags/owHCMR.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327026
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327026
+          },
+          {
+            "url": "https://id5-sync.com/api/esp/increment?counter=no-config",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110327034
+          },
+          {
+            "url": "https://ups.analytics.yahoo.com/ups/58813/fed?gpp_sid=-1&v=1&url=https%3A%2F%2Fwww.diariolasamericas.com%2F",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110327036,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://ident.mygaru.com/v2/id?partner_id=abd6fad8-5220-4364-8fd1-052f78594be6",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327037
+          },
+          {
+            "url": "https://tracking.mygaru.com/ident/?domain=www.diariolasamericas.com&otp=0&ttems=933.6&i=myg-standalone&resource=script&type=script&conn_id=null&conn_req_num=null&dns=2.9&tcp=44.400000000000006&tls=251.6&ttfb=58.9&transfer=50.3&redirect=0&blocked=0&total=933.6&fromCache=false",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327037
+          },
+          {
+            "url": "https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=www.diariolasamericas.com",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766110327041
+          },
+          {
+            "url": "https://oajs.openx.net/esp?url=https%3A%2F%2Fwww.diariolasamericas.com%2F&rid=esp&cc=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327051,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327090
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327093
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327102
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=2233617548577049&correlator=1933592795502581&eid=83321072%2C83322599&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&iu_parts=138871148%3A62691402%2Cdiariolasamericas.dw.1x1.vslider&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1&ifi=1&didk=607409652&dids=gpt-passback&adfs=2365573713&sfv=1-0-45&click=https%3A%2F%2Fadclick.g.doubleclick.net%2Fpcs%2Fclick%3Fxai%3DAKAOjssTjJqS5w-bHh4s7f9vOr1FqDDEaLF91w6mK_fsIXSu8cjYfX-vJfzd-Z3FB_9FOM87xxxS-8z9w7jQQZUaXL4PEYzEG7W1qaaJqun9eCvfIdKD1QuhvkDti7bNzBsQb2nxMMKz6QmeIwy5IS_5aYLM0LlYnwwibQ_06Vt-LTXpOE7vjRIrTXKmpeE3kg1Y_qkaEVtGPr80iz86OIj5E51uu4Y52dEvPUUXfAUr4iutb4FtVsAaYw5gtSAH5rfxM-YTHGufn2cKymUPmzIevDI9UlrdjYFmdD4Q8Weak3g5OMLnOfm2emtIJvM2lYoB52Bjs-ac15RXCpIhKnfDmQsaf0zz9mh-mS5SK7XHOxzGpNCjoLodtAfDbJSnNZ9Wixv-_BQi1w%26sai%3DAMfl-YSLv-A4Rz1_BQaaiENdFoOjSWHrqbaat5_IdtLEXEKRsd_f9KInRtP_zYp_kG5XI7AyaYwjfv8La-uQ6t0iyGFfqjVEnSkrNSNuAdOKTMz-Sb1dFn3rdwv3hZJDjA-UB1LG4ZAYnOP0Hdn9YNqAlrJwG2-Jjswf_nxiZxY8qAeiMUrrt_TIFfMbFEZFKo-yTxqOkhBWi3E7JBDnahLYyN1b06VFc_Fx9NRNXk4uflDBzLEN1uZFYUWh5zoM5PnRlOfZYbskdfcgaGy9QOyPSZLHM-D9Vv3aDRp9i74mzjw1WZg%26sig%3DCg0ArKJSzE_mUzH05VEWEAE%26fbs_aeid%3D%255Bgw_fbsaeid%255D%26urlfix%3D1%26adurl%3D&eri=4&sc=1&cookie=ID%3D699e2b5bd9b5bef2%3AT%3D1766110326%3ART%3D1766110326%3AS%3DALNI_MZWOf_xreXl2m9PsxxiG46_yK4P5w&gpic=UID%3D000012dd0614d181%3AT%3D1766110326%3ART%3D1766110326%3AS%3DALNI_Mb1jkYVFg7QHDeQSp9gqY9fcrtCQg&arp=1&abxe=1&dt=1766110327116&lmt=1766110327&adxs=0&adys=15&biw=1280&bih=720&isw=1&ish=1&scr_x=0&scr_y=0&btvi=0&ucis=cb45o47yvrjt&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&nhd=1&url=www.diariolasamericas.com&loc=https%3A%2F%2Fwww.diariolasamericas.com%2F&top=www.diariolasamericas.com&vis=1&psz=0x0&msz=1x0&fws=256&ohw=0&a3p=Eh8KEGVzcC5wdWJtYXRpYy5jb20YyNqDo7MzSABSAghkEhkKCnB1YmNpZC5vcmcYyNqDo7MzSABSAghkEhwKDWNyd2RjbnRybC5uZXQYyNqDo7MzSABSAghkEhkKCnVpZGFwaS5jb20YyNqDo7MzSABSAghkEhYKB2V1aWQuZXUYyNqDo7MzSABSAghkEiEKEmludGltYXRlbWVyZ2VyLmNvbRjI2oOjszNIAFICCGQSGAoJeWFob28uY29tGPvhg6OzM0gAUgIIbxIUCgVvcGVueBjI2oOjszNIAFICCGQSGwoMaWQ1LXN5bmMuY29tGMjag6OzM0gAUgIIZBIdCg5lc3AuY3JpdGVvLmNvbRjI2oOjszNIAFICCGQSFwoIbXlnYXJ1SUQYyNqDo7MzSABSAghkEhcKCHJ0YmhvdXNlGMngg6OzM0gAUgIIag..&psd=WzMxLFtdXQ..&dlt=1766110326623&idt=484&adks=3888760349&frm=23&eo_id_str=ID%3Db9737407a191ca72%3AT%3D1766110326%3ART%3D1766110326%3AS%3DAA-AfjbEo_rpN_hMi8uLntxcRRP7",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327120,
+            "macros": [
+              "%3A62691402%",
+              "%2F0%",
+              "%3A%",
+              "%2Fpcs%",
+              "%3Fxai%",
+              "%26sai%",
+              "%26sig%",
+              "%26fbs_aeid%",
+              "%255Bgw_fbsaeid%",
+              "%26urlfix%",
+              "%26adurl%",
+              "%3D699e2b5bd9b5bef2%",
+              "%3D1766110326%",
+              "%3D000012dd0614d181%",
+              "%3Db9737407a191ca72%"
+            ]
+          },
+          {
+            "url": "https://3fe8220206196e1083a8a384d518ebc9.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html?n=1",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766110327120
+          },
+          {
+            "url": "https://t.co/i/adsct?bci=3&dv=America%2FChicago%26en-US%26Google%20Inc.%26MacIntel%26127%261280%26720%268%2624%261280%26720%260%26na&eci=2&event_id=71bc1e72-6b7b-4de9-88b4-a0d7dc649cba&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=afbea630-9303-4116-81fa-676ed1adb7d8&pt=Home%20-%20Diario%20Las%20Am%C3%A9ricas&tw_document_href=https%3A%2F%2Fwww.diariolasamericas.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o7pdg&type=javascript&version=2.3.35",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327141,
+            "macros": [
+              "%2FChicago%",
+              "%26Google%",
+              "%26MacIntel%",
+              "%261280%",
+              "%268%",
+              "%260%",
+              "%5B%",
+              "%22pageview%",
+              "%2C%",
+              "%7D%",
+              "%20Diario%",
+              "%20Am%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FChicago%26en-US%26Google%20Inc.%26MacIntel%26127%261280%26720%268%2624%261280%26720%260%26na&eci=2&event_id=71bc1e72-6b7b-4de9-88b4-a0d7dc649cba&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=afbea630-9303-4116-81fa-676ed1adb7d8&pt=Home%20-%20Diario%20Las%20Am%C3%A9ricas&tw_document_href=https%3A%2F%2Fwww.diariolasamericas.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o7pdg&type=javascript&version=2.3.35",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327141,
+            "macros": [
+              "%2FChicago%",
+              "%26Google%",
+              "%26MacIntel%",
+              "%261280%",
+              "%268%",
+              "%260%",
+              "%5B%",
+              "%22pageview%",
+              "%2C%",
+              "%7D%",
+              "%20Diario%",
+              "%20Am%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://google-bidout-d.openx.net/w/1.0/pd?plm=5",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766110327144
+          },
+          {
+            "url": "https://connect.facebook.net/signals/config/365455823800903?v=2.9.248&r=stable&domain=www.diariolasamericas.com&hme=17590b9a2e1b26755cdc9ecb401f9f46bca979d3ccce95d786db0936167af731&ex_m=94%2C156%2C134%2C20%2C67%2C68%2C127%2C63%2C43%2C128%2C72%2C62%2C10%2C141%2C80%2C15%2C93%2C28%2C122%2C115%2C70%2C73%2C121%2C138%2C102%2C143%2C7%2C3%2C4%2C6%2C5%2C2%2C81%2C91%2C144%2C224%2C167%2C57%2C226%2C227%2C50%2C183%2C27%2C69%2C232%2C231%2C170%2C30%2C56%2C9%2C59%2C87%2C88%2C89%2C95%2C118%2C29%2C26%2C120%2C117%2C116%2C135%2C71%2C137%2C136%2C45%2C55%2C111%2C14%2C140%2C40%2C213%2C215%2C177%2C23%2C24%2C25%2C17%2C18%2C39%2C35%2C37%2C36%2C76%2C82%2C86%2C100%2C126%2C129%2C41%2C101%2C21%2C19%2C107%2C64%2C33%2C131%2C130%2C132%2C123%2C22%2C32%2C54%2C99%2C139%2C65%2C16%2C133%2C104%2C31%2C193%2C163%2C284%2C211%2C154%2C196%2C189%2C164%2C97%2C119%2C75%2C109%2C49%2C44%2C103%2C42%2C108%2C114%2C53%2C60%2C113%2C48%2C51%2C47%2C90%2C142%2C0%2C112%2C13%2C110%2C11%2C1%2C52%2C83%2C58%2C61%2C106%2C79%2C78%2C145%2C146%2C84%2C85%2C8%2C92%2C46%2C124%2C77%2C74%2C66%2C105%2C96%2C38%2C125%2C34%2C98%2C12%2C147",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327162,
+            "macros": [
+              "%2C156%",
+              "%2C20%",
+              "%2C68%",
+              "%2C63%",
+              "%2C128%",
+              "%2C62%",
+              "%2C141%",
+              "%2C15%",
+              "%2C28%",
+              "%2C115%",
+              "%2C73%",
+              "%2C138%",
+              "%2C143%",
+              "%2C3%",
+              "%2C6%",
+              "%2C2%",
+              "%2C91%",
+              "%2C224%",
+              "%2C57%",
+              "%2C227%",
+              "%2C183%",
+              "%2C69%",
+              "%2C231%",
+              "%2C30%",
+              "%2C9%",
+              "%2C87%",
+              "%2C89%",
+              "%2C118%",
+              "%2C26%",
+              "%2C117%",
+              "%2C135%",
+              "%2C137%",
+              "%2C45%",
+              "%2C111%",
+              "%2C140%",
+              "%2C213%",
+              "%2C177%",
+              "%2C24%",
+              "%2C17%",
+              "%2C39%",
+              "%2C37%",
+              "%2C76%",
+              "%2C86%",
+              "%2C126%",
+              "%2C41%",
+              "%2C21%",
+              "%2C107%",
+              "%2C33%",
+              "%2C130%",
+              "%2C123%",
+              "%2C32%",
+              "%2C99%",
+              "%2C65%",
+              "%2C133%",
+              "%2C31%",
+              "%2C163%",
+              "%2C211%",
+              "%2C196%",
+              "%2C164%",
+              "%2C119%",
+              "%2C109%",
+              "%2C44%",
+              "%2C42%",
+              "%2C114%",
+              "%2C60%",
+              "%2C48%",
+              "%2C47%",
+              "%2C142%",
+              "%2C112%",
+              "%2C110%",
+              "%2C1%",
+              "%2C83%",
+              "%2C61%",
+              "%2C79%",
+              "%2C145%",
+              "%2C84%",
+              "%2C8%",
+              "%2C46%",
+              "%2C77%",
+              "%2C66%",
+              "%2C96%",
+              "%2C125%",
+              "%2C98%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327185
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327185
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327186
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327193
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327194
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327201
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327201
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327204
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327204
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766110327206
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766110327207
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766110327207
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssOJY8G2Fcy3SOusmZihCehQ5HlLckMwmn0cuMhHtCi3Ww-7-gz57f-CITCm8kK3Kk5G2KLYd_2SazYVVPwuXCcxNS5a-zoL2RvmnyKRNqxKpYPFIBOoE9Z_XqmWE7hoUFRT8gy5UR9vC8WmLa0pW_rcmOPyTw7tBDcbF_e01EA0h_QQ2vKQp1i1FajAkorQvdoYwfWJVh9WYV83l_sVmSsT-Hp1slkbohVt2inw-GPx1zWDBhs14tBBPbiCciAFkUXz4jp3OL1nY-5pm-TL2E1ed0Upb6QV7IiJVjr_fCm32LRnkxSRcKlF1SEVbqiPDmTYFWtZxx2zsgO49PMWPeNjiln_pF7fizczLsD_ifnRHx1DkBIckH-gnNMHnTCk0YqDTp_C0d-iVtT9Lt8HMWBjSSjI9R2LOOrzs829tr8MA2sfE2o3GMTrpz7HcE7B1KPnRgJSA&sai=AMfl-YT5RPnWHFq3OsI-ypZv5uDYS0KjAXLui9mSWXZHYBX7AFbc5Mu4dLEg_11F19o9NDjSBr_Q1iXlWLR8EqUAqonES429jnfYLcORF8tFNMH7sp3K-tkCd0Eh36Z0yLjKXB-Kd9aTldYBflrkcq1BOoXS2PzlhHuQoo3FPowOGnXanvt8bp_Nr-zlTlFbBGN4UFhJRbLPEFdXo_QfFSDwhCGn3eFGGYRtlKH7aGnywXE9idHcI3dzaNBiZW5UCg&sig=Cg0ArKJSzOY4MvZtl4xbEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327242,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327242
+          },
+          {
+            "url": "https://client.aps.amazon-adsystem.com/publisher.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327242
+          },
+          {
+            "url": "https://s3.amazonaws.com/script-tags/hcmprebid.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327242
+          },
+          {
+            "url": "https://pub.doubleverify.com/signals/pub.json?ctx=31404933&cmp=DV1172985&url=www.diariolasamericas.com&adunits%5B%2F138871148%2Fdiariolasamericas.dw.1x1.jwplayer%5D%5B%5D=640x480",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327242,
+            "macros": [
+              "%5B%",
+              "%5D%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327250
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327250
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327250
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsurIGaDUbTWN2NfENsV_P8qvhmqhjCh4m9yMrncwpKaSFAx6DSIWoc2QDijZmFq8y3YFHGoKLc9f105jCCiyMUoo64Dm_1_107nIEh_MEVaZBXnzEwmCilLDHug_LK7cL6lWFkXA48mQhmNkilcWo8U59dJBV8PecvWnGkxsA7I-q8xEGKfYxmpzQuJlJVSeTpY2RMKH8CQ1CihSBaMLHdrm0BjKjwp8RPCp1D7_5GS4kGerGbkJSYO6ZMhQBcWG4HDSt96ZRICXCD4e7Qg6EoqDDrykXvBSZ8wxKCVvMcuTpZp-GD-5IRROvB9nuZplmO9Rq820PmAhBM2FczwSQM8IFJFlnpd2b7RQ6d7yiZ5gGaU1n6hAMJal4aX9H3M8THPacCS7GhyGiTCxEn0XmjrkI6fc4T-M58WAfqvU4aDJpUxy68Bi9EbwVdaf-iEOFuBvNkRMbl9&sai=AMfl-YTDlzCy8Yt9oDbehjUI3Fm9eyRYR-2awv9eZHqJtLvnScKLRa_0YA0MpUbIKetYwN28EifEG9_EA7P8rrAp1KIrDO1QyS2umVx3ozKmId0RmHcemxAyWaAN6DAHkpYtlauvaWr8GvyNQ_Z1rlDXhrDHEQ2drabXShN2BVxgBbCV_n9YGv5ESW6DZ8N9RogCTQ8JKpPD2tkjrIL2tLWtqRs23SmoUDqaVE0sdVEThT1YokcxHwA1UL23xFviIw&sig=Cg0ArKJSzB9p0vjsIoouEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327254,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202512040101&st=env&sjk=2233617548577049",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110327255
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjstC3HE_8lZ2RpNz8IB7211iUPEd8dO1xgJ060pxaBbDOr8qANIalSKLGGeZH_5RfDjsEzFl9f5dYHtjWiTEZYUUWsNy24SrC_aDG1ruLERI437DSRnegegLPdibCYieTq-LmCbvPpHlmJrmYmU4-AQxOsbLGtL-Ow7cR9xZHgvAUTuAZChzvJ-TXylq__UgRj85NX_I5wwAFxIHN59PWn9Wu0VNO2Z2EqU9tHwD2Z0m-XveKFWxw-2h1_8e8brqJXryLpyQCQV3F0L1BTuxwV1mH9ba4HFhrvp-gD_ntMUIOSWvvRqMoiD_eLaSL50mhC1XHDOlwCJxql-rnG2un8X8cDyFU-fulyJGxMsHcjYnEyTSkl2OXMcsdAyNI3NDU7kdiSi2WWNLgP0ZDJZFJ8-9cK3eUmGlVDmJFQ&sai=AMfl-YSW7PPB8Qnsa70I8VbGeiwx0kHL_WGKEib9QHKd01nNIu0tC_SxJFrsUXZmwU-O9M7aKW-Ri83iaCzVq9TXeEZsAFG6y0gb86s51p_2QP-XqC6rU4UqR5Kg5D1tS29XWWkFiD-3puD8XFKVN3xxu7lkjhqwJoITNJqxOPRC7t48hcDePDIZ-SZN7250TDtBWwVj2lQ6EsKI8ZqcGRRhd7epX3_uK0Q5XBkC4zXPhEqnSmyZNmURtfXhcrR-P9EqZNo2Jr7PhhD05CCOetUqQKllOoVCNvNZQL7ovX_MdbwYGgA&sig=Cg0ArKJSzCEDqL8Z3-T2EAE&uach_m=%5BUACH%5D&urlfix=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327255,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327256
+          },
+          {
+            "url": "https://onesignal.com/sdks/web/v16/OneSignalSDK.page.styles.css?v=160510",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766110327260
+          },
+          {
+            "url": "https://cdn.ampproject.org/rtv/012509301838000/amp4ads-v0.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327417
+          },
+          {
+            "url": "https://cdn.ampproject.org/rtv/012509301838000/v0/amp-ad-exit-0.1.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327417
+          },
+          {
+            "url": "https://cdn.ampproject.org/rtv/012509301838000/v0/amp-analytics-0.1.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327417
+          },
+          {
+            "url": "https://cdn.ampproject.org/rtv/012509301838000/v0/amp-fit-text-0.1.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327417
+          },
+          {
+            "url": "https://cdn.ampproject.org/rtv/012509301838000/v0/amp-form-0.1.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327417
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/simgad/6179218638989448566",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327418
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/images/adchoices/es.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327418
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/images/adchoices/adchoices_blue_wb.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327418
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/adview?ai=C6Xgid7REaf4mvrXj9Q-Ks-r5D9rL0ZaEAaLNwOilFQoQASD4uLuPAWDJxo6N5KSYFqAB6uuJuwPIAQPgAgCoAwHIAwiqBMcCT9Bx3tsHuXweXQZxiSmOHSh-my2MXTwmurbzK_5K-rRii2yTFk245x0ZDpg4YJMmemq9F-EQpMjNh4qzNIdQxdGzlVNJ34Y-42pl4HV4Jxmb5P-tcD37PazAMKrwk7DnqU4YFr9jWDpHHe73_s4mJvmGoDFiLuBKUl_kG90qGsrgLdO8J87_T8qpdYr1r3Qbo0PbOvfVfzS0Ug2nYd0HLHuqW0mhP1kzM6hOzWBhgamn4DuWuMTJaPkdlsz8bb8j--HpqAWsxFxZg2tOqjVm4UXwwLCFQ3omZ_-y7XesMoEIDAQijjLPHtiFw63jBUr6DTGOk-F-PeN0spImJIrQMmiW8GXkhm6Xguy-5dUnJDivIQeiZPMzRSRKCz-HUOa7a0wwqY0JC0UD-2Wowntp_xHA7ZxTLbU91oHRP26ZEBwdt1E9cqePwASfoKLMuwXgBAGIBdjsmMpUkgUECAQYAZIFBAgFGASgBgOAB_6T9kSoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gH2baxAqgH98KxAtgHAfIHBBDE3wbSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOli4j4vVyciRA5oJ6wJodHRwczovL3d3dy50aGVvZ3JhY2UuY29tL3Byb2R1Y3RzL3J1c3NpYW4tcmluZy1uZWNrbGFjZS1pbi0xOGstZ29sZC1wbGF0aW5nP3V0bV9zb3VyY2U9Z29vZ2xlJnV0bV9tZWRpdW09Y3BjJnV0bV9jYW1wYWlnbj1VU19BTExfR29vZ2xlX2NwY19EaXNwbGF5X1RDUEFfVEdSX0RUJnV0bV9jb250ZW50PUluTWFya2V0JTIwLSUyMERUX05ld19Mb2dvX01hbGUmdXRtX2lkPTIyNzA0MTc0NjgwJmM9JkRpc1BvcD1ZJnNtdD0mZ2Vuc2VnPTEmZHk9JkdETj0mc2xpY2VUYWc9MTg3Nzk2MzI4NDc5JmNxX3BsYWM9d3d3LmRpYXJpb2xhc2FtZXJpY2FzLmNvbSZjcV9uZXQ9ZCZnYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MjI3MDQxNzQ2ODCACgPICwGiDAOQAQHaDBAKChCg2KDC4fbB0R8SAgEDqg0CVVPiDRMIvbiL1cnIkQMVvtq4CB2KmTr_6g0TCO_1i9XJyJEDFb7auAgdipk6_4gO____________AdgTDNAVAZgWAcoWAgoA-BYBgBcBshcsChwIABIUcHViLTg2NTg1NDYwMjI2NzczNDcYwrkUGAEqCjI3NTk4MjkwODS6FwI4AaoYFwkAAAAAQPz6QBIKMjc1OTgyOTA4NBgBshgJEgK7TxgDIgEA0BgBwhkCCAE&sigh=p2Rr50KWNfI&uach_m=%5BUACH%5D&ase=2&nis=ATTRIBUTION_REPORTING_STATUS&cid=CAQSvgEAwksa0dwSXME8sYBZdCsuclaxPL85_DVjvkdYxhukugIWD6ddrVracLR9atDHTv0lvYNVVhHvFpuQWBjLFC1e6r7Kghbze5BnGROvfz2ynxbFUCzCaNNkXKruOIw1JAinkHh4yCshGlsgk5a8b98W19OtjP9ZdG6jMJIveIWSg2Uj-mOfKzQlL8zrZ7mib7rzBARjAkilSCmmHP5wZuKHU1LuhsMMzoBILoqdgRuu6_KrdbJ9Ewjubo2KyGYVGAE&ebtr=1",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327418,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsv3wUTO5sOfgLu0d8vI2DflRMcFC3T7enHIdMZioWKbOLOP4qyUCkQxF3FKwLWdCPhKV3UHYnRlATZTD0ckD9jDH5xnOSW3_4kEyXlV-SnTem8sGZS50UQ34sEbrJfPIzjvTZwYju-KEkVMb7WqJvDs7Xa-ZPrwYXH40N5bz-asVUabzEnMnNeMP5gfQ66tBg-eoRK9T3dRUGDUcWvgV66MgMHos-Pbtx3-VMeLEgzU2cLqvsytF_eKXuA88APyy7DyFpv-h1tTvteCibJ_-u_k0uLTXr4XEP4aS2bpYgUOT6lYjuNQpr3zBOKA9xaVL87IYMryE8xQaIx5nkPnBbmPj7Rbi_4yq_uRlbcoJVfjluEZlEbVDwAc6TJ0AT-Lz4vhNjgHzDkgtWgSWTmPR2XDtxHyptCDDZ_hlxHfCrhxpvWIgtjIj4H4wT9TLJ1E1gsfyW0IfmRB&sai=AMfl-YSaCq3-YxPLjD1-Uhc1lNB4aHJaRGNfYHUQsCDW3jus8ik-xGfclu1N6W2Lrsj1NCEOCAbMTSAQ_uTYjk7zG--RENbEOEQ1xxaC85OVa7mKYiRxhQQk92uOOYtdbEQXNbQEYN5-QDg36bhi1Vz29Xvrn8jSdwWmX1i5vH_WLIFy9Q6Ljk-PWrFmDTzBYmuo3eYZT5U6l4_h9Q61c2am7zE_E-6fVbzGuc1BNCk-DYCy5p0nxUjCTK94NdDvm-0Mbu_4kZp_rRIEaI3f_MDAw0qTyafHwo0AoWL-fB3jaZU8zWI&sig=Cg0ArKJSzLz6W29SJkDXEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327466,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327466
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327467
+          },
+          {
+            "url": "https://ads.pubmatic.com/AdServer/js/pwt/157163/4629/pwt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327467
+          },
+          {
+            "url": "https://s3.amazonaws.com/script-tags/owHCMR.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327467
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327467
+          },
+          {
+            "url": "https://events.newsroom.bi/data/rfv.php",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327477
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327490
+          },
+          {
+            "url": "https://ut.pubmatic.com/geo?pubid=157163",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327534
+          },
+          {
+            "url": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327535
+          },
+          {
+            "url": "https://client.aps.amazon-adsystem.com/publisher.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327535
+          },
+          {
+            "url": "https://pub.doubleverify.com/signals/pub.json?ctx=31404933&cmp=DV1172985&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&adunits%5B%2F138871148%2Fdiariolasamericas.dw.300x250%5D%5B%5D=300x250%2Cfluid",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327535,
+            "macros": [
+              "%3A%",
+              "%5B%",
+              "%5D%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327535
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327535
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327535
+          },
+          {
+            "url": "https://ut.pubmatic.com/geo?pubid=157163",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327551
+          },
+          {
+            "url": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327551
+          },
+          {
+            "url": "https://client.aps.amazon-adsystem.com/publisher.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327552
+          },
+          {
+            "url": "https://pub.doubleverify.com/signals/pub.json?ctx=31404933&cmp=DV1172985&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&adunits%5B%2F138871148%2Fdiariolasamericas.dw.300x600%5D%5B%5D=300x600%2Cfluid",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327552,
+            "macros": [
+              "%3A%",
+              "%5B%",
+              "%5D%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327552
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327552
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327552
+          },
+          {
+            "url": "https://ut.pubmatic.com/geo?pubid=157163",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327570
+          },
+          {
+            "url": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327570
+          },
+          {
+            "url": "https://client.aps.amazon-adsystem.com/publisher.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327570
+          },
+          {
+            "url": "https://pub.doubleverify.com/signals/pub.json?ctx=31404933&cmp=DV1172985&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&adunits%5B%2F138871148%2Fdiariolasamericas.dw.300x250%5D%5B%5D=300x250%2Cfluid",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327570,
+            "macros": [
+              "%3A%",
+              "%5B%",
+              "%5D%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327570
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327570
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327570
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327583
+          },
+          {
+            "url": "https://pixel.adsafeprotected.com/services/pub?anId=931348&slot=%7Bid:/138871148/diariolasamericas.dw.300x250,ss:%5B300.250%5D,p:/138871148,62691402/diariolasamericas.dw.300x250%7D&wr=300.250&sr=1280.720&url=https%253A%252F%252Fwww.diariolasamericas.com%252F",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327589,
+            "macros": [
+              "%253A%"
+            ]
+          },
+          {
+            "url": "https://cm.g.doubleclick.net/pixel?google_nid=openx&google_cm&google_sc",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327594
+          },
+          {
+            "url": "https://cm.g.doubleclick.net/pixel?google_nid=openx&google_hm=ZWEyNDFkMWItOTVmNS0yZjUzLWNkNWUtZDc0YTUyYmY3ZDg1",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327594
+          },
+          {
+            "url": "https://match.adsrvr.org/track/cmf/openx?oxid=c64bced1-5c82-71f7-d8be-8df3985db3e5&gdpr=0",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327594
+          },
+          {
+            "url": "https://ups.analytics.yahoo.com/ups/58934/cms",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327594
+          },
+          {
+            "url": "https://ad.turn.com/r/cs?pid=9&gdpr=0",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327594
+          },
+          {
+            "url": "https://pixel.adsafeprotected.com/services/pub?anId=931348&slot=%7Bid:/138871148/diariolasamericas.dw.300x600,ss:%5B300.600%5D,p:/138871148,62691402/diariolasamericas.dw.300x600%7D&wr=300.600&sr=1280.720&url=https%253A%252F%252Fwww.diariolasamericas.com%252F",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327594,
+            "macros": [
+              "%253A%"
+            ]
+          },
+          {
+            "url": "https://pixel.adsafeprotected.com/services/pub?anId=931348&slot=%7Bid:/138871148/diariolasamericas.dw.300x250,ss:%5B300.250%5D,p:/138871148,62691402/diariolasamericas.dw.300x250%7D&wr=300.250&sr=1280.720&url=https%253A%252F%252Fwww.diariolasamericas.com%252F",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327598,
+            "macros": [
+              "%253A%"
+            ]
+          },
+          {
+            "url": "https://hbopenbid.pubmatic.com/translator?source=ow-client",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327632
+          },
+          {
+            "url": "https://prebid.media.net/rtb/prebid?cid=8CU2410EL",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327632
+          },
+          {
+            "url": "https://prebid.a-mo.net/a/c",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327632
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327633
+          },
+          {
+            "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13894&site_id=147614&zone_id=697552&size_id=15&rp_schain=1.0,1!hcodemedia.com,54,1,,,&eid_pubcid.org=cdb54ee6-fd71-429d-ad61-6093e251f6b6%5E1&rf=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.domain=diariolasamericas.com&tg_i.page=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.adunit=diariolasamericas.dw.300x250&tg_i.pbadslot=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x250&tk_flint=pbjs_lite_v8.30.0&l_pb_bid_id=105126ce6cf2262&p_screen_res=1280x720&rp_secure=1&rp_maxbids=1&p_gpid=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x250&m_ch_ua=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_full_ver=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.7365490894950228",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327633,
+            "macros": [
+              "%3A%",
+              "%2F138871148%",
+              "%22HeadlessChrome%",
+              "%7Cv%",
+              "%22143%",
+              "%2C%",
+              "%22%",
+              "%3D%",
+              "%22Not%"
+            ]
+          },
+          {
+            "url": "https://ap.lijit.com/rtb/bid?src=prebid_prebid_8.30.0",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327633
+          },
+          {
+            "url": "https://hb.undertone.com/hb?pid=3648&domain=diariolasamericas.com",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327633
+          },
+          {
+            "url": "https://htlb.casalemedia.com/openrtb/pbjs?s=358663",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327633
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327633
+          },
+          {
+            "url": "https://ap.lijit.com/rtb/bid?src=prebid_prebid_8.30.0",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327634
+          },
+          {
+            "url": "https://prebid.a-mo.net/a/c",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327634
+          },
+          {
+            "url": "https://prebid.media.net/rtb/prebid?cid=8CU2410EL",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327634
+          },
+          {
+            "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13894&site_id=147614&zone_id=726582&size_id=10&rp_schain=1.0,1!hcodemedia.com,54,1,,,&eid_pubcid.org=cdb54ee6-fd71-429d-ad61-6093e251f6b6%5E1&rf=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.domain=diariolasamericas.com&tg_i.page=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.adunit=diariolasamericas.dw.300x600&tg_i.pbadslot=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x600&tk_flint=pbjs_lite_v8.30.0&l_pb_bid_id=8b92a51d739326&p_screen_res=1280x720&rp_secure=1&rp_maxbids=1&p_gpid=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x600&m_ch_ua=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_full_ver=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.960958779754514",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327634,
+            "macros": [
+              "%3A%",
+              "%2F138871148%",
+              "%22HeadlessChrome%",
+              "%7Cv%",
+              "%22143%",
+              "%2C%",
+              "%22%",
+              "%3D%",
+              "%22Not%"
+            ]
+          },
+          {
+            "url": "https://hbopenbid.pubmatic.com/translator?source=ow-client",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327634
+          },
+          {
+            "url": "https://hb.undertone.com/hb?pid=3648&domain=diariolasamericas.com",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327634
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327634
+          },
+          {
+            "url": "https://prebid.a-mo.net/a/c",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://ap.lijit.com/rtb/bid?src=prebid_prebid_8.30.0",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://prebid.media.net/rtb/prebid?cid=8CU2410EL",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://htlb.casalemedia.com/openrtb/pbjs?s=358663",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://hb.undertone.com/hb?pid=3648&domain=diariolasamericas.com",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://hbopenbid.pubmatic.com/translator?source=ow-client",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13894&site_id=147614&zone_id=697552&size_id=15&rp_schain=1.0,1!hcodemedia.com,54,1,,,&eid_pubcid.org=cdb54ee6-fd71-429d-ad61-6093e251f6b6%5E1&rf=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.domain=diariolasamericas.com&tg_i.page=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.adunit=diariolasamericas.dw.300x250&tg_i.pbadslot=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x250&tk_flint=pbjs_lite_v8.30.0&l_pb_bid_id=1627c332006ff67&p_screen_res=1280x720&rp_secure=1&rp_maxbids=1&p_gpid=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x250&m_ch_ua=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_full_ver=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.3138531241323044",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648,
+            "macros": [
+              "%3A%",
+              "%2F138871148%",
+              "%22HeadlessChrome%",
+              "%7Cv%",
+              "%22143%",
+              "%2C%",
+              "%22%",
+              "%3D%",
+              "%22Not%"
+            ]
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110327648
+          },
+          {
+            "url": "https://tracking.mygaru.com/ident/?domain=www.diariolasamericas.com&otp=1qH506e90xq4kfVuSGWXxBiyPL4OfQAwKaYAG2YTXdtjB7g4fFh1L%2FD07rvrd8xWSRSlJBlYhM9OYHhHHqklCMQ2DZrK0GgVRQ%3D%3D&ttems=615&i=myg-standalone&resource=id&type=fetch&conn_id=null&conn_req_num=null&dns=1.2&tcp=178.10000000000002&tls=202.5&ttfb=213.4&transfer=1.3&redirect=0&blocked=0&total=597.7&fromCache=false",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327652,
+            "macros": [
+              "%2FD07rvrd8xWSRSlJBlYhM9OYHhHHqklCMQ2DZrK0GgVRQ%"
+            ]
+          },
+          {
+            "url": "https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.2f3WBw8L4SI.L.W.O/am=AAQD/d=0/rs=AN8SPfrXXtxuFpMMBoYgp93jo68L3iC3ZQ/m=el_main_css",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766110327673
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327674
+          },
+          {
+            "url": "https://www.google.com/images/cleardot.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327674
+          },
+          {
+            "url": "https://www.gstatic.com/images/branding/product/2x/translate_24dp.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327678
+          },
+          {
+            "url": "https://translate-pa.googleapis.com/v1/supportedLanguages?client=te&display_language=en-US&key=AIzaSyBWDj0QJvVIx8XOhRegXX5_SrRWxhT5Hs4&callback=callback",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327683
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766110327691
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110327694
+          },
+          {
+            "url": "https://www.google.com/pagead/drt/ui",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327721
+          },
+          {
+            "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110327742
+          },
+          {
+            "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110327748
+          },
+          {
+            "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110327752
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjst1mIX3QCgmHzMoDypn4UspEiaqR21m9wRtj7clvT655JG4ew1guAFRsawkCvvq92KF8WrMN0sJncxjhdzUZqRrjX24eIZMRnQH6_Jwy2PzJjALJlAeSn85KaA6TIdMY1UQKr9iQrYHeQ-2kPFuVhxNWoARaUw5ylTyP9YZ2ZACeJBtV_nUL_--tckq3RgxY3F1XEq_oMZ4ShJC_0qvIm9aF_N1Yy8aHIWMdECB42xaThxJ6A5oTPasJ6dD29d_ANPxKriUgDU5Mb72zMNNDlBr-ZLE-807iXfsQOT5bTbnH2KrffBDesxoFg70uLijgcgD66hyrtsCm1lernodjqy33_QBFuiZTtvofAdjkVK5bY9ZcYVPK_iVIJuEHC4E4VPHaY2K-QEC5tR50-r56rVmcjVi4pwkJNMhsb0baZkTeb1Icqu7CPTQ68_gYCfIrsizjUztDuc01zdC&sai=AMfl-YQ0HN4T2OR2WKZvgEX8yagYYsR73kCavSNfhBC7cXCbJvIsTtZQ0cnG9MNVMgQk6LKqIUYsETrS9ErX4i0IWMRyKflJ6UbI8xzhzzZP8RXXf93FjEzmW6QQLNLQw-xw2O0JQ1-2zTxfdj84BdwSD3C12CS9Yz1GBE6lEOLFK6fTp_RGsaEybkGS72BcGZ_h2G78F1ZOTsJZWfGtUtX0Bd04GsQzk_ffUbVqlwcfy2n3Fmh0zQ1GTkzMyJWt3cUEiI4FdIOIRlGqYqY_VTolMls3D9lQxPrUNmXYOsm7dYTL-lc&sig=Cg0ArKJSzGJTlp6yS7BWEAE&uach_m=%5BUACH%5D&urlfix=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327759,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjss2PEF3aueC6IOSbzpGqITC7MQUvF3Hv4J9Q_DG4jUsYle3BsT78mO3HGPD7xNvj-RKWnlLlrCqd_ILGcCUvtNQcCfCX8nTGBwjHmOKblxiYtPNMGWNRVhcZFGqj0xvEEAbDaZs4dUn--TtlnGJjIMj5NntrgXIGc5TZ-99SqYGmTTFRVfi0MW5m1tsFw7Xm7bzUiT3ZcFhCF-8GsydIqMr_FWTz27AuS-2tWXh_JexjqDd7uDhDPnNtAxcrUJk_dwuupIU56R_eU3TNJH0k63LmVTllO8S1ZtbW3s0yOSgS4L89LukLBRgq2sXytpx2fSRVpowg2tga_i8ITson5a0FjbrnwSVhz07WPwWn7jZeLJPnixnrq-vBklvfWndV9jBaVjqAbTCI4RwtipfMbXJvBE5d0TKVYtim-6cT5qDvXRuuSt1BDU-8cL9QjTKAcPyA8vF9VptMdAS&sai=AMfl-YQlf1OncbwBLF8vixwk6FVWpi2Sxy63JANRi1t0AVRkDd6mUqJ0FZuWdPcganLqEuFLcZbCqZQKwwIPqTfji7cE9Ms3dtJ39kNwrZjPVToNNJatYE0QrlRlVMwLzIo1FQMa1QKngGdLUbkaXve2yvYZOr8mdyZd2-qzbx6Er6UWIYWpVOohs-Gjk1mRYBWT0k3P0WVSpbhT4oV3TgLuMM0CtO4iMH9xv-bkV62fJlHCa7zWCaqIFs-4L8u5HRQbr8VKePAOU-hChWRlkPWw0nsNjIoqmeVrDU4NH9-4OIYbzvs&sig=Cg0ArKJSzEkBV2D0Z0p7EAE&uach_m=%5BUACH%5D&urlfix=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327760,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsvwD_19k85aGGZCutsKT-X5VawdWPaV-zrpIP91TZys2YfsMchH0jO48uHHLy2v07JaY8R2e-LeirmsWTf5zO2z-ICi6p8hkhOl4Yf_-G5UUZPi4Xb2hINCL1I-KeLj-jqq7nKYAzQDege7HrQ8PaMDAe58sVp9_JJitCNTcWGFMXsqiolBgHNc5TgvBJUbronZkcv_8Ri8t1fiVaajZ6anR5pkwI7mmz7GPZaXoGxgjya5StLQVU5JHkpugd918WiEyYfx_M-JTrMxnCGRJcbnf51vOs8BsLG4p3RU-t6dKd7UJuGDG2HFkeZ6v0LRi-mesTzmuWkdXM-vF1IFRy27m7KG4B52n9-G4giTIK2VyXGCiUiFAXL_89oHuuyNaVrjaYQIAWQBqyjUzzbmVH3OWbLHPDvjw9FFGRpL3M2i9i5H9Cn826hjNY--xTu-8kIRN1uQnCoLynI&sai=AMfl-YThgPexxweDzS619Ik6HfOoI3aMUHRzbZdBbO3aMMc-jK5Zkd1uLvr1wu5rnK9FwBOyhkKRWj9Bgv6YGxcHHmSjvmTn_vQUqt_rkxwXspHlY7DNKAj3OKMvKK0xgJYMWIG9_FmEqdBTXf0yF1SdnPzd4tYm_uT3V9XXPODu8i9lJoFt9CWHYyqKgRRceAeR-bPxou_Tv0fIMLgsk9Em0q0ffWUsQC3lRWUS_2bqTgjTWN40osDkD85cagvhFUEfEuNjORP74TeeXuiU6qq0ArLgGRbuzzYtdvu67T4AG3z4c1M&sig=Cg0ArKJSzGCDFJpRb2xIEAE&uach_m=%5BUACH%5D&urlfix=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110327764,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110327785
+          },
+          {
+            "url": "https://us-u.openx.net/w/1.0/sd?id=537073025&val=y-M04rIlZE2p.yp0vJSQlwMbDPlg5oG01RuWY-~A",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110327866
+          },
+          {
+            "url": "https://rp.liadm.com/j?dtstmp=1766110328019&se=e30&duid=fb60279c6714--01kct61wpp5cqggcs92wa1fcww&pu=https%3A%2F%2Fwww.diariolasamericas.com%2F&wpn=prebid&cd=.diariolasamericas.com",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328020,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://translate.googleapis.com/translate_static/img/te_ctrl3.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110328036
+          },
+          {
+            "url": "https://rp.liadm.com/j?dtstmp=1766110328045&se=e30&duid=fb60279c6714--01kct61wpp5cqggcs92wa1fcww&pu=https%3A%2F%2Fwww.diariolasamericas.com%2F&wpn=prebid&cd=.diariolasamericas.com",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328046,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://rp.liadm.com/j?dtstmp=1766110328060&se=e30&duid=fb60279c6714--01kct61wpp5cqggcs92wa1fcww&pu=https%3A%2F%2Fwww.diariolasamericas.com%2F&wpn=prebid&cd=.diariolasamericas.com",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328060,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://us-u.openx.net/w/1.0/sd?id=537072991&val=CAESEIRMqmtm7dWm2S7IM3CGoU0&google_cver=1",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110328115
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjstrA7iq9pyk9_M0NwqzfHDsgTgbdXtPJgal8jIDguTyMGz13NEVbgf4H17_BDjRwNhoRxcB09zTjyT_6RjuTvxrmylokV7FOXh1lgZvdJ8crC6b35N64IG07OVN9DmLrfnX_b_VYc_mb9pH3KW-JNpgrLkxZcniMmu7JPhM8ldVjadg6QboQonLFqYH3Jix6A64D_4BMpXfx-h26kT2LfiiUWl6sf7vbSJO5wJNwig-vKoREc_ivpW9-VHm03IznH4M1Gexgc88l8Qh4b7GwQiTsTMariGkj-_72d8M6_0SaOGSYfVjA95Ni1TjmWHwaWOpkIBE7pefQol02wgTHBgWbeoA1ReFoWHk0lzuG9Zfq2bkTuv3AUyFSiYqL83xuqjCtY_vP-0RVjKw8KVmBNw-W-ui0qk1vP8oD7p4umrC8oMh8SWKC34nK_Vazqu3EjfAW3Ek5GdCyqWmEAuse568_LqZFUa__T80mp6j&sai=AMfl-YQ_W3iyglZGyK6-DvsnDHcJchxo0chq6WxgnuoU3tkzja4P-X19bEFB_ZfCAIE50XgJxPdN4aPY3ZnI6ApIcIExeBVM-aiSAyFjw83mHFQK5yojnXFo81dyp-gdTXBGeUKTHYCB4oNzxbnpNxt3GApiB061Ug6mY-21U423KBm8EpJoQBj4A3oBqTyR7uiKzazq5VHFV1UMdCAFX-CGY9vTzCo8Qncrngk-MjqQmviOhOfqvmgo4aCWRu3jL9mvc289vvG5UidisiXkzY8p8vZlUwc2rLYz9Pz_HHuUc_nt2sqW&sig=Cg0ArKJSzCAPbe2sFrm0EAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328155,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://ads.pubmatic.com/AdServer/js/pwt/157163/4629/pwt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://s3.amazonaws.com/script-tags/owHCMR.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://client.aps.amazon-adsystem.com/publisher.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://pub.doubleverify.com/signals/pub.json?ctx=31404933&cmp=DV1172985&url=https%3A%2F%2Fwww.diariolasamericas.com%2F&adunits%5B%2F138871148%2Fdiariolasamericas.dw.728x90%5D%5B%5D=728x90%2Cfluid",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328159,
+            "macros": [
+              "%3A%",
+              "%5B%",
+              "%5D%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328159
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://pixel.adsafeprotected.com/services/pub?anId=931348&slot=%7Bid:/138871148/diariolasamericas.dw.728x90,ss:%5B728.90%5D,p:/138871148,62691402/diariolasamericas.dw.728x90%7D&wr=728.90&sr=1280.720&url=https%253A%252F%252Fwww.diariolasamericas.com%252F",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190,
+            "macros": [
+              "%253A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsuGoAsXBDePL2R-IBNoEvIfCDPYDOdyp_9vAA9MG68bfPiykKIQY0QktlbSaR1jVjmToPg18VyuRMNc4IJ6q9oYBjX5BkQHOSrG54voYjWkkEHs6JLOaxN-iinPQhTJQix5UeXqrJaFSjB6J09fLsiFg1JJCpzm976VSWiGzbY7CgwS7c7Q3mBKGlBwRYqv9D-0ME4Ai6mtdKVczCO-4_baKXVwvh8k-2SBgK5g65VnagyhacLiasWPuEWwyzXMeADBzVmyUzfGOS4DQaKJ9Onbpj3wpODbSPBBDOiJuw9wkOeIeIFUTHQfuRf8Gt8R8W-cG_0bqYOLlvIdin4jPJ2kJCG5g4O5kdnJOr8QVrlXz9fW0E3l99ypypnAwA6G2BjzKlOrstxRluF22mKNRhHNmCQS2DxoEXf4rP9D5eDYJsHa_C_e1QG6OF1hSd6LBIW6Jk3NX69ohJNCpzR4nEVz&sai=AMfl-YSu7wdk4eK7XofqwSK0dZZY_Hs0uSUiJJ9mu2abwv-ROqlO9nf-5PFqX76Oqqh5Hc_75W9fxoTjdW9pjQXJ7BuXhAyU6rAmaf1_gMUYZlt4uDkt6_wsWKuRHB4MwNL2okdxqUa97cLuna-p0XRqq_S7X7OqmgHH-BzT-XRt-Mo1NwLHla3LcwKOFGQUzPrR4NcwUeUztE6hI1N9tJhiHZODrSA94lnsDHq5lIuuxJMcURx1Tn0PHT6cyxS1Gcj_hZChiJ3eUFMsb9XWO7nOuUgaE4OYcc7LHEDVUwWPKKM7fuhm&sig=Cg0ArKJSzAlUNLf2_PduEAE&uach_m=%5BUACH%5D&urlfix=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://htlb.casalemedia.com/openrtb/pbjs?s=358664",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://prebid.media.net/rtb/prebid?cid=8CU2410EL",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13894&site_id=147614&zone_id=726578&size_id=2&rp_schain=1.0,1!hcodemedia.com,54,1,,,&eid_pubcid.org=cdb54ee6-fd71-429d-ad61-6093e251f6b6%5E1&rf=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.domain=diariolasamericas.com&tg_i.page=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.adunit=diariolasamericas.dw.728x90&tg_i.pbadslot=%2F138871148%2C62691402%2Fdiariolasamericas.dw.728x90&tk_flint=pbjs_lite_v8.30.0&l_pb_bid_id=10d3d0da0bade008&p_screen_res=1280x720&rp_secure=1&rp_maxbids=1&p_gpid=%2F138871148%2C62691402%2Fdiariolasamericas.dw.728x90&m_ch_ua=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_full_ver=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.36870248891876334",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190,
+            "macros": [
+              "%3A%",
+              "%2F138871148%",
+              "%22HeadlessChrome%",
+              "%7Cv%",
+              "%22143%",
+              "%2C%",
+              "%22%",
+              "%3D%",
+              "%22Not%"
+            ]
+          },
+          {
+            "url": "https://hbopenbid.pubmatic.com/translator?source=ow-client",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://hb.undertone.com/hb?pid=3648&domain=diariolasamericas.com",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://prebid.a-mo.net/a/c",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://ap.lijit.com/rtb/bid?src=prebid_prebid_8.30.0",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766110328190
+          },
+          {
+            "url": "https://match.adsrvr.org/track/cmb/openx?oxid=c64bced1-5c82-71f7-d8be-8df3985db3e5&gdpr=0",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110328300
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjsvtm5tD3WmN2ceRzakXNzh0PDG_3KR5NAoBxwYp8tMMJcKXQxuLgGBfkjTbq64r2KoS3FsHWXScti2up0Uw6RNT2iQtCI4cDNHShdooWW6x0Ym4CT2joAFFHqA6lm_8LxhQk1xMj4EuZtpGy64Z8igcsv-ce43ubZefFjb5ZJoKuV4DuczT06t-nZo&sig=Cg0ArKJSzGFa1cmuf1WGEAE&id=lidar2&mcvt=1009&p=15,0,16,1&tm=1082.5999999940395&tu=74.09999999403954&mtos=1009,1009,1009,1009,1009&tos=1009,0,0,0,0&v=20251210&bin=7&avms=nio&bs=1280,720&mc=1&vu=1&app=0&itpl=19&adk=2277988595&rs=4&la=0&cr=0&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&vs=4&r=v&co=6204312700&rst=1766110326623&rpt=631&isd=0&lsd=0&met=ce&wmsd=0&pbe=0&fle=0&vae=0&spb=0&sfl=0&ffslot=0&reach=8&io2=0",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766110328301
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/drt/si?st=NO_DATA",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110328457
+          },
+          {
+            "url": "https://us-u.openx.net/w/1.0/sd?id=537073061&val=8398072187340375288&gdpr=0&gdpr_consent=&us_privacy=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766110328469
+          }
+        ],
+        "measurementIds": {
+          "ga4": [
+            "G-XQ7XWPTD48",
+            "G-7WL2K8HYSD",
+            "G-L2K1PHL8ZI",
+            "G-STANDALONE",
+            "G-EORK9T3DRU"
+          ],
+          "ua": [],
+          "gtm": [],
+          "aw": [],
+          "fb": [
+            "365455823800903"
+          ]
+        },
+        "widgetMap": {
+          "id:gpt-impl-0.8670843899193758": {
+            "widget": "gpt-impl-0.8670843899193758",
+            "attribute": "id",
+            "selector": "#gpt-impl-0.8670843899193758",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+                "hash": "o80o3r",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "gpt-impl-0.8670843899193758",
+                  "selector": "#gpt-impl-0.8670843899193758"
+                },
+                "selector": "#gpt-impl-0.8670843899193758"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:residualBanner": {
+            "widget": "residualBanner",
+            "attribute": "id",
+            "selector": "#residualBanner",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "7h03fl",
+                "content": " var googletag = googletag || {};\n googletag.cmd = googletag.cmd || [];\n (function() {\n   var gads = document.createElement('script');\n   gads.async = true;\n   var useSSL = 'https:' == document.location.protocol;\n   gads.src = (useSSL ? 'https:' : 'http:') +\n       '//www.googletagservices.com/tag/js/gpt.js';\n   var node = document.getElementsByTagName('script')[0];\n   node.parentNode.insertBefore(gads, node);\n })();\n\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "residualBanner",
+                  "selector": "#residualBanner"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "k9whn3",
+                "content": " var gptAdSlots = [];\n googletag.cmd.push(function() {\n\n   var mapping = googletag.sizeMapping().\n   addSize([750, 200], [160, 600]). \n   addSize([1050, 200], [160, 600]).build();\n\n   gptAdSlots[0] = googletag.defineSlot('/62691402/Portada_160x600_left', [160, 600], 'ad-slot-izq').\n       defineSizeMapping(mapping).\n       addService(googletag.pubads());\n   googletag.pubads().setTargeting(\"test\",\"responsive\");\n\n   googletag.enableServices();\n });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "residualBanner",
+                  "selector": "#residualBanner"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:ad-slot": {
+            "widget": "ad-slot",
+            "attribute": "id",
+            "selector": "#ad-slot",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "ttd40d",
+                "content": "\ngoogletag.cmd.push(function() {\ngoogletag.display('ad-slot');\n});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "ad-slot",
+                  "selector": "#ad-slot"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "class:standard-widget": {
+            "widget": "standard-widget",
+            "attribute": "class",
+            "selector": ".standard-widget",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "https://www.googletagservices.com/tag/js/gpt.js",
+                "hash": "9xlgka",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.googletagservices.com/tag/js/gpt.js",
+                "hash": "9xlgka",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.googletagservices.com/tag/js/gpt.js",
+                "hash": "9xlgka",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.googletagservices.com/tag/js/gpt.js",
+                "hash": "9xlgka",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "xlfy1z",
+                "content": "\n  var googletag = googletag || {};\n  googletag.cmd = googletag.cmd || [];\n  (function() {\n    var gads = document.createElement('script');\n    gads.async = true;\n    gads.type = 'text/javascript';\n    var useSSL = 'https:' == document.location.protocol;\n    gads.src = (useSSL ? 'https:' : 'http:') +\n      '//www.googletagservices.com/tag/js/gpt.js';\n    var node = document.getElementsByTagName('script')[0];\n    node.parentNode.insertBefore(gads, node);\n  })();\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "gt7t2k",
+                "content": " googletag.cmd.push(function() {\n    googletag.defineSlot('/62691402/Portada_300x250_Middle1', [300, 250], 'div-gpt-ad-1447708477280-0').addService(googletag.pubads());\n    googletag.pubads().enableSingleRequest();\n    googletag.enableServices();\n  });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.googletagservices.com/tag/js/gpt.js",
+                "hash": "9xlgka",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.googletagservices.com/tag/js/gpt.js",
+                "hash": "9xlgka",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "standard-widget",
+                  "selector": ".standard-widget"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-gpt-ad-1447708477280-0": {
+            "widget": "div-gpt-ad-1447708477280-0",
+            "attribute": "id",
+            "selector": "#div-gpt-ad-1447708477280-0",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "9s4z65",
+                "content": "\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-1447708477280-0'); });\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-gpt-ad-1447708477280-0",
+                  "selector": "#div-gpt-ad-1447708477280-0"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          }
+        }
+      }
+    ],
+    "duplicates": {
+      "duplicateIds": {},
+      "duplicateScripts": {},
+      "duplicateLibraries": {}
+    },
+    "unauthorized": [
+      {
+        "type": "script",
+        "url": "https://connect.facebook.net/signals/config/365455823800903?v=2.9.248&r=stable&domain=www.diariolasamericas.com&hme=17590b9a2e1b26755cdc9ecb401f9f46bca979d3ccce95d786db0936167af731&ex_m=94%2C156%2C134%2C20%2C67%2C68%2C127%2C63%2C43%2C128%2C72%2C62%2C10%2C141%2C80%2C15%2C93%2C28%2C122%2C115%2C70%2C73%2C121%2C138%2C102%2C143%2C7%2C3%2C4%2C6%2C5%2C2%2C81%2C91%2C144%2C224%2C167%2C57%2C226%2C227%2C50%2C183%2C27%2C69%2C232%2C231%2C170%2C30%2C56%2C9%2C59%2C87%2C88%2C89%2C95%2C118%2C29%2C26%2C120%2C117%2C116%2C135%2C71%2C137%2C136%2C45%2C55%2C111%2C14%2C140%2C40%2C213%2C215%2C177%2C23%2C24%2C25%2C17%2C18%2C39%2C35%2C37%2C36%2C76%2C82%2C86%2C100%2C126%2C129%2C41%2C101%2C21%2C19%2C107%2C64%2C33%2C131%2C130%2C132%2C123%2C22%2C32%2C54%2C99%2C139%2C65%2C16%2C133%2C104%2C31%2C193%2C163%2C284%2C211%2C154%2C196%2C189%2C164%2C97%2C119%2C75%2C109%2C49%2C44%2C103%2C42%2C108%2C114%2C53%2C60%2C113%2C48%2C51%2C47%2C90%2C142%2C0%2C112%2C13%2C110%2C11%2C1%2C52%2C83%2C58%2C61%2C106%2C79%2C78%2C145%2C146%2C84%2C85%2C8%2C92%2C46%2C124%2C77%2C74%2C66%2C105%2C96%2C38%2C125%2C34%2C98%2C12%2C147",
+        "domain": "connect.facebook.net",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://ads.pubmatic.com/AdServer/js/google-esp.js",
+        "domain": "ads.pubmatic.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-XQ7XWPTD48",
+        "domain": "googletagmanager.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+        "domain": "config.aps.amazon-adsystem.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://client.aps.amazon-adsystem.com/publisher.js",
+        "domain": "client.aps.amazon-adsystem.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-XQ7XWPTD48",
+        "domain": "googletagmanager.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "domain": "connect.facebook.net",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://ads.pubmatic.com/AdServer/js/google-esp.js",
+        "domain": "ads.pubmatic.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://1c4b802d852b9b23fa35cb15f2b21cdd.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+        "domain": "1c4b802d852b9b23fa35cb15f2b21cdd.safeframe.googlesyndication.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-XQ7XWPTD48&cid=1091941623.1766110326&gtm=45je5ca1v871065344za200zd871065344&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940",
+        "domain": "stats.g.doubleclick.net",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=www.diariolasamericas.com",
+        "domain": "gum.criteo.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://3fe8220206196e1083a8a384d518ebc9.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html?n=1",
+        "domain": "3fe8220206196e1083a8a384d518ebc9.safeframe.googlesyndication.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://config.aps.amazon-adsystem.com/configs/ea05d466-f785-4b9a-a030-6fdc6a39498f",
+        "domain": "config.aps.amazon-adsystem.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://client.aps.amazon-adsystem.com/publisher.js",
+        "domain": "client.aps.amazon-adsystem.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://pub.doubleverify.com/signals/pub.json?ctx=31404933&cmp=DV1172985&url=www.diariolasamericas.com&adunits%5B%2F138871148%2Fdiariolasamericas.dw.1x1.jwplayer%5D%5B%5D=640x480",
+        "domain": "pub.doubleverify.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://tpc.googlesyndication.com/simgad/6179218638989448566",
+        "domain": "tpc.googlesyndication.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://ut.pubmatic.com/geo?pubid=157163",
+        "domain": "ut.pubmatic.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://pixel.adsafeprotected.com/services/pub?anId=931348&slot=%7Bid:/138871148/diariolasamericas.dw.300x250,ss:%5B300.250%5D,p:/138871148,62691402/diariolasamericas.dw.300x250%7D&wr=300.250&sr=1280.720&url=https%253A%252F%252Fwww.diariolasamericas.com%252F",
+        "domain": "pixel.adsafeprotected.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=openx&google_cm&google_sc",
+        "domain": "cm.g.doubleclick.net",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://hbopenbid.pubmatic.com/translator?source=ow-client",
+        "domain": "hbopenbid.pubmatic.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13894&site_id=147614&zone_id=697552&size_id=15&rp_schain=1.0,1!hcodemedia.com,54,1,,,&eid_pubcid.org=cdb54ee6-fd71-429d-ad61-6093e251f6b6%5E1&rf=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.domain=diariolasamericas.com&tg_i.page=https%3A%2F%2Fwww.diariolasamericas.com%2F&tg_i.adunit=diariolasamericas.dw.300x250&tg_i.pbadslot=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x250&tk_flint=pbjs_lite_v8.30.0&l_pb_bid_id=105126ce6cf2262&p_screen_res=1280x720&rp_secure=1&rp_maxbids=1&p_gpid=%2F138871148%2C62691402%2Fdiariolasamericas.dw.300x250&m_ch_ua=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_full_ver=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.7365490894950228",
+        "domain": "fastlane.rubiconproject.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js",
+        "domain": "c.amazon-adsystem.com",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://googleads.g.doubleclick.net/pagead/drt/si?st=NO_DATA",
+        "domain": "googleads.g.doubleclick.net",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Not in allowed partners list"
+      }
+    ],
+    "injectedScripts": [
+      {
+        "type": "external",
+        "src": "https://connect.facebook.net/signals/config/365455823800903?v=2.9.248&r=stable&domain=www.diariolasamericas.com&hme=17590b9a2e1b26755cdc9ecb401f9f46bca979d3ccce95d786db0936167af731&ex_m=94%2C156%2C134%2C20%2C67%2C68%2C127%2C63%2C43%2C128%2C72%2C62%2C10%2C141%2C80%2C15%2C93%2C28%2C122%2C115%2C70%2C73%2C121%2C138%2C102%2C143%2C7%2C3%2C4%2C6%2C5%2C2%2C81%2C91%2C144%2C224%2C167%2C57%2C226%2C227%2C50%2C183%2C27%2C69%2C232%2C231%2C170%2C30%2C56%2C9%2C59%2C87%2C88%2C89%2C95%2C118%2C29%2C26%2C120%2C117%2C116%2C135%2C71%2C137%2C136%2C45%2C55%2C111%2C14%2C140%2C40%2C213%2C215%2C177%2C23%2C24%2C25%2C17%2C18%2C39%2C35%2C37%2C36%2C76%2C82%2C86%2C100%2C126%2C129%2C41%2C101%2C21%2C19%2C107%2C64%2C33%2C131%2C130%2C132%2C123%2C22%2C32%2C54%2C99%2C139%2C65%2C16%2C133%2C104%2C31%2C193%2C163%2C284%2C211%2C154%2C196%2C189%2C164%2C97%2C119%2C75%2C109%2C49%2C44%2C103%2C42%2C108%2C114%2C53%2C60%2C113%2C48%2C51%2C47%2C90%2C142%2C0%2C112%2C13%2C110%2C11%2C1%2C52%2C83%2C58%2C61%2C106%2C79%2C78%2C145%2C146%2C84%2C85%2C8%2C92%2C46%2C124%2C77%2C74%2C66%2C105%2C96%2C38%2C125%2C34%2C98%2C12%2C147",
+        "hash": "juobtn",
+        "measurementIds": {
+          "ga4": [],
+          "ua": [],
+          "gtm": [],
+          "aw": [],
+          "fb": []
+        },
+        "macros": [
+          "%2C156%",
+          "%2C20%",
+          "%2C68%",
+          "%2C63%",
+          "%2C128%",
+          "%2C62%",
+          "%2C141%",
+          "%2C15%",
+          "%2C28%",
+          "%2C115%",
+          "%2C73%",
+          "%2C138%",
+          "%2C143%",
+          "%2C3%",
+          "%2C6%",
+          "%2C2%",
+          "%2C91%",
+          "%2C224%",
+          "%2C57%",
+          "%2C227%",
+          "%2C183%",
+          "%2C69%",
+          "%2C231%",
+          "%2C30%",
+          "%2C9%",
+          "%2C87%",
+          "%2C89%",
+          "%2C118%",
+          "%2C26%",
+          "%2C117%",
+          "%2C135%",
+          "%2C137%",
+          "%2C45%",
+          "%2C111%",
+          "%2C140%",
+          "%2C213%",
+          "%2C177%",
+          "%2C24%",
+          "%2C17%",
+          "%2C39%",
+          "%2C37%",
+          "%2C76%",
+          "%2C86%",
+          "%2C126%",
+          "%2C41%",
+          "%2C21%",
+          "%2C107%",
+          "%2C33%",
+          "%2C130%",
+          "%2C123%",
+          "%2C32%",
+          "%2C99%",
+          "%2C65%",
+          "%2C133%",
+          "%2C31%",
+          "%2C163%",
+          "%2C211%",
+          "%2C196%",
+          "%2C164%",
+          "%2C119%",
+          "%2C109%",
+          "%2C44%",
+          "%2C42%",
+          "%2C114%",
+          "%2C60%",
+          "%2C48%",
+          "%2C47%",
+          "%2C142%",
+          "%2C112%",
+          "%2C110%",
+          "%2C1%",
+          "%2C83%",
+          "%2C61%",
+          "%2C79%",
+          "%2C145%",
+          "%2C84%",
+          "%2C8%",
+          "%2C46%",
+          "%2C77%",
+          "%2C66%",
+          "%2C96%",
+          "%2C125%",
+          "%2C98%"
+        ],
+        "attribution": null,
+        "selector": "script",
+        "page": "https://www.diariolasamericas.com/",
+        "reason": "Contains macros"
+      }
+    ],
+    "screenshots": [
+      "/Users/pablogimenez/Desktop/DeDuper.io/data/cms-monitor/screenshots/cms-monitor-screenshot-cms_1766110324086-0.png"
+    ],
+    "summary": {
+      "totalPages": 1,
+      "totalScripts": 76,
+      "totalPixels": 1,
+      "duplicateIdsCount": 0,
+      "duplicateScriptsCount": 0,
+      "unauthorizedCount": 26,
+      "injectedScriptsCount": 1
+    }
+  },
+  "baselineDiff": null
+}

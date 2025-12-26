@@ -1,0 +1,4368 @@
+{
+  "scanResult": {
+    "scanId": "cms_1766597673738",
+    "scanTimestamp": "2025-12-24T17:34:38.564Z",
+    "buildLabel": null,
+    "baseUrl": "https://www.puntal.com.ar/",
+    "pagesScanned": [
+      "https://www.puntal.com.ar/"
+    ],
+    "pageResults": [
+      {
+        "url": "https://www.puntal.com.ar/",
+        "scanTimestamp": "2025-12-24T17:34:38.414Z",
+        "scripts": [
+          {
+            "type": "external",
+            "src": "https://connect.facebook.net/es_ES/sdk.js?hash=6b2868db4046da00daa193ae6942d641",
+            "hash": "q5j0uk",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-55NYET6FXW&cx=c&gtm=4e5ca1",
+            "hash": "x4b0ym",
+            "measurementIds": {
+              "ga4": [
+                "G-55NYET6FXW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.google-analytics.com/analytics.js",
+            "hash": "lf6qr9",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+            "hash": "dfxz9n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "rl2qmq",
+            "content": "[{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"WebSite\",\"name\":\"puntal.com.ar - Noticias de Rio Cuarto, Argentina, y el mundo\",\"url\":\"https:\\/\\/www.puntal.com.ar\\/\"}]",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=UA-35735220-64",
+            "hash": "ilyk1b",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [
+                "UA-35735220-64"
+              ],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "3n6kci",
+            "content": " window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-35735220-64');\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [
+                "UA-35735220-64"
+              ],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "hash": "41irxv",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "hash": "41irxv",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-55NYET6FXW",
+            "hash": "obij9v",
+            "measurementIds": {
+              "ga4": [
+                "G-55NYET6FXW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ufzryo",
+            "content": " window.dataLayer = window.dataLayer || [];\n\n  function gtag(){dataLayer.push(arguments);}\n\n  gtag('js', new Date());\n\n  gtag('config', 'G-55NYET6FXW');\n\n",
+            "measurementIds": {
+              "ga4": [
+                "G-55NYET6FXW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "i2vtlv",
+            "content": "\n{\n    \"prefetch\": [\n        {\n            \"source\": \"document\",\n            \"where\": {\n                \"and\": [\n                    { \"href_matches\": \"https://www.puntal.com.ar/*\" },\n                    { \"not\": { \"selector_matches\": \"[rel~='nofollow']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noreferrer']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noopener']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noindex']\" } }\n            ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-55NYET6FXW",
+            "hash": "obij9v",
+            "measurementIds": {
+              "ga4": [
+                "G-55NYET6FXW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "y7m8i9",
+            "content": " window.dataLayer = window.dataLayer || [];\n    function gtag() { dataLayer.push(arguments); }\n    gtag('js', new Date());\n    gtag('config', 'G-55NYET6FXW');\n    gtag('set',\n        {\n            'dimension1': 'puntal.com.ar - Noticias de Rio Cuarto, Argentina, y el mundo',\n            'dimension2': '',\n            'dimension3': 'page',\n            'dimension4': '',\n            'dimension5': '',\n            'dimension6': '',\n            'dimension7': '',\n            'dimension8': '',\n          ",
+            "measurementIds": {
+              "ga4": [
+                "G-55NYET6FXW"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "b6220w",
+            "content": "window.TdOneSingalSetup = {\"appId\":\"2fa1cf23-4577-46d1-aa05-9a9510f0e343\",\"autoRegister\":false,\"promptOptions\":{\"actionMessage\":\"Nos gustar\\u00eda mostrarle las \\u00faltimas noticias.\",\"exampleNotificationTitleDesktop\":\"Notificaci\\u00f3n de ejemplo\",\"exampleNotificationMessageDesktop\":\"As\\u00ed aparecer\\u00e1n las notificaciones\",\"exampleNotificationCaption\":\"Pod\\u00e9s desuscribirte en cualquier momento\",\"acceptButtonText\":\"SUSCRIBIRME\",\"cancelButtonText\":\"NO, GRACIAS\"},\"welcomeNotification\":{\"",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "huuqgc",
+            "content": "window.promptNotificationsPage = \"home\";",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766549124.js",
+            "hash": "drghkx",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "hash": "smp2ab",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar/js/jquery.min-min-version-1766549262.js",
+            "hash": "k8q98p",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "hash": "xfhw4c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar/js/cms.tools-min-version-1766549262.js",
+            "hash": "cyen01",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar/vendor/lazyLoad/lazyLoad-td4-min-version-1766549264.js",
+            "hash": "2k2vy4",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "54u1s4",
+            "content": "var lazyLoad = new LazyLoad({type : 'onDemand' , isBackend : false})",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "mpb6y8",
+            "content": " window.fbAsyncInit = function() {\n          FB.init({\n            appId            : '1202765079918850',\n            autoLogAppEvents : false,\n            xfbml            : true,\n            version          : 'v8.0'\n          });\n        };\n        ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://connect.facebook.net/es_ES/sdk.js",
+            "hash": "yv98gk",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "pj0sbm",
+            "content": " window.arrCMSRegions = {  region1 : 'block' , region2 : 'block' , region3 : 'block' , region4 : 'none' , region5 : 'block' , region6 : 'block' , region7 : 'none' , region8 : 'none' , region9 : 'none' , region10 : 'none' , region11 : 'none' , region12 : 'block'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/fontawesome/fontawesome-all.min-min-version-1766549119.js",
+            "hash": "3cwfr",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/jquery-3.3.1.min-min-version-1766549119.js",
+            "hash": "tzt472",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "saan8w",
+            "content": " var jq = jQuery.noConflict();\n        ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/bootstrap.min-min-version-1766549119.js",
+            "hash": "gkxhme",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/swiper.min-min-version-1766549119.js",
+            "hash": "rxiz6",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/main-min-version-1766549119.js",
+            "hash": "5a1kzc",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/jquery.cookie.min-min-version-1766549119.js",
+            "hash": "e31u7k",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/polls-min-version-1766549119.js",
+            "hash": "jibxo4",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/customScrollbar-min-version-1766549119.js",
+            "hash": "hwe1v1",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "9jb5o4",
+            "content": " if ((\"/index.php\" == \"/backend/drop.php\" || \"/index.php\" == \"/backend/contextMenu.php\") &&\n        typeof (window.loadSwipers) != \"undefined\") {\n        window.loadSwipers();\n    }\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "3w57g",
+            "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "hash": "ykmfd0",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "4dkqpe",
+            "content": "\n(adsbygoogle = window.adsbygoogle || []).push({});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "hash": "ykmfd0",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "4dkqpe",
+            "content": "\n(adsbygoogle = window.adsbygoogle || []).push({});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "hash": "41irxv",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "3w57g",
+            "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1696079590131402",
+            "hash": "p16apw",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "3w57g",
+            "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "hash": "ykmfd0",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "4dkqpe",
+            "content": "\n(adsbygoogle = window.adsbygoogle || []).push({});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "hash": "41irxv",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "3w57g",
+            "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "hash": "4v1gtn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "class",
+              "value": "widget-content",
+              "selector": ".widget-content"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "n85xq9",
+            "content": " function loadTdDefererJs(i){\n      var s = document.createElement(\"script\");\n      s.setAttribute(\"type\", \"text/javascript\");\n      if(i >= window.defererList.length){\n        return false;\n      }\n\n      if(typeof(window.defererList[i].src) != \"undefined\" && window.defererList[i].src != \"\"){\n        //console.log(\"Add SRC =>\",window.defererList[i].src);\n        s.onload = function() {\n          i++;\n          loadTdDefererJs(i);\n        };\n        s.onerror = function() {\n          i++;\n      ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar/js/jquery.min-min-version-1766549262.js",
+            "hash": "k8q98p",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "/js/cms.tools-min-version-1766549262.js",
+            "hash": "9vmhmn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar/vendor/lazyLoad/lazyLoad-td4-min-version-1766549264.js",
+            "hash": "2k2vy4",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "54u1s4",
+            "content": "var lazyLoad = new LazyLoad({type : 'onDemand' , isBackend : false})",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "mpb6y8",
+            "content": " window.fbAsyncInit = function() {\n          FB.init({\n            appId            : '1202765079918850',\n            autoLogAppEvents : false,\n            xfbml            : true,\n            version          : 'v8.0'\n          });\n        };\n        ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://connect.facebook.net/es_ES/sdk.js",
+            "hash": "yv98gk",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "pj0sbm",
+            "content": " window.arrCMSRegions = {  region1 : 'block' , region2 : 'block' , region3 : 'block' , region4 : 'none' , region5 : 'block' , region6 : 'block' , region7 : 'none' , region8 : 'none' , region9 : 'none' , region10 : 'none' , region11 : 'none' , region12 : 'block'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/fontawesome/fontawesome-all.min-min-version-1766549119.js",
+            "hash": "3cwfr",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/jquery-3.3.1.min-min-version-1766549119.js",
+            "hash": "tzt472",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "saan8w",
+            "content": " var jq = jQuery.noConflict();\n        ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/bootstrap.min-min-version-1766549119.js",
+            "hash": "gkxhme",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/swiper.min-min-version-1766549119.js",
+            "hash": "rxiz6",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/main-min-version-1766549119.js",
+            "hash": "5a1kzc",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/jquery.cookie.min-min-version-1766549119.js",
+            "hash": "e31u7k",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/polls-min-version-1766549119.js",
+            "hash": "jibxo4",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.puntal.com.ar//js-custom/vendor/customScrollbar-min-version-1766549119.js",
+            "hash": "hwe1v1",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "9jb5o4",
+            "content": " if ((\"/index.php\" == \"/backend/drop.php\" || \"/index.php\" == \"/backend/contextMenu.php\") &&\n        typeof (window.loadSwipers) != \"undefined\") {\n        window.loadSwipers();\n    }\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          }
+        ],
+        "pixels": [
+          {
+            "type": "img",
+            "src": "<tddeferernodes id=\"tddeferernodes\"><script type=\"text/javascript\" src=\"https://www.puntal.com.ar/js/jquery.min-min-version-1766549262.js\"></script>\n<script type=\"text/javascript\" src=\"/js/cms.tools-min-version-1766549262.js\"></script>\n<script type=\"text/javascript\" src=\"https://www.puntal.com.ar/vendor/lazyLoad/lazyLoad-td4-min-version-1766549264.js\"></script>\n<script type=\"text/javascript\">var lazyLoad = new LazyLoad({type : 'onDemand' , isBackend : false})</script>\n<script> window.fbAsyncInit",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddefererjs",
+              "selector": "#tddefererjs"
+            },
+            "selector": "#tddefererjs"
+          }
+        ],
+        "networkRequests": [
+          {
+            "url": "https://www.puntal.com.ar/",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766597674570
+          },
+          {
+            "url": "https://www.puntal.com.ar/tdcss-44609376a6702c803e752d11f2361df9bbd27aef-10",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766597674901
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=UA-35735220-64",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674901
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-55NYET6FXW",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://www.puntal.com.ar/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766549124.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://www.puntal.com.ar/css-custom/270/lazy.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/img/270/clima/svg/owm/03d.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/img/270/clima/svg/owm/02d.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/img/270/clima/svg/owm/04d.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674902
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/img/270/logo.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674903
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/asyncjs.php",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674903
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1696079590131402",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674903
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/d89b83e46d32a2fba6bbf98ace66b424/adjuntos/270/imagenes/001/594/0001594518/1200x675/smart/rural-foto-andres-oviedo-3.jpeg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674903
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/6fa8a2bc3c0978e3c6008b587729a872/adjuntos/270/imagenes/001/590/0001590198/1200x675/smart/nevadas-la-region-1jpeg.jpeg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674904
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/2dc23a4ffd93d2d5c199b9da85425d3c/adjuntos/270/imagenes/001/588/0001588558/1200x675/smart/accidente-foto-andres-oviedo-puntal-4jpeg.jpeg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674904
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/59e8e3c8ad13a06f7c0d1298efc0e189/adjuntos/270/imagenes/001/586/0001586623/1200x675/smart/whatsapp-image-2025-05-01-at-120451jpeg.jpeg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674905
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/000/000/0000000119.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674905
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/000/000/0000000120.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674909
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/001/549/0001549752.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674909
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/001/549/0001549753.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674909
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/000/000/0000000127.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674909
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/000/000/0000000128.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674909
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/000/548/0000548634.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674909
+          },
+          {
+            "url": "https://media.puntal.com.ar/adjuntos/270/imagenes/000/548/0000548635.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597674909
+          },
+          {
+            "url": "https://www.puntal.com.ar/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597674910
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/fonts/Oswald/Oswald-Medium.ttf",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766597674995
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/fonts/Open_Sans/OpenSans-Regular.ttf",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766597674995
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766597674995
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/fonts/Open_Sans/OpenSans-Light.ttf",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766597674995
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/fonts/fontawesome-webfont.woff2?v=4.7.0",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766597674995
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/fonts/Oswald/Oswald-Regular.ttf",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766597674996
+          },
+          {
+            "url": "https://www.puntal.com.ar/assets/fonts/Open_Sans/OpenSans-Bold.ttf",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766597674996
+          },
+          {
+            "url": "https://www.puntal.com.ar/js/jquery.min-min-version-1766549262.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675013
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675123
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675245
+          },
+          {
+            "url": "https://api.onesignal.com/sync/2fa1cf23-4577-46d1-aa05-9a9510f0e343/web?callback=__jp0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675274
+          },
+          {
+            "url": "https://www.google-analytics.com/analytics.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675288
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-55NYET6FXW&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675288
+          },
+          {
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-55NYET6FXW&gtm=45je5ca1v871168954za200&_p=1766597674921&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1702033017.1766597675&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616986~115938466~115938468~116184927~116184929~116251938~116251940&sid=1766597675&sct=1&seg=0&dl=https%3A%2F%2Fwww.puntal.com.ar%2F&dt=puntal.com.ar%20-%20Noticias%20de%20Rio%20Cuarto%2C%20Argentina%2C%20y%20el%20mundo&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=736",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766597675309,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%20Noticias%",
+              "%20Rio%",
+              "%2C%",
+              "%20el%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766597675347
+          },
+          {
+            "url": "https://onesignal.com/sdks/web/v16/OneSignalSDK.page.styles.css?v=160510",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766597675491
+          },
+          {
+            "url": "https://www.puntal.com.ar/js/cms.tools-min-version-1766549262.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675528
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766597675538
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1696079590131402&output=html&adk=1812271804&adf=3025194257&lmt=1766597674&plaf=1%3A2%2C2%3A2&plat=1%3A128%2C2%3A128%2C3%3A16%2C4%3A16%2C8%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&format=0x0&url=https%3A%2F%2Fwww.puntal.com.ar%2F&pra=5&wgl=1&asro=0&aiapm=0.1542&aiapmd=0.1423&aiapmi=0.16&aiapmid=1&aiact=0.5423&aiactd=0.7&aicct=0.7&aicctd=0.5799&ailct=0.5849&ailctd=0.65&aimart=4&aimartd=4&aieuf=1&aicrs=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&abgtt=6&dt=1766597675229&bpp=11&bdt=357&idt=302&shv=r20251211&mjsv=m202512100101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&nras=1&correlator=3477867424698&frm=20&pv=2&u_tz=-360&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=8&adx=-12245933&ady=-12245933&biw=1280&bih=720&scr_x=0&scr_y=0&eid=31096041%2C95376241%2C95376583%2C95378599%2C95378750%2C95379213%2C95379484%2C95379897%2C95344789&oid=2&pvsid=2844526716847162&tmod=653003158&uas=0&nvt=1&fsapi=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1&ifi=1&uci=a!1&fsb=1&dtd=322",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766597675552,
+            "macros": [
+              "%3A2%",
+              "%3A128%",
+              "%3A16%",
+              "%3A32776%",
+              "%3A8388608%",
+              "%3A32%",
+              "%3A1081344%",
+              "%3A%",
+              "%2C95376241%",
+              "%2C95378599%",
+              "%2C95379213%",
+              "%2C95379897%",
+              "%2C0%",
+              "%2C720%",
+              "%7C%"
+            ]
+          },
+          {
+            "url": "https://www.puntal.com.ar/vendor/lazyLoad/lazyLoad-td4-min-version-1766549264.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675596
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766597675635
+          },
+          {
+            "url": "https://connect.facebook.net/es_ES/sdk.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675656
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/2387fac2831beea8df78ca546527e497/adjuntos/270/imagenes/001/601/0001601972/776x438/smart/villarruel.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675656
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/f2eba27a4e9ede0c7e29f2b58ca9d156/adjuntos/270/imagenes/001/555/0001555690/400x623/smart/pirotecnia-secuestrada-100jpg.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675657
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/e8ff1b19aca09949e1e639e636c892f5/adjuntos/270/imagenes/001/601/0001601960/350x197/smart/smn-14.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675657
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/de55e0c9beda514d8691f3ec3ed8e768/adjuntos/270/imagenes/001/601/0001601970/350x197/smart/arca.webp",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675657
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/1966bf2ab9a7157069f8a7160a29190f/adjuntos/270/imagenes/001/601/0001601958/350x197/smart/papa-noelph-andres-oviedo-2.jpeg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675657
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/fd8df0a7ba5b2371ebd1520003c88a8c/adjuntos/270/imagenes/001/590/0001590336/1200x675/smart/basura-la-callejpg.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675657
+          },
+          {
+            "url": "https://media.puntal.com.ar/p/762abb234552b2632541eeb1ae12a09e/adjuntos/270/imagenes/001/595/0001595658/1200x675/smart/senado1.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675657
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_success&c=0&wpc=ca-pub-1696079590131402&w=1280&h=720&pp=0&ppp=0&eatf=false&eatfAbg=false&reatf=false&apv=20251210_093552&sat=1766395975217&afm=0&as_count=7&d_count=0&ng_count=0&am_count=0&atf_count=0&mdns=0.112&alldns=0.112&allp=76&pgh=15891&abl=false&rr=n&su=www.puntal.com.ar&pvc=2844526716847162&r=0.1&eid=31096041%2C95376241%2C95376583%2C95378599%2C95378750%2C95379213%2C95379484%2C95379897%2C95344789",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597675812,
+            "macros": [
+              "%2C95376241%",
+              "%2C95378599%",
+              "%2C95379213%",
+              "%2C95379897%"
+            ]
+          },
+          {
+            "url": "https://connect.facebook.net/es_ES/sdk.js?hash=6b2868db4046da00daa193ae6942d641",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675830
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/vendor/fontawesome/fontawesome-all.min-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675830
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766597675910
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/vendor/jquery-3.3.1.min-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597675934
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/vendor/bootstrap.min-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676039
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/vendor/swiper.min-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676106
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/main-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676164
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/vendor/jquery.cookie.min-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676227
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/vendor/polls-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676279
+          },
+          {
+            "url": "https://www.puntal.com.ar//js-custom/vendor/customScrollbar-min-version-1766549119.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676354
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/asyncspc.php?zones=3%7C1%7C300%7C301%7C302%7C10%7C11%7C9%7C12%7C13%7C292%7C2%7C5%7C6%7C8%7C34%7C36%7C37%7C14%7C16%7C17%7C18%7C19%7C20%7C21%7C22%7C23%7C25%7C329%7C330%7C26%7C27%7C28%7C29%7C30%7C32%7C33%7C38%7C40%7C41&prefix=revive-0-&loc=https%3A%2F%2Fwww.puntal.com.ar%2F",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766597676425,
+            "macros": [
+              "%7C1%",
+              "%7C301%",
+              "%7C10%",
+              "%7C9%",
+              "%7C13%",
+              "%7C2%",
+              "%7C6%",
+              "%7C34%",
+              "%7C37%",
+              "%7C16%",
+              "%7C18%",
+              "%7C20%",
+              "%7C22%",
+              "%7C25%",
+              "%7C330%",
+              "%7C27%",
+              "%7C29%",
+              "%7C32%",
+              "%7C38%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20251211&st=env&sjk=2844526716847162",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766597676425
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676622
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/468bd887198ac28217c56661c9143944.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1196&campaignid=621&zoneid=3&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=93ec06e01b",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/426027884203a034becca4bb0209a1ad.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=258&campaignid=113&zoneid=1&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=35f8008435",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=300&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=a9710b314d",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=301&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=650c3ae417",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/899f56b7bb2c3dc9464d264771a22083.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=635&campaignid=306&zoneid=302&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=2b1708a38f",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/dd22ab5edc8481af11c5efcf1d7d0b38.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=13&campaignid=10&zoneid=10&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=c5b8a049c1",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=11&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=43783833c4",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/bddfc05c3bb9bafe4fe5a547d3a62d3c.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1177&campaignid=615&zoneid=9&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=5595fce18b",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/28bf8c3d6f11a8d17ce56b70b2e4f258.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=465&campaignid=222&zoneid=12&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=5ba8a194ec",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/a41e47a0b182c9db885c15c1d5e09009.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1030&campaignid=540&zoneid=13&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=ca8d292134",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/627c6bc207bb502ab8c56c2a1d9dc1ae.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=437&campaignid=208&zoneid=292&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=83b26c5183",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=2&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=1ca167433b",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/3b7470b5414cd48e8a5af84ce801d1c0.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=14&campaignid=11&zoneid=5&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=50a97109cb",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/9f31548b4be2b4c58cd8acbcd32c2263.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1209&campaignid=631&zoneid=6&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=1b69d70d24",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=8&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=84b0456b9f",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/a20315af0fef2d3fa725c110e27bc9ac.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=759&campaignid=381&zoneid=34&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=e61a8b10e6",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=36&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=7d137f1795",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=37&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=a47df23f8e",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/ef69b6b3a057e43c9d21cc218feacd5a.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1101&campaignid=540&zoneid=14&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=d142d3c87b",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=635&campaignid=306&zoneid=16&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=10711a9710",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/e8b2703cbd5063ec87f6bbbd2b7ff9e5.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676635
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=478&campaignid=208&zoneid=17&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=1a5c68c6a6",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1177&campaignid=615&zoneid=18&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=0e9d79741a",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1209&campaignid=631&zoneid=19&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=44066555bb",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=20&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=2c03443f3f",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/81e2bba8958841c1f41d34fac32df9fd.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1072&campaignid=298&zoneid=21&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=f0f1876fa7",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/4a8e8158f38ae7d573bacfde4012cd8a.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1186&campaignid=620&zoneid=22&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=59daeb0e97",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/794c508bb1c69e88d879571960c916a2.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1075&campaignid=561&zoneid=23&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=8f4d2fafcd",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1196&campaignid=621&zoneid=25&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=c1e7de9050",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1186&campaignid=620&zoneid=329&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=6f6db1529a",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1209&campaignid=631&zoneid=330&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=8d79bab97b",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/ae2e854c435c777dae708df09dffabab.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=213&campaignid=3&zoneid=26&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=71c5893007",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=213&campaignid=3&zoneid=27&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=d184648fbf",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/b5ca4b03aaf3c4636651f3cf42138f95.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=161&campaignid=78&zoneid=28&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=4b6237abfb",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/27b68861549c8d9776b016583b4d945b.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=595&campaignid=78&zoneid=29&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=af6b49ad79",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1075&campaignid=561&zoneid=30&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=f6e1d1cd7c",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676636,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=32&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=562e7442d1",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676637,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/images/3197d1a98282d46f55064f1fffac5c7c.gif",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676637
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1074&campaignid=561&zoneid=33&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=6061eac2ea",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676637,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=38&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=df0933c4c6",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676637,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=1209&campaignid=631&zoneid=40&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=d13c1ab250",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676637,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://adserverpuntal.com.ar/www/delivery/lg.php?bannerid=0&campaignid=0&zoneid=41&loc=https%3A%2F%2Fwww.puntal.com.ar%2F&cb=039a472405",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597676637,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2/237/runner.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766597676781
+          },
+          {
+            "url": "https://www.google.com/recaptcha/api2/aframe",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766597676782
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/bg/vKVxIeXH0QGTDDOwiqpaTKZp5NNzUAHYSL8enmE7PZA.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766597676840
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/generate_204?UKmBGg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597678141
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=237&li=gda_r20251211&jk=2844526716847162&rc=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766597678171
+          }
+        ],
+        "measurementIds": {
+          "ga4": [
+            "G-55NYET6FXW"
+          ],
+          "ua": [
+            "UA-35735220-64"
+          ],
+          "gtm": [],
+          "aw": [],
+          "fb": []
+        },
+        "widgetMap": {
+          "class:widget-content": {
+            "widget": "widget-content",
+            "attribute": "class",
+            "selector": ".widget-content",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "3w57g",
+                "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+                "hash": "ykmfd0",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "4dkqpe",
+                "content": "\n(adsbygoogle = window.adsbygoogle || []).push({});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+                "hash": "ykmfd0",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "4dkqpe",
+                "content": "\n(adsbygoogle = window.adsbygoogle || []).push({});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+                "hash": "41irxv",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "3w57g",
+                "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1696079590131402",
+                "hash": "p16apw",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "3w57g",
+                "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+                "hash": "ykmfd0",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "4dkqpe",
+                "content": "\n(adsbygoogle = window.adsbygoogle || []).push({});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+                "hash": "41irxv",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "3w57g",
+                "content": " (adsbygoogle = window.adsbygoogle || []).push({});\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "//adserverpuntal.com.ar/www/delivery/asyncjs.php",
+                "hash": "4v1gtn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "class",
+                  "value": "widget-content",
+                  "selector": ".widget-content"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:tddeferernodes": {
+            "widget": "tddeferernodes",
+            "attribute": "id",
+            "selector": "#tddeferernodes",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar/js/jquery.min-min-version-1766549262.js",
+                "hash": "k8q98p",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "/js/cms.tools-min-version-1766549262.js",
+                "hash": "9vmhmn",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar/vendor/lazyLoad/lazyLoad-td4-min-version-1766549264.js",
+                "hash": "2k2vy4",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "54u1s4",
+                "content": "var lazyLoad = new LazyLoad({type : 'onDemand' , isBackend : false})",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "mpb6y8",
+                "content": " window.fbAsyncInit = function() {\n          FB.init({\n            appId            : '1202765079918850',\n            autoLogAppEvents : false,\n            xfbml            : true,\n            version          : 'v8.0'\n          });\n        };\n        ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://connect.facebook.net/es_ES/sdk.js",
+                "hash": "yv98gk",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "pj0sbm",
+                "content": " window.arrCMSRegions = {  region1 : 'block' , region2 : 'block' , region3 : 'block' , region4 : 'none' , region5 : 'block' , region6 : 'block' , region7 : 'none' , region8 : 'none' , region9 : 'none' , region10 : 'none' , region11 : 'none' , region12 : 'block'  }; \n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/vendor/fontawesome/fontawesome-all.min-min-version-1766549119.js",
+                "hash": "3cwfr",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/vendor/jquery-3.3.1.min-min-version-1766549119.js",
+                "hash": "tzt472",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "saan8w",
+                "content": " var jq = jQuery.noConflict();\n        ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/vendor/bootstrap.min-min-version-1766549119.js",
+                "hash": "gkxhme",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/vendor/swiper.min-min-version-1766549119.js",
+                "hash": "rxiz6",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/main-min-version-1766549119.js",
+                "hash": "5a1kzc",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/vendor/jquery.cookie.min-min-version-1766549119.js",
+                "hash": "e31u7k",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/vendor/polls-min-version-1766549119.js",
+                "hash": "jibxo4",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "external",
+                "src": "https://www.puntal.com.ar//js-custom/vendor/customScrollbar-min-version-1766549119.js",
+                "hash": "hwe1v1",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              },
+              {
+                "type": "inline",
+                "hash": "9jb5o4",
+                "content": " if ((\"/index.php\" == \"/backend/drop.php\" || \"/index.php\" == \"/backend/contextMenu.php\") &&\n        typeof (window.loadSwipers) != \"undefined\") {\n        window.loadSwipers();\n    }\n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:tddefererjs": {
+            "widget": "tddefererjs",
+            "attribute": "id",
+            "selector": "#tddefererjs",
+            "scripts": [],
+            "pixels": [
+              {
+                "type": "img",
+                "src": "<tddeferernodes id=\"tddeferernodes\"><script type=\"text/javascript\" src=\"https://www.puntal.com.ar/js/jquery.min-min-version-1766549262.js\"></script>\n<script type=\"text/javascript\" src=\"/js/cms.tools-min-version-1766549262.js\"></script>\n<script type=\"text/javascript\" src=\"https://www.puntal.com.ar/vendor/lazyLoad/lazyLoad-td4-min-version-1766549264.js\"></script>\n<script type=\"text/javascript\">var lazyLoad = new LazyLoad({type : 'onDemand' , isBackend : false})</script>\n<script> window.fbAsyncInit",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddefererjs",
+                  "selector": "#tddefererjs"
+                },
+                "selector": "#tddefererjs"
+              }
+            ],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          }
+        }
+      }
+    ],
+    "duplicates": {
+      "duplicateIds": {},
+      "duplicateScripts": {},
+      "duplicateLibraries": {}
+    },
+    "unauthorized": [
+      {
+        "type": "script",
+        "url": "https://connect.facebook.net/es_ES/sdk.js?hash=6b2868db4046da00daa193ae6942d641",
+        "domain": "connect.facebook.net",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-55NYET6FXW&cx=c&gtm=4e5ca1",
+        "domain": "googletagmanager.com",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-35735220-64",
+        "domain": "googletagmanager.com",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup.html",
+        "domain": "googleads.g.doubleclick.net",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://connect.facebook.net/es_ES/sdk.js",
+        "domain": "connect.facebook.net",
+        "page": "https://www.puntal.com.ar/",
+        "reason": "Not in allowed partners list"
+      }
+    ],
+    "injectedScripts": [],
+    "screenshots": [
+      "/Users/pablogimenez/Desktop/DeDuper.io/data/cms-monitor/screenshots/cms-monitor-screenshot-cms_1766597673738-0.png"
+    ],
+    "summary": {
+      "totalPages": 1,
+      "totalScripts": 107,
+      "totalPixels": 1,
+      "duplicateIdsCount": 0,
+      "duplicateScriptsCount": 0,
+      "unauthorizedCount": 9,
+      "injectedScriptsCount": 0
+    }
+  },
+  "baselineDiff": null
+}

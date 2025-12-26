@@ -24,3 +24,10 @@ yarn-error.log*
 # Vite
 .vite
 
+# Scan results and runs
+/runs/
+*.png
+evidence_*.png
+scan_results_*.json
+scan_history.json
+

@@ -1,0 +1,15 @@
+{
+  "scanId": "cms_1766699101679",
+  "scanTimestamp": "2025-12-25T21:45:08.292Z",
+  "buildLabel": null,
+  "baseUrl": "https://www.excelsior.com.mx/",
+  "summary": {
+    "totalPages": 1,
+    "totalScripts": 45,
+    "totalPixels": 2,
+    "duplicateIdsCount": 0,
+    "duplicateScriptsCount": 0,
+    "unauthorizedCount": 22,
+    "injectedScriptsCount": 2
+  }
+}

@@ -1,0 +1,3222 @@
+{
+  "scanResult": {
+    "scanId": "cms_1766598639277",
+    "scanTimestamp": "2025-12-24T17:50:45.387Z",
+    "buildLabel": null,
+    "baseUrl": "https://www.elancasti.com.ar/",
+    "pagesScanned": [
+      "https://www.elancasti.com.ar/"
+    ],
+    "pageResults": [
+      {
+        "url": "https://www.elancasti.com.ar/",
+        "scanTimestamp": "2025-12-24T17:50:45.256Z",
+        "scripts": [
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl_page_level_ads.js",
+            "hash": "glepvn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//gum.criteo.com/sync?c=72&r=2&j=TRC.getRTUS",
+            "hash": "z9mxnf",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://script.4dex.io/a/latest/adagio.js",
+            "hash": "eyw36o",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "adagiojs-220a4beaea6d258",
+              "selector": "#adagiojs-220a4beaea6d258"
+            },
+            "selector": "#adagiojs-220a4beaea6d258"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-1ZMKMZGT7R",
+            "hash": "1u9z40",
+            "measurementIds": {
+              "ga4": [
+                "G-1ZMKMZGT7R"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-PRJHEDRHDQ&cx=c&gtm=4e5ca1",
+            "hash": "mvqfzd",
+            "measurementIds": {
+              "ga4": [
+                "G-PRJHEDRHDQ"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-GNHWGL20XC&cx=c&gtm=4e5ca1",
+            "hash": "5rdt89",
+            "measurementIds": {
+              "ga4": [
+                "G-GNHWGL20XC"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//cdn.taboola.com/libtrc/embimedia-elancasticomar/loader.js",
+            "hash": "xmij2z",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tb_loader_script",
+              "selector": "#tb_loader_script"
+            },
+            "selector": "#tb_loader_script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-1ZMKMZGT7R&cx=c&gtm=4e5ca1",
+            "hash": "k9spxr",
+            "measurementIds": {
+              "ga4": [
+                "G-1ZMKMZGT7R"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-1ZMKMZGT7R",
+            "hash": "1u9z40",
+            "measurementIds": {
+              "ga4": [
+                "G-1ZMKMZGT7R"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://embi-media.com/sj_prod/elancasti.com.ar/scripts/embi_1758217344692_desktop.js",
+            "hash": "3z7tva",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.google-analytics.com/analytics.js",
+            "hash": "lf6qr9",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "lywh3l",
+            "content": "[{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"WebSite\",\"name\":\"El Ancasti - Diario de Catamarca\",\"url\":\"https:\\/\\/www.elancasti.com.ar\\/\"}]",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=UA-28859433-1",
+            "hash": "7e3v0b",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [
+                "UA-28859433-1"
+              ],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "q34jiu",
+            "content": "\nwindow.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\n\ngtag('config', 'UA-28859433-1');\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [
+                "UA-28859433-1"
+              ],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://embi-media.com/hb_resources/el_ancasti/vadsf72n_desktop.js",
+            "hash": "cfb6hd",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "xikku5",
+            "content": "\n  window._taboola = window._taboola || [];\n  _taboola.push({article:'auto'});\n  !function (e, f, u, i) {\n    if (!document.getElementById(i)){\n      e.async = 1;\n      e.src = u;\n      e.id = i;\n      f.parentNode.insertBefore(e, f);\n    }\n  }(document.createElement('script'),\n  document.getElementsByTagName('script')[0],\n  '//cdn.taboola.com/libtrc/embimedia-elancasticomar/loader.js',\n  'tb_loader_script');\n  if(window.performance && typeof window.performance.mark == 'function')\n    {window.pe",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-GNHWGL20XC",
+            "hash": "xvgtc8",
+            "measurementIds": {
+              "ga4": [
+                "G-GNHWGL20XC"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "5ich5x",
+            "content": " window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-GNHWGL20XC');\n",
+            "measurementIds": {
+              "ga4": [
+                "G-GNHWGL20XC"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "zcuedp",
+            "content": "\n{\n    \"prefetch\": [\n        {\n            \"source\": \"document\",\n            \"where\": {\n                \"and\": [\n                    { \"href_matches\": \"https://www.elancasti.com.ar/*\" },\n                    { \"not\": { \"selector_matches\": \"[rel~='nofollow']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noreferrer']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noopener']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noindex']\" } }\n         ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-GNHWGL20XC",
+            "hash": "xvgtc8",
+            "measurementIds": {
+              "ga4": [
+                "G-GNHWGL20XC"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "a14ron",
+            "content": " window.dataLayer = window.dataLayer || [];\n    function gtag() { dataLayer.push(arguments); }\n    gtag('js', new Date());\n    gtag('config', 'G-GNHWGL20XC');\n    gtag('set',\n        {\n            'dimension1': 'El Ancasti - Diario de Catamarca',\n            'dimension2': '',\n            'dimension3': 'page',\n            'dimension4': '',\n            'dimension5': '',\n            'dimension6': '',\n            'dimension7': '',\n            'dimension8': '',\n            'dimension9': '',\n        }",
+            "measurementIds": {
+              "ga4": [
+                "G-GNHWGL20XC"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "lxmfy5",
+            "content": "window.TdOneSingalSetup = {\"appId\":\"1300d09a-1e64-4243-ad67-d33c4b74b053\",\"autoRegister\":false,\"promptOptions\":{\"actionMessage\":\"Nos gustar\\u00eda mostrarle las \\u00faltimas noticias.\",\"exampleNotificationTitleDesktop\":\"Notificaci\\u00f3n de ejemplo\",\"exampleNotificationMessageDesktop\":\"As\\u00ed aparecer\\u00e1n las notificaciones\",\"exampleNotificationCaption\":\"Pod\\u00e9s desuscribirte en cualquier momento\",\"acceptButtonText\":\"SUSCRIBIRME\",\"cancelButtonText\":\"NO, GRACIAS\"},\"welcomeNotification\":{\"",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "huuqgc",
+            "content": "window.promptNotificationsPage = \"home\";",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.elancasti.com.ar/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766549215.js",
+            "hash": "gavs54",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "hash": "smp2ab",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.elancasti.com.ar/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766549419.js",
+            "hash": "ewmlcf",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "dmbfd5",
+            "content": " window.arrCMSRegions = {  region1 : 'block' , region2 : 'block' , region3 : 'block' , region4 : 'block' , region5 : 'block'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "hash": "xfhw4c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "hash": "tihp7c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://embi-media.com/prebids/production/prebid.js",
+            "hash": "wls0p0",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://embi-media.com/hb_resources/teads/teads_cookieless.js",
+            "hash": "xmbiu6",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://a.teads.tv/analytics/tag.js",
+            "hash": "v9tnxk",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "hash": "o80o3r",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/i/40135427?ers=3",
+            "hash": "lsjb4m",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxWucnC1ZiwuB-ZDWo1YhHeN5kyBsgJqzwX5X8QIUiyhtjG6z_IKnd8CZvfz5WXD-Fyid5ndXiPYx90h3hrFjly6tAthTw4Xrg6yoyYtTlgSuDdH--vvQhUC0NWhNQRFEI6XvgF7XQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk4NjQyLDg1OTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZWxhbmNhc3RpLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "hash": "8r2up",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxXoexB6v0uo2CHSE1PKLuHqdoye_1rdfYKuHLUt0oc4nGLWQGkFqLMY5mE2dXEkfjpVvd9BOv1jAwQdSCOKZx8l3exCxzFy3q_ABOnKnvqDNNTMPfn016zO6un00P9VVPJtuai9fQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk4NjQyLDkyMDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vd3d3LmVsYW5jYXN0aS5jb20uYXIvIixudWxsLFtbOCwic0NoTkg1T3NhazAiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+            "hash": "9iwclw",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxUtCSEVMajgCRmTqD3-uGNGBy2sazMtkCO6aRIR7SWusPt0wuz3m912-kw6v_jHoRSeFufXpJ27gXfAIwWfie0Q8IEJGFHX6Mocvbv2zEU7dnbezcWnXqpSO2la-5a3_pnJfmZriQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk4NjQ0LDg5MDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cuZWxhbmNhc3RpLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "hash": "met2bm",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "1jq3uv",
+            "content": "\n  window._taboola = window._taboola || [];\n  _taboola.push({flush: true});\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ps6e6h",
+            "content": "\tvar _URL_API_USERS = 'https://usuarios.elancasti.com.ar';\n\t",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.elancasti.com.ar//js-custom/xpress/header_desktop-min-version-1766549215.js",
+            "hash": "tf4t4g",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "m7mogd",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-20'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-20",
+              "selector": "#div-home_rectangle-20"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "llo70n",
+            "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_horizontal-18'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_horizontal-18",
+              "selector": "#div-home_horizontal-18"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "pmovqn",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-24'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-24",
+              "selector": "#div-home_rectangle-24"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "4kr2tm",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-18'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-18",
+              "selector": "#div-home_rectangle-18"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "r9yil0",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-27'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-27",
+              "selector": "#div-home_rectangle-27"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "x72fwp",
+            "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_horizontal-16'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_horizontal-16",
+              "selector": "#div-home_horizontal-16"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "56pk9c",
+            "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_horizontal-20'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_horizontal-20",
+              "selector": "#div-home_horizontal-20"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "e1amul",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-26'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-26",
+              "selector": "#div-home_rectangle-26"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "2fwdyj",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-28'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-28",
+              "selector": "#div-home_rectangle-28"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "hkxdde",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-9'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-9",
+              "selector": "#div-home_rectangle-9"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "c4xj65",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-8'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-8",
+              "selector": "#div-home_rectangle-8"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "fok9oy",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-25'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-25",
+              "selector": "#div-home_rectangle-25"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "7i8836",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-21'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-21",
+              "selector": "#div-home_rectangle-21"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "pg3vs2",
+            "content": " googletag.cmd.push(function() { googletag.display('div-derecha-6'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-derecha-6",
+              "selector": "#div-derecha-6"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "xt0xcf",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-22'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-22",
+              "selector": "#div-home_rectangle-22"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ochdbg",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-30'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-30",
+              "selector": "#div-home_rectangle-30"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "w5rai2",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-29'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-29",
+              "selector": "#div-home_rectangle-29"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "i3tmec",
+            "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_rectangle-1'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-1",
+              "selector": "#div-home_rectangle-1"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "mn97i1",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-2'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-2",
+              "selector": "#div-home_rectangle-2"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "t6bm9g",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-7'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_rectangle-7",
+              "selector": "#div-home_rectangle-7"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "sdtw28",
+            "content": " googletag.cmd.push(function() { googletag.display('div-home_vertical-6'); });\n  ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "div-home_vertical-6",
+              "selector": "#div-home_vertical-6"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.elancasti.com.ar/js-custom/xpress/residual-banner-min-version-1766549215.js",
+            "hash": "agzrpn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "n85xq9",
+            "content": " function loadTdDefererJs(i){\n      var s = document.createElement(\"script\");\n      s.setAttribute(\"type\", \"text/javascript\");\n      if(i >= window.defererList.length){\n        return false;\n      }\n\n      if(typeof(window.defererList[i].src) != \"undefined\" && window.defererList[i].src != \"\"){\n        //console.log(\"Add SRC =>\",window.defererList[i].src);\n        s.onload = function() {\n          i++;\n          loadTdDefererJs(i);\n        };\n        s.onerror = function() {\n          i++;\n      ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.elancasti.com.ar/js-custom/vendor/jquery/jquery-3.6.0.min-min-version-1766549215.js",
+            "hash": "gli8qn",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": " https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+            "hash": "ti4via",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": " https://usuarios.elancasti.com.ar/js/TDUserPaywall-version-1637935548.js",
+            "hash": "nphd7i",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": " https://www.elancasti.com.ar/js-custom/xpress/paywall-min-version-1766549215.js",
+            "hash": "mncp03",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          }
+        ],
+        "pixels": [],
+        "networkRequests": [
+          {
+            "url": "https://www.elancasti.com.ar/",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766598640233
+          },
+          {
+            "url": "https://www.elancasti.com.ar/tdcss-a6b389f2db8a9590de5b3e720318d6799e1db617-1",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766598640623
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/fonts/roboto/roboto-v20-latin-300.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766598640624
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/fonts/roboto/roboto-v20-latin-regular.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766598640624
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/fonts/roboto/roboto-v27-latin-500.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766598640624
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/fonts/roboto/roboto-v20-latin-700.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766598640624
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=UA-28859433-1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640624
+          },
+          {
+            "url": "https://embi-media.com/hb_resources/el_ancasti/vadsf72n_desktop.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640625
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-GNHWGL20XC",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640625
+          },
+          {
+            "url": "https://www.elancasti.com.ar/libs/OneSignalSDKFiles/TdWebPushv17-min-version-1766549215.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640631
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640631
+          },
+          {
+            "url": "https://www.elancasti.com.ar/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766549419.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640632
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/images/header-logo-sticky.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598640632
+          },
+          {
+            "url": "https://www.elancasti.com.ar//js-custom/xpress/header_desktop-min-version-1766549215.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640632
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/images/header-logo.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598640632
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/newsletter.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598640632
+          },
+          {
+            "url": "https://www.elancasti.com.ar/assets/img/325/clima/svg/owm/02d.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598640633
+          },
+          {
+            "url": "https://www.elancasti.com.ar/assets/img/325/clima/svg/owm/10d.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598640633
+          },
+          {
+            "url": "https://www.elancasti.com.ar/assets/img/325/clima/svg/owm/04d.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598640633
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/325/lazy.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598640633
+          },
+          {
+            "url": "https://www.elancasti.com.ar/js-custom/xpress/residual-banner-min-version-1766549215.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598640633
+          },
+          {
+            "url": "https://www.google-analytics.com/analytics.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641111
+          },
+          {
+            "url": "https://embi-media.com/sj_prod/elancasti.com.ar/scripts/embi_1758217344692_desktop.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641851
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-1ZMKMZGT7R",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641851
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-1ZMKMZGT7R&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641852
+          },
+          {
+            "url": "https://cdn.taboola.com/libtrc/embimedia-elancasticomar/loader.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641861
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-GNHWGL20XC&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641861
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/search.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641909
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/chevron-down.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641909
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/facebook-circle.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641909
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/twitter.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641909
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/instagram.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641909
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/chevron-right.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641909
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/facebook-f.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641926
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/youtube.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641926
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/tiktok.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641926
+          },
+          {
+            "url": "https://www.elancasti.com.ar/css-custom/xpress/icons/telegram.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641926
+          },
+          {
+            "url": "https://media.elancasti.com.ar/p/edadacf6749e47cbde1aa4d0f30b39bc/adjuntos/325/imagenes/000/401/0000401078/1200x600/smart/image.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598641931
+          },
+          {
+            "url": "https://www.elancasti.com.ar/js-custom/vendor/jquery/jquery-3.6.0.min-min-version-1766549215.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641931
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-GNHWGL20XC&gtm=45je5ca1v871258753za200&_p=1766598640642&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=150020558.1766598642&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875&sid=1766598641&sct=1&seg=0&dl=https%3A%2F%2Fwww.elancasti.com.ar%2F&dt=El%20Ancasti%20-%20Diario%20de%20Catamarca&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1722",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598641958,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%20Ancasti%",
+              "%20Diario%"
+            ]
+          },
+          {
+            "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-GNHWGL20XC&cid=150020558.1766598642&gtm=45je5ca1v871258753za200&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875",
+            "method": "POST",
+            "resourceType": "ping",
+            "timestamp": 1766598641958
+          },
+          {
+            "url": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160510",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598641973
+          },
+          {
+            "url": "https://api.onesignal.com/sync/1300d09a-1e64-4243-ad67-d33c4b74b053/web?callback=__jp0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642076
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642116
+          },
+          {
+            "url": "https://embi-media.com/prebids/production/prebid.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642116
+          },
+          {
+            "url": "https://embi-media.com/hb_resources/teads/teads_cookieless.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642116
+          },
+          {
+            "url": "https://a.teads.tv/analytics/tag.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642116
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-PRJHEDRHDQ&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642116
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-GNHWGL20XC&gtm=45je5ca1v871258753za200&_p=1766598640642&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=150020558.1766598642&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAACAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875&sid=1766598641&sct=1&seg=1&dl=https%3A%2F%2Fwww.elancasti.com.ar%2F&dt=El%20Ancasti%20-%20Diario%20de%20Catamarca&en=page_view&_ee=1&_et=3&tfd=1883",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642116,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%20Ancasti%",
+              "%20Diario%"
+            ]
+          },
+          {
+            "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642180
+          },
+          {
+            "url": "https://static.teads.tv/analytics/tag.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642310
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642329
+          },
+          {
+            "url": "https://script.4dex.io/a/latest/adagio.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642377
+          },
+          {
+            "url": "https://a.teads.tv/hb/bid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642394
+          },
+          {
+            "url": "https://onetag-sys.com/prebid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642394
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642394
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642395
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642395
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642397
+          },
+          {
+            "url": "https://onetag-sys.com/prebid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642397
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642397
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642397
+          },
+          {
+            "url": "https://mp.4dex.io/prebid?orgid=1047&gzip=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642400
+          },
+          {
+            "url": "https://mp.4dex.io/prebid?orgid=1047&gzip=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642400
+          },
+          {
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1ZMKMZGT7R&gtm=45je5ca1v9227621729za200&_p=1766598640642&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=150020558.1766598642&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875&sid=1766598642&sct=1&seg=0&dl=https%3A%2F%2Fwww.elancasti.com.ar%2F&dt=El%20Ancasti%20-%20Diario%20de%20Catamarca&en=page_view&_fv=1&_ss=1&_ee=1&tfd=2182",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642429,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%20Ancasti%",
+              "%20Diario%"
+            ]
+          },
+          {
+            "url": "https://usuarios.elancasti.com.ar/js/TDUserPaywall-version-1637935548.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642442
+          },
+          {
+            "url": "https://gum.criteo.com/sync?c=72&r=2&j=TRC.getRTUS",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642464
+          },
+          {
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PRJHEDRHDQ&gtm=45je5ca1v9197158583za200&_p=1766598640642&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=150020558.1766598642&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875&sid=1766598642&sct=1&seg=0&dl=https%3A%2F%2Fwww.elancasti.com.ar%2F&dt=El%20Ancasti%20-%20Diario%20de%20Catamarca&en=page_view&_fv=1&_ss=1&_ee=1&tfd=2254",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642501,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%",
+              "%20Ancasti%",
+              "%20Diario%"
+            ]
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/i/40135427?ers=3",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642535
+          },
+          {
+            "url": "https://at.teads.tv/fpc?analytics_tag_id=PUB_16164&tfpvi=&gdpr_status=22&gdpr_reason=220&gdpr_consent=&ccpa_consent=&shared_ids=&sv=d656f4a&",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598642538
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766598642544
+          },
+          {
+            "url": "https://onesignal.com/sdks/web/v16/OneSignalSDK.page.styles.css?v=160510",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766598642553
+          },
+          {
+            "url": "https://www.elancasti.com.ar/js-custom/xpress/paywall-min-version-1766549215.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642563
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642663
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642663
+          },
+          {
+            "url": "https://onetag-sys.com/prebid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642663
+          },
+          {
+            "url": "https://a.teads.tv/hb/bid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642663
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642663
+          },
+          {
+            "url": "https://mp.4dex.io/prebid?orgid=1047&gzip=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642663
+          },
+          {
+            "url": "https://usuarios.elancasti.com.ar/css/TDUser.css",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766598642663
+          },
+          {
+            "url": "https://shb.richaudience.com/hb/",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642668
+          },
+          {
+            "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=24030&site_id=588454&zone_id=3757002&size_id=15&alt_size_ids=16&rf=https%3A%2F%2Fwww.elancasti.com.ar%2F&tg_i.domain=elancasti.com.ar&tg_i.page=https%3A%2F%2Fwww.elancasti.com.ar%2F&tg_i.documentLang=es-AR&tg_i.pbadslot=%2F10749195%2Fhome_rectangle(20)&tg_i.divId=div-home_rectangle-20&tk_flint=pbjs_lite_v10.17.0&x_source.tid=ub08777e9-e184-4acc-9a3d-8ce6d8608c36&l_pb_bid_id=0bd2f533-5470-43ce-966f-8f086e4595ff&p_screen_res=1280x720&rp_secure=1&x_imp.ext.tid=uc04909ea-80b5-4ea9-82db-24483bc71611&p_gpid=%2F10749195%2Fhome_rectangle(20)&m_ch_ua=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.3856549090831204",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598642668,
+            "macros": [
+              "%3A%",
+              "%2F10749195%",
+              "%22HeadlessChrome%",
+              "%7Cv%",
+              "%22143%",
+              "%2C%",
+              "%22%",
+              "%3D%",
+              "%22Not%"
+            ]
+          },
+          {
+            "url": "https://a.teads.tv/hb/bid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642668
+          },
+          {
+            "url": "https://onetag-sys.com/prebid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642668
+          },
+          {
+            "url": "https://yandex.com/ads/prebid/17619117?imp-id=1&target-ref=elancasti.com.ar&adapter-version=2.9.0&ssp-id=10500&domain=yandex.com",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642668
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642669
+          },
+          {
+            "url": "https://prebid.smilewanted.com/",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642669
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642669
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642669
+          },
+          {
+            "url": "https://mp.4dex.io/prebid?orgid=1047&gzip=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642670
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642766
+          },
+          {
+            "url": "https://rtb.openx.net/openrtbb/prebidjs",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642766
+          },
+          {
+            "url": "https://ib.adnxs.com/ut/v3/prebid",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642766
+          },
+          {
+            "url": "https://onetag-sys.com/prebid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642767
+          },
+          {
+            "url": "https://a.teads.tv/hb/bid-request",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642767
+          },
+          {
+            "url": "https://mp.4dex.io/prebid?orgid=1047&gzip=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598642770
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWFRCKd223lJU2s5VQNiF28vEgzDLVGSCdXfNippBAcv_pIXFVACpw4rvyxDhsJsxffbsN2v227oWy7RUMKY1dIabPztHd7XbcgsK328jF-WAGDjqu77JRXfAJEMkxtkMZYuuYBcw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598642855
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWFRCKd223lJU2s5VQNiF28vEgzDLVGSCdXfNippBAcv_pIXFVACpw4rvyxDhsJsxffbsN2v227oWy7RUMKY1dIabPztHd7XbcgsK328jF-WAGDjqu77JRXfAJEMkxtkMZYuuYBcw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598642855
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWucnC1ZiwuB-ZDWo1YhHeN5kyBsgJqzwX5X8QIUiyhtjG6z_IKnd8CZvfz5WXD-Fyid5ndXiPYx90h3hrFjly6tAthTw4Xrg6yoyYtTlgSuDdH--vvQhUC0NWhNQRFEI6XvgF7XQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk4NjQyLDg1OTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZWxhbmNhc3RpLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642882
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7736515232873422&correlator=2310037091555700&eid=31095252%2C31096080%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=10749195%2Chome_horizontal(4)&enc_prev_ius=%2F0%2F1&prev_iu_szs=970x90%7C728x90&ifi=1&didk=220745223&dids=div-home_horizontal-4&adfs=1721979615&sfv=1-0-45&eri=1&sc=1&lrm=100&cookie_enabled=1&abxe=1&dt=1766598642869&lmt=1766598640&adxs=155&adys=246&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=0&ucis=1&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.elancasti.com.ar%2F&vis=1&psz=970x-1&msz=970x-1&fws=132&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766598640612&idt=1892&adks=2275674513&frm=20&eoidce=1&gblpids=%2F10749195%2Fhome_horizontal(4)&pb_szs=970x90%7C728x90&pgls=CAA.&pbbce=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598642883,
+            "macros": [
+              "%2C31096080%",
+              "%2F0%",
+              "%3A%",
+              "%2F10749195%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7736515232873422&correlator=3872268018857338&eid=31095252%2C31096080%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=10749195%2Chome_horizontal(10)&enc_prev_ius=%2F0%2F1&prev_iu_szs=970x90%7C728x90&ifi=2&didk=2776340654&dids=div-home_horizontal-10&adfs=120434186&sfv=1-0-45&eri=1&sc=1&lrm=100&cookie_enabled=1&abxe=1&dt=1766598642877&lmt=1766598640&adxs=155&adys=1079&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=1&ucis=2&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.elancasti.com.ar%2F&vis=1&psz=970x-1&msz=970x-1&fws=132&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766598640612&idt=1892&adks=230702750&frm=20&eoidce=1&gblpids=%2F10749195%2Fhome_horizontal(10)&pb_szs=970x90%7C728x90&pgls=CAA.&pbbce=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598642883,
+            "macros": [
+              "%2C31096080%",
+              "%2F0%",
+              "%3A%",
+              "%2F10749195%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7736515232873422&correlator=2073749349619374&eid=31095252%2C31096080%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=10749195%2Chome_rectangle(4)&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250%7C336x280&ifi=3&didk=4243431675&dids=div-home_rectangle-4&adfs=1927088563&sfv=1-0-45&eri=1&sc=1&lrm=100&cookie_enabled=1&abxe=1&dt=1766598642878&lmt=1766598640&adxs=147&adys=1219&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=2&ucis=3&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.elancasti.com.ar%2F&vis=1&psz=300x-1&msz=300x-1&fws=132&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766598640612&idt=1892&adks=15611615&frm=20&eoidce=1&gblpids=%2F10749195%2Fhome_rectangle(4)&pb_szs=300x250%7C336x280&pgls=CAA.&pbbce=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598642883,
+            "macros": [
+              "%2C31096080%",
+              "%2F0%",
+              "%3A%",
+              "%2F10749195%"
+            ]
+          },
+          {
+            "url": "https://6853bbf795a386023ce42b5a136e5842.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766598642883
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWODap4GTHMR6FkBiSzZJKXWv8tKcuDwYTcSYDCvCYe10gPfD8LTUIJgO_n-dtScf4x69ehPK8X0qqNPjO2M-3PfKa3ELPYuZ9VW7U1thLCkKPYVx34SqnwIoAd7SMySmWptbIZDQ==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598642921
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXoexB6v0uo2CHSE1PKLuHqdoye_1rdfYKuHLUt0oc4nGLWQGkFqLMY5mE2dXEkfjpVvd9BOv1jAwQdSCOKZx8l3exCxzFy3q_ABOnKnvqDNNTMPfn016zO6un00P9VVPJtuai9fQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk4NjQyLDkyMDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vd3d3LmVsYW5jYXN0aS5jb20uYXIvIixudWxsLFtbOCwic0NoTkg1T3NhazAiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598642921
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7736515232873422&correlator=1162120026831370&eid=31095252%2C31096080%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=10749195%2Chome_rectangle(17)&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250%7C336x280&ifi=4&didk=1610753986&dids=div-home_rectangle-17&adfs=1887197965&sfv=1-0-45&eri=1&sc=1&lrm=100&cookie_enabled=1&abxe=1&dt=1766598642943&lmt=1766598640&adxs=833&adys=1219&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=3&ucis=4&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.elancasti.com.ar%2F&vis=1&psz=300x-1&msz=300x-1&fws=132&ohw=1280&psd=WzMxLFtdXQ..&dlt=1766598640612&idt=1892&adks=2038469516&frm=20&eoidce=1&gblpids=%2F10749195%2Fhome_rectangle(17)&pb_szs=300x250%7C336x280&pgls=CAA.&pbbce=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598642946,
+            "macros": [
+              "%2C31096080%",
+              "%2F0%",
+              "%3A%",
+              "%2F10749195%"
+            ]
+          },
+          {
+            "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202512040101&st=env&sjk=7736515232873422",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766598643038
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7736515232873422&correlator=1162120026831370&eid=31095252%2C31096080%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=10749195%2Ccodeless_top&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1&ifi=5&didk=2488521466&dids=gpt_unit_%2F10749195%2Fcodeless_to&sfv=1-0-45&fas=2&eri=1&sc=1&lrm=100&cookie=ID%3Dd1c0b49d58257626%3AT%3D1766598642%3ART%3D1766598642%3AS%3DALNI_MbcArSLl1675isAJVeg2XI4aI4aSg&gpic=UID%3D000012deb19448eb%3AT%3D1766598642%3ART%3D1766598642%3AS%3DALNI_MZSpvEpwahwn2eWj9C4i3UPgagz1A&abxe=1&dt=1766598643049&lmt=1766598640&adxs=-9&adys=-9&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=-1&ucis=5&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.elancasti.com.ar%2F&vis=1&psz=0x-1&msz=0x-1&fws=2&ohw=0&psts=AOrYGsl8rmw3iqhJmDrvSwpQ3BEf8sdo_xLXnBRLSbZJwHXfgLysK6HwbsBangK1MxMGz0ajFm3X_Y0cDH503YMllpMDJIPiwzkVWpqQqw&psd=WzMxLFtdXQ..&dlt=1766598640612&idt=1892&adks=3438996812&frm=20&is_cau=1&no_cau_info=1&eo_id_str=ID%3D17f0b80f2e5e33df%3AT%3D1766598642%3ART%3D1766598642%3AS%3DAA-Afjay21hqn-pfPfEx9KMs4qqS&pgls=CAA.&pbbce=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643053,
+            "macros": [
+              "%2C31096080%",
+              "%2F0%",
+              "%2F10749195%",
+              "%3Dd1c0b49d58257626%",
+              "%3D1766598642%",
+              "%3D000012deb19448eb%",
+              "%3A%",
+              "%3D17f0b80f2e5e33df%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7736515232873422&correlator=1162120026831370&eid=31095252%2C31096080%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=10749195%2Ccodeless_itt&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1&ifi=6&didk=2680605339&dids=gpt_unit_%2F10749195%2Fcodeless_it&sfv=1-0-45&ists=1&fas=8&fsapi=1&eri=1&sc=1&lrm=100&cookie=ID%3Dd1c0b49d58257626%3AT%3D1766598642%3ART%3D1766598642%3AS%3DALNI_MbcArSLl1675isAJVeg2XI4aI4aSg&gpic=UID%3D000012deb19448eb%3AT%3D1766598642%3ART%3D1766598642%3AS%3DALNI_MZSpvEpwahwn2eWj9C4i3UPgagz1A&abxe=1&dt=1766598643050&lmt=1766598640&adxs=-9&adys=-9&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=-1&ucis=6&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.elancasti.com.ar%2F&vis=1&psz=0x-1&msz=0x-1&fws=2&ohw=0&psts=AOrYGsl8rmw3iqhJmDrvSwpQ3BEf8sdo_xLXnBRLSbZJwHXfgLysK6HwbsBangK1MxMGz0ajFm3X_Y0cDH503YMllpMDJIPiwzkVWpqQqw&psd=WzMxLFtdXQ..&dlt=1766598640612&idt=1892&adks=2781182184&frm=20&is_cau=1&no_cau_info=1&eo_id_str=ID%3D17f0b80f2e5e33df%3AT%3D1766598642%3ART%3D1766598642%3AS%3DAA-Afjay21hqn-pfPfEx9KMs4qqS&pgls=CAA.&pbbce=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643053,
+            "macros": [
+              "%2C31096080%",
+              "%2F0%",
+              "%2F10749195%",
+              "%3Dd1c0b49d58257626%",
+              "%3D1766598642%",
+              "%3D000012deb19448eb%",
+              "%3A%",
+              "%3D17f0b80f2e5e33df%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl_page_level_ads.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643053
+          },
+          {
+            "url": "https://6853bbf795a386023ce42b5a136e5842.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766598643057
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/safeframe/1-0-45/js/ext.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643065
+          },
+          {
+            "url": "https://ib.adnxs.com/ptv?id=36396678&cb=%5BCACHEBUSTER%5D&promo_alignment=%5BALIGNMENT%5D&promo_sizes=%5BWIDTH2xHEIGHT2%5D%2C%5BWIDTH3xHEIGHT3%5D&size=[300x250]",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643065,
+            "macros": [
+              "%5BCACHEBUSTER%",
+              "%5BALIGNMENT%",
+              "%5BWIDTH2xHEIGHT2%",
+              "%2C%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643065
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsvPBL4UbW3uQn0iDFQDtsHfU1dQpa-Jt05HKSN91wsUlF3Z3jnFdk6mafOXQSw89m9h3tGhlDiF7lQe8hst62eDa-LtISBJOap3pjn84oqmxFdRGP1YLC86dPELSQkv2Wp7r9BNymr1bX0aIHutIiexkJCWn3-P4F7xps4EzKPRkUo2eVlxeCD7e30o7secOpCeEbwmau8FBh0RN0mziXqyI94l-kMObY5MONJJPuAPiwHkU01ocZavGDTkp4JaGzziArFElH_1e-j6C-542LVul2oIGzM7FpyDgvfhnFW9DxTk7BZx-1xJh2f2MR5whm9wtCPCITdygLSW9-eW_KPbkHb18QQpqnO2TT4b-0gjqCl7A5kEMhK_r7q5ZWlqoen1p1B_ivVl2b5bZkaj5BH2sqrHPzrwAU-IAMmriya6czo8tFJsqLKcP1FjUhLt&sai=AMfl-YRma5HxLj98mWzQUKxQcFP_--MHfdjItr-QYs4k4OlRze1jBC3aszbwmemeUX37EoYTwboaIkvXN32Bz5jDN8ksz6ZVTtxKRrpjTw7PwWy5Q7C0vNXoqMsAcnN8PlsZF8BQSxvS-of_0tHhMZbvYbIAWmcsG3aHgRIR1mxkoii7PD3o67SNoAsu61lgtaKyVahR7gNduU3TGlc5-ZdTw_nZcyF-Cza1I3huDwgUfeMi1DBF6KkfyQvmcZhJF3SvbkqcuTUwzCbycSyqO9L9nin7qZUM_FZK31UGP8z1LUXmJS49&sig=Cg0ArKJSzDVItdvO66xuEAE&uach_m=%5BUACH%5D&urlfix=1&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643207,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643207
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjstXhro_p8swr5SNDbCZjx3EvBlM6dPQhXNvlDFHFLmPt7P5vTa_XjEXiBF9yqG0n4PUMahjXArXANtqcbpvlRy-E91E4-INf0cK1HJb8ZtMXIMoBXYAluYcgD7eRp2tJQbtfaLtS2zgVX7xb5sNUqImiceXcVfDicmczT2JouqobFHxEox9ch63yNK1QRFx-lHP_v8Pu-Zp23yEZx5TptfWBE7F7tGWaUljlFtaJ3t-jrCRUQkLgXk_uV2Y1xf8aTWsjD5K0NWARygx3qa9iVLiDFD6dkBEqKYPh2MGeK6mA_wMT7UNf2NJ6fqYD-B-7gNKMcKzki_-OFvXASMI9NMyp0wPydM34qb2hvfbRUd2JcC9an4ubIeiypCNBgc7pHHy_xGgPrUwnoJjmMkzT-vE2qPw0VYnTQ4&sai=AMfl-YSAljyjgSJGZYBfO_NsXPKcKgH5vzbfXUNM6Zm72SYpi29jLfjgh4X1flXG8bc0ZTQq-J6SsNm7sRJ3TifEAgAsTOyphuCOX6c2zj6O2dkns5vWwCBCkBSwnsEftkZu8sH5V4dXYW2KhADIWQ3Sb5gIuk_AT0GGeO0Lqf6SHT3_xL_6AkjJBBry_ILhg5TDcRKpn0bg18kRtLYXHKjx6SXnbjrdwKcHMiIceFXc5qEs80huH_DUqaPh_F87d0hkSMCh7g8kENjg-JG8Zl3iXPwXY0TQc3A4U8RgAxOYIo4auio&sig=Cg0ArKJSzBFY9hvJfx5ZEAE&uach_m=%5BUACH%5D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643216,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/abg_lite.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643216
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/client/window_focus.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643216
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643216
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/simgad/4538682543273206875",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598643216
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsuz8DmoI1zsn97OdNxFklZOGXalw2ifTubKLR_RSSAPnl0TGRzn-GRtFjuuD5kZb1kCkR8EvrT_BGrfxhwHiN7JNjYZi8z5JFMqagMEw7RWCaDPXnolk-XHZuWYfnTuxa4_Ezd3C2dibCYpB4LhqGC2iCA50srRdoU7BVFGjVhsNvKGIKbK6VsFRj3uN4GtxQ6wFL2eFINhquxORIFzrNhbiHIxtn14D05vWwqeeIcswN5bZJtXvKZtlgnB595ewzyhlrsfUZZlK447pBeaCtDj0dw61EOP2iA11JytpvJSg4ra-XS3-_UqxI_nB9v-587Zp-8blzuEVYiizVq9bDX1KP6H2CHoJd_ZWBmxhLyEfCrHlyMYCwK3n85Z6RJfzSKkBhO0OHCxoUJlp8H5nO_1biOv5lf2G3MgVqL-yalDS5WXIhKL&sai=AMfl-YTS468Rz_D07vbgO71jQPGFV3gbLAlst-cZjcQR6h2_NMmlDr-bhtjyPA6D-tCEqPya78sLviieO83x3N9WdwwfvUXzMUEhIcCUUr-VhvalspO3KUv7Z7UOjc85HzEvBjm49pZeF7VEwY9b3SDRe1nNFk4wiHE_wh4L562wg-IC-Cr5_HwydRO2SB3VrzodyIhaEIT-LdQUGIN9JiOBGHTMoAihoqTZd5lxbTjNX9miEGAsxTK1TVmTPhvbRrsUVKfuOpSFmWvSTd8tbC9pU7--PB3UsnhdoJrQhWG8PV1rry7h&sig=Cg0ArKJSzDVP_gl8kbAaEAE&uach_m=%5BUACH%5D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643247,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/client/window_focus.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643247
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643247
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/simgad/8978149698513470143",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598643247
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643270
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643271
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643277
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643277
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643285
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643285
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643287
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643288
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643289
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssxh05TyGntz92d8N8AcClaoQw7tPtSHf7VkqLEgqAYeYqBK1v9hTkt0mokQOKNLt2E92xWhmBRM-r11hVdZakf4qgsieBmpjLKUTHM8_m1g43vZHKXFE8ULIzHfsLzNPh2E7PJDjx7THBn5nOseH1JxW-kOV6xtD8vEZQWxXsWkJj2NM-qQlyJ923w_2rEae6YkhWmFOuQM0FPZecn4BNO1jF48iVDBQJ2oSGrY44McsLxlxhOFE19gQAIwTW3VO5Nt5_ZPJQVuyb5jvaz7XELWqzjHIPIZsctkVial_sWef7yb3mbFVUDeGoshtSJwabd3GxMEZtC5NhHWUXgLhsV-c2kwpcCeNDKJWCec6mu3LCJ2h-v43ryU1o-MOrYFfPrJeZZO3YA751UOGlospUzmH1uIrAUVIYiKS56POc9-aKtWAK9ezwXoRXBaMdROUk&sai=AMfl-YR9nBCeAuns6Dwk7STVPGYxJ5vBBfel0TFTw4qN0ZsGK29F_sG5q_fTz3qyRaQnlIorLdLOTS2jtHZD_8zIICdtvB_H3nIpSXl7sDDRR4wamuVBXmm9ACkgmaQE1VJ5EM4qYr6YcheSxg-DczIyfEA-j8UYSoRLr42eB-JmGJ5YxYaJ4nq6tzm1cx7o5nzkV2keLA2TvDINKGv-UgqOpbJBMfRXvE8lnZmIyQNF-kZYKNE1hMvthVauzq3Ji9DV0AGjMdimV4_9qUVF4UhLiSuIVEgqTmweLoMsC6MoZzjg-DFq&sig=Cg0ArKJSzL8_qapuFZk9EAE&uach_m=%5BUACH%5D&urlfix=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643293,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7736515232873422&correlator=4248386732435170&eid=31095252%2C31096080%2C83321072&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fif&gdpr=0&iu_parts=10749195%2Chome_rectangle(20)&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250%7C336x280&ifi=7&didk=1610754040&dids=div-home_rectangle-20&adfs=3400842921&sfv=1-0-45&eri=1&sc=1&lrm=100&cookie=ID%3D9f56f5c56b6f5abd%3AT%3D1766598643%3ART%3D1766598643%3AS%3DALNI_MZqPWO-3n15EJCyj6Le6xT5IKAKDA&gpic=UID%3D000012deb2050a3b%3AT%3D1766598643%3ART%3D1766598643%3AS%3DALNI_MZA93-LpAXLwGSxFQ0esnkZJQ8MIA&abxe=1&dt=1766598643350&lmt=1766598640&adxs=490&adys=1219&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=4&ucis=7&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.elancasti.com.ar%2F&vis=1&psz=300x-1&msz=300x-1&fws=132&ohw=1280&psts=AOrYGslZfyD4uyCkfRf8bEcA3LceEcOtU75vauQ3yGOAFvS4Kkf9KbCpogacwUWPCvXOzlbmxOfkz_SI9JdbmlFJeZ9cEZulT0XHGz8UUQ%2CAOrYGsl8rmw3iqhJmDrvSwpQ3BEf8sdo_xLXnBRLSbZJwHXfgLysK6HwbsBangK1MxMGz0ajFm3X_Y0cDH503YMllpMDJIPiwzkVWpqQqw%2CAOrYGsnykZ-s2bqibVcotepO12fga2VmBcLo5IhG3bshRRa-ebw0GUoMtvyDhktUo9foWhmYYbSZziNEnPRf91wC1UZIBrxolf_E4Avi%2CAOrYGsl1pjPrF6VKlMzm95xqObem5yTmG_Bc0523AoYrWaFNXr52g2bh2W1Yyzp5-w&psd=WzMxLFtdXQ..&dlt=1766598640612&idt=1892&adks=765934807&frm=20&no_cau_info=1&eo_id_str=ID%3Da125b21310edf4da%3AT%3D1766598643%3ART%3D1766598643%3AS%3DAA-AfjbIYg_6XnSAl8mOWmIsOG-E&gblpids=%2F10749195%2Fhome_rectangle(20)&pb_szs=300x250%7C336x280&pgls=CAA.&pbbce=1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643352,
+            "macros": [
+              "%2C31096080%",
+              "%2F0%",
+              "%3D9f56f5c56b6f5abd%",
+              "%3D1766598643%",
+              "%3D000012deb2050a3b%",
+              "%3A%",
+              "%2CAOrYGsl8rmw3iqhJmDrvSwpQ3BEf8sdo_xLXnBRLSbZJwHXfgLysK6HwbsBangK1MxMGz0ajFm3X_Y0cDH503YMllpMDJIPiwzkVWpqQqw%",
+              "%3Da125b21310edf4da%",
+              "%2F10749195%"
+            ]
+          },
+          {
+            "url": "https://6853bbf795a386023ce42b5a136e5842.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766598643413
+          },
+          {
+            "url": "https://fonts.googleapis.com/css?family=Google%20Sans%3A400%2C500",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766598643434,
+            "macros": [
+              "%20Sans%"
+            ]
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/client/load_preloaded_resource.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643434
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/adview?ai=Cfe6I8idMafXLO638kPIPocOgyQnSiqzmgwHhruCPjBWhpvjz0B0QASDU9eKPAWDJpu6M5KTAE6ABztjcmQLIAQngAgCoAwHIA8sEqgSzAk_QgS_RgFe142j8MPrQNWcWR6QEWYK5dpoaMNqqqle603QeI6T2Z7gmNLBfk4UGjOnsrBNsrDCLDqJm2LmWbx3DgrWM8YnYllpK_j9BeR_DB6l8gH-MHpQ_sB_H34aebaSX97S-9YgbP3D8q9HEMNLA4wLdH9WMqkv_-4VsGxUTkyQy8IyvIBaL2Dq_04Fr4vIcSReFkxRbUXJZdQtIu0_1d9DSCq5drX5mlt_bNd8IIrvAVhxgVnjnoYGK-zzm6AG0RMVTJx0iGk-LT4phwwPdSPI7XdoUSyTdie32lFQrlGnYxMUZX8eRKESHqFnJFDhncB5rqeRwVAaqdSg9esk6faZ5Vac_jSZ1nZ-UI0UGVs-zAfdj6opQWsZ57Y6UHDjE5RnG9RmDqoYqYdEvXZ6_trTABNz9heHXBeAEAYgFgLuYklWSBQQIBBgBkgUECAUYBKAGLoAHmqej5gGoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gH2baxAqgH98KxAtgHAPIHBBCwgwbSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOljmscvk5NaRA5oJqQFodHRwczovL2JpZ2hvcm5pcm9uZG9vcnMuY29tLz91dG1fc291cmNlPWdvb2dsZSZ1dG1fbWVkaXVtPWNwYyZ1dG1fY2FtcGFpZ249MjI4NTUxNjAzOTkmdXRtX2NvbnRlbnQ9JnV0bV90ZXJtPSZ1dG1faWQ9MjI4NTUxNjAzOTkmZ2FkX3NvdXJjZT01JmdhZF9jYW1wYWlnbmlkPTIyODU1MTYzMjY0gAoDyAsBmAyp-7_dogXaDBEKCxCQhqnOyum24sEBEgIBA6oNAlVT4g0TCM2ZzOTk1pEDFS0-RAgdoSEomeoNEwjP48zk5NaRAxUtPkQIHaEhKJmIDv___________wG4E4ME2BMO0BUByhYCCgD4FgGAFwGyFywKHAgAEhRwdWItMTE0MDQ4NTYzNTEwOTM5Mxiz5RMYASoKMTY4MDQ2MTM3NLoXAjgBqhgXCQAAAAAAG_hAEgoxNjgwNDYxMzc0GAGyGAkSAuVrGC4iAQDQGAHoGAHCGQIIAQ&sigh=_bZwZEj_CvQ&uach_m=%5BUACH%5D&ase=2&cid=CAQSvwEAwksa0biXoW6fLuQvHdVNHOsBC5CgiGLd9rNG_jf2jo-EGSD7ycsrwjoL57ZH7JGywQx4X7KgyEPrj5Ak7yPmFnTKpA1g75ksnYRY7aI6s2-P67t7adHhDEzNTQISL1tgbxNerEG9Od4JEjYtDE28-4seQgICHTwhMWcOx6WITOAtEID7QfncWX5klXcmuBkiZWjNajSTAoGJQhspVh2UV0c8V5zADbcJJTSHtuQ2AB-RqIvL9evalWejy2pf0hgB&template_id=515&ebtr=1&vis=1&nis=6",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643434,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/abg_lite.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643434
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/client/window_focus.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643434
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/pagead/js/r20251211/r20110914/client/qs_click_protection.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643434
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643434
+          },
+          {
+            "url": "https://www.gstatic.com/mysidia/9d75f147fc58653b08f4b9d747226cf4.js?tag=addon/mysidia_one_click_handler_one_afma",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643435
+          },
+          {
+            "url": "https://tpc.googlesyndication.com/simgad/4396473042856888061?w=100&h=100&tw=1&q=75",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598643445
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2/237/runner.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766598643449
+          },
+          {
+            "url": "https://www.google.com/recaptcha/api2/aframe",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766598643450
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643490
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643490
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643490
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/bg/vKVxIeXH0QGTDDOwiqpaTKZp5NNzUAHYSL8enmE7PZA.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643494
+          },
+          {
+            "url": "https://ib.adnxs.com/ptv?id=36396678&cb=%5BCACHEBUSTER%5D&promo_alignment=%5BALIGNMENT%5D&promo_sizes=%5BWIDTH2xHEIGHT2%5D%2C%5BWIDTH3xHEIGHT3%5D&size=[728x90]",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643502,
+            "macros": [
+              "%5BCACHEBUSTER%",
+              "%5BALIGNMENT%",
+              "%5BWIDTH2xHEIGHT2%",
+              "%2C%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598643503
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjstsfZzg8PJFAcOGn-i8o-kN2U9xBW0zFiVjoXPfNohNsdgpgVG9vIHguE37rIxxvMNkwXwNhsnXfinzglbWaKSZf5bWgucN23r6EG3GpDQO5Y5jX65lU-pIC3esZsD5cfBafX_hCe_rKLbBJfF1G64Irfpsvb60yrzxzAI5_PlOwQywphi6ty2X9ZfJ0-63z6aMptG2QNxtOrjQLVjUPV0T0_VccyDssseqG-E_biCxWA7H6xj2gJu9vHfRqLhL6LFp-y5uY1emnhvwi0gU9XLrP1Wm_4gqpKsdcc8MmmyUPyIxVDd4yiP0eP-EveG6gVznNzsDxpLa4tDA1Vtmv6iajU8CTfYEIHNJOrk8mOWfL5jaJ5UNND7ZdVIcnQDYvzhMEYRsKAWRqJmk_QrO5HxWOKviRqlkE4YvnYmeanoWbEwWy0qVKdk&sai=AMfl-YT5UsXVe2pnb06HkoWylsHYzBg60mD-HkNTcr1xp-NtbS22bzRXxszA_GwMu1Vhz0d986tJcK1aPV1VmL_ZQ07Sky7knVvNArZJPykEBjRh560J779nPa0LLxMfL39xc6C-I0Sl_GpgcqhaMEfQJ8umhUy5GCZjL9-WIwWE1LKCm0eg4iNhwDa_jKkh0pY-nwQs_i-Fp6MAywOOzLir1tc3N4gmUgqUa4tzKMSoo6sLzUSo0ruT-8VD_2bXwhzHBbjiyMXywCPgrj15cpx5-2wPyAyJzqiZLaTgckan-zpq_CTn&sig=Cg0ArKJSzIdCOgW5Fgy2EAE&uach_m=%5BUACH%5D&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643550,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643574
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643574
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsuXh_BPLy_a5U7F1XlKgZPFS-uvejL72sLFpw5nIkIZTmyHo1G50rp7FZpMaSRD9LdfSHS3CKmyYb0W3JgOfFQVkHrK39_hJH1HEMSrZnaMRMGvMvFatPDYV-kUmXURDGVT8vWguHBS8YmHwUdEmJkgKR17xVG7zTcOyAIO8ITLAsqh0SIIEcN0GkukXk8Rj7rkIi4qdIkXJKSGTiaFU0QO8Gs55v9eSFWwlacr5jTCzxlAObgAssxBGYoux8vxtqAHST7mKe84lkopB6It7YeEX-tZvtP09wdcbfiPhFGzs8BkUPuuEat842jR4uAp2FusN8_LN6nwStAKls-UyeeS1EuXrTTt5a-h6iEG7FKF5eF1JUQGNcVASfCv66ze_HtkDyFuu_ArfOsK-o6bUbd0WPT8W2AZUw8wCw&sai=AMfl-YSjpaYDi6NOT7bG5RfMbBGmwbBNEGX3pc2WN7HAoy6EAQ4U_rT9RItouzNqvRxHE4rl6meQU4I0A_llJ05mDmalj8SqjKLm88VoiQ8fpTB3ixflspF4qrFlCBRULGQuH1yjBLwhPg1i79JXkq8c8xgwiFaEOVmYV9tvmTKfN3ax2Diu0NacVzjMx3s0CPXUWa2OBrni3RSRW8Z69oKD1SB7WAdNxQ1i5s_apxsQ1DI_3t86YvMA0NomC3pwHzH4wH24BoUZExYoz0P8vdiDtYKm0liX_OhVIWtUGGOXc-1nnKI&sig=Cg0ArKJSzAOPRMHA2E9hEAE&uach_m=%5BUACH%5D&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0%3D&adurl=",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643578,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598643578
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/googlesans/v67/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvbQoi-E.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766598643599
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/generate_204?j2cOdg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598644869
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxV_Zroune-h2m93umWA0xSwThPDV26sP4Ot-9voiEvqDM9jzsXh5qnR8T_Ecj0RkGaCip8yCRpU1FuIqcPNA7dfrM_eXZBEScz96Lnj_XbWIZdj6_fvJyzMBmi7t50BeNXy4PxZSNkUqX_tMArtJnupzPjDslqZVbEs2sAk0DqsZKSzYqPgoFMpiH6l/_&type=ad&-728.90.-ad3./adbar2_/admaxads.",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598644870
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/show_companion_ad.js?fcd=true",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598644870
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWFRCKd223lJU2s5VQNiF28vEgzDLVGSCdXfNippBAcv_pIXFVACpw4rvyxDhsJsxffbsN2v227oWy7RUMKY1dIabPztHd7XbcgsK328jF-WAGDjqu77JRXfAJEMkxtkMZYuuYBcw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598644870
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=237&li=gpt_m202512040101&jk=7736515232873422&rc=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766598644870
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766598644883
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWFRCKd223lJU2s5VQNiF28vEgzDLVGSCdXfNippBAcv_pIXFVACpw4rvyxDhsJsxffbsN2v227oWy7RUMKY1dIabPztHd7XbcgsK328jF-WAGDjqu77JRXfAJEMkxtkMZYuuYBcw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598644888
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWFRCKd223lJU2s5VQNiF28vEgzDLVGSCdXfNippBAcv_pIXFVACpw4rvyxDhsJsxffbsN2v227oWy7RUMKY1dIabPztHd7XbcgsK328jF-WAGDjqu77JRXfAJEMkxtkMZYuuYBcw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598644891
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWFRCKd223lJU2s5VQNiF28vEgzDLVGSCdXfNippBAcv_pIXFVACpw4rvyxDhsJsxffbsN2v227oWy7RUMKY1dIabPztHd7XbcgsK328jF-WAGDjqu77JRXfAJEMkxtkMZYuuYBcw==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598644891
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUtCSEVMajgCRmTqD3-uGNGBy2sazMtkCO6aRIR7SWusPt0wuz3m912-kw6v_jHoRSeFufXpJ27gXfAIwWfie0Q8IEJGFHX6Mocvbv2zEU7dnbezcWnXqpSO2la-5a3_pnJfmZriQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2NTk4NjQ0LDg5MDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cuZWxhbmNhc3RpLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598644891
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxU926SDENj21QVz7R-1UmG27H0Rm4yX0EJ2FD6OAc3MCxTRHXTivagHi6FVjcllz-QFxl_uaQ2zCXKBx-GvX3pn4x-ycv4tGfpCsA-nUKZnUt8W8_iVysTh9HM7DBylbq8OxAqMgg==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766598644967
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/btr/view?ai=Cfe6I8idMafXLO638kPIPocOgyQnSiqzmgwHhruCPjBWhpvjz0B0QASDU9eKPAWDJpu6M5KTAE6ABztjcmQLIAQngAgCoAwHIA8sEqgSzAk_QgS_RgFe142j8MPrQNWcWR6QEWYK5dpoaMNqqqle603QeI6T2Z7gmNLBfk4UGjOnsrBNsrDCLDqJm2LmWbx3DgrWM8YnYllpK_j9BeR_DB6l8gH-MHpQ_sB_H34aebaSX97S-9YgbP3D8q9HEMNLA4wLdH9WMqkv_-4VsGxUTkyQy8IyvIBaL2Dq_04Fr4vIcSReFkxRbUXJZdQtIu0_1d9DSCq5drX5mlt_bNd8IIrvAVhxgVnjnoYGK-zzm6AG0RMVTJx0iGk-LT4phwwPdSPI7XdoUSyTdie32lFQrlGnYxMUZX8eRKESHqFnJFDhncB5rqeRwVAaqdSg9esk6faZ5Vac_jSZ1nZ-UI0UGVs-zAfdj6opQWsZ57Y6UHDjE5RnG9RmDqoYqYdEvXZ6_trTABNz9heHXBeAEAYgFgLuYklWSBQQIBBgBkgUECAUYBKAGLoAHmqej5gGoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gH2baxAqgH98KxAtgHAPIHBBCwgwbSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOljmscvk5NaRA5oJqQFodHRwczovL2JpZ2hvcm5pcm9uZG9vcnMuY29tLz91dG1fc291cmNlPWdvb2dsZSZ1dG1fbWVkaXVtPWNwYyZ1dG1fY2FtcGFpZ249MjI4NTUxNjAzOTkmdXRtX2NvbnRlbnQ9JnV0bV90ZXJtPSZ1dG1faWQ9MjI4NTUxNjAzOTkmZ2FkX3NvdXJjZT01JmdhZF9jYW1wYWlnbmlkPTIyODU1MTYzMjY0gAoDyAsBmAyp-7_dogXaDBEKCxCQhqnOyum24sEBEgIBA6oNAlVT4g0TCM2ZzOTk1pEDFS0-RAgdoSEomeoNEwjP48zk5NaRAxUtPkQIHaEhKJmIDv___________wG4E4ME2BMO0BUByhYCCgD4FgGAFwGyFywKHAgAEhRwdWItMTE0MDQ4NTYzNTEwOTM5Mxiz5RMYASoKMTY4MDQ2MTM3NLoXAjgBqhgXCQAAAAAAG_hAEgoxNjgwNDYxMzc0GAGyGAkSAuVrGC4iAQDQGAHoGAHCGQIIAQ&sigh=_bZwZEj_CvQ&uach_m=%5BUACH%5D&ase=2&cid=CAQSvwEAwksa0biXoW6fLuQvHdVNHOsBC5CgiGLd9rNG_jf2jo-EGSD7ycsrwjoL57ZH7JGywQx4X7KgyEPrj5Ak7yPmFnTKpA1g75ksnYRY7aI6s2-P67t7adHhDEzNTQISL1tgbxNerEG9Od4JEjYtDE28-4seQgICHTwhMWcOx6WITOAtEID7QfncWX5klXcmuBkiZWjNajSTAoGJQhspVh2UV0c8V5zADbcJJTSHtuQ2AB-RqIvL9evalWejy2pf0hgB&template_id=515&ibtr=1&nis=6",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766598645076,
+            "macros": [
+              "%5BUACH%"
+            ]
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/bg/-FHL9QyxOxLSMSI8vaVJTK5-5CyqyttHSSL2XZLsvSQ.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766598645081
+          }
+        ],
+        "measurementIds": {
+          "ga4": [
+            "G-GNHWGL20XC",
+            "G-1ZMKMZGT7R",
+            "G-PRJHEDRHDQ",
+            "G-JG8ZL3IXPW"
+          ],
+          "ua": [
+            "UA-28859433-1"
+          ],
+          "gtm": [],
+          "aw": [],
+          "fb": []
+        },
+        "widgetMap": {
+          "id:adagiojs-220a4beaea6d258": {
+            "widget": "adagiojs-220a4beaea6d258",
+            "attribute": "id",
+            "selector": "#adagiojs-220a4beaea6d258",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "https://script.4dex.io/a/latest/adagio.js",
+                "hash": "eyw36o",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "adagiojs-220a4beaea6d258",
+                  "selector": "#adagiojs-220a4beaea6d258"
+                },
+                "selector": "#adagiojs-220a4beaea6d258"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:tb_loader_script": {
+            "widget": "tb_loader_script",
+            "attribute": "id",
+            "selector": "#tb_loader_script",
+            "scripts": [
+              {
+                "type": "external",
+                "src": "//cdn.taboola.com/libtrc/embimedia-elancasticomar/loader.js",
+                "hash": "xmij2z",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tb_loader_script",
+                  "selector": "#tb_loader_script"
+                },
+                "selector": "#tb_loader_script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-20": {
+            "widget": "div-home_rectangle-20",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-20",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "m7mogd",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-20'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-20",
+                  "selector": "#div-home_rectangle-20"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_horizontal-18": {
+            "widget": "div-home_horizontal-18",
+            "attribute": "id",
+            "selector": "#div-home_horizontal-18",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "llo70n",
+                "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_horizontal-18'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_horizontal-18",
+                  "selector": "#div-home_horizontal-18"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-24": {
+            "widget": "div-home_rectangle-24",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-24",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "pmovqn",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-24'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-24",
+                  "selector": "#div-home_rectangle-24"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-18": {
+            "widget": "div-home_rectangle-18",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-18",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "4kr2tm",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-18'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-18",
+                  "selector": "#div-home_rectangle-18"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-27": {
+            "widget": "div-home_rectangle-27",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-27",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "r9yil0",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-27'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-27",
+                  "selector": "#div-home_rectangle-27"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_horizontal-16": {
+            "widget": "div-home_horizontal-16",
+            "attribute": "id",
+            "selector": "#div-home_horizontal-16",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "x72fwp",
+                "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_horizontal-16'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_horizontal-16",
+                  "selector": "#div-home_horizontal-16"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_horizontal-20": {
+            "widget": "div-home_horizontal-20",
+            "attribute": "id",
+            "selector": "#div-home_horizontal-20",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "56pk9c",
+                "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_horizontal-20'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_horizontal-20",
+                  "selector": "#div-home_horizontal-20"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-26": {
+            "widget": "div-home_rectangle-26",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-26",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "e1amul",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-26'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-26",
+                  "selector": "#div-home_rectangle-26"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-28": {
+            "widget": "div-home_rectangle-28",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-28",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "2fwdyj",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-28'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-28",
+                  "selector": "#div-home_rectangle-28"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-9": {
+            "widget": "div-home_rectangle-9",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-9",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "hkxdde",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-9'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-9",
+                  "selector": "#div-home_rectangle-9"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-8": {
+            "widget": "div-home_rectangle-8",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-8",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "c4xj65",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-8'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-8",
+                  "selector": "#div-home_rectangle-8"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-25": {
+            "widget": "div-home_rectangle-25",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-25",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "fok9oy",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-25'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-25",
+                  "selector": "#div-home_rectangle-25"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-21": {
+            "widget": "div-home_rectangle-21",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-21",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "7i8836",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-21'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-21",
+                  "selector": "#div-home_rectangle-21"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-derecha-6": {
+            "widget": "div-derecha-6",
+            "attribute": "id",
+            "selector": "#div-derecha-6",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "pg3vs2",
+                "content": " googletag.cmd.push(function() { googletag.display('div-derecha-6'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-derecha-6",
+                  "selector": "#div-derecha-6"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-22": {
+            "widget": "div-home_rectangle-22",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-22",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "xt0xcf",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-22'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-22",
+                  "selector": "#div-home_rectangle-22"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-30": {
+            "widget": "div-home_rectangle-30",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-30",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "ochdbg",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-30'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-30",
+                  "selector": "#div-home_rectangle-30"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-29": {
+            "widget": "div-home_rectangle-29",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-29",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "w5rai2",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-29'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-29",
+                  "selector": "#div-home_rectangle-29"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-1": {
+            "widget": "div-home_rectangle-1",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-1",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "i3tmec",
+                "content": "\n    googletag.cmd.push(function() { googletag.display('div-home_rectangle-1'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-1",
+                  "selector": "#div-home_rectangle-1"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-2": {
+            "widget": "div-home_rectangle-2",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-2",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "mn97i1",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-2'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-2",
+                  "selector": "#div-home_rectangle-2"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_rectangle-7": {
+            "widget": "div-home_rectangle-7",
+            "attribute": "id",
+            "selector": "#div-home_rectangle-7",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "t6bm9g",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_rectangle-7'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_rectangle-7",
+                  "selector": "#div-home_rectangle-7"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          },
+          "id:div-home_vertical-6": {
+            "widget": "div-home_vertical-6",
+            "attribute": "id",
+            "selector": "#div-home_vertical-6",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "sdtw28",
+                "content": " googletag.cmd.push(function() { googletag.display('div-home_vertical-6'); });\n  ",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "div-home_vertical-6",
+                  "selector": "#div-home_vertical-6"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          }
+        }
+      }
+    ],
+    "duplicates": {
+      "duplicateIds": {},
+      "duplicateScripts": {},
+      "duplicateLibraries": {}
+    },
+    "unauthorized": [
+      {
+        "type": "script",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl_page_level_ads.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-1ZMKMZGT7R",
+        "domain": "googletagmanager.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-28859433-1",
+        "domain": "googletagmanager.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.google-analytics.com/analytics.js",
+        "domain": "google-analytics.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://cdn.taboola.com/libtrc/embimedia-elancasticomar/loader.js",
+        "domain": "cdn.taboola.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-GNHWGL20XC&cid=150020558.1766598642&gtm=45je5ca1v871258753za200&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875",
+        "domain": "stats.g.doubleclick.net",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://gum.criteo.com/sync?c=72&r=2&j=TRC.getRTUS",
+        "domain": "gum.criteo.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=24030&site_id=588454&zone_id=3757002&size_id=15&alt_size_ids=16&rf=https%3A%2F%2Fwww.elancasti.com.ar%2F&tg_i.domain=elancasti.com.ar&tg_i.page=https%3A%2F%2Fwww.elancasti.com.ar%2F&tg_i.documentLang=es-AR&tg_i.pbadslot=%2F10749195%2Fhome_rectangle(20)&tg_i.divId=div-home_rectangle-20&tk_flint=pbjs_lite_v10.17.0&x_source.tid=ub08777e9-e184-4acc-9a3d-8ce6d8608c36&l_pb_bid_id=0bd2f533-5470-43ce-966f-8f086e4595ff&p_screen_res=1280x720&rp_secure=1&x_imp.ext.tid=uc04909ea-80b5-4ea9-82db-24483bc71611&p_gpid=%2F10749195%2Fhome_rectangle(20)&m_ch_ua=%22HeadlessChrome%22%7Cv%3D%22143%22%2C%22Chromium%22%7Cv%3D%22143%22%2C%22Not%20A(Brand%22%7Cv%3D%2224%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.3856549090831204",
+        "domain": "fastlane.rubiconproject.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://6853bbf795a386023ce42b5a136e5842.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+        "domain": "6853bbf795a386023ce42b5a136e5842.safeframe.googlesyndication.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://tpc.googlesyndication.com/safeframe/1-0-45/js/ext.js",
+        "domain": "tpc.googlesyndication.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.elancasti.com.ar/",
+        "reason": "Not in allowed partners list"
+      }
+    ],
+    "injectedScripts": [],
+    "screenshots": [
+      "/Users/pablogimenez/Desktop/DeDuper.io/data/cms-monitor/screenshots/cms-monitor-screenshot-cms_1766598639277-0.png"
+    ],
+    "summary": {
+      "totalPages": 1,
+      "totalScripts": 67,
+      "totalPixels": 0,
+      "duplicateIdsCount": 0,
+      "duplicateScriptsCount": 0,
+      "unauthorizedCount": 13,
+      "injectedScriptsCount": 0
+    }
+  },
+  "baselineDiff": null
+}

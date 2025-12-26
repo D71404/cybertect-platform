@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/assets/internal-base.css">
     <style>
-        main { max-width: 960px; margin: 0 auto; padding: 60px 24px 120px; }
+        main { max-width: 1400px; margin: 0 auto; padding: 60px 24px 120px; }
         .tool-hero { text-align: left; margin-bottom: 32px; }
         .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: var(--text-gray); margin-bottom: 12px; }
         h1 { font-size: 40px; margin-bottom: 12px; color: var(--text-dark); }
@@ -21,10 +21,30 @@
             margin-bottom: 32px;
             box-shadow: 0 12px 30px rgba(15,23,42,0.08);
         }
-        .panel h2 { font-size: 20px; margin-bottom: 16px; }
-        .panel ul { list-style: disc; padding-left: 20px; color: var(--text-gray); }
-        .panel li { margin-bottom: 10px; }
-        .actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+        .panel h2 { font-size: 20px; margin-bottom: 16px; color: var(--text-dark); }
+        .panel h3 { font-size: 16px; margin-bottom: 12px; color: var(--text-dark); }
+        
+        /* Input Form */
+        .input-group { margin-bottom: 20px; }
+        .input-group label { display: block; font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 8px; }
+        .input-group input[type="text"], .input-group input[type="number"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        .input-group input[type="text"]:focus, .input-group input[type="number"]:focus {
+            outline: none;
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .checkbox-group { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+        .checkbox-group input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
+        .checkbox-group label { margin: 0; cursor: pointer; }
+        
+        .actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
         .run-btn {
             background: var(--blue);
             color: var(--white);
@@ -32,10 +52,136 @@
             border-radius: 999px;
             font-weight: 600;
             border: none;
-            opacity: 0.5;
-            cursor: not-allowed;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
+        .run-btn:hover:not(:disabled) { background: var(--blue-dark); }
+        .run-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .run-btn.loading { pointer-events: none; }
+        .spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.6s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
         .helper { font-size: 13px; color: var(--text-gray); }
+        .error { color: var(--red); font-size: 14px; margin-top: 8px; }
+        
+        /* Summary KPIs */
+        .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .kpi-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .kpi-value { font-size: 32px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+        .kpi-label { font-size: 14px; color: var(--text-gray); }
+        
+        /* Findings Cards - Horizontal Scroll */
+        .findings-section { margin-bottom: 32px; }
+        .findings-scroll {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding: 16px 0;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border) transparent;
+        }
+        .findings-scroll::-webkit-scrollbar { height: 8px; }
+        .findings-scroll::-webkit-scrollbar-track { background: transparent; }
+        .findings-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        .findings-scroll::-webkit-scrollbar-thumb:hover { background: var(--text-gray); }
+        
+        .finding-card {
+            min-width: 320px;
+            max-width: 320px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(15,23,42,0.08);
+        }
+        .finding-card.severity-high { border-left: 4px solid var(--red); }
+        .finding-card.severity-medium { border-left: 4px solid var(--yellow); }
+        .finding-card.severity-low { border-left: 4px solid var(--blue); }
+        .finding-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+        .finding-type { font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--text-gray); }
+        .finding-title { font-size: 16px; font-weight: 600; color: var(--text-dark); margin-bottom: 8px; }
+        .finding-details { font-size: 14px; color: var(--text-gray); line-height: 1.5; }
+        .finding-evidence { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+        .finding-evidence code { font-size: 12px; color: var(--blue); background: var(--light-gray); padding: 2px 6px; border-radius: 4px; }
+        
+        /* Tables */
+        .table-container { overflow-x: auto; margin-bottom: 24px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th {
+            background: var(--light-gray);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--border);
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-gray);
+        }
+        tr:hover { background: var(--light-gray); }
+        
+        /* Checklist */
+        .checklist-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .checklist-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+        .checklist-severity {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .checklist-severity.high { background: #FEE2E2; color: #991B1B; }
+        .checklist-severity.medium { background: #FEF3C7; color: #92400E; }
+        .checklist-severity.low { background: #DBEAFE; color: #1E40AF; }
+        .checklist-owner {
+            font-size: 12px;
+            color: var(--text-gray);
+            padding: 4px 8px;
+            background: var(--light-gray);
+            border-radius: 4px;
+        }
+        .checklist-action { font-size: 14px; color: var(--text-dark); margin-bottom: 4px; font-weight: 500; }
+        .checklist-why { font-size: 13px; color: var(--text-gray); font-style: italic; }
+        
+        /* Download Button */
+        .download-btn {
+            background: var(--white);
+            border: 1px solid var(--border);
+            color: var(--text-dark);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .download-btn:hover { background: var(--light-gray); border-color: var(--blue); color: var(--blue); }
+        
+        .hidden { display: none; }
+        
         @media (max-width: 640px) {
             .header { flex-direction: column; align-items: flex-start; }
             .top-menu { margin: 12px 0; width: 100%; justify-content: flex-start; }
@@ -43,6 +189,7 @@
             .dropdown-toggle { width: 100%; justify-content: space-between; }
             .dropdown-menu { position: static; box-shadow: none; margin-top: 8px; width: 100%; }
             .logo-container { font-size: 24px; }
+            .finding-card { min-width: 280px; max-width: 280px; }
         }
     </style>
 </head>
@@ -63,7 +210,8 @@
                 <div class="dropdown-menu" role="menu">
                     <a class="tool-link" href="/tools/cms-level-data-monitor/" data-route="/tools/cms-level-data-monitor">CMS Output Monitor</a>
                     <a class="tool-link" href="/tools/ad-level-impression-verification/" data-route="/tools/ad-level-impression-verification">Ad Impression Verification</a>
-                    <a class="tool-link" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
+                    <a class="tool-link active" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
+                    <a class="tool-link" href="/tools/injected-telemetry-monitor/" data-route="/tools/injected-telemetry-monitor">Injected Telemetry Monitor</a>
                     <a class="tool-link" href="/tools/reverse-analytics-search/" data-route="/tools/reverse-analytics-search">Reverse Analytics Search</a>
                 </div>
             </div>
@@ -79,21 +227,125 @@
         </div>
 
         <section class="panel">
-            <h2>Coming Soon</h2>
-            <ul>
-                <li>Inventory every GA/Adobe/Pixel ID per site and detect duplicates across networks.</li>
-                <li>Replay telemetry to confirm viewability, scroll, and conversion events align with UX.</li>
-                <li>Auto-generate remediation checklists for publishers before traffic resumes.</li>
-            </ul>
+            <h2>Scan Configuration</h2>
+            <div class="input-group">
+                <label for="url-input">Target URL</label>
+                <input type="text" id="url-input" placeholder="https://example.com" value="">
+            </div>
+            <div class="input-group">
+                <label for="max-pages">Max Pages to Scan</label>
+                <input type="number" id="max-pages" min="1" max="10" value="5">
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="telemetry-replay" checked>
+                <label for="telemetry-replay">Include Telemetry Replay (UX alignment check)</label>
+            </div>
+            <div class="actions">
+                <button class="run-btn" id="run-scan">
+                    <span class="btn-text">Run Scan</span>
+                </button>
+                <p class="helper">Scans multiple pages to detect ID collisions, drift, and rogue tracking tags.</p>
+                <div class="error hidden" id="error-message"></div>
+            </div>
         </section>
 
-        <div class="actions">
-            <button class="run-btn" disabled title="Connect scanner pipeline first">Run Scan</button>
-            <p class="helper">Connect scanner pipeline first</p>
+        <!-- Results Section (hidden initially) -->
+        <div id="results-section" class="hidden">
+            <!-- Summary KPIs -->
+            <section class="panel">
+                <h2>Summary</h2>
+                <div class="kpi-grid" id="kpi-grid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Findings Cards -->
+            <section class="panel findings-section">
+                <h2>Findings</h2>
+                <div class="findings-scroll" id="findings-scroll">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Inventory Table -->
+            <section class="panel">
+                <h2>ID Inventory</h2>
+                <div class="table-container">
+                    <table id="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>Vendor</th>
+                                <th>IDs</th>
+                                <th>Pages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Drift Table -->
+            <section class="panel" id="drift-section">
+                <h2>Drift Detection</h2>
+                <div class="table-container">
+                    <table id="drift-table">
+                        <thead>
+                            <tr>
+                                <th>Page</th>
+                                <th>Missing IDs</th>
+                                <th>Extra IDs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Telemetry Replay -->
+            <section class="panel" id="telemetry-section">
+                <h2>Telemetry Replay</h2>
+                <div class="table-container">
+                    <table id="telemetry-table">
+                        <thead>
+                            <tr>
+                                <th>Page</th>
+                                <th>Step</th>
+                                <th>Event Counts</th>
+                                <th>Anomalies</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Checklist -->
+            <section class="panel">
+                <h2>Remediation Checklist</h2>
+                <div id="checklist-container">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Download Button -->
+            <section class="panel">
+                <button class="download-btn" id="download-json">
+                    <span class="material-icons">download</span>
+                    Download JSON Report
+                </button>
+            </section>
         </div>
     </main>
 
     <script>
+        let currentResult = null;
+
         function setActiveNav() {
             const current = window.location.pathname.replace(/\/$/, '');
             document.querySelectorAll('[data-route]').forEach(link => {
@@ -155,10 +407,334 @@
             });
         }
 
+        async function runScan() {
+            const urlInput = document.getElementById('url-input');
+            const maxPagesInput = document.getElementById('max-pages');
+            const telemetryReplayCheckbox = document.getElementById('telemetry-replay');
+            const runBtn = document.getElementById('run-scan');
+            const errorDiv = document.getElementById('error-message');
+            const resultsSection = document.getElementById('results-section');
+
+            const url = urlInput.value.trim();
+            if (!url) {
+                errorDiv.textContent = 'Please enter a URL';
+                errorDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Validate URL
+            try {
+                new URL(url);
+            } catch (e) {
+                errorDiv.textContent = 'Invalid URL format';
+                errorDiv.classList.remove('hidden');
+                return;
+            }
+
+            errorDiv.classList.add('hidden');
+            runBtn.disabled = true;
+            runBtn.classList.add('loading');
+            runBtn.innerHTML = '<span class="spinner"></span><span class="btn-text">Scanning...</span>';
+
+            try {
+                const response = await fetch('http://localhost:3000/api/diagnose', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        url: url,
+                        options: {
+                            maxPages: parseInt(maxPagesInput.value) || 5,
+                            includeTelemetryReplay: telemetryReplayCheckbox.checked,
+                            pageSampleStrategy: 'sitemap',
+                            timeoutMs: 30000
+                        }
+                    })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Scan failed');
+                }
+
+                const result = await response.json();
+                currentResult = result;
+                displayResults(result);
+                resultsSection.classList.remove('hidden');
+            } catch (error) {
+                errorDiv.textContent = `Error: ${error.message}`;
+                errorDiv.classList.remove('hidden');
+            } finally {
+                runBtn.disabled = false;
+                runBtn.classList.remove('loading');
+                runBtn.innerHTML = '<span class="btn-text">Run Scan</span>';
+            }
+        }
+
+        function displayResults(result) {
+            // Summary KPIs
+            const totalIds = Object.values(result.inventory || {}).reduce((sum, vendor) => sum + (vendor.ids || []).length, 0);
+            const findingsCount = (result.findings || []).length;
+            const highSeverity = (result.findings || []).filter(f => f.severity === 'high').length;
+            const pagesScanned = (result.pagesScanned || []).length;
+
+            const kpiGrid = document.getElementById('kpi-grid');
+            kpiGrid.innerHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-value">${totalIds}</div>
+                    <div class="kpi-label">Total IDs Found</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">${findingsCount}</div>
+                    <div class="kpi-label">Total Findings</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">${highSeverity}</div>
+                    <div class="kpi-label">High Severity</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">${pagesScanned}</div>
+                    <div class="kpi-label">Pages Scanned</div>
+                </div>
+            `;
+
+            // Findings Cards
+            const findingsScroll = document.getElementById('findings-scroll');
+            if (result.findings && result.findings.length > 0) {
+                findingsScroll.innerHTML = result.findings.map(finding => `
+                    <div class="finding-card severity-${finding.severity}">
+                        <div class="finding-header">
+                            <span class="finding-type">${finding.type}</span>
+                            <span class="finding-type">${finding.vendor}</span>
+                        </div>
+                        <div class="finding-title">${finding.title}</div>
+                        <div class="finding-details">${finding.details}</div>
+                        ${finding.evidence && finding.evidence.ids ? `
+                            <div class="finding-evidence">
+                                <strong>IDs:</strong> ${finding.evidence.ids.map(id => `<code>${id}</code>`).join(', ')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `).join('');
+            } else {
+                findingsScroll.innerHTML = '<p style="color: var(--text-gray);">No findings detected.</p>';
+            }
+
+            // Inventory Table
+            const inventoryTable = document.querySelector('#inventory-table tbody');
+            inventoryTable.innerHTML = Object.keys(result.inventory || {}).map(vendor => {
+                const vendorData = result.inventory[vendor];
+                const ids = vendorData.ids || [];
+                const pages = Object.keys(vendorData.byPage || {});
+                return `
+                    <tr>
+                        <td><strong>${vendor}</strong></td>
+                        <td>${ids.length > 0 ? ids.map(id => `<code>${id}</code>`).join(', ') : 'None'}</td>
+                        <td>${pages.length} page(s)</td>
+                    </tr>
+                `;
+            }).join('');
+
+            // Drift Table
+            const driftTable = document.querySelector('#drift-table tbody');
+            if (result.drift && result.drift.pageDeltas && result.drift.pageDeltas.length > 0) {
+                driftTable.innerHTML = result.drift.pageDeltas.map(delta => {
+                    const missing = Object.keys(delta.missing || {}).map(vendor => 
+                        `${vendor}: ${delta.missing[vendor].join(', ')}`
+                    ).join('; ');
+                    const extra = Object.keys(delta.extra || {}).map(vendor => 
+                        `${vendor}: ${delta.extra[vendor].join(', ')}`
+                    ).join('; ');
+                    return `
+                        <tr>
+                            <td><code>${delta.page}</code></td>
+                            <td>${missing || 'None'}</td>
+                            <td>${extra || 'None'}</td>
+                        </tr>
+                    `;
+                }).join('');
+            } else {
+                driftTable.innerHTML = '<tr><td colspan="3" style="text-align: center; color: var(--text-gray);">No drift detected.</td></tr>';
+            }
+
+            // Telemetry Replay Table
+            const telemetryTable = document.querySelector('#telemetry-table tbody');
+            if (result.telemetryReplay && result.telemetryReplay.steps && result.telemetryReplay.steps.length > 0) {
+                telemetryTable.innerHTML = result.telemetryReplay.steps.map(step => {
+                    const counts = Object.keys(step.counts || {}).map(vendor => 
+                        `${vendor}: ${step.counts[vendor]}`
+                    ).join(', ');
+                    const anomalies = (step.anomalies || []).join(', ') || 'None';
+                    return `
+                        <tr>
+                            <td><code>${step.page.substring(0, 50)}...</code></td>
+                            <td>${step.step}</td>
+                            <td>${counts || 'None'}</td>
+                            <td>${anomalies}</td>
+                        </tr>
+                    `;
+                }).join('');
+            } else {
+                telemetryTable.innerHTML = '<tr><td colspan="4" style="text-align: center; color: var(--text-gray);">No telemetry replay data.</td></tr>';
+            }
+
+            // Checklist
+            const checklistContainer = document.getElementById('checklist-container');
+            if (result.checklist && result.checklist.length > 0) {
+                checklistContainer.innerHTML = result.checklist.map(item => `
+                    <div class="checklist-item">
+                        <div class="checklist-header">
+                            <span class="checklist-severity ${item.severity}">${item.severity}</span>
+                            <span class="checklist-owner">Owner: ${item.owner}</span>
+                        </div>
+                        <div class="checklist-action">${item.action}</div>
+                        <div class="checklist-why">Why: ${item.why}</div>
+                    </div>
+                `).join('');
+            } else {
+                checklistContainer.innerHTML = '<p style="color: var(--text-gray);">No remediation items needed.</p>';
+            }
+        }
+
+        function downloadJSON() {
+            if (!currentResult) return;
+            const blob = new Blob([JSON.stringify(currentResult, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `diagnosis-${currentResult.url.replace(/[^a-z0-9]/gi, '-')}-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             setActiveNav();
             initDropdowns();
+            document.getElementById('run-scan').addEventListener('click', runScan);
+            document.getElementById('download-json').addEventListener('click', downloadJSON);
         });
+
+        // AI Validate floating button
+        (function() {
+            const btn = document.createElement('button');
+            btn.id = 'aiValidateDiag';
+            btn.textContent = 'AI Validate';
+            btn.style.position = 'fixed';
+            btn.style.bottom = '16px';
+            btn.style.right = '16px';
+            btn.style.padding = '10px 14px';
+            btn.style.background = '#2563EB';
+            btn.style.color = '#fff';
+            btn.style.border = 'none';
+            btn.style.borderRadius = '8px';
+            btn.style.cursor = 'pointer';
+            btn.style.boxShadow = '0 8px 24px rgba(0,0,0,0.15)';
+            document.body.appendChild(btn);
+
+            async function mockValidate(payload) {
+                await new Promise(res => setTimeout(res, 500));
+                return {
+                    status: 'done',
+                    result: {
+                        verdict: 'likely_inflation',
+                        confidence: 0.7,
+                        key_findings: [
+                            { title: 'Mock duplicate beacons', detail: 'Simulated finding', confidence: 0.7, evidence_refs: [] }
+                        ],
+                        duplicate_assessment: { has_duplicates: true, likely_tool_error: false, notes: 'mock' },
+                        inflation_signals: [{ signal: 'Duplicate analytics', strength: 'moderate', evidence_refs: [] }],
+                        recommended_actions: ['Check tag firing rules'],
+                        missing_data_requests: []
+                    }
+                };
+            }
+
+            function renderMockVerdict(result) {
+                const panelId = 'ai-validation-panel';
+                let panel = document.getElementById(panelId);
+                if (!panel) {
+                    panel = document.createElement('div');
+                    panel.id = panelId;
+                    panel.style.marginTop = '12px';
+                    const container = document.getElementById('results-section') || document.body;
+                    container.appendChild(panel);
+                }
+                const verdict = result?.verdict || 'inconclusive';
+                const confidence = result?.confidence != null ? Math.round(result.confidence * 100) + '%' : '—';
+                const findings = result?.key_findings || [];
+                const color = verdict === 'verified' ? '#0f766e'
+                            : verdict === 'likely_inflation' ? '#b91c1c'
+                            : verdict === 'inconclusive' ? '#92400e'
+                            : '#4b5563';
+
+                panel.style.display = 'block';
+                panel.style.border = `1px solid ${color}33`;
+                panel.style.background = '#f8fafc';
+                panel.style.borderRadius = '12px';
+                panel.style.padding = '12px';
+                panel.style.color = '#0f172a';
+                panel.innerHTML = `
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                      <div style="font-weight:700;color:${color}">Verdict: ${verdict}</div>
+                      <div style="font-size:12px;color:#475569;">Confidence: ${confidence}</div>
+                    </div>
+                    <div style="font-size:13px;color:#475569;margin-bottom:6px;">Key Findings</div>
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      ${findings.map((f) => `
+                        <div style="padding:8px;border:1px solid #e2e8f0;border-radius:10px;background:#fff;">
+                          <div style="font-weight:600;color:#0f172a;">${f.title || 'Finding'}</div>
+                          <div style="font-size:13px;color:#475569;margin-top:4px;">${f.detail || ''}</div>
+                          <div style="font-size:12px;color:#94a3b8;margin-top:4px;">Conf: ${Math.round((f.confidence||0)*100)}%</div>
+                        </div>
+                      `).join('')}
+                    </div>
+                `;
+            }
+
+            btn.addEventListener('click', async () => {
+                const urlInput = document.getElementById('url-input');
+                const targetUrl = urlInput?.value || window.location.href;
+                btn.disabled = true;
+                btn.textContent = 'Sending...';
+                try {
+                    const payload = {
+                        toolId: 'analytics_integrity',
+                        scanId: currentResult?.scanId || `analytics-${Date.now()}`,
+                        evidencePack: {
+                            version: '1.0',
+                            createdAt: new Date().toISOString(),
+                            target: { url: targetUrl, domain: '' },
+                            findings: [],
+                            telemetry: { hasResults: !!currentResult },
+                            artifacts: []
+                        }
+                    };
+                    const { result } = await mockValidate(payload);
+                    renderMockVerdict(result);
+                    btn.textContent = 'AI Validate';
+                    btn.disabled = false;
+                } catch (error) {
+                    alert(`AI validation failed: ${error.message}`);
+                    btn.textContent = 'AI Validate';
+                    btn.disabled = false;
+                }
+            });
+        })();
     </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-disclaimer">
+                <strong>Disclaimer:</strong> Analytics detection relies on network traffic analysis and may not capture all implementations. Some legitimate analytics may be flagged. The results provided by this tool are for informational purposes only. Cybertect does not guarantee the accuracy, completeness, or reliability of scan results. Results may contain false positives or false negatives. Users should verify findings independently before making business decisions. Cybertect is not liable for any decisions made based on these results.
+            </p>
+            <div class="footer-links">
+                <a href="/terms-of-service.html">Terms of Service</a>
+                <span class="footer-separator">|</span>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="footer-copyright">© 2025 Cybertect. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Output Monitor Report - cms_1766536697806</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #2563EB; border-bottom: 2px solid #2563EB; padding-bottom: 10px; }
+        h2 { color: #1E40AF; margin-top: 30px; }
+        .summary { background: white; padding: 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
+        .summary-item { padding: 10px; background: #F3F4F6; border-radius: 4px; }
+        .summary-item strong { display: block; color: #1F2937; margin-bottom: 5px; }
+        .summary-item span { color: #6B7280; font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; background: white; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th { background: #2563EB; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #E5E7EB; }
+        tr:hover { background: #F9FAFB; }
+        .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+        .badge-error { background: #FEE2E2; color: #991B1B; }
+        .badge-warning { background: #FEF3C7; color: #92400E; }
+        .badge-success { background: #D1FAE5; color: #065F46; }
+        .diff-added { background: #D1FAE5; }
+        .diff-removed { background: #FEE2E2; }
+        .diff-changed { background: #FEF3C7; }
+        pre { background: #1F2937; color: #F9FAFB; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .page-section { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <h1>CMS Output Monitor Report</h1>
+    
+    <div class="summary">
+        <h2>Scan Summary</h2>
+        <div class="summary-grid">
+            <div class="summary-item">
+                <strong>Scan ID</strong>
+                <span>cms_1766536697806</span>
+            </div>
+            <div class="summary-item">
+                <strong>Build Label</strong>
+                <span>N/A</span>
+            </div>
+            <div class="summary-item">
+                <strong>Base URL</strong>
+                <span>https://www.diariolasamericas.com/</span>
+            </div>
+            <div class="summary-item">
+                <strong>Pages Scanned</strong>
+                <span>1</span>
+            </div>
+            <div class="summary-item">
+                <strong>Total Scripts</strong>
+                <span>75</span>
+            </div>
+            <div class="summary-item">
+                <strong>Total Pixels</strong>
+                <span>1</span>
+            </div>
+            <div class="summary-item">
+                <strong>Duplicate IDs</strong>
+                <span class="badge badge-warning">0</span>
+            </div>
+            <div class="summary-item">
+                <strong>Unauthorized Partners</strong>
+                <span class="badge badge-error">27</span>
+            </div>
+            <div class="summary-item">
+                <strong>Injected Scripts</strong>
+                <span class="badge badge-error">1</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="page-section">
+        <h2>Injected/Unknown Scripts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>Type</th>
+                    <th>Source/Hash</th>
+                    <th>Reason</th>
+                    <th>Macros</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>external</td>
+                    <td><code>https://connect.facebook.net/signals/config/365455823800903?</code></td>
+                    <td>Contains macros</td>
+                    <td>%2C156%, %2C20%, %2C68%, %2C63%, %2C128%, %2C62%, %2C141%, %2C15%, %2C28%, %2C115%, %2C73%, %2C138%, %2C143%, %2C3%, %2C6%, %2C2%, %2C91%, %2C224%, %2C57%, %2C227%, %2C183%, %2C69%, %2C231%, %2C30%, %2C9%, %2C87%, %2C89%, %2C118%, %2C26%, %2C117%, %2C135%, %2C137%, %2C45%, %2C111%, %2C140%, %2C213%, %2C177%, %2C24%, %2C17%, %2C39%, %2C37%, %2C76%, %2C86%, %2C126%, %2C41%, %2C21%, %2C107%, %2C33%, %2C130%, %2C123%, %2C32%, %2C99%, %2C65%, %2C133%, %2C31%, %2C163%, %2C211%, %2C196%, %2C164%, %2C119%, %2C109%, %2C44%, %2C42%, %2C114%, %2C60%, %2C48%, %2C47%, %2C142%, %2C112%, %2C110%, %2C1%, %2C83%, %2C61%, %2C79%, %2C145%, %2C84%, %2C8%, %2C46%, %2C77%, %2C66%, %2C96%, %2C125%, %2C98%</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    
+    
+    
+    
+    
+    <div class="page-section">
+        <h2>Unauthorized Macros/Partners</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Domain</th>
+                    <th>Page</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>connect.facebook.net</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>securepubads.g.doubleclick.net</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>googletagmanager.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>config.aps.amazon-adsystem.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>client.aps.amazon-adsystem.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>googletagmanager.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>connect.facebook.net</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>securepubads.g.doubleclick.net</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>123d3ce838b449ff3d3907858b5a5ca8.safeframe.googlesyndication.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>pagead2.googlesyndication.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>50200265dfb1ab91c648e31d0b114da1.safeframe.googlesyndication.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>gum.criteo.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>stats.g.doubleclick.net</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>config.aps.amazon-adsystem.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>client.aps.amazon-adsystem.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>pub.doubleverify.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>ads.pubmatic.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>c.amazon-adsystem.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>cm.g.doubleclick.net</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>googleads.g.doubleclick.net</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>ut.pubmatic.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>pixel.adsafeprotected.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>fastlane.rubiconproject.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>hbopenbid.pubmatic.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>aax.amazon-adsystem.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>mug.criteo.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>prebid-server.rubiconproject.com</code></td>
+                    <td>https://www.diariolasamericas.com/</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div class="page-section">
+        <h2>Widget Attribution Map</h2>
+        
+        <h3>https://www.diariolasamericas.com/</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Widget</th>
+                    <th>Attribute</th>
+                    <th>Scripts</th>
+                    <th>Pixels</th>
+                    <th>Measurement IDs</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><code>gpt-impl-0.6449578989578043</code></td>
+                    <td>id</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>residualBanner</code></td>
+                    <td>id</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>ad-slot</code></td>
+                    <td>id</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>standard-widget</code></td>
+                    <td>class</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>div-gpt-ad-1447708477280-0</code></td>
+                    <td>id</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        
+    </div>
+    
+    <div class="page-section">
+        <h2>Page Details</h2>
+        
+        <h3>Page 1: https://www.diariolasamericas.com/</h3>
+        <p><strong>Scripts:</strong> 75</p>
+        <p><strong>Pixels:</strong> 1</p>
+        <p><strong>Network Requests:</strong> 395</p>
+        <details>
+            <summary>Measurement IDs</summary>
+            <pre>{
+  "ga4": [
+    "G-XQ7XWPTD48",
+    "G-STANDALONE",
+    "G-AQUTCLSEUE"
+  ],
+  "ua": [],
+  "gtm": [],
+  "aw": [],
+  "fb": [
+    "365455823800903"
+  ]
+}</pre>
+        </details>
+        
+    </div>
+    
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #E5E7EB; color: #6B7280; text-align: center;">
+        <p>Generated by CMS Output Monitor at 12/23/2025, 6:38:23 PM</p>
+    </footer>
+</body>
+</html>

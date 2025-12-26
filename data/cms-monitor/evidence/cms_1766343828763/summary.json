@@ -1,0 +1,15 @@
+{
+  "scanId": "cms_1766343828763",
+  "scanTimestamp": "2025-12-21T19:03:57.149Z",
+  "buildLabel": null,
+  "baseUrl": "https://www.dailymail.co.uk/ushome/index.html",
+  "summary": {
+    "totalPages": 1,
+    "totalScripts": 111,
+    "totalPixels": 1,
+    "duplicateIdsCount": 0,
+    "duplicateScriptsCount": 0,
+    "unauthorizedCount": 32,
+    "injectedScriptsCount": 9
+  }
+}

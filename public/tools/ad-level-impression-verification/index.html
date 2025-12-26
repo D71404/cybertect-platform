@@ -340,14 +340,18 @@
             <!-- Ad Stacking Findings Panel -->
             <div id="ad-stacking-container"></div>
 
-            <!-- Export Button -->
-            <button class="export-btn" id="export-btn" disabled>Export Evidence Pack</button>
+            <!-- Export + AI Validation -->
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <button class="export-btn" id="export-btn" disabled>Export Evidence Pack</button>
+                <button class="export-btn" id="ai-validate-btn" style="background:#2563EB" disabled>AI Validate</button>
+            </div>
         </section>
     </main>
 
     <script>
         let currentRunId = null;
         let currentSequences = [];
+        let currentResult = null;
         let sortColumn = null;
         let sortDirection = 'asc';
         let showDiagnostic = false; // Default: hide diagnostic events
@@ -469,6 +473,9 @@
         function displayResults(result) {
             const summary = result.summary || {};
             const diagnostic = summary.diagnostic || {};
+            currentResult = result;
+            const aiBtn = document.getElementById('ai-validate-btn');
+            if (aiBtn) aiBtn.disabled = false;
             
             // Calculate if we have GPT data for viewability
             const hasViewabilityData = summary.viewableImpressions > 0 || summary.totalImpressions > 0;
@@ -711,6 +718,129 @@
             });
         });
 
+        async function buildAdEvidencePack() {
+            if (!currentResult) {
+                throw new Error('Run a scan before validating.');
+            }
+            const summary = currentResult.summary || {};
+            const targetUrl = summary.url || document.getElementById('url').value || '';
+            let domain = '';
+            try { domain = new URL(targetUrl).hostname; } catch (e) {}
+            const findings = [];
+            if (summary.discrepancyPercent !== undefined) {
+                findings.push({
+                    type: 'impression_discrepancy',
+                    severity: summary.discrepancyPercent > 20 ? 'high' : 'med',
+                    description: `Discrepancy ${summary.discrepancyPercent}% between served and verified`,
+                    evidence: [
+                        { kind: 'metric', name: 'totalImpressions', value: summary.summary?.totalImpressions },
+                        { kind: 'metric', name: 'viewableImpressions', value: summary.summary?.viewableImpressions }
+                    ]
+                });
+            }
+            const artifacts = [];
+            if (currentRunId) {
+                artifacts.push({
+                    kind: 'zip',
+                    name: `evidence-pack-${currentRunId}.zip`,
+                    uri: `/api/ad-impression-verification/export?runId=${currentRunId}`
+                });
+            }
+            return {
+                version: '1.0',
+                createdAt: new Date().toISOString(),
+                target: { url: targetUrl, domain },
+                findings,
+                telemetry: { summary },
+                artifacts
+            };
+        }
+
+        async function mockValidate(payload) {
+            await new Promise(res => setTimeout(res, 500));
+            return {
+                status: 'done',
+                result: {
+                    verdict: 'likely_inflation',
+                    confidence: 0.72,
+                    key_findings: [
+                        {
+                            title: 'Mock stacked iframes',
+                            detail: 'Simulated inflation signal for demo',
+                            confidence: 0.8,
+                            evidence_refs: ['artifact:mock']
+                        }
+                    ],
+                    duplicate_assessment: { has_duplicates: true, likely_tool_error: false, notes: 'mock' },
+                    inflation_signals: [{ signal: 'Beacon > render', strength: 'strong', evidence_refs: ['log:mock'] }],
+                    recommended_actions: ['Review placements', 'Reconcile with ad server'],
+                    missing_data_requests: []
+                }
+            };
+        }
+
+        function renderMockVerdict(result) {
+            const panelId = 'ai-validation-panel';
+            let panel = document.getElementById(panelId);
+            if (!panel) {
+                panel = document.createElement('div');
+                panel.id = panelId;
+                panel.style.marginTop = '12px';
+                document.getElementById('results-panel')?.appendChild(panel);
+            }
+            const verdict = result?.verdict || 'inconclusive';
+            const confidence = result?.confidence != null ? Math.round(result.confidence * 100) + '%' : '—';
+            const findings = result?.key_findings || [];
+            const color = verdict === 'verified' ? '#0f766e'
+                        : verdict === 'likely_inflation' ? '#b91c1c'
+                        : verdict === 'inconclusive' ? '#92400e'
+                        : '#4b5563';
+
+            panel.style.display = 'block';
+            panel.style.border = `1px solid ${color}33`;
+            panel.style.background = '#f8fafc';
+            panel.style.borderRadius = '12px';
+            panel.style.padding = '12px';
+            panel.style.color = '#0f172a';
+            panel.innerHTML = `
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                  <div style="font-weight:700;color:${color}">Verdict: ${verdict}</div>
+                  <div style="font-size:12px;color:#475569;">Confidence: ${confidence}</div>
+                </div>
+                <div style="font-size:13px;color:#475569;margin-bottom:6px;">Key Findings</div>
+                <div style="display:flex;flex-direction:column;gap:6px;">
+                  ${findings.map((f) => `
+                    <div style="padding:8px;border:1px solid #e2e8f0;border-radius:10px;background:#fff;">
+                      <div style="font-weight:600;color:#0f172a;">${f.title || 'Finding'}</div>
+                      <div style="font-size:13px;color:#475569;margin-top:4px;">${f.detail || ''}</div>
+                      <div style="font-size:12px;color:#94a3b8;margin-top:4px;">Conf: ${Math.round((f.confidence||0)*100)}%</div>
+                    </div>
+                  `).join('')}
+                </div>
+            `;
+        }
+
+        document.getElementById('ai-validate-btn').addEventListener('click', async () => {
+            const btn = document.getElementById('ai-validate-btn');
+            if (!currentResult) {
+                alert('Run a scan before AI validation.');
+                return;
+            }
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+            try {
+                const evidencePack = await buildAdEvidencePack();
+                const { result } = await mockValidate({ evidencePack });
+                renderMockVerdict(result);
+                btn.textContent = 'AI Validate';
+                btn.disabled = false;
+            } catch (error) {
+                alert(`AI validation failed: ${error.message}`);
+                btn.textContent = 'AI Validate';
+                btn.disabled = false;
+            }
+        });
+
         // Export button
         document.getElementById('export-btn').addEventListener('click', async () => {
             if (!currentRunId) return;
@@ -756,5 +886,19 @@
             initDropdowns();
         });
     </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-disclaimer">
+                <strong>Disclaimer:</strong> The results provided by this tool are for informational purposes only. Cybertect does not guarantee the accuracy, completeness, or reliability of scan results. Results may contain false positives or false negatives. Users should verify findings independently before making business decisions. Cybertect is not liable for any decisions made based on these results.
+            </p>
+            <div class="footer-links">
+                <a href="/terms-of-service.html">Terms of Service</a>
+                <span class="footer-separator">|</span>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="footer-copyright">© 2025 Cybertect. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

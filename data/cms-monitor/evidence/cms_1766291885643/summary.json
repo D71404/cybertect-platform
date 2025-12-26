@@ -1,0 +1,15 @@
+{
+  "scanId": "cms_1766291885643",
+  "scanTimestamp": "2025-12-21T04:38:09.606Z",
+  "buildLabel": null,
+  "baseUrl": "https://www.telebajocero.com",
+  "summary": {
+    "totalPages": 1,
+    "totalScripts": 60,
+    "totalPixels": 1,
+    "duplicateIdsCount": 0,
+    "duplicateScriptsCount": 0,
+    "unauthorizedCount": 11,
+    "injectedScriptsCount": 1
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "scanResult": {
+    "scanId": "cms_1766272283270",
+    "scanTimestamp": "2025-12-20T23:11:27.274Z",
+    "buildLabel": null,
+    "baseUrl": "https://www.linkedin.com",
+    "pagesScanned": [
+      "https://www.linkedin.com"
+    ],
+    "pageResults": [
+      {
+        "url": "https://www.linkedin.com",
+        "scanTimestamp": "2025-12-20T23:11:27.192Z",
+        "scripts": [
+          {
+            "type": "inline",
+            "hash": "5k3des",
+            "content": "\n          function getDfd() {let yFn,nFn;const p=new Promise(function(y, n){yFn=y;nFn=n;});p.resolve=yFn;p.reject=nFn;return p;}\n          window.lazyloader = getDfd();\n          window.tracking = getDfd();\n          window.impressionTracking = getDfd();\n          window.ingraphTracking = getDfd();\n          window.appDetection = getDfd();\n          window.pemTracking = getDfd();\n          window.appRedirectCompleted = getDfd();\n        ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://platform.linkedin.com/litms/utag/homepage-guest-frontend/utag.js?cb=1766272200000",
+            "hash": "j5p16r",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://static.licdn.com/aero-v1/sc/h/29rdkxlvag0d3cpj96fiilbju",
+            "hash": "u6467p",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": ".lazy-loaded"
+          },
+          {
+            "type": "external",
+            "src": "https://static.licdn.com/aero-v1/sc/h/fx69lqty609xpf6l4xb6bs3a",
+            "hash": "ekw14s",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": ".lazy-loaded"
+          },
+          {
+            "type": "external",
+            "src": "https://static.licdn.com/aero-v1/sc/h/87irg12ceymlfmgkn0v3v1mgf",
+            "hash": "12pvow",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://static.licdn.com/aero-v1/sc/h/51t74mlo1ty7vakn3a80a9jcp",
+            "hash": "rzuc9e",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": ".lazy-loaded"
+          },
+          {
+            "type": "external",
+            "src": "https://static.licdn.com/aero-v1/sc/h/7025d7ktnuqqh9frhs6t5ocfb",
+            "hash": "cc9a0v",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          }
+        ],
+        "pixels": [
+          {
+            "type": "img",
+            "src": "https://ponf.linkedin.com/pixel/tracking.png?reqid=78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6&pageInstance=urn%3Ali%3Apage%3Ad_homepage-guest-home_jsbeacon%3BCYsRR22VTfa4qoqsOs77wg%3D%3D&js=enabled",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [
+              "%3Ali%",
+              "%3BCYsRR22VTfa4qoqsOs77wg%"
+            ],
+            "attribution": {
+              "attribute": "id",
+              "value": "78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+              "selector": "#78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6"
+            },
+            "selector": ".bc"
+          },
+          {
+            "type": "img",
+            "src": "https://ponf.linkedin.com/pixel/tracking.png?reqid=78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6&pageInstance=urn%3Ali%3Apage%3Ad_homepage-guest-home_jsbeacon%3BCYsRR22VTfa4qoqsOs77wg%3D%3D&js=enabled",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [
+              "%3Ali%",
+              "%3BCYsRR22VTfa4qoqsOs77wg%"
+            ],
+            "attribution": {
+              "attribute": "id",
+              "value": "78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+              "selector": "#78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6"
+            },
+            "selector": ".bc"
+          },
+          {
+            "type": "img",
+            "src": "https://ponf.linkedin.com/pixel/tracking.png?reqid=78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6&pageInstance=urn%3Ali%3Apage%3Ad_homepage-guest-home_jsbeacon%3BCYsRR22VTfa4qoqsOs77wg%3D%3D&js=enabled",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [
+              "%3Ali%",
+              "%3BCYsRR22VTfa4qoqsOs77wg%"
+            ],
+            "attribution": {
+              "attribute": "id",
+              "value": "78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+              "selector": "#78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6"
+            },
+            "selector": ".bc"
+          }
+        ],
+        "networkRequests": [
+          {
+            "url": "https://www.linkedin.com/",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766272284157
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/8zfq9pz0eh2acpkef3k265qei",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766272284796
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766272284796
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/87irg12ceymlfmgkn0v3v1mgf",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766272284871
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/7025d7ktnuqqh9frhs6t5ocfb",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766272284871
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/ddi43qwelxeqjxdd45pe3fvs1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285196
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/29rdkxlvag0d3cpj96fiilbju",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766272285196
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/ddi43qwelxeqjxdd45pe3fvs1",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285196
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/fx69lqty609xpf6l4xb6bs3a",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766272285196
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/4zqr0f9jf98vi2nkijyc3bex2",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285196
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/8fkga714vy9b2wk5auqo5reeb",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/5ofmdgombsj3cqmfn03qb7h60",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/7kb6sn3tm4cx918cx9a5jlb0",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/8wykgzgbqy0t3fnkgborvz54u",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/92eb1xekc34eklevj0io6x4ki",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/29h8hsjuomfp50lam5ipnc3uh",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/4chtt12k98xwnba1nimld2oyg",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/c4cba545dp8erex8bfiynf35e",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/51t74mlo1ty7vakn3a80a9jcp",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766272285197
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/8zfq9pz0eh2acpkef3k265qei",
+            "method": "HEAD",
+            "resourceType": "fetch",
+            "timestamp": 1766272285633
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4",
+            "method": "HEAD",
+            "resourceType": "fetch",
+            "timestamp": 1766272285633
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/87irg12ceymlfmgkn0v3v1mgf",
+            "method": "HEAD",
+            "resourceType": "fetch",
+            "timestamp": 1766272285633
+          },
+          {
+            "url": "https://static.licdn.com/aero-v1/sc/h/7025d7ktnuqqh9frhs6t5ocfb",
+            "method": "HEAD",
+            "resourceType": "fetch",
+            "timestamp": 1766272285633
+          },
+          {
+            "url": "https://www.linkedin.com/homepage-guest/api/ingraphs/gauge",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766272285633
+          },
+          {
+            "url": "https://www.linkedin.com/litms/api/metadata/user",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766272285633
+          },
+          {
+            "url": "https://platform.linkedin.com/litms/utag/homepage-guest-frontend/utag.js?cb=1766272200000",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766272285633
+          },
+          {
+            "url": "https://ponf.linkedin.com/pixel/tracking.png?reqid=78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6&pageInstance=urn%3Ali%3Apage%3Ad_homepage-guest-home_jsbeacon%3BCYsRR22VTfa4qoqsOs77wg%3D%3D&js=enabled",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766272285633,
+            "macros": [
+              "%3Ali%",
+              "%3BCYsRR22VTfa4qoqsOs77wg%"
+            ]
+          },
+          {
+            "url": "https://li.protechts.net/index.html?ts=1766272285638&r_id=AAZGalAYW2Esr%2F0XpmFxcw%3D%3D&app_id=PXdOjV695v&uc=scraping&d_id=b1252935a03f714791d1264003856f8ac185fe092243f53a4d5c8d34a6d52605",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766272285641,
+            "macros": [
+              "%2F0XpmFxcw%"
+            ]
+          },
+          {
+            "url": "https://www.linkedin.com/litms/api/events/tms-load",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766272285669
+          },
+          {
+            "url": "https://www.linkedin.com/litms/api/events/ext-tag-load",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766272285678
+          },
+          {
+            "url": "https://dpm.demdex.net/id?d_visid_ver=5.1.1&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=14215E3D5995C57C0A495C55%40AdobeOrg&d_nsid=0&ts=1766272285676",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766272285678
+          },
+          {
+            "url": "https://accounts.google.com/gsi/button?logo_alignment=center&shape=pill&size=large&text=continue_with&theme=filled_blue&type=undefined&width=400px&client_id=990339570472-k6nqn1tpmitg8pui82bfaun3jrpmiuhs.apps.googleusercontent.com&iframe_id=gsi_285683_584580&as=Ma4TRDI9fiGFlmwrXPcl8w&hl=en_US",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766272285685
+          },
+          {
+            "url": "https://accounts.google.com/gsi/status?client_id=990339570472-k6nqn1tpmitg8pui82bfaun3jrpmiuhs.apps.googleusercontent.com&as=Ma4TRDI9fiGFlmwrXPcl8w&has_opted_out_fedcm=true",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766272285686
+          },
+          {
+            "url": "https://www.linkedin.com/li/track",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766272285822
+          },
+          {
+            "url": "https://client.protechts.net/PXdOjV695v/main.min.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766272285840
+          },
+          {
+            "url": "https://www.linkedin.com/homepage-guest/api/ingraphs/counter",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766272285984
+          },
+          {
+            "url": "https://www.linkedin.com/li/track",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766272286040
+          },
+          {
+            "url": "https://tzm.protechts.net/ns?c=35612700-ddf9-11f0-a0ba-fb65283c7c64",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766272287096
+          },
+          {
+            "url": "https://collector-pxdojv695v.protechts.net/api/v2/msft",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766272287100
+          },
+          {
+            "url": "https://lnkd.demdex.net/dest5.html?d_nsid=0",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766272287103
+          },
+          {
+            "url": "https://lnkd.demdex.net/event?d_dil_ver=9.4&_ts=1766272285678",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766272287103
+          },
+          {
+            "url": "https://www.linkedin.com/platform-telemetry/li/apfcDf",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766272287106
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/googlesans/v62/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCIhM907w.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766272287137
+          },
+          {
+            "url": "https://www.linkedin.com/li/track",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766272287176
+          }
+        ],
+        "measurementIds": {
+          "ga4": [],
+          "ua": [],
+          "gtm": [],
+          "aw": [],
+          "fb": []
+        },
+        "widgetMap": {
+          "id:78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6": {
+            "widget": "78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+            "attribute": "id",
+            "selector": "#78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+            "scripts": [],
+            "pixels": [
+              {
+                "type": "img",
+                "src": "https://ponf.linkedin.com/pixel/tracking.png?reqid=78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6&pageInstance=urn%3Ali%3Apage%3Ad_homepage-guest-home_jsbeacon%3BCYsRR22VTfa4qoqsOs77wg%3D%3D&js=enabled",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [
+                  "%3Ali%",
+                  "%3BCYsRR22VTfa4qoqsOs77wg%"
+                ],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+                  "selector": "#78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6"
+                },
+                "selector": ".bc"
+              },
+              {
+                "type": "img",
+                "src": "https://ponf.linkedin.com/pixel/tracking.png?reqid=78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6&pageInstance=urn%3Ali%3Apage%3Ad_homepage-guest-home_jsbeacon%3BCYsRR22VTfa4qoqsOs77wg%3D%3D&js=enabled",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [
+                  "%3Ali%",
+                  "%3BCYsRR22VTfa4qoqsOs77wg%"
+                ],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+                  "selector": "#78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6"
+                },
+                "selector": ".bc"
+              },
+              {
+                "type": "img",
+                "src": "https://ponf.linkedin.com/pixel/tracking.png?reqid=78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6&pageInstance=urn%3Ali%3Apage%3Ad_homepage-guest-home_jsbeacon%3BCYsRR22VTfa4qoqsOs77wg%3D%3D&js=enabled",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [
+                  "%3Ali%",
+                  "%3BCYsRR22VTfa4qoqsOs77wg%"
+                ],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6",
+                  "selector": "#78cd5740-c5bc-4db0-ae1d-fc4b2e9434e6"
+                },
+                "selector": ".bc"
+              }
+            ],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          }
+        }
+      }
+    ],
+    "duplicates": {
+      "duplicateIds": {},
+      "duplicateScripts": {},
+      "duplicateLibraries": {}
+    },
+    "unauthorized": [],
+    "injectedScripts": [],
+    "screenshots": [
+      "/Users/pablogimenez/Desktop/DeDuper.io/data/cms-monitor/screenshots/cms-monitor-screenshot-cms_1766272283270-0.png"
+    ],
+    "summary": {
+      "totalPages": 1,
+      "totalScripts": 7,
+      "totalPixels": 3,
+      "duplicateIdsCount": 0,
+      "duplicateScriptsCount": 0,
+      "unauthorizedCount": 0,
+      "injectedScriptsCount": 0
+    }
+  },
+  "baselineDiff": null
+}

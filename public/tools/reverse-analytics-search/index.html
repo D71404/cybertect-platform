@@ -340,12 +340,16 @@
                 <h4>Matches</h4>
                 <p style="color:var(--text-gray);">Enter an analytics ID above to find all domains sharing it.</p>
             </div>
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                <button type="button" id="aiValidateBtn" class="secondary-btn" disabled>AI Validate</button>
+            </div>
         </section>
     </main>
 
     <script>
         let isLoading = false;
         let isUrlScanning = false;
+        let lastLookupResult = null;
 
         document.addEventListener('DOMContentLoaded', () => {
             setActiveNav();
@@ -446,6 +450,9 @@
                     ${hitsCount}
                     <div class="results-grid">${cardsHtml}</div>
                 `;
+                lastLookupResult = { query: data.query, results: data.results, id: rawValue };
+                const aiBtn = document.getElementById('aiValidateBtn');
+                if (aiBtn) aiBtn.disabled = false;
             } catch (error) {
                 resultsBox.innerHTML = `
                     <h4>Matches</h4>
@@ -932,6 +939,123 @@
                 }
             });
         }
+
+        async function buildReverseEvidencePack() {
+            if (!lastLookupResult) throw new Error('Run a lookup first.');
+            const createdAt = new Date().toISOString();
+            const findings = (lastLookupResult.results || []).slice(0, 5).map((r, idx) => ({
+                type: 'shared_analytics',
+                severity: idx < 2 ? 'high' : 'med',
+                description: `Domain ${r.domain} shares ${lastLookupResult.id}`,
+                evidence: [
+                    { kind: 'domain', uri: r.domain, meta: { sources: r.sources, sample_urls: r.sample_urls } }
+                ]
+            }));
+            return {
+                version: '1.0',
+                createdAt,
+                target: { url: lastLookupResult.id || '', domain: lastLookupResult.id || '' },
+                findings,
+                telemetry: { hits: lastLookupResult.results?.length || 0 },
+                artifacts: []
+            };
+        }
+
+        async function mockValidate(payload) {
+            await new Promise(res => setTimeout(res, 500));
+            return {
+                status: 'done',
+                result: {
+                    verdict: 'likely_inflation',
+                    confidence: 0.68,
+                    key_findings: [
+                        {
+                            title: 'Shared analytics IDs',
+                            detail: 'Multiple domains reuse the same analytics ID',
+                            confidence: 0.7,
+                            evidence_refs: ['finding:0-0']
+                        }
+                    ],
+                    duplicate_assessment: { has_duplicates: true, likely_tool_error: false, notes: 'mock' },
+                    inflation_signals: [{ signal: 'ID reuse', strength: 'moderate', evidence_refs: ['log:mock'] }],
+                    recommended_actions: ['Investigate shared IDs', 'Review partner domains'],
+                    missing_data_requests: []
+                }
+            };
+        }
+
+        function renderMockVerdict(result) {
+            const panelId = 'ai-validation-panel';
+            let panel = document.getElementById(panelId);
+            if (!panel) {
+                panel = document.createElement('div');
+                panel.id = panelId;
+                panel.style.marginTop = '12px';
+                const container = document.getElementById('lookupResults') || document.body;
+                container.appendChild(panel);
+            }
+            const verdict = result?.verdict || 'inconclusive';
+            const confidence = result?.confidence != null ? Math.round(result.confidence * 100) + '%' : '—';
+            const findings = result?.key_findings || [];
+            const color = verdict === 'verified' ? '#0f766e'
+                        : verdict === 'likely_inflation' ? '#b91c1c'
+                        : verdict === 'inconclusive' ? '#92400e'
+                        : '#4b5563';
+
+            panel.style.display = 'block';
+            panel.style.border = `1px solid ${color}33`;
+            panel.style.background = '#f8fafc';
+            panel.style.borderRadius = '12px';
+            panel.style.padding = '12px';
+            panel.style.color = '#0f172a';
+            panel.innerHTML = `
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                  <div style="font-weight:700;color:${color}">Verdict: ${verdict}</div>
+                  <div style="font-size:12px;color:#475569;">Confidence: ${confidence}</div>
+                </div>
+                <div style="font-size:13px;color:#475569;margin-bottom:6px;">Key Findings</div>
+                <div style="display:flex;flex-direction:column;gap:6px;">
+                  ${findings.map((f) => `
+                    <div style="padding:8px;border:1px solid #e2e8f0;border-radius:10px;background:#fff;">
+                      <div style="font-weight:600;color:#0f172a;">${f.title || 'Finding'}</div>
+                      <div style="font-size:13px;color:#475569;margin-top:4px;">${f.detail || ''}</div>
+                      <div style="font-size:12px;color:#94a3b8;margin-top:4px;">Conf: ${Math.round((f.confidence||0)*100)}%</div>
+                    </div>
+                  `).join('')}
+                </div>
+            `;
+        }
+
+        document.getElementById('aiValidateBtn').addEventListener('click', async () => {
+            const btn = document.getElementById('aiValidateBtn');
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+            try {
+                const evidencePack = await buildReverseEvidencePack();
+                const { result } = await mockValidate({ evidencePack });
+                renderMockVerdict(result);
+                btn.textContent = 'AI Validate';
+                btn.disabled = false;
+            } catch (error) {
+                alert(`AI validation failed: ${error.message}`);
+                btn.textContent = 'AI Validate';
+                btn.disabled = false;
+            }
+        });
     </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-disclaimer">
+                <strong>Disclaimer:</strong> The results provided by this tool are for informational purposes only. Cybertect does not guarantee the accuracy, completeness, or reliability of scan results. Results may contain false positives or false negatives. Users should verify findings independently before making business decisions. Cybertect is not liable for any decisions made based on these results.
+            </p>
+            <div class="footer-links">
+                <a href="/terms-of-service.html">Terms of Service</a>
+                <span class="footer-separator">|</span>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="footer-copyright">© 2025 Cybertect. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

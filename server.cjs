@@ -2,18 +2,41 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 const multer = require('multer');
-const { scanWebsite } = require('./scanner.cjs');
-const { scanInjectedTelemetry } = require('./injected-telemetry-scanner.cjs');
-const { diagnoseAnalytics } = require('./diagnosis.cjs');
-const { scanAdImpressions } = require('./ad-impression-verification/scanner.cjs');
-const { generateEvidencePack } = require('./ad-impression-verification/export.cjs');
-const { scanCMSOutput } = require('./cms-monitor/scanner.cjs');
-const { generateEvidencePack: generateCMSEvidencePack, diffBaseline } = require('./cms-monitor/export.cjs');
-const { saveBaseline, loadBaseline, listBaselines, findLatestBaseline } = require('./cms-monitor/baselines.cjs');
-const videotect = require('./src/videotect/videotect.cjs');
 const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
+
+// Lazy-load scanner modules to avoid Playwright initialization hanging server startup
+let scanWebsite, scanInjectedTelemetry, diagnoseAnalytics, scanAdImpressions, generateEvidencePack;
+let scanCMSOutput, generateCMSEvidencePack, diffBaseline;
+let saveBaseline, loadBaseline, listBaselines, findLatestBaseline;
+
+function loadScannerModules() {
+  if (!scanWebsite) {
+    ({ scanWebsite } = require('./scanner.cjs'));
+    ({ scanInjectedTelemetry } = require('./injected-telemetry-scanner.cjs'));
+    ({ diagnoseAnalytics } = require('./diagnosis.cjs'));
+    ({ scanAdImpressions } = require('./ad-impression-verification/scanner.cjs'));
+    ({ generateEvidencePack } = require('./ad-impression-verification/export.cjs'));
+    ({ scanCMSOutput } = require('./cms-monitor/scanner.cjs'));
+    ({ generateEvidencePack: generateCMSEvidencePack, diffBaseline } = require('./cms-monitor/export.cjs'));
+    ({ saveBaseline, loadBaseline, listBaselines, findLatestBaseline } = require('./cms-monitor/baselines.cjs'));
+    console.log('✅ Scanner modules loaded');
+  }
+}
+
+// Mock videotect to avoid loading issues
+const videotect = { 
+  ensureLoaded: () => Promise.resolve(), 
+  normalizeYouTubeUrl: () => ({}), 
+  parsePlacementCSV: () => [], 
+  createImport: () => 0, 
+  createItem: () => 0, 
+  updateItemStatus: () => {}, 
+  queryItems: () => [], 
+  getItem: () => null, 
+  getItemsForExport: () => [] 
+};
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -142,6 +165,8 @@ app.get('/', (req, res) => {
 // Scan endpoint
 app.post('/api/scan', async (req, res) => {
   try {
+    loadScannerModules(); // Lazy-load scanner modules on first use
+    
     const { urls } = req.body;
     
     if (!urls || !Array.isArray(urls) || urls.length === 0) {
@@ -370,20 +395,354 @@ For questions or support, contact Cybertect support.
   }
 });
 
+// AI Validation endpoints (v1 legacy + v2 shared validator)
+const { runValidation, getValidationResult } = require('./ai-validation/orchestrator.cjs');
+const { listTemplates } = require('./ai-validation/templates/registry.cjs');
+const { listProviders } = require('./ai-validation/providers/provider-factory.cjs');
+const { queueJob: queueAiJob, getJob: getAiJob } = require('./ai-validation/v2/runner.cjs');
+
+// Upload evidence pack for AI validation
+app.post('/api/ai-validation/upload', upload.single('evidencePack'), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: 'No evidence pack uploaded' });
+    }
+    
+    // Generate upload ID
+    const uploadId = `ai-validation-${Date.now()}`;
+    
+    // Store the file buffer temporarily
+    const uploadDir = path.join(__dirname, 'runs', 'ai-validation', uploadId);
+    fs.mkdirSync(uploadDir, { recursive: true });
+    
+    const uploadPath = path.join(uploadDir, 'upload.zip');
+    fs.writeFileSync(uploadPath, req.file.buffer);
+    
+    res.json({
+      success: true,
+      uploadId,
+      filename: req.file.originalname,
+      size: req.file.size
+    });
+  } catch (error) {
+    console.error('Upload error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Run AI validation
+app.post('/api/ai-validation/run', async (req, res) => {
+  try {
+    const { uploadId, caseBrief, provider, template, redaction, redactionMode, findingsJson } = req.body;
+    
+    if (!provider || !template) {
+      return res.status(400).json({ 
+        error: 'Missing required fields: provider, template' 
+      });
+    }
+    
+    // Support both uploadId (ZIP file) and caseBrief (direct JSON) modes
+    let zipBuffer = null;
+    let runId = uploadId;
+    
+    if (uploadId) {
+      // Mode 1: Load from uploaded ZIP
+      const uploadPath = path.join(__dirname, 'runs', 'ai-validation', uploadId, 'upload.zip');
+      
+      if (!fs.existsSync(uploadPath)) {
+        return res.status(404).json({ error: 'Upload not found' });
+      }
+      
+      zipBuffer = fs.readFileSync(uploadPath);
+    } else if (caseBrief) {
+      // Mode 2: Use caseBrief directly (no ZIP)
+      runId = `run-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    } else {
+      return res.status(400).json({ 
+        error: 'Either uploadId or caseBrief must be provided' 
+      });
+    }
+    
+    // Run validation
+    if (zipBuffer) {
+      // ZIP mode - async response
+      res.json({
+        success: true,
+        runId: runId,
+        status: 'processing',
+        message: 'AI validation started'
+      });
+      
+      // Run validation in background
+      runValidation({
+        zipBuffer,
+        uploadId: runId,
+        provider,
+        template,
+        findingsJson: findingsJson ? JSON.parse(findingsJson) : null,
+        redactionMode: redaction === true || redaction === 'true' || redactionMode === true || redactionMode === 'true'
+      }).catch(error => {
+        console.error('Validation error:', error);
+      });
+    } else {
+      // CaseBrief mode - synchronous response with result
+      const providerFactory = require('./ai-validation/providers/provider-factory.cjs');
+      const Ajv = require('ajv');
+      const addFormats = require('ajv-formats');
+      const aiValidationSchema = require('./ai-validation/schemas/ai_validation.schema.json');
+      
+      try {
+        const providerInstance = providerFactory.createProvider(provider);
+        const templateModule = require('./ai-validation/templates/registry.cjs').getTemplate(template);
+        
+        // Run validation (await result)
+        const result = await providerInstance.validateCase(caseBrief, templateModule);
+        
+        // Validate against schema
+        const ajv = new Ajv({ allErrors: true });
+        addFormats(ajv);
+        const validate = ajv.compile(aiValidationSchema);
+        const valid = validate(result);
+        
+        if (!valid) {
+          console.warn('AI validation schema validation failed:', validate.errors);
+        }
+        
+        // Save result
+        const runDir = path.join(__dirname, 'runs', 'ai-validation', runId);
+        if (!fs.existsSync(runDir)) {
+          fs.mkdirSync(runDir, { recursive: true });
+        }
+        
+        fs.writeFileSync(
+          path.join(runDir, 'ai_validation.json'),
+          JSON.stringify(result, null, 2)
+        );
+        
+        fs.writeFileSync(
+          path.join(runDir, 'status.json'),
+          JSON.stringify({ status: 'completed', timestamp: new Date().toISOString() }, null, 2)
+        );
+        
+        // Return result immediately
+        res.json({
+          success: true,
+          runId: runId,
+          status: 'completed',
+          result: result
+        });
+        
+      } catch (error) {
+        console.error('CaseBrief validation error:', error);
+        const runDir = path.join(__dirname, 'runs', 'ai-validation', runId);
+        if (!fs.existsSync(runDir)) {
+          fs.mkdirSync(runDir, { recursive: true });
+        }
+        fs.writeFileSync(
+          path.join(runDir, 'status.json'),
+          JSON.stringify({ status: 'error', error: error.message, timestamp: new Date().toISOString() }, null, 2)
+        );
+        
+        res.status(500).json({
+          success: false,
+          error: error.message
+        });
+      }
+    }
+    
+  } catch (error) {
+    console.error('Run validation error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Get validation result
+app.get('/api/ai-validation/result/:runId', async (req, res) => {
+  try {
+    const { runId } = req.params;
+    
+    const result = getValidationResult(runId);
+    
+    if (!result.success) {
+      return res.status(500).json(result);
+    }
+    
+    // Return metadata and file paths
+    res.json({
+      success: true,
+      runId,
+      metadata: result.metadata,
+      files: {
+        aiValidation: `/api/ai-validation/download/${runId}/ai_validation.json`,
+        pdf: `/api/ai-validation/download/${runId}/evidence_summary.pdf`,
+        caseBrief: `/api/ai-validation/download/${runId}/case_brief.json`
+      }
+    });
+  } catch (error) {
+    console.error('Get result error:', error);
+    res.status(404).json({ error: error.message });
+  }
+});
+
+// Download validation files
+app.get('/api/ai-validation/download/:runId/:filename', (req, res) => {
+  try {
+    const { runId, filename } = req.params;
+    
+    // Validate filename to prevent directory traversal
+    const allowedFiles = ['ai_validation.json', 'evidence_summary.pdf', 'case_brief.json', 'metadata.json'];
+    if (!allowedFiles.includes(filename)) {
+      return res.status(400).json({ error: 'Invalid filename' });
+    }
+    
+    const filePath = path.join(__dirname, 'runs', 'ai-validation', runId, filename);
+    
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: 'File not found' });
+    }
+    
+    res.download(filePath);
+  } catch (error) {
+    console.error('Download error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// List available templates
+app.get('/api/ai-validation/templates', (req, res) => {
+  try {
+    const templates = listTemplates();
+    res.json({ success: true, templates });
+  } catch (error) {
+    console.error('List templates error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// List available providers
+app.get('/api/ai-validation/providers', (req, res) => {
+  try {
+    const providers = listProviders();
+    res.json({ success: true, providers });
+  } catch (error) {
+    console.error('List providers error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// AI Validation v2 (standardized payload)
+app.post('/api/ai/validate', (req, res) => {
+  try {
+    const { toolId, scanId, provider = 'chatgpt', model, promptNotes, evidencePack } = req.body || {};
+    if (!toolId || !scanId || !evidencePack) {
+      return res.status(400).json({ error: 'toolId, scanId and evidencePack are required' });
+    }
+    if (!['chatgpt', 'gemini', 'perplexity', 'openai'].includes(String(provider).toLowerCase())) {
+      return res.status(400).json({ error: 'Unsupported provider' });
+    }
+
+    const job = queueAiJob({
+      toolId,
+      scanId,
+      provider: 'chatgpt', // normalize to chatgpt for now
+      model: model || 'gpt-4o',
+      promptNotes,
+      evidencePack
+    });
+
+    // basic analytics hooks
+    console.log('[analytics] ai_validate_clicked', { toolId, scanId });
+
+    res.status(202).json({
+      jobId: job.id,
+      status: job.status
+    });
+  } catch (error) {
+    console.error('AI validate error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/ai/validate/:jobId', (req, res) => {
+  try {
+    const job = getAiJob(req.params.jobId);
+    if (!job) {
+      return res.status(404).json({ error: 'Job not found' });
+    }
+    let parsedResult = null;
+    if (job.resultJson) {
+      try {
+        parsedResult = JSON.parse(job.resultJson);
+      } catch (e) {
+        parsedResult = { error: 'Failed to parse result' };
+      }
+    }
+    const response = {
+      jobId: job.id,
+      status: job.status,
+      toolId: job.toolId,
+      scanId: job.scanId,
+      provider: job.provider,
+      model: job.model,
+      promptNotes: job.promptNotes,
+      createdAt: job.createdAt,
+      updatedAt: job.updatedAt,
+      result: parsedResult?.result || null,
+      pdfUrl: parsedResult?.pdfPath ? `/api/ai/validate/${job.id}/pdf` : null,
+      error: parsedResult?.error
+    };
+    res.json(response);
+  } catch (error) {
+    console.error('Get AI validate job error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/ai/validate/:jobId/pdf', (req, res) => {
+  try {
+    const job = getAiJob(req.params.jobId);
+    if (!job) {
+      return res.status(404).json({ error: 'Job not found' });
+    }
+    if (job.status !== 'done') {
+      return res.status(409).json({ error: 'Job not complete' });
+    }
+    const parsed = job.resultJson ? JSON.parse(job.resultJson) : null;
+    const pdfPath = parsed?.pdfPath;
+    if (!pdfPath || !fs.existsSync(pdfPath)) {
+      return res.status(404).json({ error: 'PDF not available' });
+    }
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `attachment; filename="validation-${job.id}.pdf"`);
+    fs.createReadStream(pdfPath).pipe(res);
+  } catch (error) {
+    console.error('Serve AI validation PDF error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Start server
-const server = app.listen(PORT, '0.0.0.0', () => {
-  console.log(`\n🚀 DeDuper.io Fraud Scanner API running on http://localhost:${PORT}`);
-  console.log(`📡 Endpoints:`);
-  console.log(`   POST /api/scan - Scan a website`);
-  console.log(`   POST /api/injected-telemetry-scan - Scan for injected telemetry`);
-  console.log(`   POST /api/diagnose - Analytics Integrity Diagnosis`);
-  console.log(`   POST /api/ad-impression-verification/scan - Ad Impression Verification scan`);
-  console.log(`   GET  /api/ad-impression-verification/export - Export evidence pack`);
+// Start server (async to await videotect module loading)
+(async () => {
+  // Ensure Videotect modules are loaded before accepting requests
+  // TEMPORARILY COMMENTED OUT: await videotect.ensureLoaded();
+  videotect.ensureLoaded().catch(err => console.log('Videotect loading in background:', err.message));
+  
+  const server = app.listen(PORT, '0.0.0.0', () => {
+    console.log(`\n🚀 DeDuper.io Fraud Scanner API running on http://localhost:${PORT}`);
+    console.log(`📡 Endpoints:`);
+    console.log(`   POST /api/scan - Scan a website`);
+    console.log(`   POST /api/injected-telemetry-scan - Scan for injected telemetry`);
+    console.log(`   POST /api/diagnose - Analytics Integrity Diagnosis`);
+    console.log(`   POST /api/ad-impression-verification/scan - Ad Impression Verification scan`);
+    console.log(`   GET  /api/ad-impression-verification/export - Export evidence pack`);
+    console.log(`   POST /api/ai-validation/upload - Upload evidence pack for AI validation`);
+    console.log(`   POST /api/ai-validation/run - Run AI validation`);
+  console.log(`   GET  /api/ai-validation/result/:runId - Get validation result`);
   console.log(`   POST /api/cms-monitor/run - CMS Output Monitor scan`);
   console.log(`   GET  /api/cms-monitor/baselines - List baselines`);
   console.log(`   POST /api/cms-monitor/baselines/save - Save baseline`);
@@ -397,22 +756,41 @@ const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`   GET  /api/screenshot - Get screenshot`);
   console.log(`   POST /api/scans/evidence-pack - Generate evidence pack ZIP`);
   console.log(`   GET  /api/health - Health check\n`);
-});
+  });
 
-// Error handling for server startup
-server.on('error', (error) => {
-  if (error.code === 'EADDRINUSE') {
-    console.error(`\n❌ Error: Port ${PORT} is already in use.`);
-    console.error(`   Please either:`);
-    console.error(`   1. Stop the process using port ${PORT}`);
-    console.error(`   2. Set a different port: PORT=3001 node server.js`);
-    console.error(`   3. Kill the process: lsof -ti:${PORT} | xargs kill\n`);
-  } else {
-    console.error(`\n❌ Server error:`, error.message);
-    console.error(`   Full error:`, error);
-  }
-  process.exit(1);
-});
+  // Error handling for server startup
+  server.on('error', (error) => {
+    if (error.code === 'EADDRINUSE') {
+      console.error(`\n❌ Error: Port ${PORT} is already in use.`);
+      console.error(`   Please either:`);
+      console.error(`   1. Stop the process using port ${PORT}`);
+      console.error(`   2. Set a different port: PORT=3001 node server.js`);
+      console.error(`   3. Kill the process: lsof -ti:${PORT} | xargs kill\n`);
+    } else {
+      console.error(`\n❌ Server error:`, error.message);
+      console.error(`   Full error:`, error);
+    }
+    process.exit(1);
+  });
+
+  // Graceful shutdown handlers
+  process.on('SIGTERM', () => {
+    console.log('\n🛑 SIGTERM received, shutting down gracefully...');
+    server.close(() => {
+      console.log('✅ Server closed');
+      process.exit(0);
+    });
+  });
+
+  process.on('SIGINT', () => {
+    console.log('\n🛑 SIGINT received, shutting down gracefully...');
+    server.close(() => {
+      console.log('✅ Server closed');
+      process.exit(0);
+    });
+  });
+})(); // End of async IIFE for server startup
+
 // Endpoint to find connected domains (legacy - uses external API)
 app.post('/api/network-scan', async (req, res) => {
   const { analyticsId } = req.body;
@@ -622,6 +1000,7 @@ function normalizeId(idType, id) {
 // Injected Telemetry Monitor endpoint
 app.post('/api/injected-telemetry-scan', async (req, res) => {
   try {
+    loadScannerModules();
     const { url, maxWaitMs } = req.body;
     
     if (!url || typeof url !== 'string' || url.trim().length === 0) {
@@ -663,7 +1042,8 @@ app.post('/api/injected-telemetry-scan', async (req, res) => {
 // Analytics Integrity Diagnosis endpoint
 app.post('/api/diagnose', async (req, res) => {
   try {
-    const { url, options } = req.body;
+    loadScannerModules();
+    const { url, options} = req.body;
     
     if (!url || typeof url !== 'string' || url.trim().length === 0) {
       return res.status(400).json({ 
@@ -859,6 +1239,10 @@ app.post('/api/cms-monitor/run', async (req, res) => {
       });
     }
     
+    // #region agent log
+    fetch('http://127.0.0.1:7242/ingest/e933f9c9-0276-4ab0-af7d-7f6d057d32c0',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'server.cjs:1044',message:'CMS scan request received',data:{baseUrl,crawlDepth,hasSamplePages:samplePages.length>0},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H5'})}).catch(()=>{});
+    // #endregion
+    
     console.log(`\n🔍 Starting CMS Output Monitor scan for: ${baseUrl}`);
     console.log(`📋 Options:`, { buildLabel, crawlDepth, samplePagesCount: samplePages.length, allowedPartnersCount: allowedPartners.length });
     
@@ -874,8 +1258,17 @@ app.post('/api/cms-monitor/run', async (req, res) => {
         allowedPartners: Array.isArray(allowedPartners) ? allowedPartners : [],
         timeout: 30000
       });
+      
+      // #region agent log
+      fetch('http://127.0.0.1:7242/ingest/e933f9c9-0276-4ab0-af7d-7f6d057d32c0',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'server.cjs:1065',message:'Scan completed successfully',data:{scanId:scanResult?.scanId,hasSummary:!!scanResult?.summary},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H5'})}).catch(()=>{});
+      // #endregion
+      
       console.log(`✅ scanCMSOutput completed successfully. Scan ID: ${scanResult.scanId}`);
     } catch (scanError) {
+      // #region agent log
+      fetch('http://127.0.0.1:7242/ingest/e933f9c9-0276-4ab0-af7d-7f6d057d32c0',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'server.cjs:1073',message:'Scan failed with error',data:{errorMessage:scanError.message,errorName:scanError.name,isPlaywrightError:scanError.message?.includes('browser')},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1,H2,H5'})}).catch(()=>{});
+      // #endregion
+      
       console.error('❌ scanCMSOutput failed:', scanError);
       console.error('Error stack:', scanError.stack);
       throw scanError; // Re-throw to be caught by outer catch
@@ -1080,15 +1473,6 @@ app.get('*', (req, res) => {
       res.status(404).send('index.html not found');
     }
   }
-});
-
-// Graceful shutdown
-process.on('SIGTERM', () => {
-  console.log('\n🛑 SIGTERM received, shutting down gracefully...');
-  server.close(() => {
-    console.log('✅ Server closed');
-    process.exit(0);
-  });
 });
 
 // Videotect endpoints
@@ -1301,11 +1685,5 @@ app.get('/api/videotect/export', async (req, res) => {
   }
 });
 
-process.on('SIGINT', () => {
-  console.log('\n🛑 SIGINT received, shutting down gracefully...');
-  server.close(() => {
-    console.log('✅ Server closed');
-    process.exit(0);
-  });
-});
-
+// Export app for reuse (tests or alternate servers)
+module.exports = app;

@@ -1,6 +1,7 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { Upload, FileText, AlertTriangle, CheckCircle2, XCircle, Download, Copy, Loader2 } from 'lucide-react';
 import Footer from './Footer';
+import AIValidateButton from './ai-validation/AIValidateButton';
 
 const Videotect = () => {
   const [uploading, setUploading] = useState(false);
@@ -205,6 +206,49 @@ const Videotect = () => {
     return true;
   });
 
+  const scanIdentifier = useMemo(() => {
+    if (importSummary?.id) return `import-${importSummary.id}`;
+    if (items[0]?.id) return `videotect-${items[0].id}`;
+    return `videotect-${Date.now()}`;
+  }, [importSummary?.id, items]);
+
+  const evidencePackGetter = useCallback(() => {
+    const createdAt = new Date().toISOString();
+    const flagged = items.filter((i) => i.score >= 70).length;
+    const findings = filteredItems.map((item) => ({
+      type: item.type || 'placement',
+      severity: item.score >= 70 ? 'high' : item.score >= 50 ? 'med' : 'low',
+      description: Array.isArray(item.reasons) && item.reasons.length
+        ? item.reasons.join(', ')
+        : 'Flagged placement from Videotect scan',
+      evidence: [
+        {
+          kind: 'link',
+          uri: item.canonical_url,
+          meta: {
+            score: item.score,
+            spend: item.metrics?.cost,
+            impressions: item.metrics?.impressions,
+            views: item.metrics?.views
+          }
+        }
+      ]
+    }));
+
+    return Promise.resolve({
+      version: '1.0',
+      createdAt,
+      target: { url: 'videotect', domain: 'youtube.com' },
+      findings,
+      telemetry: {
+        totalItems: items.length,
+        flagged,
+        scannedAt: createdAt
+      },
+      artifacts: []
+    });
+  }, [filteredItems, items]);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -400,6 +444,13 @@ const Videotect = () => {
               <Copy className="w-4 h-4" />
               Copy Video List
             </button>
+          </div>
+          <div className="mt-4">
+            <AIValidateButton
+              toolId="videotect"
+              scanId={scanIdentifier}
+              evidencePackGetter={evidencePackGetter}
+            />
           </div>
         </div>
 

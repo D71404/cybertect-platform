@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Output Monitor Report - cms_1766291885643</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #2563EB; border-bottom: 2px solid #2563EB; padding-bottom: 10px; }
+        h2 { color: #1E40AF; margin-top: 30px; }
+        .summary { background: white; padding: 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
+        .summary-item { padding: 10px; background: #F3F4F6; border-radius: 4px; }
+        .summary-item strong { display: block; color: #1F2937; margin-bottom: 5px; }
+        .summary-item span { color: #6B7280; font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; background: white; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th { background: #2563EB; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #E5E7EB; }
+        tr:hover { background: #F9FAFB; }
+        .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+        .badge-error { background: #FEE2E2; color: #991B1B; }
+        .badge-warning { background: #FEF3C7; color: #92400E; }
+        .badge-success { background: #D1FAE5; color: #065F46; }
+        .diff-added { background: #D1FAE5; }
+        .diff-removed { background: #FEE2E2; }
+        .diff-changed { background: #FEF3C7; }
+        pre { background: #1F2937; color: #F9FAFB; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .page-section { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <h1>CMS Output Monitor Report</h1>
+    
+    <div class="summary">
+        <h2>Scan Summary</h2>
+        <div class="summary-grid">
+            <div class="summary-item">
+                <strong>Scan ID</strong>
+                <span>cms_1766291885643</span>
+            </div>
+            <div class="summary-item">
+                <strong>Build Label</strong>
+                <span>N/A</span>
+            </div>
+            <div class="summary-item">
+                <strong>Base URL</strong>
+                <span>https://www.telebajocero.com</span>
+            </div>
+            <div class="summary-item">
+                <strong>Pages Scanned</strong>
+                <span>1</span>
+            </div>
+            <div class="summary-item">
+                <strong>Total Scripts</strong>
+                <span>60</span>
+            </div>
+            <div class="summary-item">
+                <strong>Total Pixels</strong>
+                <span>1</span>
+            </div>
+            <div class="summary-item">
+                <strong>Duplicate IDs</strong>
+                <span class="badge badge-warning">0</span>
+            </div>
+            <div class="summary-item">
+                <strong>Unauthorized Partners</strong>
+                <span class="badge badge-error">11</span>
+            </div>
+            <div class="summary-item">
+                <strong>Injected Scripts</strong>
+                <span class="badge badge-error">1</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="page-section">
+        <h2>Injected/Unknown Scripts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>Type</th>
+                    <th>Source/Hash</th>
+                    <th>Reason</th>
+                    <th>Macros</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>https://www.telebajocero.com</td>
+                    <td>external</td>
+                    <td><code>https://fundingchoicesmessages.google.com/i/ca-pub-658296821</code></td>
+                    <td>Contains macros</td>
+                    <td>%3A%</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    
+    
+    
+    
+    
+    <div class="page-section">
+        <h2>Unauthorized Macros/Partners</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Domain</th>
+                    <th>Page</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>pagead2.googlesyndication.com</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>connect.facebook.net</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>google-analytics.com</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>script</td>
+                    <td><code>googletagmanager.com</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>googletagmanager.com</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>pagead2.googlesyndication.com</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>google-analytics.com</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>connect.facebook.net</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>stats.g.doubleclick.net</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>googleads.g.doubleclick.net</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+                <tr>
+                    <td>network_request</td>
+                    <td><code>tpc.googlesyndication.com</code></td>
+                    <td>https://www.telebajocero.com</td>
+                    <td>Not in allowed partners list</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div class="page-section">
+        <h2>Widget Attribution Map</h2>
+        
+        <h3>https://www.telebajocero.com</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Widget</th>
+                    <th>Attribute</th>
+                    <th>Scripts</th>
+                    <th>Pixels</th>
+                    <th>Measurement IDs</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><code>widget-content</code></td>
+                    <td>class</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>tddeferernodes</code></td>
+                    <td>id</td>
+                    <td>17</td>
+                    <td>0</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>tddefererjs</code></td>
+                    <td>id</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        
+    </div>
+    
+    <div class="page-section">
+        <h2>Page Details</h2>
+        
+        <h3>Page 1: https://www.telebajocero.com</h3>
+        <p><strong>Scripts:</strong> 60</p>
+        <p><strong>Pixels:</strong> 1</p>
+        <p><strong>Network Requests:</strong> 91</p>
+        <details>
+            <summary>Measurement IDs</summary>
+            <pre>{
+  "ga4": [
+    "G-K74X5EZD10",
+    "G-90JNAWSXBE"
+  ],
+  "ua": [
+    "UA-98336070-1"
+  ],
+  "gtm": [],
+  "aw": [],
+  "fb": []
+}</pre>
+        </details>
+        
+    </div>
+    
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #E5E7EB; color: #6B7280; text-align: center;">
+        <p>Generated by CMS Output Monitor at 12/20/2025, 10:38:09 PM</p>
+    </footer>
+</body>
+</html>

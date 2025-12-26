@@ -1,0 +1,1376 @@
+{
+  "scanResult": {
+    "scanId": "cms_1766779211892",
+    "scanTimestamp": "2025-12-26T20:00:17.017Z",
+    "buildLabel": null,
+    "baseUrl": "https://www.diariouno.com.ar/",
+    "pagesScanned": [
+      "https://www.diariouno.com.ar/"
+    ],
+    "pageResults": [
+      {
+        "url": "https://www.diariouno.com.ar/",
+        "scanTimestamp": "2025-12-26T20:00:16.816Z",
+        "scripts": [
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-K7569D5RH2&cx=c&gtm=4e5ca1",
+            "hash": "s7fa6k",
+            "measurementIds": {
+              "ga4": [
+                "G-K7569D5RH2"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+            "hash": "dfxz9n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://sb.scorecardresearch.com/cs/7199219/beacon.js",
+            "hash": "v5t0j0",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "kzj96o",
+            "content": "[{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"WebSite\",\"name\":\"Diario UNO\",\"url\":\"https:\\/\\/www.diariouno.com.ar\\/\"}]",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.diariouno.com.ar/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766722167.js",
+            "hash": "l1v0y4",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "p4vk6z",
+            "content": "var _sf_startpt=(new Date()).getTime()",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-FGE5LDNL3P",
+            "hash": "i9sbig",
+            "measurementIds": {
+              "ga4": [
+                "G-FGE5LDNL3P"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "2qv59y",
+            "content": " window.dataLayer = window.dataLayer || [];\n    function gtag() { dataLayer.push(arguments); }\n    gtag('js', new Date());\n\n    gtag('config', 'G-FGE5LDNL3P');\n\n    gtag('event', 'custom_event', {\n\tusuario: '',\n\tseccion: '',\n\tprimertag: '',\n        autor: '',\n    });\n\n    // Evento personalizado para autor\n    gtag('event', 'autor', {\n        author: ''\n    });\n\n    // Evento personalizado para usuario\n    gtag('event', 'usuario', {\n        user: ''\n    });\n\n    // Evento personalizado para Prim",
+            "measurementIds": {
+              "ga4": [
+                "G-FGE5LDNL3P"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "uly89l",
+            "content": "\n      {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"NewsMediaOrganization\",\n        \"@id\": \"https://www.diariouno.com.ar/#organization\",\n        \"name\": \"Diario UNO\",\n        \"url\": \"https://www.diariouno.com.ar\",\n        \"description\": \"Diario UNO: Información útil y diversa para argentinos. Noticias, deportes, tendencias, estilos de vida, recetas y ocio, desde Mendoza para toda Argentina y el mundo.\",\n        \"logo\": {\n          \"@type\": \"ImageObject\",\n          \"url\": \"https:",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [
+              "%2Fg%"
+            ],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "hash": "tihp7c",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://s1.adzonestatic.com/c/2_2024.diariouno.js",
+            "hash": "le9rxw",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "qa1uo0",
+            "content": "\nsetTimeout(function(){\n  !function(f,b,e,v,n,t,s)\n  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n  n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=\"2.0\";\n  n.queue=[];t=b.createElement(e);t.async=!0;\n  t.src=v;s=b.getElementsByTagName(e)[0];\n  s.parentNode.insertBefore(t,s)}(window, document,\"script\",\n  \"https://connect.facebook.net/en_US/fbevents.js\");\n  fbq(\"init\", \"281273192029661\");\n  fbq(\"track\", \"PageView\");\n}, 3000);\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": [
+                "281273192029661"
+              ]
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9956190737880259",
+            "hash": "330oz7",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/i/pub-8248545761929594?ers=1",
+            "hash": "qf8j40",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "197m4r",
+            "content": "(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "v5iggx",
+            "content": "\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    \n    // Lista de las palabras clave de los scripts a congelar\n    const adScriptKeywords = ['gpt.js', 'adsbygoogle.js', 'adzonestatic.com'];\n    \n    const frozenScripts = [];\n\n    // 1. Fase de \"Congelación\"\n    // Buscar todos los scripts en la página\n    document.querySelectorAll('script').forEach(script => {\n        // Si la URL del script contiene alguna de nuestras palabras clave...\n        if (script.src && adScriptKeywords.s",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "ifjd27",
+            "content": "\n// generar tag chartbeat por secciones\n(function() {\n    // 1. Obtener la ruta de la URL\n    const path = window.location.pathname;\n\n    // 2. Dividir la ruta y limpiar vacíos\n    let segmentos = path.split('/').filter(function(segmento) {\n        return segmento.length > 0;\n    });\n\n    // 3. Lógica para eliminar el título de la nota (si es un artículo)\n    if (segmentos.length > 0) {\n        const ultimoSegmento = segmentos[segmentos.length - 1];\n        // Detecta si termina en patrón de ID ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "14cd49",
+            "content": "\n{\n    \"prefetch\": [\n        {\n            \"source\": \"document\",\n            \"where\": {\n                \"and\": [\n                    { \"href_matches\": \"https://www.diariouno.com.ar/*\" },\n                    { \"not\": { \"selector_matches\": \"[rel~='nofollow']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noreferrer']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noopener']\" } },\n                    { \"not\": { \"selector_matches\": \"[rel~='noindex']\" } }\n         ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "o2z9g9",
+            "content": " \n var _sf_async_config = _sf_async_config || {}; \n /** CONFIGURATION START **/ \n _sf_async_config.uid = 64788; // ACCOUNT NUMBER \n _sf_async_config.domain = 'diariouno.com.ar'; // DOMAIN \n _sf_async_config.useCanonical = true; \n _sf_async_config.useCanonicalDomain = true; \n /** CONFIGURATION END **/ \n var _sf_startpt = (new Date()).getTime(); \n // Set a timeout event for 1 second that will remove the body hiding \n // tag from the document if it has not already been removed. This \n // gives the ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//static.chartbeat.com/js/chartbeat_mab.js",
+            "hash": "ufdu9e",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-K7569D5RH2",
+            "hash": "osow77",
+            "measurementIds": {
+              "ga4": [
+                "G-K7569D5RH2"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "u3zfx3",
+            "content": " window.dataLayer = window.dataLayer || [];\n    function gtag() { dataLayer.push(arguments); }\n    gtag('js', new Date());\n    gtag('config', 'G-K7569D5RH2');\n    gtag('set',\n        {\n            'dimension1': 'Diario UNO',\n            'dimension2': '',\n            'dimension3': 'page',\n            'dimension4': '',\n            'dimension5': '',\n            'dimension6': '',\n            'dimension7': '',\n            'dimension8': '',\n            'dimension9': '',\n        });\n",
+            "measurementIds": {
+              "ga4": [
+                "G-K7569D5RH2"
+              ],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "9yytdi",
+            "content": " window.arrCMSRegions = {  region1 : 'none' , region2 : 'block' , region3 : 'none' , region4 : 'block' , region5 : 'block' , region6 : 'none' , region7 : 'none' , region8 : 'none' , region9 : 'block' , region10 : 'block'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://s1.adzonestatic.com/c/10003_adzone.25.01.js?a0102921",
+            "hash": "ptvvs2",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "hash": "o80o3r",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxXXml_-I8pu22kEb0yqjWYZMhEOUgCtde92PMKaajDhGrsq3XtJvHOX3o6M7ZydxJqsHb-_hYr78CA_xAKU0aa6b-de9r839aPGEHOly5LqwEMhEc4rWtVTLmXIJCBJ--3z7w5QiQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2Nzc5MjEzLDgzMTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZGlhcmlvdW5vLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "hash": "snnt7i",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/i/22466671215?ers=3",
+            "hash": "rot3cc",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxWA24g0Zb5X7oo4gHHFs_pSHGXQb7ZhfsTYYzOoKlYh4WCldF2ELIXxv23gr-6djqk8dWA9VE4sh4yGPVzM2A2sdUmnflMs8qPZ0IwDmlzaINo_9xCyj_6Tduq_qRv-YRDnIanjjA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2Nzc5MjE0LDcxMzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmRpYXJpb3Vuby5jb20uYXIvIixudWxsLFtbOCwic0NoTkg1T3NhazAiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+            "hash": "9x61vj",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/f/AGSKWxUomDH7q85tCUWcj3W8SUV1PjHC7gvNeXX36rpgNuG1AEoFE7_UDC_Afn1HYpwW_1TQbJrtgX7951y33rKg2VBvrRzddApcnMeHQ3uABGmoH9BRJ9swTeoaFf43NquhV2aX8nMH6g==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2Nzc5MjE0LDc5OTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNiw5XSxudWxsLDIsbnVsbCwiZXMiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cuZGlhcmlvdW5vLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "hash": "3p9scg",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://fundingchoicesmessages.google.com/i/ca-pub-9956190737880259?href=https%3A%2F%2Fwww.diariouno.com.ar&ers=2",
+            "hash": "iiyb7d",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [
+              "%3A%"
+            ],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "z7so3f",
+            "content": " var _comscore = _comscore || [];\n  _comscore.push({\n    c1: \"2\", c2: \"7199219\",\n    options: {\n      enableFirstPartyCookie: true,\n      bypassUserConsentRequirementFor1PCookie: true\n    }\n  });\n  (function () {\n    var s = document.createElement(\"script\"), el = document.getElementsByTagName(\"script\")[0]; s.async = true;\n    s.src = \"https://sb.scorecardresearch.com/cs/7199219/beacon.js\";\n    el.parentNode.insertBefore(s, el);\n  })();\n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "mob5py",
+            "content": " \n var _sf_async_config = _sf_async_config || {}; \n /** CONFIGURATION START **/ \n _sf_async_config.sections = ''; //CHANGE THIS \n _sf_async_config.authors = ''; //CHANGE THIS \n _sf_async_config.useCanonical = true; \n _sf_async_config.useCanonicalDomain = true; \n /** CONFIGURATION END **/ \n (function() { \n function loadChartbeat() { \n  var e = document.createElement('script'); \n e.setAttribute('language', 'javascript'); \n e.setAttribute('type', 'text/javascript'); \n e.setAttribute('src', '//stati",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "//static.chartbeat.com/js/chartbeat_video.js",
+            "hash": "lbrx7",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "n85xq9",
+            "content": " function loadTdDefererJs(i){\n      var s = document.createElement(\"script\");\n      s.setAttribute(\"type\", \"text/javascript\");\n      if(i >= window.defererList.length){\n        return false;\n      }\n\n      if(typeof(window.defererList[i].src) != \"undefined\" && window.defererList[i].src != \"\"){\n        //console.log(\"Add SRC =>\",window.defererList[i].src);\n        s.onload = function() {\n          i++;\n          loadTdDefererJs(i);\n        };\n        s.onerror = function() {\n          i++;\n      ",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          },
+          {
+            "type": "inline",
+            "hash": "9yytdi",
+            "content": " window.arrCMSRegions = {  region1 : 'none' , region2 : 'block' , region3 : 'none' , region4 : 'block' , region5 : 'block' , region6 : 'none' , region7 : 'none' , region8 : 'none' , region9 : 'block' , region10 : 'block'  }; \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": {
+              "attribute": "id",
+              "value": "tddeferernodes",
+              "selector": "#tddeferernodes"
+            },
+            "selector": "script"
+          },
+          {
+            "type": "external",
+            "src": "https://www.diariouno.com.ar/js-custom/298/v2/header.js?v=26122025163504",
+            "hash": "6nucq7",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "script"
+          }
+        ],
+        "pixels": [
+          {
+            "type": "noscript",
+            "src": "  <img src=\"https://sb.scorecardresearch.com/p?c1=2&amp;c2=7199219&amp;cv=4.4.0&amp;cj=1\"> \n",
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            },
+            "macros": [],
+            "attribution": null,
+            "selector": "noscript"
+          }
+        ],
+        "networkRequests": [
+          {
+            "url": "https://www.diariouno.com.ar/",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766779212871
+          },
+          {
+            "url": "https://www.diariouno.com.ar/assets/img/298/logo.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://www.diariouno.com.ar/tdcss-df45196f8aedd9a87289ced44cabf47494b82fbd-10",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://www.diariouno.com.ar/vendor/lazyLoad/lazyLoad-observer-td4-min-version-1766722167.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/fonts/roboto/roboto-v20-latin-300.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/fonts/roboto/roboto-v20-latin-regular.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/fonts/roboto/roboto-v20-latin-700.woff2",
+            "method": "GET",
+            "resourceType": "font",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-FGE5LDNL3P",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213199
+          },
+          {
+            "url": "https://s1.adzonestatic.com/c/2_2024.diariouno.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213200
+          },
+          {
+            "url": "https://assets.a24.com/prd/diariouno/uno-custom.css",
+            "method": "GET",
+            "resourceType": "stylesheet",
+            "timestamp": 1766779213200
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9956190737880259",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213200
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/i/pub-8248545761929594?ers=1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213200
+          },
+          {
+            "url": "https://static.chartbeat.com/js/chartbeat_mab.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213200
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-K7569D5RH2",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213200
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/lazy.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213200
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/icons/search-solid-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213448
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/cs/7199219/beacon.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213461
+          },
+          {
+            "url": "https://static.chartbeat.com/js/chartbeat_video.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213461
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/icons/play-circle-solid-white.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213483
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/icons/facebook-f-brands-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213484
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/icons/instagram-brands-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213484
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/icons/linkedin-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213484
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/icons/twitter-brands-black.svg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213484
+          },
+          {
+            "url": "https://www.diariouno.com.ar/js-custom/298/v2/header.js?v=26122025163504",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213489
+          },
+          {
+            "url": "https://www.diariouno.com.ar/css-custom/298/v2/icons/dolar.png",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213489
+          },
+          {
+            "url": "https://media.diariouno.com.ar/p/b79e78d5cff26d0fb6ccb4ed25ee8e8b/adjuntos/298/imagenes/009/679/0009679244/1200x675/smart/navidad-controles-conductores-alcoholizados.jpeg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213490
+          },
+          {
+            "url": "https://media.diariouno.com.ar/p/4f3d0d5f5ec29d1e6641d6bcaa583920/adjuntos/298/imagenes/009/679/0009679195/350x197/smart/senado-presupuesto-suarez-juri.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213490
+          },
+          {
+            "url": "https://media.diariouno.com.ar/p/a6fc1247bc0deba6c27206db6215eb35/adjuntos/298/imagenes/009/679/0009679085/350x197/smart/diego-tonetto-lepra.jpg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213490
+          },
+          {
+            "url": "https://media.diariouno.com.ar/p/c0299e1943496af3da9507b8820c3660/adjuntos/298/imagenes/009/679/0009679260/350x197/smart/camion-vuelco-ruta-40.jpeg",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213490
+          },
+          {
+            "url": "https://mab.chartbeat.com/mab_strategy/headline_testing/get_strategy/?host=diariouno.com.ar&domain=diariouno.com.ar&path=%2F",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766779213671
+          },
+          {
+            "url": "https://s1.adzonestatic.com/c/10003_adzone.25.01.js?a0102921",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766779213674
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/internal-cs/default/beacon.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213741
+          },
+          {
+            "url": "https://s1.adzonestatic.com/c/10003_adzone.25.01.js?a0102921",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213771
+          },
+          {
+            "url": "https://ping.chartbeat.net/ping?h=diariouno.com.ar&p=%2F&u=B5iE4pDwfQ8QBAJaqt&d=diariouno.com.ar&g=64788&g0=No%20Section&g1=No%20Author&n=1&f=00001&c=0&x=0&m=0&y=18526&o=1280&w=720&j=45&R=1&W=0&I=0&E=0&e=0&r=&PA=https%3A%2F%2Fwww.diariouno.com.ar%2F&b=921&t=B8QlE6DZJVhQMQETCBTPNtawMhR&V=150&i=Diario%20UNO&tz=360&sn=1&sv=DS9yqvglLw6CN3AHXXfOn_BX9RlI&sr=external&sd=1&im=067b0fff&_",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213790,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213811
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/b?c1=2&c2=7199219&cs_fpcu=959ac80619324b8fb4d33e5f0183cac5&cs_it=b1&cv=4.13.1%2B2508250908&ns__t=1766779213812&ns_c=UTF-8&cs_cfg=1111110&c7=https%3A%2F%2Fwww.diariouno.com.ar%2F&c8=Diario%20UNO&c9=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213813,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVGEOk5CdvWLZAdXNFHo9WGOYslD_HDLX-4Mpxsm-mDfrPdPxuaIcCXGz3HKPWYOBWGz8qoYmPtuZJIIs0Wxbsg1sZ6uNcfxBqsMR2_tF5Ar_Ojr6uR7dWAAuNTwcCB1rl1ZWyf7g==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779213827
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVGEOk5CdvWLZAdXNFHo9WGOYslD_HDLX-4Mpxsm-mDfrPdPxuaIcCXGz3HKPWYOBWGz8qoYmPtuZJIIs0Wxbsg1sZ6uNcfxBqsMR2_tF5Ar_Ojr6uR7dWAAuNTwcCB1rl1ZWyf7g==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779213827
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXXml_-I8pu22kEb0yqjWYZMhEOUgCtde92PMKaajDhGrsq3XtJvHOX3o6M7ZydxJqsHb-_hYr78CA_xAKU0aa6b-de9r839aPGEHOly5LqwEMhEc4rWtVTLmXIJCBJ--3z7w5QiQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2Nzc5MjEzLDgzMTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZGlhcmlvdW5vLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213832
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213848
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt",
+            "method": "GET",
+            "resourceType": "other",
+            "timestamp": 1766779213848
+          },
+          {
+            "url": "https://sb.scorecardresearch.com/b2?c1=2&c2=7199219&cs_fpcu=959ac80619324b8fb4d33e5f0183cac5&cs_it=b1&cv=4.13.1%2B2508250908&ns__t=1766779213812&ns_c=UTF-8&cs_cfg=1111110&c7=https%3A%2F%2Fwww.diariouno.com.ar%2F&c8=Diario%20UNO&c9=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779213882,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-FGE5LDNL3P&gtm=45je5ca1v887570950za200zd887570950&_p=1766779213218&_gaz=1&gcs=G1--&gcd=13l3l3l3l5l1&npa=0&dma=0&tcfd=10000&cid=786729078.1766779214&ecid=1563294744&ul=en-us&sr=1280x720&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1766779213&sct=1&seg=0&dl=https%3A%2F%2Fwww.diariouno.com.ar%2F&dt=Diario%20UNO&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1091",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766779213967,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-FGE5LDNL3P&cid=786729078.1766779214&gtm=45je5ca1v887570950za200zd887570950&aip=1&dma=0&gcs=G1--&gcd=13l3l3l3l5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940",
+            "method": "POST",
+            "resourceType": "ping",
+            "timestamp": 1766779213968
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-K7569D5RH2&cx=c&gtm=4e5ca1",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779213968
+          },
+          {
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-K7569D5RH2&gtm=45je5ca1h1v9123077325za200zb887570950zd887570950&_p=1766779213218&gcs=G1--&gcd=13l3l3l3l5l1&npa=0&dma=0&tcfd=10000&cid=786729078.1766779214&ul=en-us&sr=1280x720&ir=1&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_eu=EA&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115706422~115938465~115938468~116184927~116184929~116251938~116251940&sid=1766779213&sct=1&seg=0&dl=https%3A%2F%2Fwww.diariouno.com.ar%2F&dt=Diario%20UNO&en=page_view&_fv=1&_ss=1&_ee=1&tfd=1123",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766779213992,
+            "macros": [
+              "%7CChromium%",
+              "%7CNot%",
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://s1.adzonestatic.com/vr/vw_diariouno.com.ar.json?20449",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766779214128
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/i/22466671215?ers=3",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779214128
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=6085035887241780&correlator=4277676650152541&eid=95379660%2C83321073&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fifs&gdpr=0&iu_parts=40327789%2Cwww.diariouno.com.ar%2Chome%2Cv2%2Clateral&enc_prev_ius=%2F0%2F1%2F2%2F3%2F4&prev_iu_szs=260x650%7C260x600&ifi=2&didk=3994467785&dids=ad-slot-lateral&adfs=4016227391&sfv=1-0-45&eri=1&sc=1&lrm=50&cookie_enabled=1&abxe=1&dt=1766779214334&lmt=1766779209&adxs=-12245933&adys=-12245933&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=-1&ucis=1&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariouno.com.ar%2F&vis=1&psz=0x0&msz=0x-1&fws=640&ohw=0&psd=WzMxLFtdXQ..&dlt=1766779213186&idt=890&prev_scp=az_ref%3D30%26az_lazy%3D1&cust_params=platform%3Ddesktop%26domain%3Ddiariouno.com.ar%26page%3Dhome%26section%3Dhome&adks=1230028347&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766779214347,
+            "macros": [
+              "%2Chome%",
+              "%2F0%",
+              "%2F2%",
+              "%3A%",
+              "%3D30%",
+              "%3Ddesktop%",
+              "%26page%",
+              "%26section%"
+            ]
+          },
+          {
+            "url": "https://3bcdd4365f568562d4362badae00a479.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766779214348
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=6085035887241780&correlator=4277676650152541&eid=95379660%2C83321073&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fifs&gdpr=0&iu_parts=40327789%2Cwww.diariouno.com.ar%2Chome%2Cv2%2Citt&enc_prev_ius=%2F0%2F1%2F2%2F3%2F4&prev_iu_szs=320x50%7C1000x480%7C1000x540%7C800x600&fluid=height&ifi=3&didk=3860944036&dids=ad-slot-itt&adfs=100134914&sfv=1-0-45&eri=1&sc=1&cookie_enabled=1&abxe=1&dt=1766779214348&lmt=1766779209&adxs=140&adys=18526&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=1&ucis=2&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariouno.com.ar%2F&vis=1&psz=1280x18525&msz=1280x-1&fws=128&ohw=0&psd=WzMxLFtdXQ..&dlt=1766779213186&idt=890&cust_params=platform%3Ddesktop%26domain%3Ddiariouno.com.ar%26page%3Dhome%26section%3Dhome&adks=3606196525&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766779214351,
+            "macros": [
+              "%2Chome%",
+              "%2F0%",
+              "%2F2%",
+              "%7C1000x480%",
+              "%3A%",
+              "%3Ddesktop%",
+              "%26page%",
+              "%26section%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=6085035887241780&correlator=4277676650152541&eid=95379660%2C83321073&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fifs&gdpr=0&iu_parts=40327789%2Cwww.diariouno.com.ar%2Chome%2Cv2%2C1x1%2C1x1_red2%2Czocalo&enc_prev_ius=%2F0%2F1%2F2%2F3%2F4%2C%2F0%2F1%2F2%2F3%2F5%2C%2F0%2F1%2F2%2F3%2F6&prev_iu_szs=1x1%2C1x1%2C728x91%7C728x90%7C950x90%7C950x50%7C1x1&ifi=4&didk=3861088870~35147253~2940131257&dids=ad-slot-1x1~ad-slot-1x1_red2~ad-slot-zocalo&adfs=1752420797~25602480~1210920323&sfv=1-0-45&eri=1&sc=1&cookie_enabled=1&abxe=1&dt=1766779214351&lmt=1766779209&adxs=640%2C640%2C276&adys=18526%2C18526%2C18526&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=2%7C3%7C4&ucis=3%7C4%7C5&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariouno.com.ar%2F&vis=1&psz=1280x18525%7C1280x18525%7C1280x18525&msz=1280x0%7C1280x0%7C1280x-1&fws=0%2C0%2C128&ohw=0%2C0%2C0&psd=WzMxLFtdXQ..&dlt=1766779213186&idt=890&prev_scp=%7C%7Caz_ref%3D30&cust_params=platform%3Ddesktop%26domain%3Ddiariouno.com.ar%26page%3Dhome%26section%3Dhome&adks=859129293%2C4043416102%2C2404516365&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766779214353,
+            "macros": [
+              "%2Chome%",
+              "%2C1x1%",
+              "%2F0%",
+              "%2F2%",
+              "%2F4%",
+              "%2F5%",
+              "%7C728x90%",
+              "%7C950x50%",
+              "%2C640%",
+              "%2C18526%",
+              "%7C3%",
+              "%7C4%",
+              "%3A%",
+              "%7C1280x18525%",
+              "%7C1280x0%",
+              "%2C0%",
+              "%7C%",
+              "%3Ddesktop%",
+              "%26page%",
+              "%26section%",
+              "%2C4043416102%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=6085035887241780&correlator=4277676650152541&eid=95379660%2C83321073&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fifs&gdpr=0&iu_parts=40327789%2Cwww.diariouno.com.ar%2Chome%2Cv2%2Cbox_e&enc_prev_ius=%2F0%2F1%2F2%2F3%2F4&prev_iu_szs=300x250&ifi=7&didk=3524383286&dids=ad-slot-box_e&adfs=4148378221&sfv=1-0-45&eri=1&sc=1&lrm=50&cookie_enabled=1&abxe=1&dt=1766779214360&lmt=1766779209&adxs=902&adys=1354&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=9&ucis=6&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariouno.com.ar%2F&vis=1&psz=396x270&msz=396x-1&fws=0&ohw=0&psd=WzMxLFtdXQ..&dlt=1766779213186&idt=890&prev_scp=az_ref%3D15%26az_lazy%3D1&cust_params=platform%3Ddesktop%26domain%3Ddiariouno.com.ar%26page%3Dhome%26section%3Dhome&adks=324148068&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766779214363,
+            "macros": [
+              "%2Chome%",
+              "%2F0%",
+              "%2F2%",
+              "%3A%",
+              "%3D15%",
+              "%3Ddesktop%",
+              "%26page%",
+              "%26section%"
+            ]
+          },
+          {
+            "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=6085035887241780&correlator=4277676650152541&eid=95379660%2C83321073&output=ldjh&gdfp_req=1&vrg=202512040101&ptt=17&impl=fifs&gdpr=0&iu_parts=40327789%2Cwww.diariouno.com.ar%2Chome%2Cv2%2Cbox_b&enc_prev_ius=%2F0%2F1%2F2%2F3%2F4&prev_iu_szs=300x250&ifi=8&didk=3524383285&dids=ad-slot-box_b&adfs=1743822625&sfv=1-0-45&eri=1&sc=1&lrm=50&cookie_enabled=1&abxe=1&dt=1766779214363&lmt=1766779209&adxs=902&adys=1654&biw=1280&bih=720&scr_x=0&scr_y=0&btvi=11&ucis=7&oid=2&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&u_tz=-360&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.diariouno.com.ar%2F&vis=1&psz=396x270&msz=396x-1&fws=0&ohw=0&psd=WzMxLFtdXQ..&dlt=1766779213186&idt=890&prev_scp=az_ref%3D15%26az_lazy%3D1&cust_params=platform%3Ddesktop%26domain%3Ddiariouno.com.ar%26page%3Dhome%26section%3Dhome&adks=2566484719&frm=20&eoidce=1&pgls=CAA.",
+            "method": "GET",
+            "resourceType": "fetch",
+            "timestamp": 1766779214364,
+            "macros": [
+              "%2Chome%",
+              "%2F0%",
+              "%2F2%",
+              "%3A%",
+              "%3D15%",
+              "%3Ddesktop%",
+              "%26page%",
+              "%26section%"
+            ]
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXvtCqqdt0qZ7e9WhZKlGMHeHRXPi0igisJ4l1kNM_sXMiz6I2A7NAb4Tmfn4DrH7k81bSna0lEJ1_CjvVZJGzONj4iN4tIfmpQdqEKOUqRhwydFufGJeM5YzbxSYsVHyccURzHTlhWdBqr9GUCMqN511d_WOZRBI5sLwd0N9pasXnQKp2OgczROGQO/_.za/ads.?ads=/ads/pop._ad_harness./logoutad.",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779214562
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?fcd=true",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779214562
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVGEOk5CdvWLZAdXNFHo9WGOYslD_HDLX-4Mpxsm-mDfrPdPxuaIcCXGz3HKPWYOBWGz8qoYmPtuZJIIs0Wxbsg1sZ6uNcfxBqsMR2_tF5Ar_Ojr6uR7dWAAuNTwcCB1rl1ZWyf7g==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779214562
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVGEOk5CdvWLZAdXNFHo9WGOYslD_HDLX-4Mpxsm-mDfrPdPxuaIcCXGz3HKPWYOBWGz8qoYmPtuZJIIs0Wxbsg1sZ6uNcfxBqsMR2_tF5Ar_Ojr6uR7dWAAuNTwcCB1rl1ZWyf7g==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779214609
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766779214668
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&client=ca-pub-9956190737880259&output=html&adk=1812271804&adf=3025194257&lmt=1766779209&plaf=1%3A2%2C2%3A2%2C7%3A2&plat=1%3A128%2C2%3A128%2C3%3A128%2C4%3A128%2C8%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&format=0x0&url=https%3A%2F%2Fwww.diariouno.com.ar%2F&pra=5&wgl=1&asro=0&aiapm=0.1542&aiapmd=0.1423&aiapmi=0.16&aiapmid=1&aiact=0.5423&aiactd=0.7&aicct=0.7&aicctd=0.5799&ailct=0.5849&ailctd=0.65&aimart=4&aimartd=4&aieuf=1&aicrs=1&uach=WyJtYWNPUyIsIjI2LjAuMSIsImFybSIsIiIsIjE0My4wLjc0OTkuNCIsbnVsbCwwLG51bGwsIjY0IixbWyJIZWFkbGVzc0Nocm9tZSIsIjE0My4wLjc0OTkuNCJdLFsiQ2hyb21pdW0iLCIxNDMuMC43NDk5LjQiXSxbIk5vdCBBKEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&abgtt=6&dt=1766779213839&bpp=8&bdt=653&idt=819&shv=r20251211&mjsv=m202512100101&ptt=9&saldr=aa&abxe=1&cookie=ID%3Dbf5c980323c10324%3AT%3D1766779214%3ART%3D1766779214%3AS%3DALNI_MYvHW8n0c2-CAX57XPIesPTF0hNmg&gpic=UID%3D000013202cfd35e5%3AT%3D1766779214%3ART%3D1766779214%3AS%3DALNI_MaQ18mZgxt8toqBP3QKzBP7-2aYrQ&eo_id_str=ID%3De2d45792c607e1a2%3AT%3D1766779214%3ART%3D1766779214%3AS%3DAA-AfjZV4ncxOlZr_PsJJA3VylLz&nras=1&correlator=8647330208860&frm=20&pv=2&u_tz=-360&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=8&adx=-12245933&ady=-12245933&biw=1280&bih=720&scr_x=0&scr_y=0&eid=31095904%2C31096041%2C95376242%2C95376582%2C95378750%2C31095696%2C95380210&oid=2&pvsid=6085035887241780&tmod=43051117&uas=0&nvt=1&fsapi=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1&pgls=CAA.&ifi=1&uci=a!1&fsb=1&dtd=834",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766779214675,
+            "macros": [
+              "%3A2%",
+              "%3A128%",
+              "%3A32776%",
+              "%3A8388608%",
+              "%3A32%",
+              "%3A1081344%",
+              "%3A%",
+              "%3Dbf5c980323c10324%",
+              "%3D1766779214%",
+              "%3D000013202cfd35e5%",
+              "%3De2d45792c607e1a2%",
+              "%2C31096041%",
+              "%2C95376582%",
+              "%2C31095696%",
+              "%2C0%",
+              "%2C720%",
+              "%7C%"
+            ]
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVGEOk5CdvWLZAdXNFHo9WGOYslD_HDLX-4Mpxsm-mDfrPdPxuaIcCXGz3HKPWYOBWGz8qoYmPtuZJIIs0Wxbsg1sZ6uNcfxBqsMR2_tF5Ar_Ojr6uR7dWAAuNTwcCB1rl1ZWyf7g==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779214714
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVGEOk5CdvWLZAdXNFHo9WGOYslD_HDLX-4Mpxsm-mDfrPdPxuaIcCXGz3HKPWYOBWGz8qoYmPtuZJIIs0Wxbsg1sZ6uNcfxBqsMR2_tF5Ar_Ojr6uR7dWAAuNTwcCB1rl1ZWyf7g==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779214714
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWA24g0Zb5X7oo4gHHFs_pSHGXQb7ZhfsTYYzOoKlYh4WCldF2ELIXxv23gr-6djqk8dWA9VE4sh4yGPVzM2A2sdUmnflMs8qPZ0IwDmlzaINo_9xCyj_6Tduq_qRv-YRDnIanjjA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2Nzc5MjE0LDcxMzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmRpYXJpb3Vuby5jb20uYXIvIixudWxsLFtbOCwic0NoTkg1T3NhazAiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779214714
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVG2XMDqpH9ShYbYV28uXWT2D53-U8h6Wihd2O7BFKxGZP6EXlDqWschHoN_Ayh6jE7rHvsQXQrmO9TKSwk-c35jwWIpWllK4zpvxxJ4GNOoTmVU8yK3jrUzwoJPMx4asomEYCVbA==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779214799
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUomDH7q85tCUWcj3W8SUV1PjHC7gvNeXX36rpgNuG1AEoFE7_UDC_Afn1HYpwW_1TQbJrtgX7951y33rKg2VBvrRzddApcnMeHQ3uABGmoH9BRJ9swTeoaFf43NquhV2aX8nMH6g==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzY2Nzc5MjE0LDc5OTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNiw5XSxudWxsLDIsbnVsbCwiZXMiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cuZGlhcmlvdW5vLmNvbS5hci8iLG51bGwsW1s4LCJzQ2hOSDVPc2FrMCJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779214800
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXKgrTDRBS1CY14XHGuXKtZbbumQFohm7_4TVG4_t1pjlyJJm5ovWKxoBaBNnsoVlTgNaNAUPEJyZKuGivtDTSu80wxKBnjhbiv_My2VYSD5YNgihoZKwTMvc35lAl0Zm9PzDL_0Q==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779214874
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVGEOk5CdvWLZAdXNFHo9WGOYslD_HDLX-4Mpxsm-mDfrPdPxuaIcCXGz3HKPWYOBWGz8qoYmPtuZJIIs0Wxbsg1sZ6uNcfxBqsMR2_tF5Ar_Ojr6uR7dWAAuNTwcCB1rl1ZWyf7g==",
+            "method": "POST",
+            "resourceType": "xhr",
+            "timestamp": 1766779215000
+          },
+          {
+            "url": "https://fundingchoicesmessages.google.com/i/ca-pub-9956190737880259?href=https%3A%2F%2Fwww.diariouno.com.ar&ers=2",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779215000,
+            "macros": [
+              "%3A%"
+            ]
+          },
+          {
+            "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202512040101&st=env&sjk=6085035887241780",
+            "method": "GET",
+            "resourceType": "xhr",
+            "timestamp": 1766779215117
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779215305
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+            "method": "POST",
+            "resourceType": "fetch",
+            "timestamp": 1766779215325
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/sodar/sodar2/237/runner.html",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766779215527
+          },
+          {
+            "url": "https://www.google.com/recaptcha/api2/aframe",
+            "method": "GET",
+            "resourceType": "document",
+            "timestamp": 1766779215527
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/bg/cEKNWemrxTs4NW8H3E33JwLPZapylAUFwGQa1dnzZcE.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779215607
+          },
+          {
+            "url": "https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=237&li=gpt_m202512040101&jk=6085035887241780&rc=",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779215703
+          },
+          {
+            "url": "https://ep2.adtrafficquality.google/generate_204?ndfOdA",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779216808
+          },
+          {
+            "url": "https://connect.facebook.net/en_US/fbevents.js",
+            "method": "GET",
+            "resourceType": "script",
+            "timestamp": 1766779216809
+          },
+          {
+            "url": "https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=237&t=2&li=gpt_m202512040101&jk=6085035887241780&bg=!OTqlOnXNAAbBJJhj4SQ7ADQBe5WfOB3V5kMsvQCBdTcUIr9c0sbM6rwxML0U6F_WS3MOU0xzdcrdR6C2qQTXMpF9JvijAgAAAH9SAAAAAmgBB34ANl1TH3IzBfbLqx52Jr_jIKJHFQqP7L8NFeGpMg4XjoR8xM1fBF-M7zPg-QuylGPrp6Yu8kwuRAoAD-14ChHHS96xsDiKRBSvj5kClyJ1H7se8N6C6SNMkNKR_7Pvz5GSJ1AeKkvslHYRojdB5xqNCCVREJ2ZBAOJDGww4Hg8RLTwU42kNkOH4R_1dFQrNuX5zzIUkXbjRIpLgdOTRudIVEWXPYRUpw3xDThxGadr-A1r3i9C85gbWuL0fnvPwRYXyw1XMre4N6rO3o9qEl7nZUPCxPds-m2mRy9rNNaU8VdOlHp6hS4PjXq5NTP5sF7yTMtRibTd1U6-vzBOeIkRpZDgZlA85_g-fc1cu1dyJ1urMGzu50IBVg4ughdM8FPHRp0JJGTxbnUor8F_oXQAMHMiD8Y_Patw4UPiYpzbR3P0tTGCJghMCt0aYGpNfSzDjV695QANIDLD0OOJuGUJRZ7u-8jKz4T8x8zEkTwnONuAlmmUvZbMF6R84n06IQczECuEiyV_H_Ex8DYpMWf5aw087hZyAxYdUT6LhGiwM0fjk1hpOKkWToLL28oVdYsN1a5ajl1J0guk_52tUgw69-b-nST4r0Bv09ch7COQ3FlT68NFsgsSbtsXsx0UVql48AmpBhDZ4KM5Sf34B6jo_5ytde9QVHfx5bhdlJUln1J_MN3TioEZlLHdmJ4vpmzucFMUVEKX8WwjHICAkF4NHbVk2cFFUhMte0o-XVDhAgOcvFDXxirJs29fxc831yLtA7mI_6oC-dpSnaDrioXy35ZT-ugdANK4F0nuq04kxpucIxuN4ucsuNV_bPgEEGv2a_qJ7h4x2Kbn5Pbvr8DbuU_WH78n6wUPDFE9URmNrLkybnloENtQpA7jL-zSyae3FsdlRAS8wMFc-FSTFuVTK40hsBDF0OrNNr8RjTSogQNQ-SL5JTz-WXwASxqEGZUczpmwUUvJcCTyhoi51de8xlo4-Q",
+            "method": "GET",
+            "resourceType": "image",
+            "timestamp": 1766779216809
+          }
+        ],
+        "measurementIds": {
+          "ga4": [
+            "G-FGE5LDNL3P",
+            "G-K7569D5RH2",
+            "G-QUYLGPRP6Y",
+            "G-FC1CU1DYJ1"
+          ],
+          "ua": [],
+          "gtm": [],
+          "aw": [],
+          "fb": [
+            "281273192029661"
+          ]
+        },
+        "widgetMap": {
+          "id:tddeferernodes": {
+            "widget": "tddeferernodes",
+            "attribute": "id",
+            "selector": "#tddeferernodes",
+            "scripts": [
+              {
+                "type": "inline",
+                "hash": "9yytdi",
+                "content": " window.arrCMSRegions = {  region1 : 'none' , region2 : 'block' , region3 : 'none' , region4 : 'block' , region5 : 'block' , region6 : 'none' , region7 : 'none' , region8 : 'none' , region9 : 'block' , region10 : 'block'  }; \n",
+                "measurementIds": {
+                  "ga4": [],
+                  "ua": [],
+                  "gtm": [],
+                  "aw": [],
+                  "fb": []
+                },
+                "macros": [],
+                "attribution": {
+                  "attribute": "id",
+                  "value": "tddeferernodes",
+                  "selector": "#tddeferernodes"
+                },
+                "selector": "script"
+              }
+            ],
+            "pixels": [],
+            "measurementIds": {
+              "ga4": [],
+              "ua": [],
+              "gtm": [],
+              "aw": [],
+              "fb": []
+            }
+          }
+        }
+      }
+    ],
+    "duplicates": {
+      "duplicateIds": {},
+      "duplicateScripts": {},
+      "duplicateLibraries": {}
+    },
+    "unauthorized": [
+      {
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-K7569D5RH2&cx=c&gtm=4e5ca1",
+        "domain": "googletagmanager.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202512100101/show_ads_impl.js",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://sb.scorecardresearch.com/cs/7199219/beacon.js",
+        "domain": "sb.scorecardresearch.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "script",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-FGE5LDNL3P",
+        "domain": "googletagmanager.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "domain": "securepubads.g.doubleclick.net",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9956190737880259",
+        "domain": "pagead2.googlesyndication.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://sb.scorecardresearch.com/cs/7199219/beacon.js",
+        "domain": "sb.scorecardresearch.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-FGE5LDNL3P&cid=786729078.1766779214&gtm=45je5ca1v887570950za200zd887570950&aip=1&dma=0&gcs=G1--&gcd=13l3l3l3l5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940",
+        "domain": "stats.g.doubleclick.net",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-K7569D5RH2&gtm=45je5ca1h1v9123077325za200zb887570950zd887570950&_p=1766779213218&gcs=G1--&gcd=13l3l3l3l5l1&npa=0&dma=0&tcfd=10000&cid=786729078.1766779214&ul=en-us&sr=1280x720&ir=1&uaa=arm&uab=64&uafvl=HeadlessChrome%3B143.0.7499.4%7CChromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.0.1&uaw=0&are=1&frm=0&pscdl=noapi&_eu=EA&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115706422~115938465~115938468~116184927~116184929~116251938~116251940&sid=1766779213&sct=1&seg=0&dl=https%3A%2F%2Fwww.diariouno.com.ar%2F&dt=Diario%20UNO&en=page_view&_fv=1&_ss=1&_ee=1&tfd=1123",
+        "domain": "google-analytics.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://3bcdd4365f568562d4362badae00a479.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+        "domain": "3bcdd4365f568562d4362badae00a479.safeframe.googlesyndication.com",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup.html",
+        "domain": "googleads.g.doubleclick.net",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      },
+      {
+        "type": "network_request",
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "domain": "connect.facebook.net",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Not in allowed partners list"
+      }
+    ],
+    "injectedScripts": [
+      {
+        "type": "inline",
+        "hash": "uly89l",
+        "content": "\n      {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"NewsMediaOrganization\",\n        \"@id\": \"https://www.diariouno.com.ar/#organization\",\n        \"name\": \"Diario UNO\",\n        \"url\": \"https://www.diariouno.com.ar\",\n        \"description\": \"Diario UNO: Información útil y diversa para argentinos. Noticias, deportes, tendencias, estilos de vida, recetas y ocio, desde Mendoza para toda Argentina y el mundo.\",\n        \"logo\": {\n          \"@type\": \"ImageObject\",\n          \"url\": \"https:",
+        "measurementIds": {
+          "ga4": [],
+          "ua": [],
+          "gtm": [],
+          "aw": [],
+          "fb": []
+        },
+        "macros": [
+          "%2Fg%"
+        ],
+        "attribution": null,
+        "selector": "script",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Contains macros"
+      },
+      {
+        "type": "external",
+        "src": "https://fundingchoicesmessages.google.com/i/ca-pub-9956190737880259?href=https%3A%2F%2Fwww.diariouno.com.ar&ers=2",
+        "hash": "iiyb7d",
+        "measurementIds": {
+          "ga4": [],
+          "ua": [],
+          "gtm": [],
+          "aw": [],
+          "fb": []
+        },
+        "macros": [
+          "%3A%"
+        ],
+        "attribution": null,
+        "selector": "script",
+        "page": "https://www.diariouno.com.ar/",
+        "reason": "Contains macros"
+      }
+    ],
+    "screenshots": [
+      "/Users/pablogimenez/Desktop/DeDuper.io/data/cms-monitor/screenshots/cms-monitor-screenshot-cms_1766779211892-0.png"
+    ],
+    "summary": {
+      "totalPages": 1,
+      "totalScripts": 36,
+      "totalPixels": 1,
+      "duplicateIdsCount": 0,
+      "duplicateScriptsCount": 0,
+      "unauthorizedCount": 13,
+      "injectedScriptsCount": 2
+    }
+  },
+  "baselineDiff": null
+}

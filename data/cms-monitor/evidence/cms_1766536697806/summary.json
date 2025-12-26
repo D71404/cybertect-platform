@@ -1,0 +1,15 @@
+{
+  "scanId": "cms_1766536697806",
+  "scanTimestamp": "2025-12-24T00:38:23.401Z",
+  "buildLabel": null,
+  "baseUrl": "https://www.diariolasamericas.com/",
+  "summary": {
+    "totalPages": 1,
+    "totalScripts": 75,
+    "totalPixels": 1,
+    "duplicateIdsCount": 0,
+    "duplicateScriptsCount": 0,
+    "unauthorizedCount": 27,
+    "injectedScriptsCount": 1
+  }
+}
