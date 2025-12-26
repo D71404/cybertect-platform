@@ -8,7 +8,9 @@
     "build": "tsc",
     "test": "vitest run",
     "lint": "tsc --noEmit",
-    "dev": "node --loader ts-node/esm src/cli.ts scan --url https://example.com --report-dir reports"
+    "dev": "node --loader ts-node/esm src/cli.ts scan --url https://example.com --report-dir reports",
+    "start:server": "node server.cjs",
+    "start:dev": "vite"
   },
   "bin": {
     "cybertect-scan": "./dist/cli.js"
@@ -17,17 +19,32 @@
     "node": ">=18"
   },
   "dependencies": {
+    "archiver": "^7.0.1",
+    "axios": "^1.6.0",
+    "better-sqlite3": "^12.5.0",
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "js-yaml": "^4.1.0",
+    "lucide-react": "^0.562.0",
+    "multer": "^1.4.5-lts.1",
     "node-html-parser": "^6.1.13",
     "pino": "^9.2.0",
-    "playwright": "^1.42.0"
+    "playwright": "^1.42.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.23",
+    "tailwindcss": "^4.1.18",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.3",
+    "vite": "^5.0.0",
     "vitest": "^4.0.15"
   }
 }

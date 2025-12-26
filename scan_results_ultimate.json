@@ -1,24 +1,18 @@
 {
-  "url": "https://www.infobae.com/",
-  "scanTimestamp": "2025-12-14T22:10:03.095Z",
+  "url": "https://starkfuture.com/en-us-AU",
+  "scanTimestamp": "2025-12-15T14:58:34.250Z",
   "analyticsIds": [
-    "AW-967466772",
-    "G-Q2J791G3GV",
-    "G-FVWZ0RM4DH"
+    "G-JTYE8V5WFM",
+    "UA-210287994-1"
   ],
-  "inflationReloads": 0,
+  "inflationReloads": 2,
   "fraudWarnings": [
     {
-      "type": "Inflated Page Views",
-      "details": "Site fired 2 pageview events for a single load.",
-      "url": "Google Analytics Endpoint"
-    },
-    {
-      "type": "Ad Inflation / Churning",
-      "details": "Excessive ad requests (30+) detected in short timeframe.",
-      "url": "Multiple Sources (Google/Amazon/etc)"
+      "type": "Auto-Refresh / Inflation",
+      "details": "Page reloaded itself without user interaction.",
+      "url": "https://starkfuture.com/en-us-AU"
     }
   ],
-  "networkEventsCount": 211,
-  "pageViewCount": 2
+  "networkEventsCount": 2,
+  "pageViewCount": 0
 }

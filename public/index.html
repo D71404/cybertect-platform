@@ -202,6 +202,8 @@
             font-size: 32px;
             letter-spacing: -0.5px;
             line-height: 1;
+            text-decoration: none;
+            color: inherit;
         }
 
         .cyber-text {
@@ -919,11 +921,11 @@
 
     <header class="header">
         <div class="logo-container">
-            <div class="cybertect-logo">
+            <a href="/" class="cybertect-logo" aria-label="Cybertect home">
                 <span class="cyber-text">cyber</span>
                 <span class="tect-text">tect</span>
                 <span class="com-text">.com</span>
-            </div>
+            </a>
         </div>
         <nav class="top-menu">
             <a class="nav-pill nav-pill-link" href="/online-waste/" data-route="/online-waste">Online Waste</a>
@@ -936,7 +938,9 @@
                     <a class="tool-link" href="/tools/cms-level-data-monitor/" data-route="/tools/cms-level-data-monitor">CMS Output Monitor</a>
                     <a class="tool-link" href="/tools/ad-level-impression-verification/" data-route="/tools/ad-level-impression-verification">Ad Impression Verification</a>
                     <a class="tool-link" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
+                    <a class="tool-link" href="/tools/injected-telemetry-monitor/" data-route="/tools/injected-telemetry-monitor">Injected Telemetry Monitor</a>
                     <a class="tool-link" href="/tools/reverse-analytics-search/" data-route="/tools/reverse-analytics-search">Reverse Analytics Search</a>
+                    <a class="tool-link" href="/videotect" data-route="/videotect">Videotect</a>
                 </div>
             </div>
         </nav>
@@ -1473,8 +1477,9 @@
         }
 
 document.addEventListener('click', evt => {
-    const target = evt.target;
-    if (!(target instanceof HTMLElement)) return;
+    const rawTarget = evt.target;
+    const target = rawTarget instanceof Element ? rawTarget : rawTarget && 'parentElement' in rawTarget ? rawTarget.parentElement : null;
+    if (!(target instanceof Element)) return;
     const badge = target.closest('[data-id][data-type]');
     if (!(badge instanceof HTMLElement)) return;
     const id = badge.dataset.id;
@@ -1644,5 +1649,22 @@ document.addEventListener('click', evt => {
             tbody.innerHTML = rows;
         }
     </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-disclaimer">
+                <strong>Disclaimer:</strong> The results provided by Cybertect tools are for informational purposes only. 
+                Cybertect does not guarantee the accuracy, completeness, or reliability of scan results. 
+                Results may contain false positives or false negatives. Users should verify findings independently 
+                before making business decisions. Cybertect is not liable for any decisions made based on these results.
+            </p>
+            <div class="footer-links">
+                <a href="/terms-of-service.html">Terms of Service</a>
+                <span class="footer-separator">|</span>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="footer-copyright">© 2025 Cybertect. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

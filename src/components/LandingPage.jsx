@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Shield, Zap, Sparkles, Radar, Download, Loader2 } from 'lucide-react';
+import { Shield, Zap, Sparkles, Radar, Download, Loader2, RefreshCw } from 'lucide-react';
 
 const LandingPage = ({ onNavigateToDashboard }) => {
   // Scanner state
@@ -7,6 +7,50 @@ const LandingPage = ({ onNavigateToDashboard }) => {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState([]);
   const [globalHistory, setGlobalHistory] = useState([]);
+  const [downloadingEvidence, setDownloadingEvidence] = useState(false);
+
+  const handleClearHistory = () => {
+    if (globalHistory.length === 0) return;
+    if (confirm(`Clear all ${globalHistory.length} scanned domains?`)) {
+      setGlobalHistory([]);
+      setResults([]);
+    }
+  };
+
+  const handleDownloadEvidencePack = async () => {
+    if (globalHistory.length === 0) {
+      alert("No scan results to download");
+      return;
+    }
+    
+    setDownloadingEvidence(true);
+    try {
+      const response = await fetch('http://localhost:3000/api/scans/evidence-pack', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ error: 'Failed to generate evidence pack' }));
+        throw new Error(errorData.error || 'Failed to generate evidence pack');
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `scan-evidence-pack-${new Date().toISOString().slice(0,10)}.zip`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      alert("Failed to download evidence pack: " + err.message);
+    } finally {
+      setDownloadingEvidence(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
@@ -163,6 +207,32 @@ const LandingPage = ({ onNavigateToDashboard }) => {
               {globalHistory.length > 0 && (
                 <>
                   <button
+                    onClick={handleClearHistory}
+                    className="bg-gray-500 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-600 transition-colors flex items-center gap-2"
+                    title="Clear scanned domains"
+                  >
+                    <RefreshCw className="w-4 h-4" />
+                    Clear History
+                  </button>
+                  <button
+                    onClick={handleDownloadEvidencePack}
+                    disabled={downloadingEvidence}
+                    className="bg-purple-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
+                    title="Download evidence pack"
+                  >
+                    {downloadingEvidence ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Generating...
+                      </>
+                    ) : (
+                      <>
+                        <Download className="w-4 h-4" />
+                        Evidence Pack
+                      </>
+                    )}
+                  </button>
+                  <button
                     onClick={() => {
                       if (globalHistory.length === 0) return alert("No data");
                       const headers = ["Domain", "Risk", "Fraud", "IDs", "Views", "Waste"];
@@ -246,13 +316,26 @@ const LandingPage = ({ onNavigateToDashboard }) => {
                           const style = isShared 
                             ? "bg-red-600 text-white" 
                             : "bg-blue-100 text-blue-700";
+                          
+                          // Add Hits Sent info from hitsById if available
+                          const hitsById = r.hitsById || {};
+                          const hitData = hitsById[id];
+                          const title = isShared 
+                            ? 'Shared Network ID - Appears across multiple domains' 
+                            : hitData 
+                              ? `Standard Analytics ID - ${hitData.total} hits sent (${Object.entries(hitData.events || {}).map(([e, c]) => `${e}:${c}`).join(', ')})`
+                              : 'Standard Analytics ID';
+                          
                           return (
                             <span
                               key={id}
                               className={`px-2 py-1 rounded-lg text-xs font-medium mr-1 ${style}`}
-                              title={isShared ? 'Shared Network ID - Appears across multiple domains' : 'Standard Analytics ID'}
+                              title={title}
                             >
                               {id}
+                              {hitData && hitData.total > 0 && (
+                                <span className="ml-1 text-xs opacity-75">({hitData.total})</span>
+                              )}
                             </span>
                           );
                         });
@@ -282,8 +365,26 @@ const LandingPage = ({ onNavigateToDashboard }) => {
                               )}
                             </td>
                             <td className="px-6 py-4">{ids.length > 0 ? ids : "-"}</td>
-                            <td className="px-6 py-4">{fraud.length > 0 ? fraud : <span className="px-2 py-1 rounded-lg text-xs font-medium bg-green-100 text-green-700">Clean</span>}</td>
-                            <td className="px-6 py-4 text-center font-medium">{r.pageViewCount || "-"}</td>
+                            <td className="px-6 py-4">
+                              {fraud.length > 0 ? fraud : (
+                                (() => {
+                                  // Check for duplicate pageviews before marking as Clean
+                                  const hitsById = r.hitsById || {};
+                                  const hasDuplicatePageViews = Object.values(hitsById).some(hitData => {
+                                    const pageViewCount = (hitData.events?.['page_view'] || 0) + (hitData.events?.['pageview'] || 0);
+                                    return pageViewCount > 1;
+                                  });
+                                  return hasDuplicatePageViews ? (
+                                    <span className="px-2 py-1 rounded-lg text-xs font-medium bg-yellow-100 text-yellow-700">⚠ Duplicate Pageviews</span>
+                                  ) : (
+                                    <span className="px-2 py-1 rounded-lg text-xs font-medium bg-green-100 text-green-700">Clean</span>
+                                  );
+                                })()
+                              )}
+                            </td>
+                            <td className="px-6 py-4 text-center font-medium">
+                              {r.pageviewsPerNavigation !== undefined ? r.pageviewsPerNavigation : (r.pageViewCount || "-")}
+                            </td>
                             <td className="px-6 py-4 text-sm">{analysis.length > 0 ? analysis : "-"}</td>
                           </tr>
                         );

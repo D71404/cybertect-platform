@@ -1,5 +1,32 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+const path = require('path');
+const { runTagParityDetection } = require('./tagAssistantParity.cjs');
+const { indexTelemetryFromScan } = require('./src/index-telemetry.cjs');
+
+// Debug logging helper
+function debugLog(location, message, data, hypothesisId) {
+  try {
+    const logPath = path.join(__dirname, '.cursor', 'debug.log');
+    const logDir = path.dirname(logPath);
+    if (!fs.existsSync(logDir)) {
+      fs.mkdirSync(logDir, { recursive: true });
+    }
+    const logEntry = JSON.stringify({
+      location,
+      message,
+      data,
+      timestamp: Date.now(),
+      sessionId: 'debug-session',
+      runId: 'run1',
+      hypothesisId
+    }) + '\n';
+    fs.appendFileSync(logPath, logEntry);
+  } catch (e) {
+    // Log to console as fallback
+    console.error('[DebugLog Error]', e.message);
+  }
+}
 
 const STAGE_A_MS = 12_000;
 const STAGE_B_MS = 6_000;
@@ -69,6 +96,12 @@ async function scanWebsite(url, onProgress) {
     notes: []
   };
   const warningSet = new Set();
+  
+  // Tag Assistant-style Hits Sent tracking
+  const hitsById = {}; // { [tid]: { total: number, events: { [eventName]: number }, samples: [...] } }
+  let currentNavigationStart = Date.now();
+  const pageViewsPerNavigation = new Map(); // Track pageviews per navigation: { navigationId: { [tid]: count } }
+  let navigationId = 0;
 
   let browser;
   let page;
@@ -78,6 +111,7 @@ async function scanWebsite(url, onProgress) {
   let stageADeltas = { adImpressions: 0 };
   let finalScore = 0;
   let signals = [];
+  const networkRequests = []; // Track network requests for telemetry indexing
 
   try {
     browser = await chromium.launch({
@@ -90,6 +124,11 @@ async function scanWebsite(url, onProgress) {
     page.on('framenavigated', frame => {
       if (frame === page.mainFrame()) {
         metrics.pageLoadCount += 1;
+        // Start new navigation tracking
+        navigationId += 1;
+        currentNavigationStart = Date.now();
+        pageViewsPerNavigation.set(navigationId, {});
+        
         if (metrics.pageLoadCount > 1) {
           pushWarningOnce(warningSet, fraudWarnings, {
             type: 'Auto-Refresh / Inflation',
@@ -111,6 +150,14 @@ async function scanWebsite(url, onProgress) {
       const lowerHost = host.toLowerCase();
       const lowerUrl = reqUrl.toLowerCase();
 
+      // Track telemetry-related network requests for indexing
+      if (isTagEndpoint(host, lowerUrl) || isGaEndpoint(reqUrl) || 
+          lowerHost.includes('facebook.com') || lowerHost.includes('googletagmanager.com')) {
+        if (networkRequests.length < 100) { // Limit to 100 requests
+          networkRequests.push(reqUrl);
+        }
+      }
+
       if (host) {
         adHostCounts.set(host, (adHostCounts.get(host) || 0) + 1);
         if (AD_HOST_PATTERNS.some(pattern => lowerHost.endsWith(pattern) || lowerHost.includes(pattern))) {
@@ -120,22 +167,58 @@ async function scanWebsite(url, onProgress) {
       }
 
       if (lowerHost.includes('facebook.com') && reqUrl.includes('/tr')) {
+        // #region agent log
+        debugLog('scanner.cjs:122', 'Facebook pixel URL detected', { url: reqUrl.substring(0, 200) }, 'B');
+        // #endregion
         const pixelMatch = reqUrl.match(/[?&]id=(\d{8,18})/);
-        if (pixelMatch) addDetailedId(tagInventoryDetailed, tagInventory, 'fb', pixelMatch[1], 'network_collect');
+        // #region agent log
+        debugLog('scanner.cjs:124', 'Facebook pixel match result', { hasMatch: !!pixelMatch, pixelId: pixelMatch?.[1] || null }, 'B');
+        // #endregion
+        if (pixelMatch) {
+          const result = addDetailedId(tagInventoryDetailed, tagInventory, 'fb', pixelMatch[1], 'network_collect');
+          // #region agent log
+          debugLog('scanner.cjs:125', 'addDetailedId result for FB', { result: result, rawId: pixelMatch[1] }, 'B');
+          // #endregion
+        }
       }
 
       if (lowerHost.includes('googletagmanager.com')) {
         const gtmMatch = reqUrl.match(/id=(GTM-[A-Z0-9]+)/i);
-        if (gtmMatch) addDetailedId(tagInventoryDetailed, tagInventory, 'gtm', gtmMatch[1], 'network_script_src');
+        if (gtmMatch) {
+          // #region agent log
+          debugLog('scanner.cjs:164', 'GTM match found', { gtmId: gtmMatch[1], url: reqUrl.substring(0, 200) }, 'E');
+          // #endregion
+          addDetailedId(tagInventoryDetailed, tagInventory, 'gtm', gtmMatch[1], 'network_script_src');
+        }
         if (lowerUrl.includes('gtag/js')) {
-          const gaMatch = reqUrl.match(/id=(G-[A-Z0-9]+)/i);
-          if (gaMatch) addDetailedId(tagInventoryDetailed, tagInventory, 'ga4', gaMatch[1], 'network_script_src');
+          // Fix: Match exactly 10 characters after G- to match GA4 format
+          const gaMatch = reqUrl.match(/id=(G-[A-Z0-9]{10})/i);
+          // #region agent log
+          debugLog('scanner.cjs:167', 'GA4 extraction attempt', { hasGtagJs: true, gaMatch: gaMatch?.[1] || null, url: reqUrl.substring(0, 200) }, 'E');
+          // #endregion
+          if (gaMatch) {
+            const result = addDetailedId(tagInventoryDetailed, tagInventory, 'ga4', gaMatch[1], 'network_script_src');
+            // #region agent log
+            debugLog('scanner.cjs:170', 'GA4 addDetailedId result', { result: result, rawId: gaMatch[1] }, 'E');
+            // #endregion
+          }
         }
       }
 
       if (lowerUrl.includes('aw-')) {
+        // #region agent log
+        debugLog('scanner.cjs:136', 'AW tag URL detected', { url: reqUrl.substring(0, 200) }, 'C');
+        // #endregion
         const awMatch = reqUrl.match(/AW-\d{6,}/i);
-        if (awMatch) addDetailedId(tagInventoryDetailed, tagInventory, 'aw', awMatch[0], 'network_collect');
+        // #region agent log
+        debugLog('scanner.cjs:138', 'AW tag match result', { hasMatch: !!awMatch, awId: awMatch?.[0] || null }, 'C');
+        // #endregion
+        if (awMatch) {
+          const result = addDetailedId(tagInventoryDetailed, tagInventory, 'aw', awMatch[0], 'network_collect');
+          // #region agent log
+          debugLog('scanner.cjs:139', 'addDetailedId result for AW', { result: result, rawId: awMatch[0] }, 'C');
+          // #endregion
+        }
       }
 
       if (lowerUrl.includes('scroll') && !isScannerScrolling) {
@@ -155,7 +238,13 @@ async function scanWebsite(url, onProgress) {
       }
 
       if (isGaEndpoint(reqUrl)) {
+        // #region agent log
+        debugLog('scanner.cjs:157', 'GA endpoint detected', { url: reqUrl.substring(0, 200) }, 'A');
+        // #endregion
         const gaEvent = await parseGaHit(request);
+        // #region agent log
+        debugLog('scanner.cjs:159', 'GA event parsed', { hasEvent: !!gaEvent, tid: gaEvent?.tid || null }, 'A');
+        // #endregion
         if (gaEvent) {
           processGaHit(gaEvent, {
             metrics,
@@ -168,7 +257,10 @@ async function scanWebsite(url, onProgress) {
             fraudWarnings,
             diagnostics,
             warningSet,
-            tagInventoryDetailed
+            tagInventoryDetailed,
+            hitsById,
+            navigationId,
+            pageViewsPerNavigation
           });
 
           progressEmitter({
@@ -188,10 +280,60 @@ async function scanWebsite(url, onProgress) {
     await page.waitForTimeout(2000);
     await collectDomTagInventory(page, tagInventory, tagInventoryDetailed);
 
+    // Run Tag Assistant parity detection
+    let tagParityResult = null;
+    try {
+      tagParityResult = await runTagParityDetection(page);
+      console.log(`[Scanner] Tag Parity Detection: GA4=${tagParityResult.ga4_ids.length}, GTM=${tagParityResult.gtm_containers.length}, AW=${tagParityResult.gads_aw_ids.length}, FB=${tagParityResult.fb_pixel_ids.length}`);
+      
+      // Merge detected IDs into tagInventory
+      tagParityResult.ga4_ids.forEach(id => {
+        addDetailedId(tagInventoryDetailed, tagInventory, 'ga4', id, 'tag_parity');
+        measurementIds.add(id);
+      });
+      tagParityResult.gtm_containers.forEach(id => {
+        addDetailedId(tagInventoryDetailed, tagInventory, 'gtm', id, 'tag_parity');
+      });
+      tagParityResult.gads_aw_ids.forEach(id => {
+        addDetailedId(tagInventoryDetailed, tagInventory, 'aw', id, 'tag_parity');
+      });
+      tagParityResult.fb_pixel_ids.forEach(id => {
+        addDetailedId(tagInventoryDetailed, tagInventory, 'fb', id, 'tag_parity');
+      });
+
+      // Add flags to fraud warnings if they indicate issues
+      if (tagParityResult.flags.includes('MULTIPLE_GA4')) {
+        pushWarningOnce(warningSet, fraudWarnings, {
+          type: 'Multiple GA4 IDs Detected',
+          details: `Found ${tagParityResult.ga4_ids.length} GA4 measurement IDs: ${tagParityResult.ga4_ids.join(', ')}`,
+          url: 'tag-parity-detection',
+          risk: 'Medium'
+        });
+      }
+      if (tagParityResult.flags.includes('MULTIPLE_GTM')) {
+        pushWarningOnce(warningSet, fraudWarnings, {
+          type: 'Multiple GTM Containers Detected',
+          details: `Found ${tagParityResult.gtm_containers.length} GTM containers: ${tagParityResult.gtm_containers.join(', ')}`,
+          url: 'tag-parity-detection',
+          risk: 'Medium'
+        });
+      }
+      if (tagParityResult.flags.includes('TAGS_PRESENT_NO_BEACONS')) {
+        pushWarningOnce(warningSet, fraudWarnings, {
+          type: 'Tags Present But No Beacons',
+          details: 'Analytics tags detected but no collect/tr hits observed. Possible consent blocking or tag misconfiguration.',
+          url: 'tag-parity-detection',
+          risk: 'Low'
+        });
+      }
+    } catch (error) {
+      console.error(`[Scanner] Tag Parity Detection failed: ${error.message}`);
+    }
+
     await page.waitForTimeout(STAGE_A_MS);
     stageADeltas = { adImpressions: metrics.adImpressionCount };
     updateDerivedMetrics(metrics, measurementIds, queryIds, STAGE_A_MS / 1000, contextEventCounts);
-    ({ score: finalScore, signals } = scoreSignals(metrics));
+    ({ score: finalScore, signals } = scoreSignals(metrics, [], hitsById));
     progressEmitter({
       stage: 'A_DONE',
       url,
@@ -208,7 +350,7 @@ async function scanWebsite(url, onProgress) {
       await page.waitForTimeout(STAGE_B_MS);
       const delta = metrics.adImpressionCount - stageADeltas.adImpressions;
       updateDerivedMetrics(metrics, measurementIds, queryIds, (STAGE_A_MS + STAGE_B_MS) / 1000, contextEventCounts);
-      ({ score: finalScore, signals } = scoreSignals(metrics));
+      ({ score: finalScore, signals } = scoreSignals(metrics, signals, hitsById));
       if (delta >= 3 && !metrics.hasViewabilityParams) {
         signals.push({
           id: 'post_scroll_burst',
@@ -256,6 +398,63 @@ async function scanWebsite(url, onProgress) {
 
     const detailedOutput = formatDetailedInventory(tagInventoryDetailed);
 
+    // Inflation detection: Multiple GA4 properties firing page_view
+    // Requirement: "if multiple GA4 tids each send page_view at least once => issue 'Multiple GA4 properties firing page_view' and set risk at least Medium"
+    const ga4TidsWithPageView = Object.keys(hitsById).filter(tid => {
+      const info = classifyMeasurementId(tid);
+      // Only check GA4 properties (not UA) and specifically for page_view events
+      return info && info.type === 'ga4' && hitsById[tid].events['page_view'] > 0;
+    });
+    
+    if (ga4TidsWithPageView.length > 1) {
+      pushWarningOnce(warningSet, fraudWarnings, {
+        type: 'Multiple GA4 properties firing page_view',
+        details: `${ga4TidsWithPageView.length} GA4 measurement IDs each sent at least one page_view: ${ga4TidsWithPageView.join(', ')}`,
+        url: 'google-analytics.com',
+        risk: 'Medium'
+      });
+    }
+    
+    // Calculate total pageviews per navigation across all GA4 tids
+    let pageviewsPerNavigationTotal = 0;
+    for (const [navId, navPageViews] of pageViewsPerNavigation.entries()) {
+      const navTotal = Object.values(navPageViews).reduce((sum, count) => sum + count, 0);
+      pageviewsPerNavigationTotal = Math.max(pageviewsPerNavigationTotal, navTotal);
+    }
+    
+    // If no pageviews detected but we have hits, calculate from hitsById
+    if (pageviewsPerNavigationTotal === 0) {
+      pageviewsPerNavigationTotal = Object.values(hitsById).reduce((sum, hitData) => {
+        return sum + (hitData.events['page_view'] || 0) + (hitData.events['pageview'] || 0);
+      }, 0);
+    }
+    
+    // Update metrics.pageViewCount with computed value if it's higher
+    if (pageviewsPerNavigationTotal > metrics.pageViewCount) {
+      metrics.pageViewCount = pageviewsPerNavigationTotal;
+    }
+    
+    // Ensure at least 1 pageview if analytics IDs are detected but no pageviews were counted
+    // Check both measurementIds (from network) and tagInventory.analyticsIds (from DOM)
+    const hasAnalyticsIds = measurementIds.size > 0 || 
+                           (tagInventory && tagInventory.analyticsIds && tagInventory.analyticsIds.length > 0);
+    
+    if (metrics.pageViewCount === 0 && hasAnalyticsIds) {
+      metrics.pageViewCount = 1;
+      console.log(`[Scanner] Set default pageview count to 1 (analytics IDs detected: ${measurementIds.size} network, ${tagInventory?.analyticsIds?.length || 0} DOM)`);
+    }
+
+    // Update risk score if flags indicate issues
+    if (tagParityResult && tagParityResult.flags.length > 0) {
+      const hasMultipleFlags = tagParityResult.flags.some(f => f.startsWith('MULTIPLE_'));
+      if (hasMultipleFlags && finalScore < 30) {
+        finalScore = Math.max(finalScore, 30); // At least Medium risk
+        if (finalScore >= 30 && verdictFromScore(finalScore) !== 'SUSPICIOUS') {
+          // Update verdict if needed
+        }
+      }
+    }
+
     const output = {
       url,
       scanTimestamp: new Date().toISOString(),
@@ -270,6 +469,27 @@ async function scanWebsite(url, onProgress) {
         facebookPixels: Array.from(tagInventory.facebookPixels),
         googleAdsIds: Array.from(tagInventory.googleAdsIds)
       },
+      // Tag Assistant Parity Detection results
+      tagParity: tagParityResult ? {
+        ga4_ids: tagParityResult.ga4_ids,
+        gtm_containers: tagParityResult.gtm_containers,
+        gads_aw_ids: tagParityResult.gads_aw_ids,
+        fb_pixel_ids: tagParityResult.fb_pixel_ids,
+        flags: tagParityResult.flags,
+        evidence: tagParityResult.evidence
+      } : null,
+      // #region agent log
+      // Final tag inventory summary
+      _debugTagInventory: {
+        analyticsIdsCount: tagInventory.analyticsIds.size,
+        analyticsIds: Array.from(tagInventory.analyticsIds),
+        measurementIdsCount: measurementIds.size,
+        measurementIds: Array.from(measurementIds),
+        gtmContainersCount: tagInventory.gtmContainers.size,
+        facebookPixelsCount: tagInventory.facebookPixels.size,
+        googleAdsIdsCount: tagInventory.googleAdsIds.size
+      },
+      // #endregion
       tagInventoryDetailed: detailedOutput,
       advertisers: mapAdvertisers(advertisers),
       evidence: {
@@ -278,8 +498,21 @@ async function scanWebsite(url, onProgress) {
         screenshotPath
       },
       fraudWarnings,
-      diagnostics
+      diagnostics,
+      // Tag Assistant-style Hits Sent data
+      hitsById: hitsById,
+      pageviewsPerNavigation: pageviewsPerNavigationTotal
     };
+
+    // Index telemetry IDs into global database
+    try {
+      indexTelemetryFromScan(output, networkRequests);
+      if (process.env.REVERSE_SEARCH_DEBUG === 'true') {
+        console.log(`[Scanner] Indexed telemetry IDs for ${url}`);
+      }
+    } catch (error) {
+      console.warn(`[Scanner] Failed to index telemetry IDs: ${error.message}`);
+    }
 
     return output;
   } catch (error) {
@@ -301,6 +534,7 @@ async function scanWebsite(url, onProgress) {
         facebookPixels: [],
         googleAdsIds: []
       },
+      tagParity: null,
       tagInventoryDetailed: detailedOutput,
       advertisers: mapAdvertisers(advertisers),
       evidence: {
@@ -309,6 +543,8 @@ async function scanWebsite(url, onProgress) {
       },
       fraudWarnings,
       diagnostics,
+      hitsById: hitsById,
+      pageviewsPerNavigation: 0,
       error: {
         message: error.message || 'Scan failed',
         stage: currentStage === 'A' ? 'observe' : currentStage === 'B' ? 'parse' : 'evidence'
@@ -358,6 +594,7 @@ async function parseGaHit(request) {
       timestamp: Date.now(),
       tid: null,
       en: null,
+      t: null, // UA event type (pageview, event, transaction, item, etc.)
       dl: null,
       dr: null,
       dt: null,
@@ -373,12 +610,16 @@ async function parseGaHit(request) {
         if (typeof value !== 'string' || value === '') continue;
         if (key === 'tid') event.tid = value;
         else if (key === 'en') event.en = value;
+        else if (key === 't') {
+          // Capture all UA event types (pageview, event, transaction, item, etc.)
+          event.t = value;
+          if (value === 'pageview') event.__uaPageView = true;
+        }
         else if (key === 'dl') event.dl = value;
         else if (key === 'dr') event.dr = value;
         else if (key === 'dt') event.dt = value;
         else if (key === 'sid') event.sid = value;
         else if (key === '_p') event._p = value;
-        else if (key === 't' && value === 'pageview') event.__uaPageView = true;
         else if (key.startsWith('ep.')) {
           const epKey = key.slice(3);
           event.ep[epKey] = value;
@@ -414,14 +655,105 @@ function processGaHit(event, context) {
     fraudWarnings,
     diagnostics,
     warningSet,
-    tagInventoryDetailed
+    tagInventoryDetailed,
+    hitsById,
+    navigationId,
+    pageViewsPerNavigation
   } = context;
 
   if (event.tid) {
+    // #region agent log
+    debugLog('scanner.cjs:430', 'Processing tid from GA event', { tid: event.tid }, 'A');
+    // #endregion
     const info = classifyMeasurementId(event.tid);
+    // #region agent log
+    debugLog('scanner.cjs:432', 'classifyMeasurementId result', { hasInfo: !!info, info: info }, 'A');
+    // #endregion
     if (info) {
       measurementIds.add(info.id);
-      addDetailedId(tagInventoryDetailed, tagInventory, info.type, info.id, 'network_collect');
+      const result = addDetailedId(tagInventoryDetailed, tagInventory, info.type, info.id, 'network_collect');
+      // #region agent log
+      debugLog('scanner.cjs:434', 'addDetailedId result for GA', { result: result, type: info.type, id: info.id }, 'A');
+      // #endregion
+    }
+    
+    // Tag Assistant-style Hits Sent tracking
+    const tid = event.tid;
+    if (!hitsById[tid]) {
+      hitsById[tid] = {
+        total: 0,
+        events: {},
+        samples: []
+      };
+    }
+    
+    hitsById[tid].total += 1;
+    
+    // Determine event name: GA4 en or UA type t
+    let eventName = null;
+    if (event.en) {
+      // GA4 event name (e.g., page_view, ad_impression, etc.)
+      eventName = event.en;
+    } else if (event.t) {
+      // UA event type (pageview, event, transaction, item, etc.)
+      eventName = event.t;
+    } else if (event.tid && event.dl && !event.en && !event.t) {
+      // GA4 automatic pageview (no en parameter, but has dl)
+      eventName = 'page_view';
+    }
+    
+    if (eventName) {
+      hitsById[tid].events[eventName] = (hitsById[tid].events[eventName] || 0) + 1;
+    }
+    
+    // Store sample (limit to 10 per tid)
+    if (hitsById[tid].samples.length < 10) {
+      hitsById[tid].samples.push({
+        timestamp: event.timestamp,
+        eventName: eventName,
+        en: event.en,
+        t: event.t,
+        __uaPageView: event.__uaPageView,
+        dl: event.dl
+      });
+    }
+    
+    // Track pageviews per navigation for inflation detection
+    // Check for explicit GA4 page_view (en=page_view) or UA pageview (t=pageview) or automatic GA4 pageview
+    const isPageView = eventName === 'page_view' || eventName === 'pageview' || 
+                       (event.tid && event.dl && !event.en && !event.t);
+    
+    if (isPageView) {
+      const navPageViews = pageViewsPerNavigation.get(navigationId) || {};
+      navPageViews[tid] = (navPageViews[tid] || 0) + 1;
+      pageViewsPerNavigation.set(navigationId, navPageViews);
+      
+      // Inflation detection: duplicate page_view in same navigation
+      // Specifically check for GA4 en=page_view count > 1 OR UA pageview count > 1
+      if (navPageViews[tid] > 1) {
+        const isGA4PageView = event.en === 'page_view' || (event.tid && event.dl && !event.en && !event.t);
+        const warningType = isGA4PageView ? 'Duplicate page_view' : 'Duplicate pageview';
+        pushWarningOnce(warningSet, fraudWarnings, {
+          type: warningType,
+          details: `Measurement ID ${tid} sent ${navPageViews[tid]} ${isGA4PageView ? 'page_view' : 'pageview'} hits during one navigation.`,
+          url: 'google-analytics.com',
+          risk: 'High'
+        });
+      }
+    }
+    
+    // Inflation detection: duplicate ad_impression
+    // Check specifically for GA4 en=ad_impression count > 1
+    if (eventName === 'ad_impression' && event.en === 'ad_impression') {
+      const adImpCount = hitsById[tid].events['ad_impression'] || 0;
+      if (adImpCount > 1) {
+        pushWarningOnce(warningSet, fraudWarnings, {
+          type: 'Duplicate ad_impression',
+          details: `Measurement ID ${tid} sent ${adImpCount} ad_impression hits.`,
+          url: 'google-analytics.com',
+          risk: 'High'
+        });
+      }
     }
   }
 
@@ -461,15 +793,16 @@ function processGaHit(event, context) {
     }
   }
 
-  if (event.en === 'page_view' || event.__uaPageView) {
+  // Count pageviews: GA4 en=page_view, UA t=pageview, or GA4 automatic pageview
+  if (event.en === 'page_view' || event.t === 'pageview' || event.__uaPageView) {
     metrics.pageViewCount += 1;
-    if (metrics.pageViewCount > 1) {
-      pushWarningOnce(warningSet, fraudWarnings, {
-        type: 'Inflated Page Views',
-        details: `Multiple page_view hits (${metrics.pageViewCount}) detected without navigation.`,
-        url: 'google-analytics.com'
-      });
-    }
+    console.log(`[Scanner] Explicit pageview detected: en=${event.en}, t=${event.t}, __uaPageView=${event.__uaPageView}`);
+  }
+
+  // Also count pageviews from GA4 automatic pageviews (no en or t, but has dl)
+  if (event.tid && event.dl && !event.en && !event.t) {
+    metrics.pageViewCount += 1;
+    console.log(`[Scanner] Automatic GA4 pageview detected: tid=${event.tid}, dl=${event.dl}`);
   }
 
   if (event.en && !['ad_impression', 'page_view'].includes(event.en)) {
@@ -503,7 +836,7 @@ function updateDerivedMetrics(metrics, measurementIds, queryIds, observedSeconds
   metrics.repeatedContextEvents = repeated;
 }
 
-function scoreSignals(metrics, existingSignals = []) {
+function scoreSignals(metrics, existingSignals = [], hitsById = {}) {
   let score = 0;
   const signals = [...existingSignals];
 
@@ -562,6 +895,19 @@ function scoreSignals(metrics, existingSignals = []) {
       severity: 'low',
       detail: 'GA hits reference same domain as referrer.'
     });
+  }
+  
+  // Check for duplicate pageviews in hitsById
+  for (const [tid, hitData] of Object.entries(hitsById)) {
+    const pageViewCount = (hitData.events['page_view'] || 0) + (hitData.events['pageview'] || 0);
+    if (pageViewCount > 1) {
+      score += 20;
+      signals.push({
+        id: 'duplicate_pageview',
+        severity: 'high',
+        detail: `Measurement ID ${tid} sent ${pageViewCount} page_view hits.`
+      });
+    }
   }
 
   return { score: Math.min(score, 100), signals };
@@ -772,8 +1118,14 @@ function pushWarningOnce(cache, list, warning) {
 
 function isGaEndpoint(url) {
   const lower = url.toLowerCase();
-  if (lower.includes('google-analytics.com') && lower.includes('/collect')) return true;
-  if (lower.includes('stats.g.doubleclick.net') && lower.includes('/collect')) return true;
+  // Match GA4 endpoints: https://*.google-analytics.com/g/collect* and /collect*
+  if (lower.includes('google-analytics.com')) {
+    if (lower.includes('/g/collect') || lower.includes('/collect')) return true;
+  }
+  // Match DoubleClick: https://stats.g.doubleclick.net/g/collect* and /collect*
+  if (lower.includes('stats.g.doubleclick.net')) {
+    if (lower.includes('/g/collect') || lower.includes('/collect')) return true;
+  }
   return false;
 }
 
@@ -861,7 +1213,11 @@ function classifyMeasurementId(id) {
 function normalizeGa4Id(id) {
   if (!id) return null;
   const upper = id.toUpperCase();
-  return /^G-[A-Z0-9]{10}$/.test(upper) ? upper : null;
+  const result = /^G-[A-Z0-9]{10}$/.test(upper) ? upper : null;
+  // #region agent log
+  debugLog('scanner.cjs:927', 'normalizeGa4Id', { input: id, upper: upper, result: result, length: upper.length }, 'D');
+  // #endregion
+  return result;
 }
 
 function normalizeUaId(id) {
@@ -879,16 +1235,30 @@ function normalizeGtmId(id) {
 function normalizeAwId(id) {
   if (!id) return null;
   const upper = id.toUpperCase();
-  return /^AW-\d{6,}$/.test(upper) ? upper : null;
+  const result = /^AW-\d{6,}$/.test(upper) ? upper : null;
+  // #region agent log
+  debugLog('scanner.cjs:949', 'normalizeAwId', { input: id, upper: upper, result: result }, 'D');
+  // #endregion
+  return result;
 }
 
 function normalizeFbId(id) {
   if (!id) return null;
-  return /^\d{8,18}$/.test(id) ? id : null;
+  const result = /^\d{8,18}$/.test(id) ? id : null;
+  // #region agent log
+  debugLog('scanner.cjs:959', 'normalizeFbId', { input: id, result: result, length: id.length }, 'D');
+  // #endregion
+  return result;
 }
 
 function addDetailedId(detailMaps, tagInventory, type, rawId, source) {
+  // #region agent log
+  debugLog('scanner.cjs:907', 'addDetailedId called', { type: type, rawId: rawId, source: source }, 'D');
+  // #endregion
   const normalized = normalizeIdByType(type, rawId);
+  // #region agent log
+  debugLog('scanner.cjs:909', 'normalizeIdByType result', { normalized: normalized, type: type, rawId: rawId }, 'D');
+  // #endregion
   if (!normalized) return null;
   const map = detailMaps[type];
   if (!map.has(normalized)) {

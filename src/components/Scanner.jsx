@@ -48,28 +48,104 @@ const Scanner = () => {
       const response = await fetch('http://localhost:3000/api/scan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url })
+        body: JSON.stringify({ urls: [url] })
       });
       const result = await response.json();
       
-      if (result.success && result.data) {
-        // Map API result to new card format
-        const isHighRisk = result.data.riskLevel === 'High';
-        const isClean = result.data.analysis === '✅ Clean';
+      if (result.results && Array.isArray(result.results) && result.results.length > 0) {
+        // Process each result from the array
+        result.results.forEach(scanResult => {
+          if (scanResult.error) {
+            alert(`Scan failed for ${scanResult.url}: ${scanResult.error}`);
+            return;
+          }
 
-        const newResult = {
-          domain: result.data.domain,
-          status: isHighRisk ? 'Fraud Detection' : (isClean ? 'Verified Human Traffic' : 'Cautious Items'),
-          riskLevel: result.data.riskLevel,
-          details: `Analysis: ${result.data.analysis}. IDs found: ${result.data.tags.length}`,
-          action: isHighRisk ? 'Block & Report' : (isClean ? 'Monitor' : 'Review'),
-          waste: isHighRisk ? '5x' : '1x',
-          colorTheme: isHighRisk ? 'red' : (isClean ? 'green' : 'yellow')
-        };
+          // Extract domain from URL
+          let domain = scanResult.url || '';
+          try {
+            domain = new URL(scanResult.url).hostname;
+          } catch (e) {
+            // Keep original URL if parsing fails
+          }
 
-        setData(prev => [newResult, ...prev]);
-      } else {
+          // Determine risk level from verdict and riskScore
+          // Check for page_view duplication issues before marking as Clean
+          const hitsById = scanResult.hitsById || {};
+          const hasDuplicatePageViews = Object.values(hitsById).some(hitData => {
+            const pageViewCount = (hitData.events?.['page_view'] || 0) + (hitData.events?.['pageview'] || 0);
+            return pageViewCount > 1;
+          });
+          
+          const isHighRisk = scanResult.verdict === 'HIGH_RISK' || (scanResult.riskScore && scanResult.riskScore >= 60);
+          const isMediumRisk = scanResult.verdict === 'SUSPICIOUS' || (scanResult.riskScore && scanResult.riskScore >= 30);
+          const isClean = scanResult.verdict === 'PASS' && (!scanResult.riskScore || scanResult.riskScore < 30) && !hasDuplicatePageViews;
+          
+          // Get fraud warnings count
+          const fraudCount = scanResult.fraudWarnings ? scanResult.fraudWarnings.length : 0;
+          const hasFraud = fraudCount > 0 || isHighRisk;
+
+          // Calculate waste factor based on metrics
+          const networkEvents = scanResult.metrics?.adRequestCount || scanResult.networkEventsCount || 0;
+          const wasteFactor = networkEvents > 50 ? '6x' : networkEvents > 30 ? '5x' : networkEvents > 10 ? '3x' : '1x';
+
+          // Extract analytics IDs (GA/UA) and Google Ads IDs (AW)
+          const analyticsIds = scanResult.analyticsIds || scanResult.tagInventory?.analyticsIds || [];
+          const googleAdsIds = scanResult.googleAdsIds || scanResult.tagInventory?.googleAdsIds || [];
+          
+          // Format IDs for display with Hits Sent data (Tag Assistant-style)
+          const hitsById = scanResult.hitsById || {};
+          const hitsDisplay = Object.keys(hitsById).map(tid => {
+            const hitData = hitsById[tid];
+            const eventCounts = Object.entries(hitData.events || {})
+              .map(([eventName, count]) => `${eventName}: ${count}`)
+              .join(', ');
+            return `${tid} (${hitData.total} hits${eventCounts ? `: ${eventCounts}` : ''})`;
+          }).join('; ');
+          
+          const allIds = [...analyticsIds, ...googleAdsIds];
+          const idsDisplay = allIds.length > 0 
+            ? `IDs: ${allIds.join(', ')}` 
+            : '';
+          
+          // Build details string
+          let detailsText = '';
+          if (fraudCount > 0) {
+            detailsText = `Found ${fraudCount} fraud warning(s). Risk Score: ${scanResult.riskScore || 0}`;
+          } else {
+            detailsText = `Analysis complete. Risk Score: ${scanResult.riskScore || 0}`;
+          }
+          
+          if (idsDisplay) {
+            detailsText += `. ${idsDisplay}`;
+          }
+          
+          // Add Hits Sent information
+          if (hitsDisplay) {
+            detailsText += `. Hits Sent: ${hitsDisplay}`;
+          }
+          
+          // Store hitsById for display in card
+          scanResult._hitsById = hitsById;
+          scanResult._hitsDisplay = hitsDisplay;
+
+          const newResult = {
+            domain: domain,
+            status: hasFraud ? 'Fraud Detection' : (isClean ? 'Verified Human Traffic' : 'Cautious Items'),
+            riskLevel: isHighRisk ? 'High' : (isMediumRisk ? 'Medium' : 'Low'),
+            details: detailsText,
+            action: hasFraud ? 'Block & Report' : (isClean ? 'Monitor' : 'Review'),
+            waste: wasteFactor,
+            colorTheme: hasFraud ? 'red' : (isClean ? 'green' : 'yellow'),
+            _hitsById: hitsById,
+            _hitsDisplay: hitsDisplay
+          };
+
+          setData(prev => [newResult, ...prev]);
+        });
+      } else if (result.error) {
         alert(result.error || "Scan failed to return data");
+      } else {
+        alert("No results returned from scan");
       }
 
     } catch (error) {
@@ -196,6 +272,32 @@ const Scanner = () => {
                      <p className="text-sm text-slate-500 font-medium mb-1">Analysis Details</p>
                      <p className="text-slate-700 text-sm leading-relaxed">{row.details}</p>
                   </div>
+                  
+                  {/* Tag Assistant-style Hits Sent */}
+                  {row._hitsById && Object.keys(row._hitsById).length > 0 && (
+                    <div className="bg-white bg-opacity-60 p-3 rounded-xl border border-slate-100">
+                      <p className="text-sm text-slate-500 font-medium mb-2">Hits Sent (Tag Assistant-style)</p>
+                      <div className="space-y-2">
+                        {Object.entries(row._hitsById).map(([tid, hitData]) => (
+                          <div key={tid} className="text-xs">
+                            <div className="font-semibold text-slate-900 mb-1">{tid}</div>
+                            <div className="text-slate-600 ml-2">
+                              Total: {hitData.total} hits
+                              {Object.keys(hitData.events || {}).length > 0 && (
+                                <div className="mt-1">
+                                  {Object.entries(hitData.events).map(([eventName, count]) => (
+                                    <span key={eventName} className="inline-block mr-2 px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded">
+                                      {eventName}: {count}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                   {/* 💰 Projected Loss Section (Interactive) */}
                   {theme !== 'green' && (() => {

@@ -6,153 +6,67 @@
     <title>CMS Output Monitor | Cybertect</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/internal-base.css">
     <style>
-        :root {
-            --blue: #007BFF;
-            --green: #00C853;
-            --yellow: #FFB800;
-            --red: #FF3D00;
-            --dark-gray: #1F2937;
-            --light-gray: #F8F9FA;
-            --text-dark: #111827;
-            --text-gray: #6B7280;
-            --white: #FFFFFF;
-            --border: #E5E7EB;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--white);
-            color: var(--text-dark);
-            min-height: 100vh;
-        }
-        .header {
-            background: var(--white);
-            padding: 16px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }
-        .logo-container { display: flex; align-items: baseline; gap: 4px; font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
-        .cyber-text { color: var(--dark-gray); }
-        .tect-text { color: var(--blue); }
-        .com-text { color: var(--text-gray); font-size: 20px; }
-        .top-menu { display: flex; gap: 18px; margin: 0 32px; flex: 1; justify-content: center; flex-wrap: wrap; }
-        .tool-link {
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-gray);
-            text-decoration: none;
-            padding-bottom: 6px;
-            border-bottom: 2px solid transparent;
-            transition: color 0.2s, border-color 0.2s;
-        }
-        .tool-link:hover { color: var(--text-dark); }
-        .tool-link.active { color: var(--blue); border-color: var(--blue); }
-        .nav-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-dark);
-            background: transparent;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            padding: 8px 18px;
-            cursor: pointer;
-            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.18);
-        }
-        .nav-pill:hover,
-        .nav-pill:focus-visible {
-            background: var(--light-gray);
-            border-color: var(--text-gray);
-        }
-        .nav-pill-link {
-            text-decoration: none;
-            color: inherit;
-        }
-        .nav-pill-link.active {
-            border-color: var(--blue);
-            color: var(--blue);
-        }
-        .dropdown { position: relative; }
-        .dropdown-toggle {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-dark);
-            background: transparent;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            padding: 8px 18px;
-            cursor: pointer;
-        }
-        .dropdown-toggle:hover,
-        .dropdown-toggle:focus-visible {
-            background: var(--light-gray);
-            border-color: var(--text-gray);
-        }
-        .dropdown-menu {
-            position: absolute;
-            top: calc(100% + 8px);
-            left: 0;
-            display: none;
-            flex-direction: column;
-            min-width: 260px;
-            padding: 12px;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            background: var(--white);
-            box-shadow: 0 20px 30px rgba(15,23,42,0.12);
-            z-index: 20;
-        }
-        .dropdown-menu.show { display: flex; }
-        .dropdown-menu .tool-link {
-            padding: 8px 12px;
-            border-bottom: none;
-            border-radius: 10px;
-        }
-        .dropdown-menu .tool-link:hover,
-        .dropdown-menu .tool-link.active {
-            background: var(--light-gray);
-            color: var(--text-dark);
-        }
-        .sign-in-btn {
-            background: transparent;
-            border: 1px solid var(--border);
-            padding: 8px 20px;
-            border-radius: 24px;
-            color: var(--text-dark);
-            font-weight: 500;
-            cursor: pointer;
-        }
-        main {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 60px 24px 120px;
-        }
+        main { max-width: 1400px; margin: 0 auto; padding: 60px 24px 120px; }
         .tool-hero { text-align: left; margin-bottom: 32px; }
         .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: var(--text-gray); margin-bottom: 12px; }
-        h1 { font-size: 40px; margin-bottom: 12px; }
+        h1 { font-size: 40px; margin-bottom: 12px; color: var(--text-dark); }
         .subtitle { font-size: 18px; color: var(--text-gray); max-width: 720px; }
         .panel {
-            background: var(--light-gray);
+            background: var(--white);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 32px;
             margin-bottom: 32px;
-            box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+            box-shadow: 0 2px 8px rgba(15,23,42,0.08);
         }
-        .panel h2 { font-size: 20px; margin-bottom: 16px; }
-        .panel ul { list-style: disc; padding-left: 20px; color: var(--text-gray); }
-        .panel li { margin-bottom: 10px; }
-        .actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+        .panel h2 { font-size: 20px; margin-bottom: 16px; color: var(--text-dark); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--blue);
+        }
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .form-group small {
+            display: block;
+            margin-top: 6px;
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+        }
         .run-btn {
             background: var(--blue);
             color: var(--white);
@@ -160,24 +74,164 @@
             border-radius: 999px;
             font-weight: 600;
             border: none;
+            cursor: pointer;
+            transition: background 0.2s, opacity 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .run-btn:hover:not(:disabled) {
+            background: var(--blue-dark);
+        }
+        .run-btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
         }
-        .helper { font-size: 13px; color: var(--text-gray); }
-        @media (max-width: 640px) {
-            .header { flex-direction: column; gap: 16px; }
-            .top-menu { margin: 12px 0; width: 100%; }
-            .dropdown { width: 100%; }
-            .dropdown-toggle { width: 100%; justify-content: space-between; }
-            .dropdown-menu { position: static; box-shadow: none; margin-top: 8px; width: 100%; }
-            .logo-container { font-size: 24px; }
+        .download-btn {
+            background: var(--white);
+            color: var(--blue);
+            padding: 14px 32px;
+            border-radius: 999px;
+            font-weight: 600;
+            border: 1px solid var(--blue);
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .download-btn:hover:not(:disabled) {
+            background: var(--light-gray);
+        }
+        .download-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .results {
+            margin-top: 32px;
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .result-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(15,23,42,0.06);
+        }
+        .result-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .result-card .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        .badge-error { background: #FEE2E2; color: #991B1B; }
+        .badge-warning { background: #FEF3C7; color: #92400E; }
+        .badge-success { background: #D1FAE5; color: #065F46; }
+        .result-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .result-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+        .result-card li:last-child {
+            border-bottom: none;
+        }
+        .result-card code {
+            background: var(--light-gray);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: var(--text-gray);
+        }
+        .loading.active {
+            display: block;
+        }
+        .spinner {
+            border: 3px solid var(--border);
+            border-top-color: var(--blue);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .error {
+            background: #FEE2E2;
+            color: #991B1B;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 16px;
+            background: var(--light-gray);
+            border-radius: 8px;
+        }
+        .stat-item .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .stat-item .stat-label {
+            font-size: 12px;
+            color: var(--text-gray);
+            margin-top: 4px;
+        }
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <span class="cyber-text">cyber</span><span class="tect-text">tect</span><span class="com-text">.com</span>
+            <a href="/" class="cybertect-logo" aria-label="Cybertect home">
+                <span class="cyber-text">cyber</span><span class="tect-text">tect</span><span class="com-text">.com</span>
+            </a>
         </div>
         <nav class="top-menu">
             <a class="nav-pill nav-pill-link" href="/online-waste/" data-route="/online-waste">Online Waste</a>
@@ -187,9 +241,10 @@
                     <span class="material-icons" aria-hidden="true">expand_more</span>
                 </button>
                 <div class="dropdown-menu" role="menu">
-                    <a class="tool-link" href="/tools/cms-level-data-monitor/" data-route="/tools/cms-level-data-monitor">CMS Output Monitor</a>
+                    <a class="tool-link active" href="/tools/cms-level-data-monitor/" data-route="/tools/cms-level-data-monitor">CMS Output Monitor</a>
                     <a class="tool-link" href="/tools/ad-level-impression-verification/" data-route="/tools/ad-level-impression-verification">Ad Impression Verification</a>
                     <a class="tool-link" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
+                    <a class="tool-link" href="/tools/injected-telemetry-monitor/" data-route="/tools/injected-telemetry-monitor">Injected Telemetry Monitor</a>
                     <a class="tool-link" href="/tools/reverse-analytics-search/" data-route="/tools/reverse-analytics-search">Reverse Analytics Search</a>
                 </div>
             </div>
@@ -205,21 +260,106 @@
         </div>
 
         <section class="panel">
-            <h2>Coming Soon</h2>
-            <ul>
-                <li>Snapshot CMS releases and diff every analytics snippet before go-live.</li>
-                <li>Auto-map CMS widgets to the ad/measurement IDs they inject on page.</li>
-                <li>Alert when unauthorized partners or macros appear in QA builds.</li>
-            </ul>
+            <h2>Scan Configuration</h2>
+            <form id="scanForm">
+                <div class="form-group">
+                    <label for="baseUrl">Base URL *</label>
+                    <input type="url" id="baseUrl" name="baseUrl" placeholder="https://example.com" required>
+                    <small>Starting URL for the scan</small>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="buildLabel">Build/Release Label</label>
+                        <input type="text" id="buildLabel" name="buildLabel" placeholder="v2.1.0">
+                        <small>Optional label for this build/release</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="crawlDepth">Crawl Depth</label>
+                        <select id="crawlDepth" name="crawlDepth">
+                            <option value="0">0 - Base URL only</option>
+                            <option value="1" selected>1 - Base URL + 1 level</option>
+                            <option value="2">2 - Base URL + 2 levels</option>
+                        </select>
+                        <small>How many levels to crawl</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="samplePages">Sample Pages (one per line)</label>
+                    <textarea id="samplePages" name="samplePages" placeholder="https://example.com/page1&#10;https://example.com/page2"></textarea>
+                    <small>Optional list of specific pages to scan</small>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="authHeader">Auth Header (format: HeaderName: HeaderValue)</label>
+                        <input type="text" id="authHeader" name="authHeader" placeholder="Authorization: Bearer token123">
+                        <small>Optional authentication header</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="authCookie">Auth Cookie (format: name=value)</label>
+                        <input type="text" id="authCookie" name="authCookie" placeholder="session=abc123">
+                        <small>Optional authentication cookie</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="allowedPartners">Allowed Partners (one per line)</label>
+                    <textarea id="allowedPartners" name="allowedPartners" placeholder="google-analytics.com&#10;googletagmanager.com&#10;facebook.com"></textarea>
+                    <small>List of allowed partner domains. Any vendor domain not in this list will be flagged as unauthorized.</small>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="publisher">Publisher</label>
+                        <input type="text" id="publisher" name="publisher" placeholder="acme-corp" value="default">
+                        <small>Publisher identifier for baseline management</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="environment">Environment</label>
+                        <select id="environment" name="environment">
+                            <option value="qa">QA</option>
+                            <option value="stage">Stage</option>
+                            <option value="prod" selected>Production</option>
+                        </select>
+                        <small>Environment for baseline comparison</small>
+                    </div>
+                </div>
+                
+                <div class="actions">
+                    <button type="submit" class="run-btn" id="runBtn">
+                        <span class="material-icons">play_arrow</span>
+                        Run Scan
+                    </button>
+                    <button type="button" class="download-btn" id="downloadBtn" disabled>
+                        <span class="material-icons">download</span>
+                        Download Evidence Pack
+                    </button>
+                </div>
+            </form>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Scanning CMS output...</p>
+            </div>
+            
+            <div id="error" class="error" style="display: none;"></div>
         </section>
 
-        <div class="actions">
-            <button class="run-btn" disabled title="Connect scanner pipeline first">Run Scan</button>
-            <p class="helper">Connect scanner pipeline first</p>
-        </div>
+        <section class="results" id="results" style="display: none;">
+            <div class="panel">
+                <h2>Scan Summary</h2>
+                <div class="summary-stats" id="summaryStats"></div>
+            </div>
+            
+            <div class="results-grid" id="resultsGrid"></div>
+        </section>
     </main>
 
     <script>
+        let currentScanId = null;
+        
         function setActiveNav() {
             const current = window.location.pathname.replace(/\/$/, '');
             document.querySelectorAll('[data-route]').forEach(link => {
@@ -281,10 +421,350 @@
             });
         }
 
+        function showError(message) {
+            const errorEl = document.getElementById('error');
+            errorEl.textContent = message;
+            errorEl.style.display = 'block';
+            setTimeout(() => {
+                errorEl.style.display = 'none';
+            }, 5000);
+        }
+
+        function renderResults(data) {
+            console.log('[CMS Monitor UI] renderResults called with data:', data);
+            
+            const resultsEl = document.getElementById('results');
+            const summaryStatsEl = document.getElementById('summaryStats');
+            const resultsGridEl = document.getElementById('resultsGrid');
+            
+            if (!resultsEl || !summaryStatsEl || !resultsGridEl) {
+                console.error('[CMS Monitor UI] Missing required DOM elements');
+                showError('UI error: Missing required elements');
+                return;
+            }
+            
+            resultsEl.style.display = 'block';
+            
+            // Summary stats
+            const summary = data.summary || {};
+            console.log('[CMS Monitor UI] Rendering summary:', summary);
+            
+            summaryStatsEl.innerHTML = `
+                <div class="stat-item">
+                    <div class="stat-value">${summary.totalPages || 0}</div>
+                    <div class="stat-label">Pages Scanned</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${summary.totalScripts || 0}</div>
+                    <div class="stat-label">Total Scripts</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${summary.duplicateIdsCount || 0}</div>
+                    <div class="stat-label">Duplicate IDs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${summary.unauthorizedCount || 0}</div>
+                    <div class="stat-label">Unauthorized</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${summary.injectedScriptsCount || 0}</div>
+                    <div class="stat-label">Injected Scripts</div>
+                </div>
+            `;
+            
+            // Results cards
+            const cards = [];
+            
+            console.log('[CMS Monitor UI] Building result cards...');
+            console.log('[CMS Monitor UI] Data structure:', {
+                hasInjectedScripts: !!data.injectedScripts,
+                injectedScriptsLength: data.injectedScripts?.length || 0,
+                hasDuplicates: !!data.duplicates,
+                duplicatesKeys: data.duplicates ? Object.keys(data.duplicates) : [],
+                hasUnauthorized: !!data.unauthorized,
+                unauthorizedLength: data.unauthorized?.length || 0
+            });
+            
+            // Injected/Unknown Scripts
+            if (data.injectedScripts && Array.isArray(data.injectedScripts) && data.injectedScripts.length > 0) {
+                cards.push(`
+                    <div class="result-card">
+                        <h3><span class="material-icons" style="color: #EF4444;">warning</span>Injected/Unknown Scripts</h3>
+                        <ul>
+                            ${data.injectedScripts.slice(0, 10).map(script => `
+                                <li>
+                                    <code>${(script.src || script.hash || 'N/A').substring(0, 50)}</code>
+                                    <br><small>${script.reason} - ${script.page}</small>
+                                </li>
+                            `).join('')}
+                        </ul>
+                        ${data.injectedScripts.length > 10 ? `<p style="margin-top: 12px; font-size: 12px; color: var(--text-gray);">+${data.injectedScripts.length - 10} more</p>` : ''}
+                    </div>
+                `);
+            }
+            
+            // Duplicate Analytics Tags
+            if (data.duplicates && data.duplicates.duplicateIds && Object.keys(data.duplicates.duplicateIds).length > 0) {
+                const duplicateIds = Object.entries(data.duplicates.duplicateIds);
+                cards.push(`
+                    <div class="result-card">
+                        <h3><span class="material-icons" style="color: #F59E0B;">content_copy</span>Duplicate Analytics Tags</h3>
+                        <ul>
+                            ${duplicateIds.slice(0, 10).map(([id, count]) => `
+                                <li>
+                                    <code>${id}</code>
+                                    <span class="badge badge-warning">${count}x</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                        ${duplicateIds.length > 10 ? `<p style="margin-top: 12px; font-size: 12px; color: var(--text-gray);">+${duplicateIds.length - 10} more</p>` : ''}
+                    </div>
+                `);
+            }
+            
+            // Unauthorized Macros/Partners
+            if (data.unauthorized && Array.isArray(data.unauthorized) && data.unauthorized.length > 0) {
+                cards.push(`
+                    <div class="result-card">
+                        <h3><span class="material-icons" style="color: #EF4444;">block</span>Unauthorized Macros/Partners</h3>
+                        <ul>
+                            ${data.unauthorized.slice(0, 10).map(item => `
+                                <li>
+                                    <code>${item.domain}</code>
+                                    <br><small>${item.type} - ${item.page}</small>
+                                </li>
+                            `).join('')}
+                        </ul>
+                        ${data.unauthorized.length > 10 ? `<p style="margin-top: 12px; font-size: 12px; color: var(--text-gray);">+${data.unauthorized.length - 10} more</p>` : ''}
+                    </div>
+                `);
+            }
+            
+            // Baseline Diff
+            if (data.baselineDiff) {
+                const diff = data.baselineDiff;
+                cards.push(`
+                    <div class="result-card">
+                        <h3><span class="material-icons" style="color: #3B82F6;">compare_arrows</span>New/Changed Snippets vs Baseline</h3>
+                        <p><strong>Baseline:</strong> ${diff.baselineLabel || 'Unknown'}</p>
+                        <ul>
+                            <li>New Scripts: <span class="badge badge-warning">${diff.newScripts?.length || 0}</span></li>
+                            <li>Removed Scripts: <span class="badge badge-warning">${diff.removedScripts?.length || 0}</span></li>
+                            <li>Changed Scripts: <span class="badge badge-warning">${diff.changedScripts?.length || 0}</span></li>
+                        </ul>
+                    </div>
+                `);
+            }
+            
+            // Widget Attribution Map
+            if (data.pagesScanned && data.pagesScanned.length > 0) {
+                cards.push(`
+                    <div class="result-card">
+                        <h3><span class="material-icons" style="color: #10B981;">account_tree</span>Widget Attribution Map</h3>
+                        <p>Pages scanned: ${data.pagesScanned.length}</p>
+                        <ul>
+                            ${data.pagesScanned.slice(0, 5).map(page => `
+                                <li><code>${page}</code></li>
+                            `).join('')}
+                        </ul>
+                        ${data.pagesScanned.length > 5 ? `<p style="margin-top: 12px; font-size: 12px; color: var(--text-gray);">+${data.pagesScanned.length - 5} more pages</p>` : ''}
+                    </div>
+                `);
+            }
+            
+            if (cards.length === 0) {
+                cards.push(`
+                    <div class="result-card">
+                        <h3><span class="material-icons" style="color: #10B981;">check_circle</span>No Issues Found</h3>
+                        <p>Scan completed successfully. No injected scripts, duplicates, or unauthorized partners detected.</p>
+                    </div>
+                `);
+            }
+            
+            console.log(`[CMS Monitor UI] Rendering ${cards.length} result cards`);
+            resultsGridEl.innerHTML = cards.join('');
+            console.log('[CMS Monitor UI] Results rendered successfully');
+        }
+
+        // Wait for DOM to be ready before attaching event listeners
+        function initCMSMonitor() {
+            const scanForm = document.getElementById('scanForm');
+            const downloadBtn = document.getElementById('downloadBtn');
+            
+            if (!scanForm) {
+                console.error('[CMS Monitor UI] scanForm not found!');
+                return;
+            }
+            
+            console.log('[CMS Monitor UI] Attaching form submit listener...');
+            
+            scanForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                console.log('[CMS Monitor UI] Form submitted!');
+                
+                const formData = new FormData(e.target);
+                const baseUrl = formData.get('baseUrl');
+                
+                if (!baseUrl || !baseUrl.trim()) {
+                    showError('Base URL is required');
+                    return;
+                }
+                
+                const buildLabel = formData.get('buildLabel') || null;
+                const crawlDepth = parseInt(formData.get('crawlDepth')) || 1;
+                const samplePages = formData.get('samplePages')
+                    ? formData.get('samplePages').split('\n').filter(url => url.trim())
+                    : [];
+                const authHeader = formData.get('authHeader') || null;
+                const authCookie = formData.get('authCookie') || null;
+                const allowedPartners = formData.get('allowedPartners')
+                    ? formData.get('allowedPartners').split('\n').filter(p => p.trim())
+                    : [];
+                const publisher = formData.get('publisher') || 'default';
+                const environment = formData.get('environment') || 'prod';
+                
+                const loadingEl = document.getElementById('loading');
+                const runBtn = document.getElementById('runBtn');
+                const downloadBtnEl = document.getElementById('downloadBtn');
+                
+                if (!loadingEl || !runBtn || !downloadBtnEl) {
+                    console.error('[CMS Monitor UI] Missing required UI elements');
+                    showError('UI error: Missing required elements');
+                    return;
+                }
+                
+                loadingEl.classList.add('active');
+                runBtn.disabled = true;
+                downloadBtnEl.disabled = true;
+                
+                try {
+                    console.log('[CMS Monitor UI] Starting scan request...');
+                    console.log('[CMS Monitor UI] Request payload:', {
+                        baseUrl,
+                        buildLabel,
+                        crawlDepth,
+                        samplePagesCount: samplePages.length,
+                        allowedPartnersCount: allowedPartners.length
+                    });
+                    
+                    const response = await fetch('http://localhost:3000/api/cms-monitor/run', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            baseUrl,
+                            buildLabel,
+                            crawlDepth,
+                            samplePages,
+                            authHeader,
+                            authCookie,
+                            allowedPartners,
+                            publisher,
+                            environment
+                        })
+                    });
+                    
+                    console.log('[CMS Monitor UI] Response status:', response.status, response.statusText);
+                    
+                    if (!response.ok) {
+                        let errorData;
+                        try {
+                            errorData = await response.json();
+                        } catch (e) {
+                            errorData = { error: `HTTP ${response.status}: ${response.statusText}` };
+                        }
+                        console.error('[CMS Monitor UI] Response error:', errorData);
+                        throw new Error(errorData.error || `Scan failed with status ${response.status}`);
+                    }
+                    
+                    const data = await response.json();
+                    console.log('[CMS Monitor UI] Response data received:', {
+                        scanId: data.scanId,
+                        hasSummary: !!data.summary,
+                        summary: data.summary,
+                        hasDuplicates: !!data.duplicates,
+                        hasUnauthorized: !!data.unauthorized,
+                        hasInjectedScripts: !!data.injectedScripts
+                    });
+                    
+                    // Validate response structure
+                    if (!data.scanId) {
+                        throw new Error('Invalid response: missing scanId');
+                    }
+                    if (!data.summary) {
+                        console.warn('[CMS Monitor UI] Response missing summary, creating default');
+                        data.summary = {
+                            totalPages: 0,
+                            totalScripts: 0,
+                            totalPixels: 0,
+                            duplicateIdsCount: 0,
+                            duplicateScriptsCount: 0,
+                            unauthorizedCount: 0,
+                            injectedScriptsCount: 0
+                        };
+                    }
+                    
+                    currentScanId = data.scanId;
+                    
+                    console.log('[CMS Monitor UI] Rendering results...');
+                    renderResults(data);
+                    downloadBtnEl.disabled = false;
+                    console.log('[CMS Monitor UI] Results rendered successfully');
+                } catch (error) {
+                    console.error('[CMS Monitor UI] Error:', error);
+                    console.error('[CMS Monitor UI] Error stack:', error.stack);
+                    const errorMessage = error.message || 'Scan failed. Make sure the server is running on port 3000.';
+                    showError(errorMessage);
+                } finally {
+                    loadingEl.classList.remove('active');
+                    runBtn.disabled = false;
+                }
+            });
+            
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', async () => {
+                    if (!currentScanId) {
+                        showError('No scan results available. Run a scan first.');
+                        return;
+                    }
+                    
+                    try {
+                        const response = await fetch(`http://localhost:3000/api/cms-monitor/evidence/${currentScanId}`);
+                        if (!response.ok) {
+                            throw new Error('Failed to download evidence pack');
+                        }
+                        
+                        const blob = await response.blob();
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `cms-monitor-evidence-${currentScanId}.zip`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        window.URL.revokeObjectURL(url);
+                    } catch (error) {
+                        showError(error.message || 'Failed to download evidence pack');
+                    }
+                });
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
+            console.log('[CMS Monitor UI] DOMContentLoaded fired');
             setActiveNav();
             initDropdowns();
+            initCMSMonitor(); // Initialize CMS Monitor after DOM is ready
         });
+        
+        // Also try to initialize immediately if DOM is already loaded
+        if (document.readyState === 'loading') {
+            // DOM is still loading, wait for DOMContentLoaded
+            console.log('[CMS Monitor UI] DOM still loading, waiting for DOMContentLoaded');
+        } else {
+            // DOM is already loaded
+            console.log('[CMS Monitor UI] DOM already loaded, initializing immediately');
+            initCMSMonitor();
+        }
     </script>
 </body>
 </html>

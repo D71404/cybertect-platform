@@ -6,106 +6,21 @@
     <title>Reverse Analytics Search | Cybertect</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/internal-base.css">
     <style>
-        :root {
-            --blue: #007BFF;
-            --green: #00C853;
-            --yellow: #FFB800;
-            --red: #FF3D00;
-            --dark-gray: #1F2937;
-            --light-gray: #F8F9FA;
-            --text-dark: #111827;
-            --text-gray: #6B7280;
-            --white: #FFFFFF;
-            --border: #E5E7EB;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text-dark); min-height: 100vh; }
-        .header {
-            background: var(--white);
-            padding: 16px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }
-        .logo-container { display: flex; align-items: baseline; gap: 4px; font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
-        .cyber-text { color: var(--dark-gray); }
-        .tect-text { color: var(--blue); }
-        .com-text { color: var(--text-gray); font-size: 20px; }
-        .top-menu { display: flex; gap: 18px; margin: 0 32px; flex: 1; justify-content: center; flex-wrap: wrap; }
-        .tool-link { font-size: 14px; font-weight: 500; color: var(--text-gray); text-decoration: none; padding-bottom: 6px; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
-        .tool-link:hover { color: var(--text-dark); }
-        .tool-link.active { color: var(--blue); border-color: var(--blue); }
-        .nav-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-dark);
-            background: transparent;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            padding: 8px 18px;
-            cursor: pointer;
-            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.18);
-        }
-        .nav-pill:hover,
-        .nav-pill:focus-visible { background: var(--light-gray); border-color: var(--text-gray); }
-        .nav-pill-link { text-decoration: none; color: inherit; }
-        .nav-pill-link.active { border-color: var(--blue); color: var(--blue); }
-        .dropdown { position: relative; }
-        .dropdown-toggle {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-dark);
-            background: transparent;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            padding: 8px 18px;
-            cursor: pointer;
-        }
-        .dropdown-toggle:hover,
-        .dropdown-toggle:focus-visible {
-            background: var(--light-gray);
-            border-color: var(--text-gray);
-        }
-        .dropdown-menu {
-            position: absolute;
-            top: calc(100% + 8px);
-            left: 0;
-            display: none;
-            flex-direction: column;
-            min-width: 260px;
-            padding: 12px;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            background: var(--white);
-            box-shadow: 0 20px 30px rgba(15,23,42,0.12);
-            z-index: 20;
-        }
-        .dropdown-menu.show { display: flex; }
-        .dropdown-menu .tool-link { padding: 8px 12px; border-bottom: none; border-radius: 10px; }
-        .dropdown-menu .tool-link:hover,
-        .dropdown-menu .tool-link.active { background: var(--light-gray); color: var(--text-dark); }
-        .sign-in-btn { background: transparent; border: 1px solid var(--border); padding: 8px 20px; border-radius: 24px; color: var(--text-dark); font-weight: 500; cursor: pointer; }
         main { max-width: 960px; margin: 0 auto; padding: 60px 24px 120px; }
         .tool-hero { text-align: left; margin-bottom: 32px; }
         .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: var(--text-gray); margin-bottom: 12px; }
-        h1 { font-size: 40px; margin-bottom: 12px; }
+        h1 { font-size: 40px; margin-bottom: 12px; color: var(--text-dark); }
         .subtitle { font-size: 18px; color: var(--text-gray); max-width: 720px; }
         .panel { background: var(--light-gray); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin-bottom: 32px; box-shadow: 0 12px 30px rgba(15,23,42,0.08); }
         .panel h2 { font-size: 20px; margin-bottom: 16px; }
         .panel ul { list-style: disc; padding-left: 20px; color: var(--text-gray); }
         .panel li { margin-bottom: 10px; }
         .actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-bottom: 40px; }
-        .run-btn { background: var(--blue); color: var(--white); padding: 14px 32px; border-radius: 999px; font-weight: 600; border: none; opacity: 0.5; cursor: not-allowed; }
+        .run-btn { background: var(--blue); color: var(--white); padding: 14px 32px; border-radius: 999px; font-weight: 600; border: none; cursor: pointer; transition: opacity 0.2s, background 0.2s; }
+        .run-btn:hover:not(:disabled) { background: #1D4ED8; }
+        .run-btn:disabled { opacity: 0.5; cursor: not-allowed; }
         .helper { font-size: 13px; color: var(--text-gray); }
         .lookup-card {
             background: var(--white);
@@ -148,21 +63,222 @@
             background: var(--light-gray);
         }
         .lookup-results ul { margin-top: 10px; padding-left: 18px; color: var(--text-dark); }
+        .hits-count {
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .domain-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .domain-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .domain-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--blue);
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+        .domain-name:hover {
+            text-decoration: underline;
+        }
+        .domain-meta {
+            font-size: 12px;
+            color: var(--text-gray);
+            margin-bottom: 8px;
+        }
+        .sources-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .source-badge {
+            background: var(--light-gray);
+            color: var(--text-dark);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        .also-seen {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        .also-seen-title {
+            font-size: 11px;
+            color: var(--text-gray);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+        .also-seen-ids {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .also-seen-id {
+            background: var(--light-gray);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-family: monospace;
+            color: var(--text-dark);
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-gray);
+        }
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-gray);
+        }
+        .url-search-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+            margin-bottom: 32px;
+        }
+        .url-search-card h3 {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        .url-search-card p {
+            color: var(--text-gray);
+            margin-bottom: 24px;
+        }
+        .url-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .url-controls input {
+            font-size: 16px;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .url-controls button {
+            background: var(--blue);
+            color: var(--white);
+            border: none;
+            border-radius: 999px;
+            padding: 12px 28px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .url-controls button:hover:not(:disabled) {
+            background: #0056d6;
+        }
+        .url-controls button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .found-ids-section {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+        .found-ids-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .found-id-badge {
+            background: var(--light-gray);
+            color: var(--text-dark);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-family: monospace;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .found-id-badge .id-type {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: var(--text-gray);
+            font-weight: 600;
+        }
+        .results-by-id {
+            margin-top: 32px;
+        }
+        .id-group {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid var(--border);
+        }
+        .id-group:last-child {
+            border-bottom: none;
+        }
+        .id-group-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .id-group-header h4 {
+            font-size: 18px;
+            margin: 0;
+            color: var(--text-dark);
+        }
+        .id-group-header .id-value {
+            font-family: monospace;
+            background: var(--light-gray);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .id-group-header .hits-badge {
+            background: var(--blue);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
         @media (max-width: 640px) {
-            .header { flex-direction: column; gap: 16px; }
-            .top-menu { margin: 12px 0; width: 100%; }
+            .header { flex-direction: column; align-items: flex-start; }
+            .top-menu { margin: 12px 0; width: 100%; justify-content: flex-start; }
             .dropdown { width: 100%; }
             .dropdown-toggle { width: 100%; justify-content: space-between; }
             .dropdown-menu { position: static; box-shadow: none; margin-top: 8px; width: 100%; }
             .lookup-controls { flex-direction: column; }
             .lookup-controls button { width: 100%; }
+            .url-controls { flex-direction: column; }
+            .url-controls input { min-width: 100%; }
+            .url-controls button { width: 100%; }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <span class="cyber-text">cyber</span><span class="tect-text">tect</span><span class="com-text">.com</span>
+            <a href="/" class="cybertect-logo" aria-label="Cybertect home">
+                <span class="cyber-text">cyber</span><span class="tect-text">tect</span><span class="com-text">.com</span>
+            </a>
         </div>
         <nav class="top-menu">
             <a class="nav-pill nav-pill-link" href="/online-waste/" data-route="/online-waste">Online Waste</a>
@@ -175,6 +291,7 @@
                     <a class="tool-link" href="/tools/cms-level-data-monitor/" data-route="/tools/cms-level-data-monitor">CMS Output Monitor</a>
                     <a class="tool-link" href="/tools/ad-level-impression-verification/" data-route="/tools/ad-level-impression-verification">Ad Impression Verification</a>
                     <a class="tool-link" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
+                    <a class="tool-link" href="/tools/injected-telemetry-monitor/" data-route="/tools/injected-telemetry-monitor">Injected Telemetry Monitor</a>
                     <a class="tool-link" href="/tools/reverse-analytics-search/" data-route="/tools/reverse-analytics-search">Reverse Analytics Search</a>
                 </div>
             </div>
@@ -189,120 +306,64 @@
             <p class="subtitle">Investigate any GA4, UA, GTM, or Meta Pixel ID to see which publishers reuse it, exposing cross-network measurement duplication.</p>
         </div>
 
-        <section class="panel">
-            <h2>Coming Soon</h2>
-            <ul>
-                <li>Auto-ingest tag inventories from every scan without manual export.</li>
-                <li>Correlate duplicate IDs with advertiser invoices to prove performance drain.</li>
-                <li>Trigger inbox alerts when partner tags appear on unauthorized domains.</li>
-            </ul>
+        <section class="url-search-card">
+            <h3>Search by URL</h3>
+            <p>Enter a website URL to scan for analytics IDs and automatically find all domains sharing those IDs.</p>
+            <div class="url-controls">
+                <input type="url" id="urlInput" placeholder="https://example.com" aria-label="Website URL to scan" />
+                <button type="button" id="scanUrlBtn" onclick="scanUrlAndReverseSearch()">Scan & Reverse Search</button>
+            </div>
+            <div id="urlScanResults" style="display: none;">
+                <div class="found-ids-section" id="foundIdsSection" style="display: none;">
+                    <h4>Found Analytics IDs</h4>
+                    <div class="found-ids-list" id="foundIdsList"></div>
+                </div>
+                <div class="results-by-id" id="resultsById"></div>
+            </div>
         </section>
-
-        <div class="actions">
-            <button class="run-btn" disabled title="Connect scanner pipeline first">Run Scan</button>
-            <p class="helper">Connect scanner pipeline first</p>
-        </div>
 
         <section class="lookup-card">
             <h3>Reverse Analytics Search</h3>
             <p>Paste a GA4 ID, GTM container, or Facebook pixel to expose every publisher reusing the same telemetry tag.</p>
             <div class="lookup-controls">
                 <select id="lookupType" aria-label="Analytics identifier type">
-                    <option value="ga4">GA4 / UA ID</option>
-                    <option value="gtm">GTM Container</option>
-                    <option value="fb">Facebook Pixel</option>
+                    <option value="GA4">GA4 ID</option>
+                    <option value="UA">UA ID</option>
+                    <option value="GTM">GTM Container</option>
+                    <option value="FBP">Facebook Pixel</option>
+                    <option value="AW">Google Ads</option>
                 </select>
-                <input id="lookupValue" placeholder="e.g., G-XXXXXXX" aria-label="Analytics identifier value" />
+                <input id="lookupValue" placeholder="e.g., UA-35735220-64" aria-label="Analytics identifier value" />
                 <button type="button" onclick="runLookup()">Run Reverse Search</button>
             </div>
             <div class="lookup-results" id="lookupResults">
                 <h4>Matches</h4>
-                <p style="color:var(--text-gray);">Load recent scans, then search for a tag to reveal duplicates.</p>
+                <p style="color:var(--text-gray);">Enter an analytics ID above to find all domains sharing it.</p>
             </div>
         </section>
     </main>
 
     <script>
-        const GA4_REGEX = /^G-[A-Z0-9]{10}$/;
-        const UA_REGEX = /^UA-\d{8,10}-\d{1,2}$/;
-
-        const lookupMaps = {
-            ga: new Map(),
-            gtm: new Map(),
-            fb: new Map()
-        };
-        let pendingPrefill = null;
+        let isLoading = false;
+        let isUrlScanning = false;
 
         document.addEventListener('DOMContentLoaded', () => {
             setActiveNav();
             initDropdowns();
-            pendingPrefill = prefillFromQuery();
-            hydrateLookupMaps();
+            prefillFromQuery();
+            
+            // Allow Enter key to trigger URL scan
+            const urlInput = document.getElementById('urlInput');
+            if (urlInput) {
+                urlInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' && !isUrlScanning) {
+                        scanUrlAndReverseSearch();
+                    }
+                });
+            }
         });
 
-        async function hydrateLookupMaps() {
-            const resultsBox = document.getElementById('lookupResults');
-            try {
-                const res = await fetch('/api/results');
-                if (!res.ok) throw new Error('Load recent scans to enable reverse search.');
-                const data = await res.json();
-                const payload = Array.isArray(data) ? data : (data.results || []);
-                buildLookupMaps(payload);
-                if (pendingPrefill) {
-                    runLookup();
-                }
-            } catch (err) {
-                if (resultsBox) {
-                    resultsBox.innerHTML = `<h4>Matches</h4><p style="color:var(--red);">${err.message}</p>`;
-                }
-            }
-        }
-
-        function buildLookupMaps(results) {
-            lookupMaps.ga = new Map();
-            lookupMaps.gtm = new Map();
-            lookupMaps.fb = new Map();
-
-            results.forEach(result => {
-                let host;
-                try {
-                    host = new URL(result.url).hostname;
-                } catch (err) {
-                    host = result.url;
-                }
-
-                const analyticsEntries = getAnalyticsEntries(result);
-                analyticsEntries.forEach(entry => {
-                    if (!entry.id) return;
-                    const key = entry.id.toUpperCase();
-                    if (!lookupMaps.ga.has(key)) lookupMaps.ga.set(key, new Set());
-                    lookupMaps.ga.get(key).add(host);
-                });
-
-                const gtmEntries = (result.tagInventoryDetailed && result.tagInventoryDetailed.gtm && result.tagInventoryDetailed.gtm.length)
-                    ? result.tagInventoryDetailed.gtm
-                    : (result.gtmContainers || (result.tagInventory ? result.tagInventory.gtmContainers : null) || []);
-                (gtmEntries || []).forEach(id => {
-                    if (!id) return;
-                    const value = typeof id === 'string' ? id.toUpperCase() : String(id.id || '').toUpperCase();
-                    if (!value) return;
-                    if (!lookupMaps.gtm.has(value)) lookupMaps.gtm.set(value, new Set());
-                    lookupMaps.gtm.get(value).add(host);
-                });
-
-                const fbEntries = (result.tagInventoryDetailed && result.tagInventoryDetailed.fb && result.tagInventoryDetailed.fb.length)
-                    ? result.tagInventoryDetailed.fb
-                    : (result.facebookPixels || (result.tagInventory ? result.tagInventory.facebookPixels : null) || []);
-                (fbEntries || []).forEach(id => {
-                    const value = typeof id === 'string' ? id : id.id;
-                    if (!value) return;
-                    if (!lookupMaps.fb.has(value)) lookupMaps.fb.set(value, new Set());
-                    lookupMaps.fb.get(value).add(host);
-                });
-            });
-        }
-
-        function runLookup() {
+        async function runLookup() {
             const typeSelect = document.getElementById('lookupType');
             const input = document.getElementById('lookupValue');
             const resultsBox = document.getElementById('lookupResults');
@@ -315,64 +376,500 @@
                 return;
             }
 
-            const key = type === 'ga4' ? rawValue.toUpperCase() : rawValue.toUpperCase();
-            const map = type === 'ga4' ? lookupMaps.ga : type === 'gtm' ? lookupMaps.gtm : lookupMaps.fb;
-            const matches = map.get(key) || map.get(rawValue);
+            if (isLoading) return;
+            isLoading = true;
 
-            if (!matches || matches.size === 0) {
-                resultsBox.innerHTML = `<h4>Matches</h4><p>No publishers currently share <strong>${rawValue}</strong>.</p>`;
+            // Show loading state
+            resultsBox.innerHTML = '<div class="loading">Searching global index...</div>';
+
+            try {
+                const response = await fetch(`/api/reverse-search?type=${encodeURIComponent(type)}&id=${encodeURIComponent(rawValue)}`);
+                
+                // Check content type to ensure we got JSON
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    const text = await response.text();
+                    throw new Error(`Server returned non-JSON response. Status: ${response.status}. Response: ${text.substring(0, 200)}`);
+                }
+                
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || `Search failed: ${response.status}`);
+                }
+
+                if (data.hits === 0 || !data.results || data.results.length === 0) {
+                    resultsBox.innerHTML = `
+                        <h4>Matches</h4>
+                        <div class="no-results">
+                            <p style="color:var(--text-gray);">No domains found sharing <strong>${rawValue}</strong>.</p>
+                            <p style="color:var(--text-gray);font-size:13px;margin-top:8px;">Scan some websites first to build the index.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // Render results in DNSlytics-style grid
+                const hitsCount = `<div class="hits-count">hits: ${data.hits}</div>`;
+                const cardsHtml = data.results.map(result => {
+                    const sourcesHtml = result.sources.map(s => 
+                        `<span class="source-badge">${s}</span>`
+                    ).join('');
+                    
+                    const alsoSeenHtml = result.also_seen_ids && result.also_seen_ids.length > 0
+                        ? `
+                            <div class="also-seen">
+                                <div class="also-seen-title">Also Found</div>
+                                <div class="also-seen-ids">
+                                    ${result.also_seen_ids.map(id => 
+                                        `<span class="also-seen-id">${id.id_type}:${id.id_value}</span>`
+                                    ).join('')}
+                                </div>
+                            </div>
+                        `
+                        : '';
+
+                    const lastSeen = new Date(result.last_seen_at).toLocaleDateString();
+
+                    return `
+                        <div class="domain-card">
+                            <a href="https://${result.domain}" target="_blank" rel="noopener noreferrer" class="domain-name">${result.domain}</a>
+                            <div class="domain-meta">Last seen: ${lastSeen}</div>
+                            <div class="sources-badges">${sourcesHtml}</div>
+                            ${alsoSeenHtml}
+                        </div>
+                    `;
+                }).join('');
+
+                resultsBox.innerHTML = `
+                    <h4 style="margin-bottom:12px;">${data.hits} publisher${data.hits > 1 ? 's' : ''} share <code style="background:var(--white);padding:2px 6px;border-radius:4px;font-size:14px;">${rawValue}</code></h4>
+                    ${hitsCount}
+                    <div class="results-grid">${cardsHtml}</div>
+                `;
+            } catch (error) {
+                resultsBox.innerHTML = `
+                    <h4>Matches</h4>
+                    <div class="no-results">
+                        <p style="color:var(--red);">Error: ${error.message}</p>
+                        <p style="color:var(--text-gray);font-size:13px;margin-top:8px;">Make sure the server is running.</p>
+                    </div>
+                `;
+            } finally {
+                isLoading = false;
+            }
+        }
+
+        async function scanUrlAndReverseSearch() {
+            const urlInput = document.getElementById('urlInput');
+            const scanBtn = document.getElementById('scanUrlBtn');
+            const urlScanResults = document.getElementById('urlScanResults');
+            const foundIdsSection = document.getElementById('foundIdsSection');
+            const foundIdsList = document.getElementById('foundIdsList');
+            const resultsById = document.getElementById('resultsById');
+
+            if (!urlInput || !scanBtn || !urlScanResults) return;
+
+            const url = urlInput.value.trim();
+            if (!url) {
+                alert('Please enter a URL');
                 return;
             }
 
-            const listItems = Array.from(matches).map(host => `<li>${host}</li>`).join('');
-            resultsBox.innerHTML = `
-                <h4>${matches.size} publisher${matches.size > 1 ? 's' : ''} share ${rawValue}</h4>
-                <ul>${listItems}</ul>
-            `;
-        }
-
-        function getAnalyticsEntries(result) {
-            const detailed = result.tagInventoryDetailed;
-            if (detailed && ((detailed.ga4 && detailed.ga4.length) || (detailed.ua && detailed.ua.length))) {
-                const entries = [
-                    ...(detailed.ga4 || []),
-                    ...(detailed.ua || [])
-                ];
-                return entries
-                    .filter(entry => entry && entry.id && isValidAnalyticsId(entry.id))
-                    .map(entry => ({
-                        id: entry.id.toUpperCase()
-                    }));
+            // Validate URL format
+            try {
+                new URL(url);
+            } catch (e) {
+                alert('Please enter a valid URL (e.g., https://example.com)');
+                return;
             }
-            const fallback = result.analyticsIds 
-                || (result.tagInventory ? result.tagInventory.analyticsIds : null)
-                || (result.metrics ? result.metrics.uniqueMeasurementIds : null)
-                || [];
-            return fallback
-                .filter(id => isValidAnalyticsId(id))
-                .map(id => ({
-                    id: id.toUpperCase()
-                }));
+
+            if (isUrlScanning) return;
+            isUrlScanning = true;
+            scanBtn.disabled = true;
+            scanBtn.textContent = 'Scanning...';
+
+            // Clear previous results
+            foundIdsSection.style.display = 'none';
+            foundIdsList.innerHTML = '';
+            resultsById.innerHTML = '';
+            urlScanResults.style.display = 'block';
+            resultsById.innerHTML = '<div class="loading">Scanning URL and extracting analytics IDs...</div>';
+
+            try {
+                // Step 1: Scan the URL
+                const scanResponse = await fetch('/api/scan', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ urls: [url] })
+                });
+
+                if (!scanResponse.ok) {
+                    const errorData = await scanResponse.json().catch(() => ({ error: 'Scan failed' }));
+                    throw new Error(errorData.error || `Scan failed: ${scanResponse.status}`);
+                }
+
+                const scanData = await scanResponse.json();
+                
+                if (!scanData.results || !Array.isArray(scanData.results) || scanData.results.length === 0) {
+                    throw new Error('No scan results returned');
+                }
+
+                const scanResult = scanData.results[0];
+                if (scanResult.error) {
+                    throw new Error(scanResult.error);
+                }
+
+                // Step 2: Extract analytics IDs
+                const extractedIds = extractAnalyticsIds(scanResult);
+                
+                if (extractedIds.length === 0) {
+                    resultsById.innerHTML = `
+                        <div class="no-results">
+                            <p style="color:var(--text-gray);">No analytics IDs found on ${url}</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // Step 3: Display found IDs
+                displayFoundIds(extractedIds, foundIdsList, foundIdsSection);
+
+                // Step 4: Run reverse search for each ID
+                resultsById.innerHTML = '<div class="loading">Running reverse searches...</div>';
+                await runReverseSearchesForIds(extractedIds, resultsById);
+
+            } catch (error) {
+                console.error('URL scan error:', error);
+                resultsById.innerHTML = `
+                    <div class="no-results">
+                        <p style="color:var(--red);">Error: ${error.message}</p>
+                        <p style="color:var(--text-gray);font-size:13px;margin-top:8px;">Make sure the server is running and the URL is accessible.</p>
+                    </div>
+                `;
+            } finally {
+                isUrlScanning = false;
+                scanBtn.disabled = false;
+                scanBtn.textContent = 'Scan & Reverse Search';
+            }
         }
 
-        function isValidAnalyticsId(id) {
-            if (!id) return false;
-            const upper = id.toUpperCase();
-            return GA4_REGEX.test(upper) || UA_REGEX.test(upper);
+        function extractAnalyticsIds(scanResult) {
+            const ids = [];
+            
+            // Priority 1: tagInventoryDetailed
+            if (scanResult.tagInventoryDetailed) {
+                const detailed = scanResult.tagInventoryDetailed;
+                
+                // GA4 IDs
+                if (detailed.ga4 && Array.isArray(detailed.ga4)) {
+                    detailed.ga4.forEach(item => {
+                        if (item && item.id) {
+                            ids.push({ type: 'GA4', value: item.id.toUpperCase() });
+                        }
+                    });
+                }
+                
+                // UA IDs
+                if (detailed.ua && Array.isArray(detailed.ua)) {
+                    detailed.ua.forEach(item => {
+                        if (item && item.id) {
+                            ids.push({ type: 'UA', value: item.id.toUpperCase() });
+                        }
+                    });
+                }
+                
+                // GTM IDs
+                if (detailed.gtm && Array.isArray(detailed.gtm)) {
+                    detailed.gtm.forEach(item => {
+                        if (item && item.id) {
+                            ids.push({ type: 'GTM', value: item.id.toUpperCase() });
+                        }
+                    });
+                }
+                
+                // Facebook Pixel IDs
+                if (detailed.fb && Array.isArray(detailed.fb)) {
+                    detailed.fb.forEach(item => {
+                        if (item && item.id) {
+                            ids.push({ type: 'FBP', value: String(item.id) });
+                        }
+                    });
+                }
+                
+                // Google Ads IDs
+                if (detailed.aw && Array.isArray(detailed.aw)) {
+                    detailed.aw.forEach(item => {
+                        if (item && item.id) {
+                            ids.push({ type: 'AW', value: item.id.toUpperCase() });
+                        }
+                    });
+                }
+            }
+            
+            // Priority 2: tagParity
+            if (scanResult.tagParity) {
+                const parity = scanResult.tagParity;
+                
+                if (parity.ga4_ids && Array.isArray(parity.ga4_ids)) {
+                    parity.ga4_ids.forEach(id => {
+                        if (id && !ids.some(existing => existing.type === 'GA4' && existing.value === id.toUpperCase())) {
+                            ids.push({ type: 'GA4', value: id.toUpperCase() });
+                        }
+                    });
+                }
+                
+                if (parity.gtm_containers && Array.isArray(parity.gtm_containers)) {
+                    parity.gtm_containers.forEach(id => {
+                        if (id && !ids.some(existing => existing.type === 'GTM' && existing.value === id.toUpperCase())) {
+                            ids.push({ type: 'GTM', value: id.toUpperCase() });
+                        }
+                    });
+                }
+                
+                if (parity.fb_pixel_ids && Array.isArray(parity.fb_pixel_ids)) {
+                    parity.fb_pixel_ids.forEach(id => {
+                        const idStr = String(id);
+                        if (idStr && !ids.some(existing => existing.type === 'FBP' && existing.value === idStr)) {
+                            ids.push({ type: 'FBP', value: idStr });
+                        }
+                    });
+                }
+                
+                if (parity.gads_aw_ids && Array.isArray(parity.gads_aw_ids)) {
+                    parity.gads_aw_ids.forEach(id => {
+                        if (id && !ids.some(existing => existing.type === 'AW' && existing.value === id.toUpperCase())) {
+                            ids.push({ type: 'AW', value: id.toUpperCase() });
+                        }
+                    });
+                }
+            }
+            
+            // Priority 3: Fallback to tagInventory
+            if (scanResult.tagInventory) {
+                const inventory = scanResult.tagInventory;
+                
+                if (inventory.analyticsIds && Array.isArray(inventory.analyticsIds)) {
+                    inventory.analyticsIds.forEach(id => {
+                        if (!id) return;
+                        const upperId = id.toUpperCase();
+                        if (upperId.startsWith('G-') && !ids.some(existing => existing.type === 'GA4' && existing.value === upperId)) {
+                            ids.push({ type: 'GA4', value: upperId });
+                        } else if (upperId.startsWith('UA-') && !ids.some(existing => existing.type === 'UA' && existing.value === upperId)) {
+                            ids.push({ type: 'UA', value: upperId });
+                        }
+                    });
+                }
+                
+                if (inventory.gtmContainers && Array.isArray(inventory.gtmContainers)) {
+                    inventory.gtmContainers.forEach(id => {
+                        if (id && !ids.some(existing => existing.type === 'GTM' && existing.value === String(id).toUpperCase())) {
+                            ids.push({ type: 'GTM', value: String(id).toUpperCase() });
+                        }
+                    });
+                }
+                
+                if (inventory.facebookPixels && Array.isArray(inventory.facebookPixels)) {
+                    inventory.facebookPixels.forEach(id => {
+                        const idStr = String(id);
+                        if (idStr && !ids.some(existing => existing.type === 'FBP' && existing.value === idStr)) {
+                            ids.push({ type: 'FBP', value: idStr });
+                        }
+                    });
+                }
+                
+                if (inventory.googleAdsIds && Array.isArray(inventory.googleAdsIds)) {
+                    inventory.googleAdsIds.forEach(id => {
+                        if (id && !ids.some(existing => existing.type === 'AW' && existing.value === String(id).toUpperCase())) {
+                            ids.push({ type: 'AW', value: String(id).toUpperCase() });
+                        }
+                    });
+                }
+            }
+            
+            // Remove duplicates
+            const uniqueIds = [];
+            const seen = new Set();
+            ids.forEach(id => {
+                const key = `${id.type}:${id.value}`;
+                if (!seen.has(key)) {
+                    seen.add(key);
+                    uniqueIds.push(id);
+                }
+            });
+            
+            return uniqueIds;
+        }
+
+        function displayFoundIds(ids, container, section) {
+            if (ids.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+            
+            container.innerHTML = ids.map(id => 
+                `<span class="found-id-badge">
+                    <span class="id-type">${id.type}</span>
+                    <span>${id.value}</span>
+                </span>`
+            ).join('');
+            
+            section.style.display = 'block';
+        }
+
+        async function runReverseSearchesForIds(ids, container) {
+            const resultsByType = {};
+            
+            // Initialize result groups
+            ids.forEach(id => {
+                if (!resultsByType[id.type]) {
+                    resultsByType[id.type] = [];
+                }
+            });
+
+            // Run reverse search for each ID
+            for (const id of ids) {
+                try {
+                    const response = await fetch(`/api/reverse-search?type=${encodeURIComponent(id.type)}&id=${encodeURIComponent(id.value)}`);
+                    
+                    // Check content type
+                    const contentType = response.headers.get('content-type');
+                    if (!contentType || !contentType.includes('application/json')) {
+                        const text = await response.text();
+                        throw new Error(`Server returned non-JSON response: ${text.substring(0, 100)}`);
+                    }
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok && data.results) {
+                        resultsByType[id.type].push({
+                            id: id.value,
+                            query: data.query,
+                            hits: data.hits,
+                            results: data.results
+                        });
+                    } else {
+                        // Still add entry even if no results
+                        resultsByType[id.type].push({
+                            id: id.value,
+                            query: { id_type: id.type, id_value: id.value },
+                            hits: 0,
+                            results: [],
+                            error: data.error || 'No results found'
+                        });
+                    }
+                } catch (error) {
+                    console.error(`Reverse search failed for ${id.type}:${id.value}`, error);
+                    resultsByType[id.type].push({
+                        id: id.value,
+                        query: { id_type: id.type, id_value: id.value },
+                        hits: 0,
+                        results: [],
+                        error: error.message
+                    });
+                }
+            }
+
+            // Display results grouped by ID type
+            displayGroupedResults(resultsByType, container);
+        }
+
+        function displayGroupedResults(resultsByType, container) {
+            if (Object.keys(resultsByType).length === 0) {
+                container.innerHTML = '<div class="no-results"><p style="color:var(--text-gray);">No reverse search results available.</p></div>';
+                return;
+            }
+
+            let html = '';
+            
+            // Group by ID type
+            Object.keys(resultsByType).forEach(type => {
+                const typeResults = resultsByType[type];
+                
+                typeResults.forEach(result => {
+                    const headerHtml = `
+                        <div class="id-group-header">
+                            <h4>${type}</h4>
+                            <span class="id-value">${result.id}</span>
+                            <span class="hits-badge">${result.hits} hit${result.hits !== 1 ? 's' : ''}</span>
+                        </div>
+                    `;
+
+                    if (result.error) {
+                        html += `
+                            <div class="id-group">
+                                ${headerHtml}
+                                <div class="no-results">
+                                    <p style="color:var(--text-gray);">${result.error}</p>
+                                </div>
+                            </div>
+                        `;
+                    } else if (result.hits === 0 || !result.results || result.results.length === 0) {
+                        html += `
+                            <div class="id-group">
+                                ${headerHtml}
+                                <div class="no-results">
+                                    <p style="color:var(--text-gray);">No domains found sharing this ID.</p>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        const cardsHtml = result.results.map(domainResult => {
+                            const sourcesHtml = domainResult.sources.map(s => 
+                                `<span class="source-badge">${s}</span>`
+                            ).join('');
+                            
+                            const alsoSeenHtml = domainResult.also_seen_ids && domainResult.also_seen_ids.length > 0
+                                ? `
+                                    <div class="also-seen">
+                                        <div class="also-seen-title">Also Found</div>
+                                        <div class="also-seen-ids">
+                                            ${domainResult.also_seen_ids.map(id => 
+                                                `<span class="also-seen-id">${id.id_type}:${id.id_value}</span>`
+                                            ).join('')}
+                                        </div>
+                                    </div>
+                                `
+                                : '';
+
+                            const lastSeen = new Date(domainResult.last_seen_at).toLocaleDateString();
+
+                            return `
+                                <div class="domain-card">
+                                    <a href="https://${domainResult.domain}" target="_blank" rel="noopener noreferrer" class="domain-name">${domainResult.domain}</a>
+                                    <div class="domain-meta">Last seen: ${lastSeen}</div>
+                                    <div class="sources-badges">${sourcesHtml}</div>
+                                    ${alsoSeenHtml}
+                                </div>
+                            `;
+                        }).join('');
+
+                        html += `
+                            <div class="id-group">
+                                ${headerHtml}
+                                <div class="results-grid">${cardsHtml}</div>
+                            </div>
+                        `;
+                    }
+                });
+            });
+
+            container.innerHTML = html;
         }
 
         function prefillFromQuery() {
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
-            let type = params.get('type') || 'ga4';
-            if (!['ga4', 'gtm', 'fb'].includes(type)) type = 'ga4';
+            let type = params.get('type') || 'GA4';
+            if (!['GA4', 'UA', 'GTM', 'FBP', 'AW'].includes(type)) type = 'GA4';
 
             const select = document.getElementById('lookupType');
             const input = document.getElementById('lookupValue');
             if (select) select.value = type;
-            if (input && id) input.value = id;
-
-            return id ? { id, type } : null;
+            if (input && id) {
+                input.value = id;
+                // Auto-run search if ID is provided in query string
+                setTimeout(() => runLookup(), 100);
+            }
         }
 
         function setActiveNav() {

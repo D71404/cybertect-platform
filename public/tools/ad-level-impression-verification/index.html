@@ -6,128 +6,230 @@
     <title>Ad Impression Verification | Cybertect</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/internal-base.css">
     <style>
-        :root {
-            --blue: #007BFF;
-            --green: #00C853;
-            --yellow: #FFB800;
-            --red: #FF3D00;
-            --dark-gray: #1F2937;
-            --light-gray: #F8F9FA;
-            --text-dark: #111827;
-            --text-gray: #6B7280;
-            --white: #FFFFFF;
-            --border: #E5E7EB;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text-dark); min-height: 100vh; }
-        .header {
-            background: var(--white);
-            padding: 16px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }
-        .logo-container { display: flex; align-items: baseline; gap: 4px; font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
-        .cyber-text { color: var(--dark-gray); }
-        .tect-text { color: var(--blue); }
-        .com-text { color: var(--text-gray); font-size: 20px; }
-        .top-menu { display: flex; gap: 18px; margin: 0 32px; flex: 1; justify-content: center; flex-wrap: wrap; }
-        .tool-link { font-size: 14px; font-weight: 500; color: var(--text-gray); text-decoration: none; padding-bottom: 6px; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
-        .tool-link:hover { color: var(--text-dark); }
-        .tool-link.active { color: var(--blue); border-color: var(--blue); }
-        .nav-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-dark);
-            background: transparent;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            padding: 8px 18px;
-            cursor: pointer;
-            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.18);
-        }
-        .nav-pill:hover,
-        .nav-pill:focus-visible { background: var(--light-gray); border-color: var(--text-gray); }
-        .nav-pill-link { text-decoration: none; color: inherit; }
-        .nav-pill-link.active { border-color: var(--blue); color: var(--blue); }
-        .dropdown { position: relative; }
-        .dropdown-toggle {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-dark);
-            background: transparent;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            padding: 8px 18px;
-            cursor: pointer;
-        }
-        .dropdown-toggle:hover,
-        .dropdown-toggle:focus-visible {
-            background: var(--light-gray);
-            border-color: var(--text-gray);
-        }
-        .dropdown-menu {
-            position: absolute;
-            top: calc(100% + 8px);
-            left: 0;
-            display: none;
-            flex-direction: column;
-            min-width: 260px;
-            padding: 12px;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            background: var(--white);
-            box-shadow: 0 20px 30px rgba(15,23,42,0.12);
-            z-index: 20;
-        }
-        .dropdown-menu.show { display: flex; }
-        .dropdown-menu .tool-link {
-            padding: 8px 12px;
-            border-bottom: none;
-            border-radius: 10px;
-        }
-        .dropdown-menu .tool-link:hover,
-        .dropdown-menu .tool-link.active {
-            background: var(--light-gray);
-            color: var(--text-dark);
-        }
-        .sign-in-btn { background: transparent; border: 1px solid var(--border); padding: 8px 20px; border-radius: 24px; color: var(--text-dark); font-weight: 500; cursor: pointer; }
-        main { max-width: 960px; margin: 0 auto; padding: 60px 24px 120px; }
+        main { max-width: 1200px; margin: 0 auto; padding: 60px 24px 120px; }
         .tool-hero { text-align: left; margin-bottom: 32px; }
         .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: var(--text-gray); margin-bottom: 12px; }
-        h1 { font-size: 40px; margin-bottom: 12px; }
+        h1 { font-size: 40px; margin-bottom: 12px; color: var(--text-dark); }
         .subtitle { font-size: 18px; color: var(--text-gray); max-width: 720px; }
-        .panel { background: var(--light-gray); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin-bottom: 32px; box-shadow: 0 12px 30px rgba(15,23,42,0.08); }
-        .panel h2 { font-size: 20px; margin-bottom: 16px; }
-        .panel ul { list-style: disc; padding-left: 20px; color: var(--text-gray); }
-        .panel li { margin-bottom: 10px; }
-        .actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
-        .run-btn { background: var(--blue); color: var(--white); padding: 14px 32px; border-radius: 999px; font-weight: 600; border: none; opacity: 0.5; cursor: not-allowed; }
-        .helper { font-size: 13px; color: var(--text-gray); }
+        .panel {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+        }
+        .panel h2 { font-size: 20px; margin-bottom: 16px; color: var(--text-dark); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--blue);
+        }
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .form-group .helper {
+            font-size: 12px;
+            color: var(--text-gray);
+            margin-top: 4px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .run-btn {
+            background: var(--blue);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 999px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 16px;
+        }
+        .run-btn:hover { background: var(--blue-dark); }
+        .run-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .run-btn.loading {
+            opacity: 0.7;
+            cursor: wait;
+        }
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .summary-card {
+            background: var(--light-gray);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .summary-card .value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .summary-card .label {
+            font-size: 13px;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .summary-card.warning .value { color: var(--yellow); }
+        .summary-card.error .value { color: var(--red); }
+        .summary-card.success .value { color: var(--green); }
+        .timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        .timeline-table th,
+        .timeline-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+        .timeline-table th {
+            background: var(--light-gray);
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            user-select: none;
+        }
+        .timeline-table th:hover {
+            background: #E2E8F0;
+        }
+        .timeline-table th.sort-asc::after { content: ' ▲'; }
+        .timeline-table th.sort-desc::after { content: ' ▼'; }
+        .timeline-table td {
+            color: var(--text-gray);
+        }
+        .timeline-table tr:hover {
+            background: var(--light-gray);
+        }
+        .type-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .type-badge.impression-beacon { background: #DBEAFE; color: #1E40AF; }
+        .type-badge.click-redirect { background: #FEF3C7; color: #92400E; }
+        .type-badge.gpt-viewable { background: #D1FAE5; color: #065F46; }
+        .type-badge.gpt-slot-render { background: #E0E7FF; color: #4338CA; }
+        .type-badge.tag-library { background: #F3F4F6; color: #6B7280; }
+        .type-badge.id-sync { background: #FCE7F3; color: #9F1239; }
+        .type-badge.ad-request { background: #FEF3C7; color: #92400E; }
+        .type-badge.gam-ad-request { background: #E0E7FF; color: #4338CA; }
+        .type-badge.viewability { background: #D1FAE5; color: #065F46; }
+        .type-badge.other { background: #F3F4F6; color: #6B7280; }
+        .type-badge.suspect-click { background: #FEE2E2; color: #991B1B; }
+        .flags-panel {
+            background: #FEF2F2;
+            border: 1px solid #FECACA;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .flags-panel h3 {
+            font-size: 16px;
+            color: var(--red);
+            margin-bottom: 12px;
+        }
+        .flag-item {
+            padding: 12px;
+            background: var(--white);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--red);
+        }
+        .flag-item:last-child { margin-bottom: 0; }
+        .flag-item .creative-id {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .flag-item .message {
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+        .export-btn {
+            background: var(--green);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            margin-top: 16px;
+            transition: background 0.2s;
+        }
+        .export-btn:hover { background: #059669; }
+        .export-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .hidden { display: none; }
+        .error-message {
+            background: #FEF2F2;
+            border: 1px solid #FECACA;
+            color: var(--red);
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
         @media (max-width: 640px) {
-            .header { flex-direction: column; gap: 16px; }
-            .top-menu { margin: 12px 0; width: 100%; }
+            .header { flex-direction: column; align-items: flex-start; }
+            .top-menu { margin: 12px 0; width: 100%; justify-content: flex-start; }
             .dropdown { width: 100%; }
             .dropdown-toggle { width: 100%; justify-content: space-between; }
             .dropdown-menu { position: static; box-shadow: none; margin-top: 8px; width: 100%; }
             .logo-container { font-size: 24px; }
+            .form-row { grid-template-columns: 1fr; }
+            .summary-cards { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <span class="cyber-text">cyber</span><span class="tect-text">tect</span><span class="com-text">.com</span>
+            <a href="/" class="cybertect-logo" aria-label="Cybertect home">
+                <span class="cyber-text">cyber</span><span class="tect-text">tect</span><span class="com-text">.com</span>
+            </a>
         </div>
         <nav class="top-menu">
             <a class="nav-pill nav-pill-link" href="/online-waste/" data-route="/online-waste">Online Waste</a>
@@ -140,6 +242,7 @@
                     <a class="tool-link" href="/tools/cms-level-data-monitor/" data-route="/tools/cms-level-data-monitor">CMS Output Monitor</a>
                     <a class="tool-link" href="/tools/ad-level-impression-verification/" data-route="/tools/ad-level-impression-verification">Ad Impression Verification</a>
                     <a class="tool-link" href="/tools/analytics-integrity-diagnosis/" data-route="/tools/analytics-integrity-diagnosis">Analytics Integrity Diagnosis</a>
+                    <a class="tool-link" href="/tools/injected-telemetry-monitor/" data-route="/tools/injected-telemetry-monitor">Injected Telemetry Monitor</a>
                     <a class="tool-link" href="/tools/reverse-analytics-search/" data-route="/tools/reverse-analytics-search">Reverse Analytics Search</a>
                 </div>
             </div>
@@ -151,25 +254,104 @@
         <div class="tool-hero">
             <p class="eyebrow">Cybertect Toolbox</p>
             <h1>Ad Impression Verification</h1>
-            <p class="subtitle">Trace every impression beacon, verify viewability requirement alignment, and reconcile the numbers against ad-server and DSP delivery before invoices are approved.</p>
+            <p class="subtitle">Trace impressions → verify viewability → reconcile delivery → export evidence.</p>
         </div>
 
-        <section class="panel">
-            <h2>Coming Soon</h2>
-            <ul>
-                <li>Sequence impression, viewability, and click beacons per creative ID in real time.</li>
-                <li>Flag campaigns where verified viewability falls behind impressions >10%.</li>
-                <li>Export advertiser-ready trails proving which placements inflated spend.</li>
-            </ul>
+        <!-- Input Form -->
+        <section class="panel" id="input-panel">
+            <h2>Scan Configuration</h2>
+            <form id="scan-form">
+                <div class="form-group">
+                    <label for="url">Website URL <span style="color: var(--red);">*</span></label>
+                    <input type="url" id="url" name="url" required placeholder="https://example.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="campaign-label">Campaign / Placement Label (Optional)</label>
+                    <input type="text" id="campaign-label" name="campaign-label" placeholder="Campaign Name" />
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="viewability-rule">Viewability Threshold</label>
+                        <select id="viewability-rule" name="viewability-rule">
+                            <option value="50%/1s" selected>50% / 1s (Default)</option>
+                            <option value="50%/2s">50% / 2s</option>
+                            <option value="100%/1s">100% / 1s</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="discrepancy-threshold">Discrepancy Threshold (%)</label>
+                        <input type="number" id="discrepancy-threshold" name="discrepancy-threshold" value="10" min="0" max="100" />
+                        <p class="helper">Flag campaigns where viewability gap exceeds this percentage</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="delivery-totals">Upload Delivery Totals (Optional)</label>
+                    <textarea id="delivery-totals" name="delivery-totals" placeholder='Paste JSON: {"adserverImps": 1000, "dspImps": 950, "clicks": 50}&#10;Or CSV: adserverImps,dspImps,clicks&#10;1000,950,50'></textarea>
+                    <p class="helper">Provide ad-server/DSP delivery totals for reconciliation</p>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="run-btn" id="run-btn">Run Scan</button>
+                </div>
+            </form>
+
+            <div id="error-message" class="error-message hidden"></div>
         </section>
 
-        <div class="actions">
-            <button class="run-btn" disabled title="Connect scanner pipeline first">Run Scan</button>
-            <p class="helper">Connect scanner pipeline first</p>
-        </div>
+        <!-- Results Section -->
+        <section class="panel hidden" id="results-panel">
+            <h2>Scan Results</h2>
+
+            <!-- Summary Cards -->
+            <div class="summary-cards" id="summary-cards"></div>
+
+            <!-- Timeline Table -->
+            <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                    <h3 style="font-size: 18px; margin: 0;">Beacon Sequence</h3>
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; color: var(--text-gray);">
+                        <input type="checkbox" id="show-diagnostic-toggle" style="cursor: pointer;" />
+                        <span>Show diagnostic</span>
+                    </label>
+                </div>
+                <table class="timeline-table" id="timeline-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="ts">Timestamp</th>
+                            <th data-sort="type">Type</th>
+                            <th data-sort="vendor">Vendor</th>
+                            <th data-sort="creativeId">Creative ID</th>
+                            <th data-sort="placement">Placement</th>
+                            <th data-sort="status">Status</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="timeline-body"></tbody>
+                </table>
+            </div>
+
+            <!-- Flags Panel -->
+            <div id="flags-container"></div>
+
+            <!-- Ad Stacking Findings Panel -->
+            <div id="ad-stacking-container"></div>
+
+            <!-- Export Button -->
+            <button class="export-btn" id="export-btn" disabled>Export Evidence Pack</button>
+        </section>
     </main>
 
     <script>
+        let currentRunId = null;
+        let currentSequences = [];
+        let sortColumn = null;
+        let sortDirection = 'asc';
+        let showDiagnostic = false; // Default: hide diagnostic events
+
         function setActiveNav() {
             const current = window.location.pathname.replace(/\/$/, '');
             document.querySelectorAll('[data-route]').forEach(link => {
@@ -231,6 +413,344 @@
             });
         }
 
+        document.getElementById('scan-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const url = document.getElementById('url').value;
+            const campaignLabel = document.getElementById('campaign-label').value;
+            const viewabilityRule = document.getElementById('viewability-rule').value;
+            const discrepancyThreshold = parseFloat(document.getElementById('discrepancy-threshold').value);
+            const deliveryTotals = document.getElementById('delivery-totals').value.trim();
+
+            const runBtn = document.getElementById('run-btn');
+            const errorMsg = document.getElementById('error-message');
+            
+            runBtn.disabled = true;
+            runBtn.classList.add('loading');
+            runBtn.textContent = 'Scanning...';
+            errorMsg.classList.add('hidden');
+
+            try {
+                const response = await fetch('http://localhost:3000/api/ad-impression-verification/scan', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        url,
+                        campaignLabel: campaignLabel || null,
+                        viewabilityRule,
+                        discrepancyThreshold,
+                        deliveryTotals: deliveryTotals || null
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.error) {
+                    throw new Error(result.error);
+                }
+
+                currentRunId = result.runId;
+                currentSequences = result.sequences || [];
+                
+                displayResults(result);
+                document.getElementById('results-panel').classList.remove('hidden');
+                document.getElementById('export-btn').disabled = false;
+
+            } catch (error) {
+                errorMsg.textContent = `Scan failed: ${error.message}`;
+                errorMsg.classList.remove('hidden');
+            } finally {
+                runBtn.disabled = false;
+                runBtn.classList.remove('loading');
+                runBtn.textContent = 'Run Scan';
+            }
+        });
+
+        function displayResults(result) {
+            const summary = result.summary || {};
+            const diagnostic = summary.diagnostic || {};
+            
+            // Calculate if we have GPT data for viewability
+            const hasViewabilityData = summary.viewableImpressions > 0 || summary.totalImpressions > 0;
+            const discrepancyDisplay = summary.discrepancyPercent !== null && summary.discrepancyPercent !== undefined 
+                ? summary.discrepancyPercent + '%' 
+                : 'N/A';
+            const discrepancyClass = summary.discrepancyPercent !== null && summary.discrepancyPercent > 10 
+                ? 'error' 
+                : (summary.discrepancyPercent !== null ? 'success' : '');
+            
+            // Update summary cards
+            const cardsHtml = `
+                <div class="summary-card">
+                    <div class="value">${summary.servedImpressions || 0}</div>
+                    <div class="label">Served Impressions</div>
+                </div>
+                <div class="summary-card">
+                    <div class="value">${summary.verifiedImpressions || 0}</div>
+                    <div class="label">Verified Impressions</div>
+                </div>
+                <div class="summary-card ${hasViewabilityData && (summary.viewableImpressions || 0) < (summary.totalImpressions || 0) ? 'warning' : 'success'}">
+                    <div class="value">${summary.viewableImpressions !== null && summary.viewableImpressions !== undefined ? summary.viewableImpressions : 'N/A'}</div>
+                    <div class="label">Viewable Verified</div>
+                </div>
+                <div class="summary-card">
+                    <div class="value">${summary.clicks || 0}</div>
+                    <div class="label">Clicks</div>
+                </div>
+                <div class="summary-card ${discrepancyClass}">
+                    <div class="value">${discrepancyDisplay}</div>
+                    <div class="label">Discrepancy</div>
+                </div>
+                ${diagnostic.tagLibraryLoads !== undefined ? `
+                <div class="summary-card">
+                    <div class="value">${diagnostic.tagLibraryLoads || 0}</div>
+                    <div class="label">Tag Library Loads</div>
+                </div>
+                ` : ''}
+                ${diagnostic.idSyncCount !== undefined ? `
+                <div class="summary-card">
+                    <div class="value">${diagnostic.idSyncCount || 0}</div>
+                    <div class="label">ID Sync Events</div>
+                </div>
+                ` : ''}
+                ${diagnostic.adRequests !== undefined ? `
+                <div class="summary-card">
+                    <div class="value">${diagnostic.adRequests || 0}</div>
+                    <div class="label">Ad Requests</div>
+                </div>
+                ` : ''}
+                ${diagnostic.gamAdRequests !== undefined ? `
+                <div class="summary-card">
+                    <div class="value">${diagnostic.gamAdRequests || 0}</div>
+                    <div class="label">GAM Ad Requests</div>
+                </div>
+                ` : ''}
+                ${diagnostic.unattributedBeacons !== undefined ? `
+                <div class="summary-card">
+                    <div class="value">${diagnostic.unattributedBeacons || 0}</div>
+                    <div class="label">Unattributed Beacons</div>
+                </div>
+                ` : ''}
+            `;
+            document.getElementById('summary-cards').innerHTML = cardsHtml;
+
+            // Update timeline table
+            renderTimeline(currentSequences);
+
+            // Update flags
+            const flags = result.flags || [];
+            if (flags.length > 0) {
+                const flagsHtml = `
+                    <div class="flags-panel">
+                        <h3>⚠️ Flags (${flags.length})</h3>
+                        ${flags.map(flag => `
+                            <div class="flag-item">
+                                <div class="creative-id">Creative: ${flag.creativeId} | Placement: ${flag.placement}</div>
+                                <div class="message">${flag.message}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                document.getElementById('flags-container').innerHTML = flagsHtml;
+            } else {
+                document.getElementById('flags-container').innerHTML = '';
+            }
+            
+            // Update ad stacking findings
+            const adStacking = result.adStackingFindings || summary.adStackingFindings;
+            if (adStacking && (adStacking.stackedPairsCount > 0 || adStacking.hiddenIframesCount > 0 || adStacking.tinyIframesCount > 0 || adStacking.offscreenIframesCount > 0)) {
+                const adStackingHtml = `
+                    <div class="flags-panel" style="background: #FEF3C7; border-color: #FCD34D;">
+                        <h3 style="color: #92400E;">🔍 Ad Stacking Findings</h3>
+                        <div style="margin-bottom: 12px;">
+                            <strong>Stacked Pairs:</strong> ${adStacking.stackedPairsCount || 0} | 
+                            <strong>Hidden Iframes:</strong> ${adStacking.hiddenIframesCount || 0} | 
+                            <strong>Tiny Iframes:</strong> ${adStacking.tinyIframesCount || 0} | 
+                            <strong>Offscreen Iframes:</strong> ${adStacking.offscreenIframesCount || 0}
+                        </div>
+                        ${adStacking.findings && adStacking.findings.length > 0 ? `
+                            <div style="font-size: 13px; color: #78350F;">
+                                <strong>Details:</strong> Check adstack_report.json in evidence pack for screenshots and full details.
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+                document.getElementById('ad-stacking-container').innerHTML = adStackingHtml;
+            } else {
+                document.getElementById('ad-stacking-container').innerHTML = '';
+            }
+        }
+
+        function renderTimeline(sequences) {
+            const tbody = document.getElementById('timeline-body');
+            
+            // Filter diagnostic events based on toggle state
+            let displaySequences;
+            if (showDiagnostic) {
+                // Show all events including diagnostic
+                displaySequences = sequences;
+            } else {
+                // Hide diagnostic events (TAG_LIBRARY, ID_SYNC, AD_REQUEST, GAM_AD_REQUEST, OTHER)
+                displaySequences = sequences.filter(seq => 
+                    seq.type !== 'TAG_LIBRARY' && 
+                    seq.type !== 'ID_SYNC' &&
+                    seq.type !== 'AD_REQUEST' && 
+                    seq.type !== 'GAM_AD_REQUEST' &&
+                    seq.type !== 'OTHER'
+                );
+            }
+            
+            if (displaySequences.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-gray);">No beacons detected</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = displaySequences.map(seq => {
+                const date = new Date(seq.ts);
+                const timeStr = date.toLocaleTimeString() + '.' + date.getMilliseconds().toString().padStart(3, '0');
+                const urlDisplay = seq.requestUrl && seq.requestUrl.length > 60 
+                    ? seq.requestUrl.substring(0, 60) + '...' 
+                    : (seq.requestUrl || 'N/A');
+                
+                // Map event types to CSS classes
+                const badgeClass = getBadgeClass(seq.type);
+                const typeDisplay = formatEventType(seq.type);
+                
+                return `
+                    <tr>
+                        <td>${timeStr}</td>
+                        <td><span class="type-badge ${badgeClass}">${typeDisplay}</span></td>
+                        <td>${seq.vendor || 'Unknown'}</td>
+                        <td>${seq.creativeId || 'N/A'}</td>
+                        <td>${seq.placement || 'N/A'}</td>
+                        <td>${seq.status || 'N/A'}</td>
+                        <td title="${seq.requestUrl || ''}">${urlDisplay}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+        
+        function getBadgeClass(type) {
+            const classMap = {
+                'IMPRESSION_BEACON': 'impression-beacon',
+                'CLICK_REDIRECT': 'click-redirect',
+                'GPT_VIEWABLE': 'gpt-viewable',
+                'GPT_SLOT_RENDER': 'gpt-slot-render',
+                'TAG_LIBRARY': 'tag-library',
+                'ID_SYNC': 'id-sync',
+                'AD_REQUEST': 'ad-request',
+                'GAM_AD_REQUEST': 'gam-ad-request',
+                'VIEWABILITY': 'viewability',
+                'OTHER': 'other',
+                'SUSPECT_CLICK': 'suspect-click'
+            };
+            return classMap[type] || 'other';
+        }
+        
+        function formatEventType(type) {
+            const displayMap = {
+                'IMPRESSION_BEACON': 'Impression',
+                'CLICK_REDIRECT': 'Click',
+                'GPT_VIEWABLE': 'Viewable',
+                'GPT_SLOT_RENDER': 'GPT Render',
+                'TAG_LIBRARY': 'Tag Library',
+                'ID_SYNC': 'ID Sync',
+                'AD_REQUEST': 'Ad Request',
+                'GAM_AD_REQUEST': 'GAM Ad Request',
+                'VIEWABILITY': 'Viewability',
+                'OTHER': 'Other',
+                'SUSPECT_CLICK': 'Suspect Click'
+            };
+            return displayMap[type] || type;
+        }
+
+        // Table sorting
+        document.querySelectorAll('#timeline-table th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.dataset.sort;
+                
+                if (sortColumn === column) {
+                    sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+                } else {
+                    sortColumn = column;
+                    sortDirection = 'asc';
+                }
+
+                // Update UI
+                document.querySelectorAll('#timeline-table th').forEach(h => {
+                    h.classList.remove('sort-asc', 'sort-desc');
+                });
+                th.classList.add(sortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+
+                // Sort sequences
+                currentSequences.sort((a, b) => {
+                    let aVal = a[column];
+                    let bVal = b[column];
+                    
+                    if (column === 'ts') {
+                        aVal = a.ts;
+                        bVal = b.ts;
+                    }
+                    
+                    if (aVal === null || aVal === undefined) return 1;
+                    if (bVal === null || bVal === undefined) return -1;
+                    
+                    if (typeof aVal === 'string') {
+                        aVal = aVal.toLowerCase();
+                        bVal = bVal.toLowerCase();
+                    }
+                    
+                    if (sortDirection === 'asc') {
+                        return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+                    } else {
+                        return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+                    }
+                });
+
+                renderTimeline(currentSequences);
+            });
+        });
+
+        // Export button
+        document.getElementById('export-btn').addEventListener('click', async () => {
+            if (!currentRunId) return;
+
+            const exportBtn = document.getElementById('export-btn');
+            exportBtn.disabled = true;
+            exportBtn.textContent = 'Generating...';
+
+            try {
+                const response = await fetch(`http://localhost:3000/api/ad-impression-verification/export?runId=${currentRunId}`);
+                
+                if (!response.ok) {
+                    throw new Error('Export failed');
+                }
+
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `evidence-pack-${currentRunId}.zip`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+
+                exportBtn.textContent = 'Export Evidence Pack';
+            } catch (error) {
+                alert(`Export failed: ${error.message}`);
+                exportBtn.textContent = 'Export Evidence Pack';
+            } finally {
+                exportBtn.disabled = false;
+            }
+        });
+
+        // Toggle diagnostic events visibility
+        document.getElementById('show-diagnostic-toggle').addEventListener('change', (e) => {
+            showDiagnostic = e.target.checked;
+            renderTimeline(currentSequences);
+        });
+        
         document.addEventListener('DOMContentLoaded', () => {
             setActiveNav();
             initDropdowns();
