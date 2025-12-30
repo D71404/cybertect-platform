@@ -96,15 +96,23 @@ export GEMINI_API_KEY="..."
 export PERPLEXITY_API_KEY="pplx-..."
 ```
 
-2. **Start Server**
+2. **Start Backend (API on 3001)**
 
 ```bash
 npm run start:server
 ```
 
-3. **Access UI**
+3. **Start Frontend (Vite on 3000)**
+
+```bash
+npm run start:dev
+```
+
+4. **Access UI**
 
 Navigate to: `http://localhost:3000/ai-validation`
+
+API base (proxied from the frontend): `http://localhost:3001`
 
 ### Available Templates
 
