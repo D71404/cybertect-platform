@@ -18,6 +18,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 const { processBeacon, classifyRequest } = require('./detectors.cjs');
+const { persistAffectedVendorsFromEvents } = require('./affected-vendors.cjs');
 const { generateViewabilityScript } = require('./viewability.cjs');
 
 /**
@@ -588,6 +589,7 @@ async function scanAdImpressions(options) {
   console.log("✅ Cybertect AIV: using classifyRequest for all events");
   
   const sequences = [];
+  const rawImpressionEvents = [];
   const viewabilityEvents = [];
   const gptEvents = [];
   const userClicks = []; // Track all user clicks (ring buffer, last 20)
@@ -611,6 +613,7 @@ async function scanAdImpressions(options) {
   let browser;
   let page;
   
+  const scanStartedAt = Date.now();
   try {
     browser = await chromium.launch({
       headless: true,
@@ -776,6 +779,21 @@ async function scanAdImpressions(options) {
       
       if (beacon) {
         const now = Date.now();
+
+        // Capture raw impression events BEFORE any deduplication
+        if (beacon.type === 'IMPRESSION_BEACON') {
+          let vendor_host = '';
+          try {
+            vendor_host = new URL(beacon.requestUrl).hostname;
+          } catch (e) {
+            vendor_host = '';
+          }
+          rawImpressionEvents.push({
+            ...beacon,
+            ts: beacon.ts || now,
+            vendor_host
+          });
+        }
         
         // Generate dedupe key for ALL event types (not just IMPRESSION_BEACON)
         let dedupeKey;
@@ -1285,7 +1303,27 @@ async function scanAdImpressions(options) {
       path.join(runDir, 'network.json'),
       JSON.stringify(networkRequests, null, 2)
     );
-    
+    // Persist affected vendor aggregation (uses raw impression events; no dedupe)
+    const publisherId = (() => {
+      try {
+        return new URL(url).hostname.replace(/^www\./, '');
+      } catch (e) {
+        return url;
+      }
+    })();
+    const stackingSuspected =
+      (adStackingFindings && (adStackingFindings.stackedPairsCount > 0 || adStackingFindings.findingsCount > 0)) ||
+      false;
+    try {
+      persistAffectedVendorsFromEvents(runId, publisherId, rawImpressionEvents, {
+        stackingSuspected,
+        scanStartedAt,
+        scanEndedAt: Date.now()
+      });
+    } catch (persistErr) {
+      console.warn('[AIV] Failed to persist affected ad vendors', persistErr.message);
+    }
+
     return runData;
     
   } catch (error) {

@@ -51,3 +51,11 @@ vite.config.js.timestamp-*.mjs
 # Evidence exports
 *.zip
 
+
+# Local backups / tooling (do not commit)
+.safety/
+.cursor/
+.playwright-browsers/
+EVIDENCE_PACKS/
+debug.log
+

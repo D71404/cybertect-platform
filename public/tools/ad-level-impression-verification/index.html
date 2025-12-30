@@ -435,7 +435,7 @@
             errorMsg.classList.add('hidden');
 
             try {
-                const response = await fetch('http://localhost:3000/api/ad-impression-verification/scan', {
+                const response = await fetch('/api/ad-impression-verification/scan', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -850,7 +850,7 @@
             exportBtn.textContent = 'Generating...';
 
             try {
-                const response = await fetch(`http://localhost:3000/api/ad-impression-verification/export?runId=${currentRunId}`);
+                const response = await fetch(`/api/ad-impression-verification/export?runId=${currentRunId}`);
                 
                 if (!response.ok) {
                     throw new Error('Export failed');

@@ -104,7 +104,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
             {/* Dashboard Link */}
             {onNavigateToDashboard && (
               <a 
-                href="#scanner"
+                href="/scanner"
                 className="bg-[#2563EB] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#1d4ed8] transition-colors"
               >
                 Dashboard
@@ -127,7 +127,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <a 
-                href="#scanner"
+                href="/scanner"
                 className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] transition-colors shadow-sm text-center"
               >
                 Run Forensic Scan
@@ -593,7 +593,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
           </div>
           <div className="text-center mt-12">
             <a 
-              href="#scanner"
+              href="/scanner"
               className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] transition-colors shadow-sm inline-block"
             >
               Run a scan now
@@ -652,7 +652,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="#scanner"
+              href="/scanner"
               className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] transition-colors shadow-sm"
             >
               Run Forensic Scan

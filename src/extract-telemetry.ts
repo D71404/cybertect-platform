@@ -12,7 +12,8 @@ export interface TelemetryOccurrence {
 
 // Regex patterns for ID extraction
 const UA_REGEX = /UA-\d{4,10}-\d{1,4}/gi;
-const GA4_REGEX = /G-[A-Z0-9]{6,}/gi;
+// GA4 IDs: G- + 10 alphanumerics with at least one digit
+const GA4_REGEX = /G-(?=[A-Z0-9]{10}\b)(?=.*\d)[A-Z0-9]{10}/gi;
 const GTM_REGEX = /GTM-[A-Z0-9]+/gi;
 const FBQ_INIT_REGEX = /fbq\(['"]init['"],\s*['"]?(\d{8,18})/gi;
 const FB_PIXEL_URL_REGEX = /facebook\.com\/tr\?[^"'\\s]*[?&]id=(\d{8,18})/gi;
@@ -341,8 +342,8 @@ function normalizeUA(id: string): string | null {
 function normalizeGA4(id: string): string | null {
   if (!id) return null;
   const upper = id.toUpperCase();
-  // GA4 IDs are G- followed by exactly 10 alphanumeric characters
-  return /^G-[A-Z0-9]{10}$/.test(upper) ? upper : null;
+  // GA4 IDs are G- followed by exactly 10 alphanumerics and must contain at least one digit
+  return /^G-(?=[A-Z0-9]{10}$)(?=.*\d)[A-Z0-9]{10}$/.test(upper) ? upper : null;
 }
 
 /**

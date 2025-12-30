@@ -122,8 +122,8 @@ function indexTelemetryFromScan(scanResult, networkRequests = []) {
   }
 
   // Index GA4 IDs
-  const ga4Ids = tagInventoryDetailed.ga4 || [];
-  for (const item of ga4Ids) {
+  const ga4Verified = (tagInventoryDetailed.ga4 || []).filter(item => (item.classification || 'verified') === 'verified');
+  for (const item of ga4Verified) {
     if (item && item.id) {
       upsertOccurrence({
         id_type: 'GA4',
@@ -327,7 +327,7 @@ function normalizeUA(id) {
 function normalizeGA4(id) {
   if (!id) return null;
   const upper = id.toUpperCase();
-  return /^G-[A-Z0-9]{10}$/.test(upper) ? upper : null;
+  return /^G-[A-Z0-9]{8,12}$/.test(upper) ? upper : null;
 }
 
 function normalizeGTM(id) {

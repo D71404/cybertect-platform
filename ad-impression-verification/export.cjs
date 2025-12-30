@@ -7,10 +7,85 @@ const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
 
+// Helpers for safe, descriptive export filenames
+const INVALID_FILENAME_CHARS = /[^A-Za-z0-9._-]+/g;
+
+function sanitizeSegment(segment) {
+  if (!segment) return 'unknown';
+  const cleaned = String(segment)
+    .trim()
+    .replace(INVALID_FILENAME_CHARS, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_+|_+$/g, '');
+  return cleaned || 'unknown';
+}
+
+function pad2(value) {
+  return String(value).padStart(2, '0');
+}
+
+function formatUtcParts(value) {
+  const date = new Date(value || Date.now());
+  if (Number.isNaN(date.getTime())) {
+    return formatUtcParts(Date.now());
+  }
+  const year = date.getUTCFullYear();
+  const month = pad2(date.getUTCMonth() + 1);
+  const day = pad2(date.getUTCDate());
+  const hours = pad2(date.getUTCHours());
+  const minutes = pad2(date.getUTCMinutes());
+  const seconds = pad2(date.getUTCSeconds());
+  return {
+    date: `${year}-${month}-${day}`,
+    time: `${hours}-${minutes}-${seconds}`
+  };
+}
+
+function findLastSeenTimestamp(sequences = []) {
+  if (!Array.isArray(sequences) || sequences.length === 0) return null;
+  let maxTs = null;
+  for (const seq of sequences) {
+    const ts = Number(seq?.ts);
+    if (Number.isFinite(ts) && (maxTs === null || ts > maxTs)) {
+      maxTs = ts;
+    }
+  }
+  return maxTs;
+}
+
+function buildEvidenceFilename({ url, sequences = [], scanTimestamp }) {
+  let domain = 'unknown';
+  try {
+    domain = new URL(url).hostname || 'unknown';
+  } catch (e) {
+    // keep default
+  }
+
+  const tool = 'AdImpressionVerification';
+  const metric = 'EvidencePack';
+  const vendor = 'Cybertect';
+
+  const lastSeenTs = findLastSeenTimestamp(sequences);
+  const primaryParts = formatUtcParts(scanTimestamp || lastSeenTs || Date.now());
+  const lastSeenParts = formatUtcParts(lastSeenTs || scanTimestamp || Date.now());
+
+  const parts = [
+    sanitizeSegment(domain),
+    sanitizeSegment(tool),
+    sanitizeSegment(metric),
+    sanitizeSegment(vendor),
+    `Date_${primaryParts.date}`,
+    `Time_${primaryParts.time}`,
+    `LastSeen_${lastSeenParts.date}_${lastSeenParts.time}`
+  ];
+
+  return parts.filter(Boolean).join('_');
+}
+
 /**
  * Generate evidence pack ZIP file
  * @param {string} runId - Run ID
- * @returns {Promise<string>} - Path to generated ZIP file
+ * @returns {Promise<{zipPath: string, filename: string}>} - Generated ZIP info
  */
 async function generateEvidencePack(runId) {
   const runDir = path.join(__dirname, '..', 'runs', 'ad-impression-verification', runId);
@@ -24,19 +99,33 @@ async function generateEvidencePack(runId) {
     throw new Error(`Summary file not found for run: ${runId}`);
   }
   
-  const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+  const runData = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
   const sequencesPath = path.join(runDir, 'sequences.json');
   const flagsPath = path.join(runDir, 'flags.json');
   const networkPath = path.join(runDir, 'network.json');
+  const sequencesFromFile = fs.existsSync(sequencesPath)
+    ? JSON.parse(fs.readFileSync(sequencesPath, 'utf8'))
+    : [];
+  const sequences = Array.isArray(runData.sequences) && runData.sequences.length > 0
+    ? runData.sequences
+    : sequencesFromFile;
+  const exportName = buildEvidenceFilename({
+    url: runData.url,
+    sequences,
+    scanTimestamp: runData.scanTimestamp
+  });
   
   // Create ZIP file
-  const zipPath = path.join(runDir, `evidence-pack-${runId}.zip`);
+  const zipPath = path.join(runDir, `${exportName}.zip`);
   const output = fs.createWriteStream(zipPath);
   const archive = archiver('zip', { zlib: { level: 9 } });
   
   return new Promise((resolve, reject) => {
     archive.on('error', reject);
-    output.on('close', () => resolve(zipPath));
+    output.on('close', () => resolve({
+      zipPath,
+      filename: path.basename(zipPath)
+    }));
     
     archive.pipe(output);
     
@@ -44,8 +133,7 @@ async function generateEvidencePack(runId) {
     archive.file(summaryPath, { name: 'summary.json' });
     
     // Add sequences.csv
-    if (fs.existsSync(sequencesPath)) {
-      const sequences = JSON.parse(fs.readFileSync(sequencesPath, 'utf8'));
+    if (sequences.length > 0) {
       const csv = generateSequencesCSV(sequences);
       archive.append(csv, { name: 'sequences.csv' });
     }
@@ -72,7 +160,7 @@ async function generateEvidencePack(runId) {
     });
     
     // Add README.txt
-    const readme = generateReadme(summary);
+    const readme = generateReadme(runData);
     archive.append(readme, { name: 'README.txt' });
     
     archive.finalize();

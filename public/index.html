@@ -31,6 +31,11 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
         body { 
             font-family: 'Inter', sans-serif; 
             background: var(--white);
@@ -256,9 +261,10 @@
 
         /* Hero Section */
         .hero {
-            max-width: 1200px;
+            width: 100%;
+            max-width: 100vw;
             margin: 80px auto;
-            padding: 0 40px;
+            padding: 0 clamp(16px, 4vw, 40px);
         }
 
         .hero-content {
@@ -475,23 +481,29 @@
 
         /* Table Section */
         .results-section {
-            max-width: 1400px;
+            width: 100%;
+            max-width: 100vw;
             margin: 60px auto;
-            padding: 0 40px;
+            padding: 0 clamp(16px, 3vw, 32px);
             display: none;
+            box-sizing: border-box;
         }
 
         .table-container {
+            width: 100%;
+            max-width: 100%;
             background: var(--white);
             border-radius: 12px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             border: 1px solid var(--border);
             max-height: 640px;
-            overflow: auto;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
 
         table {
             width: 100%;
+            table-layout: fixed;
             border-collapse: separate;
             border-spacing: 0;
         }
@@ -509,6 +521,8 @@
             position: sticky;
             top: 0;
             z-index: 2;
+            white-space: normal;
+            word-break: break-word;
         }
 
         td {
@@ -517,6 +531,9 @@
             font-size: 14px;
             color: var(--text-dark);
             background: var(--white);
+            white-space: normal;
+            word-break: break-word;
+            vertical-align: top;
         }
 
         .badge {
@@ -646,9 +663,11 @@
 
         /* Algorithm Panel */
         .algo-panel {
-            max-width: 1200px;
+            width: 100%;
+            max-width: 100vw;
             margin: 0 auto 60px;
-            padding: 0 40px;
+            padding: 0 clamp(16px, 3vw, 32px);
+            box-sizing: border-box;
         }
 
         .algo-header {
@@ -659,6 +678,8 @@
             display: flex;
             justify-content: space-between;
             gap: 24px;
+            flex-wrap: wrap;
+            align-items: flex-start;
             box-shadow: 0 20px 30px rgba(15, 23, 42, 0.08);
         }
 
@@ -676,6 +697,8 @@
             display: flex;
             gap: 16px;
             align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-start;
         }
 
         .metric {
@@ -743,14 +766,112 @@
         }
 
         .issuesRow {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 12px;
-            overflow-x: auto;
-            padding-bottom: 8px;
+            overflow: visible;
+            width: 100%;
         }
 
         .issueCard {
-            flex: 0 0 340px;
+            min-width: 0;
+        }
+
+        .issuesClamp {
+            max-height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .issuesClamp::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 48px;
+            background: linear-gradient(180deg, rgba(255,255,255,0), #ffffff);
+            pointer-events: none;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+        }
+
+        .issuesClamp.expanded {
+            max-height: none;
+        }
+
+        .issuesClamp.expanded::after {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .issues-show-btn {
+            margin-top: 8px;
+            background: var(--light-gray);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 6px 12px;
+            font-size: 12px;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+
+        .issues-show-btn:hover {
+            border-color: var(--blue);
+            color: var(--blue);
+        }
+
+        .issue-group {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 10px;
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .issue-group-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .issue-count {
+            font-size: 12px;
+            color: var(--text-gray);
+            font-weight: 600;
+        }
+
+        .issue-toggle {
+            background: none;
+            border: none;
+            color: var(--blue);
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 6px;
+            border-radius: 6px;
+        }
+
+        .issue-toggle:hover {
+            background: var(--light-gray);
+        }
+
+        .issue-group-body {
+            display: none;
+            margin-top: 4px;
+            color: var(--text-gray);
+            font-size: 13px;
+        }
+
+        .issue-group-body.open {
+            display: block;
+        }
+
+        .issue-detail {
+            margin-bottom: 6px;
         }
 
         .fraud-row small {
@@ -784,9 +905,11 @@
         }
 
         .lookup-panel {
-            max-width: 1200px;
+            width: 100%;
+            max-width: 100vw;
             margin: 0 auto 60px;
-            padding: 0 40px;
+            padding: 0 clamp(16px, 3vw, 32px);
+            box-sizing: border-box;
         }
 
         .lookup-card {
@@ -862,9 +985,11 @@
         }
 
         .advertiser-panel {
-            max-width: 1200px;
+            width: 100%;
+            max-width: 100vw;
             margin: 0 auto 60px;
-            padding: 0 40px;
+            padding: 0 clamp(16px, 3vw, 32px);
+            box-sizing: border-box;
         }
 
         .advertiser-card {
@@ -1046,13 +1171,13 @@
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 5%;">DETAILS</th>
-                        <th style="width: 15%;">DOMAIN</th>
+                        <th style="width: 6%;">DETAILS</th>
+                        <th style="width: 18%;">DOMAIN</th>
                         <th style="width: 10%;">RISK LEVEL</th>
-                        <th style="width: 25%;">DIGITAL SIGNATURE (Analytics IDs)</th>
-                        <th style="width: 20%;">ISSUES FOUND</th>
-                        <th style="width: 8%;">PAGEVIEWS / SESSION</th>
-                        <th style="width: 25%;">NETWORK & IMPACT ANALYSIS</th>
+                        <th style="width: 22%;">DIGITAL SIGNATURE (Analytics IDs)</th>
+                        <th style="width: 18%;">ISSUES FOUND</th>
+                        <th style="width: 10%;">PAGEVIEWS / SESSION</th>
+                        <th style="width: 16%;">NETWORK & IMPACT ANALYSIS</th>
                     </tr>
                 </thead>
                 <tbody id="resultsBody"></tbody>
@@ -1068,14 +1193,58 @@
             "Shared ID": "NETWORK EVIDENCE: This ID appears on multiple DIFFERENT domains in your list."
         };
 
-        const GA4_REGEX = /^G-[A-Z0-9]{10}$/;
+        const GA4_REGEX = /^G-[A-Z0-9]{8,12}$/;
         const UA_REGEX = /^UA-\d{8,10}-\d{1,2}$/;
+
+        const VERIFIED_CONTEXTS = new Set([
+            'network_collect',
+            'network_script_src',
+            'gtag_js',
+            'gtag_config',
+            'tag_parity_network',
+            'gtm_config'
+        ]);
+
+        function classifyGaEntry(entry) {
+            if (!entry || !entry.id) return null;
+            const id = entry.id.toUpperCase();
+            if (!GA4_REGEX.test(id)) return null;
+            const source = (entry.source || '').toLowerCase();
+            const explicit = (entry.classification || '').toLowerCase();
+            if (explicit === 'verified' || explicit === 'unverified' || explicit === 'non_ga') {
+                return { ...entry, id, classification: explicit || 'verified' };
+            }
+            if (VERIFIED_CONTEXTS.has(source)) {
+                return { ...entry, id, classification: 'verified' };
+            }
+            if (source.includes('script')) {
+                return { ...entry, id, classification: 'unverified' };
+            }
+            return { ...entry, id, classification: 'non_ga', reason: entry.reason || 'Found outside GA4 script context' };
+        }
+
+        function getGaBuckets(result) {
+            const detailed = result.tagInventoryDetailed || {};
+            const all = [
+                ...(detailed.ga4 || []),
+                ...(detailed.ga4_unverified || []),
+                ...(detailed.ga4_false || [])
+            ]
+            .map(classifyGaEntry)
+            .filter(Boolean);
+
+            const verified = all.filter(e => e.classification === 'verified');
+            const unverified = all.filter(e => e.classification === 'unverified');
+            const nonGa = all.filter(e => e.classification === 'non_ga');
+            return { verified, unverified, nonGa };
+        }
 
         function getAnalyticsEntries(result) {
             const detailed = result.tagInventoryDetailed;
-            if (detailed && ((detailed.ga4 && detailed.ga4.length) || (detailed.ua && detailed.ua.length))) {
+            const gaBuckets = getGaBuckets(result);
+            if (detailed && ((gaBuckets.verified.length) || (detailed.ua && detailed.ua.length))) {
                 const entries = [
-                    ...(detailed.ga4 || []),
+                    ...gaBuckets.verified,
                     ...(detailed.ua || [])
                 ];
                 return entries
@@ -1083,7 +1252,8 @@
                     .map(entry => ({
                         id: entry.id.toUpperCase(),
                         source: entry.source || '',
-                        type: (entry.type || '').toUpperCase() || (entry.id.startsWith('UA-') ? 'UA' : 'GA4')
+                        type: (entry.type || '').toUpperCase() || (entry.id.startsWith('UA-') ? 'UA' : 'GA4'),
+                        classification: entry.classification || 'verified'
                     }));
             }
             const fallback = result.analyticsIds 
@@ -1095,7 +1265,8 @@
                 .map(id => ({
                     id: id.toUpperCase(),
                     source: '',
-                    type: id.toUpperCase().startsWith('UA-') ? 'UA' : 'GA4'
+                    type: id.toUpperCase().startsWith('UA-') ? 'UA' : 'GA4',
+                    classification: 'verified'
                 }));
         }
 
@@ -1234,27 +1405,54 @@
 
                 // Fraud
                 const fraudWarningsList = Array.isArray(r.fraudWarnings) ? r.fraudWarnings : [];
-                const issueBlocks = [];
+                const issueGroups = {};
+                const addIssue = (type, detail) => {
+                    const key = type || 'Issue';
+                    if (!issueGroups[key]) issueGroups[key] = [];
+                    issueGroups[key].push(detail || '');
+                };
                 if (fraudWarningsList.length) {
-                    issueBlocks.push(...fraudWarningsList.map(f => `
-                        <div class="fraud-row issueCard">
-                            <span class="badge badge-red tooltip" data-tooltip="${escapeHtml(definitions[f.type] || 'Suspicious telemetry pattern')}">${f.type}</span>
-                            <small>${escapeHtml(f.details || '')}</small>
-                        </div>
-                    `));
+                    fraudWarningsList.forEach(f => {
+                        addIssue(f.type || 'Fraud Warning', f.details || '');
+                    });
                 }
                 if (r.sessionInflation) {
-                    issueBlocks.push(`
-                        <div class="fraud-row issueCard">
-                            <span class="badge badge-red tooltip" data-tooltip="Multiple page_view hits fired without navigation.">Session Inflation</span>
-                            <small>Multiple page_view hits on one load.</small>
-                        </div>
-                    `);
+                    addIssue('Session Inflation', 'Multiple page_view hits on one load.');
                 }
 
-                const issuesHtml = issueBlocks.length
-                    ? `<div class="issuesRow">${issueBlocks.join("")}</div>`
-                    : '<span class="badge badge-green">Clean</span>';
+                const buildIssuesHtml = () => {
+                    const entries = Object.entries(issueGroups);
+                    if (!entries.length) return '<span class="badge badge-green">Clean</span>';
+                    const groupsHtml = entries.map(([type, details]) => {
+                        const safeType = (type || 'issue').replace(/[^a-z0-9]+/gi, '-').toLowerCase() || 'issue';
+                        const bodyId = `issue-body-${index}-${safeType}`;
+                        const detailsHtml = details.map(detail => `
+                            <div class="issue-detail">${escapeHtml(detail || 'See telemetry for details')}</div>
+                        `).join('');
+                        return `
+                            <div class="issue-group">
+                                <div class="issue-group-header">
+                                    <span class="badge badge-red tooltip" data-tooltip="Grouped by issue type">${escapeHtml(type)}</span>
+                                    <span class="issue-count">×${details.length}</span>
+                                    <button class="issue-toggle" onclick="toggleIssueGroup('${bodyId}')">Details</button>
+                                </div>
+                                <div class="issue-group-body" id="${bodyId}">
+                                    ${detailsHtml}
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                    const wrapperId = `issues-wrapper-${index}`;
+                    const toggleId = `issues-toggle-${index}`;
+                    return `
+                        <div class="issuesRow issuesClamp" id="${wrapperId}">
+                            ${groupsHtml}
+                        </div>
+                        <button class="issues-show-btn" id="${toggleId}" onclick="toggleIssuesClamp('${wrapperId}', '${toggleId}')">Show more</button>
+                    `;
+                };
+
+                const issuesHtml = buildIssuesHtml();
                 
                 // Waste
                 const waste = Math.max(1, Math.round(r.networkEventsCount / 50));
@@ -1337,7 +1535,10 @@
 
         function buildSignatureBlock(result, idToHosts) {
             const analyticsEntries = getAnalyticsEntries(result);
-            const gaEntries = analyticsEntries.filter(entry => entry.type === 'GA4');
+            const gaBuckets = getGaBuckets(result);
+            const gaEntries = gaBuckets.verified;
+            const gaUnverified = gaBuckets.unverified;
+            const gaFalse = gaBuckets.nonGa;
             const uaEntries = analyticsEntries.filter(entry => entry.type === 'UA');
 
             const gtmEntries = (result.tagInventoryDetailed && result.tagInventoryDetailed.gtm && result.tagInventoryDetailed.gtm.length)
@@ -1375,8 +1576,26 @@
                     </div>`;
             };
 
+            const renderNonGa = tokens => {
+                if (!tokens.length) return '';
+                const chips = tokens.map(entry => {
+                    const note = entry.reason ? `<span class="id-source">${escapeHtml(entry.reason)}</span>` : '';
+                    return `<span class="badge badge-gray">${escapeHtml(entry.id)}${note}</span>`;
+                }).join(' ');
+                return `
+                    <div class="id-row">
+                        <details>
+                            <summary style="cursor:pointer; font-weight:600;">Non-GA Tokens Misidentified as GA4 (Auto-Corrected)</summary>
+                            <div class="signature-chips">${chips}</div>
+                        </details>
+                    </div>
+                `;
+            };
+
             return `<div class="signature-block">
-                ${renderList('GA4', gaEntries, true)}
+                ${renderList('GA4 – Verified', gaEntries, true)}
+                ${renderList('GA4 – Unverified (Script Context Missing)', gaUnverified, false)}
+                ${renderNonGa(gaFalse)}
                 ${renderList('UA', uaEntries, true)}
                 ${renderList('GTM', Array.isArray(gtmEntries) ? gtmEntries : [], false)}
                 ${renderList('FB', Array.isArray(fbEntries) ? fbEntries : [], false)}
@@ -1645,6 +1864,20 @@ document.addEventListener('click', evt => {
                 .replace(/>/g, '&gt;')
                 .replace(/"/g, '&quot;')
                 .replace(/'/g, '&#39;');
+        }
+
+        function toggleIssueGroup(bodyId) {
+            const body = document.getElementById(bodyId);
+            if (!body) return;
+            body.classList.toggle('open');
+        }
+
+        function toggleIssuesClamp(wrapperId, buttonId) {
+            const wrapper = document.getElementById(wrapperId);
+            const btn = document.getElementById(buttonId);
+            if (!wrapper || !btn) return;
+            const expanded = wrapper.classList.toggle('expanded');
+            btn.textContent = expanded ? 'Show less' : 'Show more';
         }
 
         function updateAdvertiserPanel() {

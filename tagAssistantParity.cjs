@@ -3,7 +3,10 @@ console.log("[TAG-PARITY] loaded");
 const { chromium } = require('playwright');
 
 // Regex patterns for ID extraction
-const GA4_REGEX = /\bG-[A-Z0-9]{10}\b/g;
+// GA4 IDs: G- + 8-12 alphanumerics (validated later by context)
+const GA4_REGEX = /\bG-[A-Z0-9]{8,12}\b/g;
+const GTAG_CONFIG_REGEX = /gtag\(\s*['"]config['"]\s*,\s*['"](G-[A-Z0-9]{8,12})['"]/gi;
+const GA4_MEASUREMENT_KEY_REGEX = /['"]measurement_id['"]\s*:\s*['"](G-[A-Z0-9]{8,12})['"]/gi;
 const GTM_REGEX = /\bGTM-[A-Z0-9]+\b/g;
 const GOOGLE_ADS_REGEX = /\bAW-\d{6,}\b/g;
 const FB_PIXEL_ID_REGEX = /facebook\.com\/tr\/?\?[^"'\\s]*[?&]id=(\d{8,20})/gi;
@@ -63,6 +66,18 @@ class IdTracker {
   }
 }
 
+function extractGa4Configs(text) {
+  if (!text) return [];
+  const found = new Set();
+  for (const match of text.matchAll(GTAG_CONFIG_REGEX)) {
+    found.add(match[1].toUpperCase());
+  }
+  for (const match of text.matchAll(GA4_MEASUREMENT_KEY_REGEX)) {
+    found.add(match[1].toUpperCase());
+  }
+  return Array.from(found);
+}
+
 // Consent banner handler
 async function handleConsentBanner(page) {
   const consentKeywords = [
@@ -102,6 +117,7 @@ function extractIdsFromNetwork(request, evidence, ga4Tracker, gtmTracker, awTrac
   const url = request.url();
   const method = request.method();
   const lowerUrl = url.toLowerCase();
+  const isGaEndpoint = lowerUrl.includes('google-analytics.com') || lowerUrl.includes('doubleclick.net');
 
   // GTM container detection
   if (lowerUrl.includes('googletagmanager.com/gtm.js')) {
@@ -115,7 +131,7 @@ function extractIdsFromNetwork(request, evidence, ga4Tracker, gtmTracker, awTrac
 
   // GA4 via gtag/js
   if (lowerUrl.includes('googletagmanager.com/gtag/js') || lowerUrl.includes('google-analytics.com/gtag/js')) {
-    const gaMatch = url.match(/id=(G-[A-Z0-9]{10})/i);
+    const gaMatch = url.match(/id=(G-[A-Z0-9]{8,12})/i);
     if (gaMatch) {
       const id = gaMatch[1].toUpperCase();
       ga4Tracker.add(id, 'HIGH', 'network_gtag_js');
@@ -161,7 +177,7 @@ function extractIdsFromNetwork(request, evidence, ga4Tracker, gtmTracker, awTrac
   }
 
   // Check POST body for IDs
-  if (method === 'POST') {
+  if (method === 'POST' && isGaEndpoint) {
     try {
       const postData = request.postData();
       if (postData && postData.length < 10000) {
@@ -234,15 +250,13 @@ async function extractIdsFromRuntime(page, frameUrl, evidence, ga4Tracker, gtmTr
       return result;
     });
 
-    // Extract from dataLayer
+    // Extract from dataLayer using explicit GA4 config contexts
     if (runtimeData.dataLayer) {
-      const ga4Matches = runtimeData.dataLayer.match(GA4_REGEX);
-      if (ga4Matches) {
-        ga4Matches.forEach(id => {
-          ga4Tracker.add(id.toUpperCase(), 'MEDIUM', 'runtime_datalayer');
-          evidence.add('ga4', 'runtime_datalayer', id.toUpperCase(), frameUrl, frameUrl, Date.now());
-        });
-      }
+      const ga4Configs = extractGa4Configs(runtimeData.dataLayer);
+      ga4Configs.forEach(id => {
+        ga4Tracker.add(id, 'MEDIUM', 'runtime_datalayer_config');
+        evidence.add('ga4', 'runtime_datalayer_config', id, frameUrl, frameUrl, Date.now());
+      });
 
       const gtmMatches = runtimeData.dataLayer.match(GTM_REGEX);
       if (gtmMatches) {
@@ -275,7 +289,8 @@ async function extractIdsFromRuntime(page, frameUrl, evidence, ga4Tracker, gtmTr
 
     // Extract from script srcs
     runtimeData.scripts.forEach(src => {
-      const ga4Match = src.match(/id=(G-[A-Z0-9]{10})/i);
+      const isGtagJs = src.toLowerCase().includes('googletagmanager.com/gtag/js');
+      const ga4Match = isGtagJs ? src.match(/id=(G-[A-Z0-9]{8,12})/i) : null;
       if (ga4Match) {
         const id = ga4Match[1].toUpperCase();
         ga4Tracker.add(id, 'MEDIUM', 'dom_script_src');

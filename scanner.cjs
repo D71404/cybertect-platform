@@ -58,7 +58,11 @@ const VIEWABILITY_KEYWORDS = [
   'view', 'viewable', 'in_view', 'inview', 'visible',
   'pct', 'percent', 'time_in_view', 'viewport'
 ];
-const ID_REGEX = /(G-[A-Z0-9]{10}|UA-\d{8,10}-\d{1,2})/g;
+const ID_REGEX = /(G-[A-Z0-9]{8,12}|UA-\d{8,10}-\d{1,2})/g;
+const GA4_VALID_REGEX = /^G-[A-Z0-9]{8,12}$/;
+const GA4_TOKEN_REGEX = /G-[A-Z0-9]{8,12}/gi;
+const GTAG_CONFIG_REGEX = /gtag\(\s*['"]config['"]\s*,\s*['"](G-[A-Z0-9]{8,12})['"]/gi;
+const GTAG_JS_BOOTSTRAP_REGEX = /gtag\(\s*['"]js['"]\s*,\s*new Date\(\)\s*\)/i;
 const GTM_REGEX = /(GTM-[A-Z0-9]{4,10})/gi;
 const FBQ_REGEX = /fbq\(['"]init['"],\s*['"]?(\d{8,18})/gi;
 const FB_PIXEL_URL_REGEX = /facebook\.com\/tr\?[^"'\\s]*[?&]id=(\d{8,18})/gi;
@@ -82,7 +86,9 @@ async function scanWebsite(url, onProgress) {
     googleAdsIds: new Set()
   };
   const tagInventoryDetailed = {
-    ga4: new Map(),
+    ga4: new Map(), // verified
+    ga4_unverified: new Map(),
+    ga4_false: new Map(),
     ua: new Map(),
     gtm: new Map(),
     aw: new Map(),
@@ -287,9 +293,18 @@ async function scanWebsite(url, onProgress) {
       console.log(`[Scanner] Tag Parity Detection: GA4=${tagParityResult.ga4_ids.length}, GTM=${tagParityResult.gtm_containers.length}, AW=${tagParityResult.gads_aw_ids.length}, FB=${tagParityResult.fb_pixel_ids.length}`);
       
       // Merge detected IDs into tagInventory
-      tagParityResult.ga4_ids.forEach(id => {
-        addDetailedId(tagInventoryDetailed, tagInventory, 'ga4', id, 'tag_parity');
-        measurementIds.add(id);
+      const ga4FromParity = (tagParityResult._detailed && Array.isArray(tagParityResult._detailed.ga4) && tagParityResult._detailed.ga4.length)
+        ? tagParityResult._detailed.ga4.map(entry => ({ id: entry.id, confidence: entry.confidence }))
+        : tagParityResult.ga4_ids.map(id => ({ id, confidence: 'LOW' }));
+
+      ga4FromParity.forEach(entry => {
+        const normalized = addGa4Candidate(tagInventoryDetailed, tagInventory, entry.id, 'tag_parity', {
+          context: entry.confidence === 'HIGH' ? 'tag_parity_network' : 'tag_parity_runtime',
+          confidence: entry.confidence
+        });
+        if (normalized && getGa4Status(tagInventoryDetailed, normalized) === 'verified') {
+          measurementIds.add(normalized);
+        }
       });
       tagParityResult.gtm_containers.forEach(id => {
         addDetailedId(tagInventoryDetailed, tagInventory, 'gtm', id, 'tag_parity');
@@ -436,8 +451,10 @@ async function scanWebsite(url, onProgress) {
     
     // Ensure at least 1 pageview if analytics IDs are detected but no pageviews were counted
     // Check both measurementIds (from network) and tagInventory.analyticsIds (from DOM)
-    const hasAnalyticsIds = measurementIds.size > 0 || 
-                           (tagInventory && tagInventory.analyticsIds && tagInventory.analyticsIds.length > 0);
+    const domAnalyticsCount = tagInventory && tagInventory.analyticsIds
+      ? (typeof tagInventory.analyticsIds.size === 'number' ? tagInventory.analyticsIds.size : tagInventory.analyticsIds.length || 0)
+      : 0;
+    const hasAnalyticsIds = measurementIds.size > 0 || domAnalyticsCount > 0;
     
     if (metrics.pageViewCount === 0 && hasAnalyticsIds) {
       metrics.pageViewCount = 1;
@@ -670,11 +687,21 @@ function processGaHit(event, context) {
     debugLog('scanner.cjs:432', 'classifyMeasurementId result', { hasInfo: !!info, info: info }, 'A');
     // #endregion
     if (info) {
-      measurementIds.add(info.id);
-      const result = addDetailedId(tagInventoryDetailed, tagInventory, info.type, info.id, 'network_collect');
-      // #region agent log
-      debugLog('scanner.cjs:434', 'addDetailedId result for GA', { result: result, type: info.type, id: info.id }, 'A');
-      // #endregion
+      if (info.type === 'ga4') {
+        const normalized = addGa4Candidate(tagInventoryDetailed, tagInventory, info.id, 'network_collect', { context: 'network_collect' });
+        // #region agent log
+        debugLog('scanner.cjs:434', 'addGa4Candidate result for GA4', { result: normalized, type: info.type, id: info.id }, 'A');
+        // #endregion
+        if (normalized && getGa4Status(tagInventoryDetailed, normalized) === 'verified') {
+          measurementIds.add(normalized);
+        }
+      } else {
+        const result = addDetailedId(tagInventoryDetailed, tagInventory, info.type, info.id, 'network_collect');
+        // #region agent log
+        debugLog('scanner.cjs:434', 'addDetailedId result for GA', { result: result, type: info.type, id: info.id }, 'A');
+        // #endregion
+        measurementIds.add(info.id);
+      }
     }
     
     // Tag Assistant-style Hits Sent tracking
@@ -1170,14 +1197,33 @@ async function collectDomTagInventory(page, tagInventory, tagInventoryDetailed) 
 
 function extractTagsFromText(text, tagInventory, tagInventoryDetailed, source = 'dom_html') {
   if (!text) return;
-  const gaRegex = /G-[A-Z0-9]{10}/gi;
   const uaRegex = /UA-\d{8,10}-\d{1,2}/gi;
   const gtmRegex = /GTM-[A-Z0-9]{4,10}/gi;
   const awRegex = /AW-\d{6,}/gi;
   const fbRegex = /fbq\(\s*['"]init['"]\s*,\s*['"](\d{8,18})/gi;
+  const seenGa4 = new Set();
 
-  const gaMatches = text.match(gaRegex);
-  if (gaMatches) gaMatches.forEach(id => addDetailedId(tagInventoryDetailed, tagInventory, 'ga4', id, source));
+  const registerGa4 = (id, context, meta = {}) => {
+    const normalized = addGa4Candidate(tagInventoryDetailed, tagInventory, id, source, { ...meta, context });
+    if (normalized) seenGa4.add(normalized);
+  };
+
+  // gtag/js script tag
+  for (const match of text.matchAll(/googletagmanager\.com\/gtag\/js\?id=(G-[A-Z0-9]{8,12})/gi)) {
+    registerGa4(match[1], 'gtag_js');
+  }
+
+  // gtag('config', 'G-XXXX')
+  const hasBootstrap = GTAG_JS_BOOTSTRAP_REGEX.test(text);
+  for (const match of text.matchAll(GTAG_CONFIG_REGEX)) {
+    registerGa4(match[1], 'gtag_config', { hasBootstrap });
+  }
+
+  // measurement_id inline configs (commonly in GTM dataLayer pushes)
+  for (const match of text.matchAll(/['"]measurement_id['"]\s*:\s*['"](G-[A-Z0-9]{8,12})['"]/gi)) {
+    registerGa4(match[1], 'gtm_config');
+  }
+
   const uaMatches = text.match(uaRegex);
   if (uaMatches) uaMatches.forEach(id => addDetailedId(tagInventoryDetailed, tagInventory, 'ua', id, source));
   const gtmMatches = text.match(gtmRegex);
@@ -1187,6 +1233,23 @@ function extractTagsFromText(text, tagInventory, tagInventoryDetailed, source = 
   let fbMatch;
   while ((fbMatch = fbRegex.exec(text)) !== null) {
     addDetailedId(tagInventoryDetailed, tagInventory, 'fb', fbMatch[1], source);
+  }
+
+  // Stray GA-like tokens without execution context are logged as false positives
+  const strayMatches = text.match(GA4_TOKEN_REGEX);
+  if (strayMatches) {
+    strayMatches.forEach(raw => {
+      const normalized = normalizeGa4Id(raw);
+      if (!normalized) return;
+      if (seenGa4.has(normalized)) return;
+      const status = getGa4Status(tagInventoryDetailed, normalized);
+      if (status === 'verified') return;
+      addGa4Candidate(tagInventoryDetailed, tagInventory, normalized, source, {
+        context: 'stray_token',
+        forceClassification: 'non_ga',
+        reason: 'Found outside GA4 script context'
+      });
+    });
   }
 }
 
@@ -1213,7 +1276,7 @@ function classifyMeasurementId(id) {
 function normalizeGa4Id(id) {
   if (!id) return null;
   const upper = id.toUpperCase();
-  const result = /^G-[A-Z0-9]{10}$/.test(upper) ? upper : null;
+  const result = GA4_VALID_REGEX.test(upper) ? upper : null;
   // #region agent log
   debugLog('scanner.cjs:927', 'normalizeGa4Id', { input: id, upper: upper, result: result, length: upper.length }, 'D');
   // #endregion
@@ -1251,7 +1314,116 @@ function normalizeFbId(id) {
   return result;
 }
 
+const GA4_STATUS_PRIORITY = { verified: 3, unverified: 2, non_ga: 1, unknown: 0 };
+
+function getGa4Status(detailMaps, id) {
+  if (detailMaps.ga4 && detailMaps.ga4.has(id)) return 'verified';
+  if (detailMaps.ga4_unverified && detailMaps.ga4_unverified.has(id)) return 'unverified';
+  if (detailMaps.ga4_false && detailMaps.ga4_false.has(id)) return 'non_ga';
+  return 'unknown';
+}
+
+function clearGa4FromAll(detailMaps, id) {
+  if (detailMaps.ga4) detailMaps.ga4.delete(id);
+  if (detailMaps.ga4_unverified) detailMaps.ga4_unverified.delete(id);
+  if (detailMaps.ga4_false) detailMaps.ga4_false.delete(id);
+}
+
+function getGa4MapForStatus(detailMaps, status) {
+  if (status === 'verified') return detailMaps.ga4;
+  if (status === 'unverified') return detailMaps.ga4_unverified;
+  return detailMaps.ga4_false;
+}
+
+function classifyGa4Candidate(rawId, source, meta = {}) {
+  const normalized = normalizeGa4Id(rawId);
+  const context = meta.context || source || 'unknown';
+  if (!normalized) {
+    return {
+      normalized: null,
+      status: 'non_ga',
+      reason: meta.reason || 'Invalid GA4 format',
+      context
+    };
+  }
+
+  if (meta.forceClassification === 'non_ga') {
+    return {
+      normalized,
+      status: 'non_ga',
+      reason: meta.reason || 'Non-analytics token',
+      context
+    };
+  }
+
+  const verifiedContexts = new Set([
+    'network_collect',
+    'network_script_src',
+    'gtag_js',
+    'gtag_config',
+    'tag_parity_network',
+    'gtm_config'
+  ]);
+
+  const status = verifiedContexts.has(context) || meta.confidence === 'HIGH'
+    ? 'verified'
+    : 'unverified';
+
+  return {
+    normalized,
+    status,
+    reason: status === 'verified' ? 'Valid GA4 execution context observed' : (meta.reason || 'Script context missing'),
+    context
+  };
+}
+
+function addGa4Candidate(detailMaps, tagInventory, rawId, source, meta = {}) {
+  const { normalized, status, reason, context } = classifyGa4Candidate(rawId, source, meta);
+  if (!normalized) {
+    if (rawId && rawId.toString().toUpperCase().startsWith('G-')) {
+      const map = getGa4MapForStatus(detailMaps, 'non_ga');
+      const upper = rawId.toString().toUpperCase();
+      const existing = map.get(upper) || { id: upper, type: 'NON_GA', source, classification: 'non_ga', contexts: new Set(), reason };
+      if (existing.contexts instanceof Set) existing.contexts.add(context || source || 'unknown');
+      map.set(upper, existing);
+    }
+    return null;
+  }
+
+  const currentStatus = getGa4Status(detailMaps, normalized);
+  const shouldUpgrade = GA4_STATUS_PRIORITY[status] > GA4_STATUS_PRIORITY[currentStatus];
+  const finalStatus = shouldUpgrade ? status : currentStatus;
+  if (shouldUpgrade) {
+    clearGa4FromAll(detailMaps, normalized);
+  }
+
+  const targetMap = getGa4MapForStatus(detailMaps, finalStatus === 'unknown' ? status : finalStatus);
+  const entry = targetMap.get(normalized) || {
+    id: normalized,
+    type: 'GA4',
+    source,
+    classification: status,
+    contexts: new Set(),
+    reason
+  };
+  entry.source = entry.source || source;
+  entry.classification = GA4_STATUS_PRIORITY[status] >= GA4_STATUS_PRIORITY[entry.classification || 'unknown']
+    ? status
+    : entry.classification;
+  entry.reason = entry.reason || reason;
+  if (entry.contexts instanceof Set) entry.contexts.add(context || source || 'unknown');
+  targetMap.set(normalized, entry);
+
+  if (entry.classification === 'verified') {
+    tagInventory.analyticsIds.add(normalized);
+  }
+  return normalized;
+}
+
 function addDetailedId(detailMaps, tagInventory, type, rawId, source) {
+  if (type === 'ga4') {
+    return addGa4Candidate(detailMaps, tagInventory, rawId, source);
+  }
   // #region agent log
   debugLog('scanner.cjs:907', 'addDetailedId called', { type: type, rawId: rawId, source: source }, 'D');
   // #endregion
@@ -1283,9 +1455,14 @@ function normalizeIdByType(type, id) {
 }
 
 function formatDetailedInventory(detailMaps) {
-  const toArray = map => Array.from(map.values());
+  const toArray = map => Array.from(map.values()).map(entry => {
+    const contexts = entry.contexts instanceof Set ? Array.from(entry.contexts) : entry.contexts;
+    return { ...entry, contexts };
+  });
   return {
     ga4: toArray(detailMaps.ga4),
+    ga4_unverified: toArray(detailMaps.ga4_unverified || new Map()),
+    ga4_false: toArray(detailMaps.ga4_false || new Map()),
     ua: toArray(detailMaps.ua),
     gtm: toArray(detailMaps.gtm),
     aw: toArray(detailMaps.aw),
@@ -1294,7 +1471,7 @@ function formatDetailedInventory(detailMaps) {
 }
 
 console.assert(normalizeGa4Id('G-ABCD123456') !== null, 'Valid GA4 ID rejected');
-console.assert(normalizeGa4Id('G-THUMBNAILS') === null, 'Invalid GA4 ID accepted');
+console.assert(classifyGa4Candidate('G-THUMBNAILS', 'stray_token', { forceClassification: 'non_ga' }).status === 'non_ga', 'Invalid GA4 token not classified as non-ga');
 
 module.exports = { scanWebsite, healthCheck };
 

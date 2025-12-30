@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Brain, ShieldCheck, Loader2 } from 'lucide-react';
 import AIValidateModal from './AIValidateModal';
 import ValidationReportPanel from './ValidationReportPanel';
-import { mockAiValidate } from './mockAiValidate';
 
 const pollIntervalMs = 2500;
 

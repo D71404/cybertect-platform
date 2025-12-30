@@ -5,6 +5,7 @@ const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
+const { classifyGa4Id } = require('./src/ga4-classifier.cjs');
 
 // Lazy-load scanner modules to avoid Playwright initialization hanging server startup
 let scanWebsite, scanInjectedTelemetry, diagnoseAnalytics, scanAdImpressions, generateEvidencePack;
@@ -39,7 +40,8 @@ const videotect = {
 };
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+// Default backend port; can be overridden via PORT env var
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors()); // Enable CORS for all routes
@@ -400,6 +402,12 @@ const { runValidation, getValidationResult } = require('./ai-validation/orchestr
 const { listTemplates } = require('./ai-validation/templates/registry.cjs');
 const { listProviders } = require('./ai-validation/providers/provider-factory.cjs');
 const { queueJob: queueAiJob, getJob: getAiJob } = require('./ai-validation/v2/runner.cjs');
+const {
+  listAggregates: listAffectedVendors,
+  updateVerdict: updateAffectedVendorsVerdict,
+  getVerdict: getAffectedVendorsVerdict
+} = require('./src/db/affected-ad-vendors.cjs');
+const { buildEvidencePayload } = require('./ad-impression-verification/affected-vendors.cjs');
 
 // Upload evidence pack for AI validation
 app.post('/api/ai-validation/upload', upload.single('evidencePack'), async (req, res) => {
@@ -764,7 +772,7 @@ app.get('/api/health', (req, res) => {
       console.error(`\n❌ Error: Port ${PORT} is already in use.`);
       console.error(`   Please either:`);
       console.error(`   1. Stop the process using port ${PORT}`);
-      console.error(`   2. Set a different port: PORT=3001 node server.js`);
+      console.error(`   2. Set a different port: PORT=${Number(PORT) + 1} node server.js`);
       console.error(`   3. Kill the process: lsof -ti:${PORT} | xargs kill\n`);
     } else {
       console.error(`\n❌ Server error:`, error.message);
@@ -952,6 +960,7 @@ app.get('/api/reverse-search', async (req, res) => {
         id_value: normalizedId
       },
       hits: distinctDomains.length,
+      classification: idType === 'GA4' ? classifyGa4Id(normalizedId, distinctDomains.length) : null,
       results: results
     });
   } catch (error) {
@@ -1185,11 +1194,11 @@ app.get('/api/ad-impression-verification/export', async (req, res) => {
 
     console.log(`\n📦 Generating evidence pack for run: ${runId}`);
     
-    const zipPath = await generateEvidencePack(runId);
+    const { zipPath, filename } = await generateEvidencePack(runId);
     
     console.log(`✅ Evidence pack generated: ${zipPath}`);
     
-    res.download(zipPath, `evidence-pack-${runId}.zip`, (err) => {
+    res.download(zipPath, filename, (err) => {
       if (err) {
         console.error('Error sending file:', err);
         if (!res.headersSent) {
@@ -1202,6 +1211,127 @@ app.get('/api/ad-impression-verification/export', async (req, res) => {
     res.status(500).json({
       error: error.message || 'An error occurred during export'
     });
+  }
+});
+
+function mapAiVerdict(result) {
+  if (!result) return null;
+  const verdictText = (result.verdict || '').toLowerCase();
+  let ai_verdict_status = 'suspect';
+  if (verdictText.includes('pass') || verdictText.includes('clean')) {
+    ai_verdict_status = 'pass';
+  } else if (verdictText.includes('fail') || verdictText.includes('inflation') || verdictText.includes('high')) {
+    ai_verdict_status = 'fail';
+  }
+
+  const rationale =
+    (result.key_findings || [])
+      .map((f) => `${f.title || 'Finding'}: ${f.detail || ''}`.trim())
+      .filter(Boolean)
+      .join(' | ') || result.duplicate_assessment?.notes || null;
+
+  const modelMeta = result.model_used || {};
+  return {
+    ai_verdict_status,
+    ai_rationale: rationale,
+    ai_validator_model: modelMeta.model || modelMeta.provider || null,
+    ai_verdict_at: modelMeta.run_at || new Date().toISOString()
+  };
+}
+
+app.get('/api/scans/:scanId/publishers/:publisherId/affected-vendors', (req, res) => {
+  try {
+    const { scanId, publisherId } = req.params;
+    const { sortBy, direction } = req.query;
+    if (!scanId || !publisherId) {
+      return res.status(400).json({ error: 'scanId and publisherId are required' });
+    }
+
+    let rows = listAffectedVendors(scanId, publisherId, sortBy, direction);
+    let verdict = getAffectedVendorsVerdict(scanId, publisherId);
+
+    // If verdict pending but job is complete, refresh from AI job store
+    if (verdict?.ai_job_id && (!verdict.ai_verdict_status || verdict.ai_verdict_status === 'pending')) {
+      const job = getAiJob(verdict.ai_job_id);
+      if (job && job.status === 'done' && job.resultJson) {
+        try {
+          const parsed = JSON.parse(job.resultJson);
+          const result = parsed?.result || null;
+          const mapped = mapAiVerdict(result);
+          if (mapped) {
+            updateAffectedVendorsVerdict(scanId, publisherId, { ...mapped, ai_job_id: verdict.ai_job_id });
+            verdict = { ...verdict, ...mapped };
+            // reload rows to return updated verdict fields
+            rows = listAffectedVendors(scanId, publisherId, sortBy, direction);
+          }
+        } catch (e) {
+          console.warn('Failed to parse AI verdict for affected vendors', e.message);
+        }
+      }
+    }
+
+    res.json({
+      scanId,
+      publisherId,
+      rows,
+      verdict
+    });
+  } catch (error) {
+    console.error('Affected vendors fetch error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/scans/:scanId/publishers/:publisherId/affected-vendors/ai-validate', (req, res) => {
+  try {
+    const { scanId, publisherId } = req.params;
+    const { provider = 'chatgpt', model = 'gpt-4o', promptNotes } = req.body || {};
+    if (!scanId || !publisherId) {
+      return res.status(400).json({ error: 'scanId and publisherId are required' });
+    }
+    const rows = listAffectedVendors(scanId, publisherId, 'impressions', 'DESC');
+    if (!rows.length) {
+      return res.status(404).json({ error: 'No affected ad vendors found for this scan/publisher' });
+    }
+
+    const evidencePayload = buildEvidencePayload(scanId, publisherId, rows);
+    const job = queueAiJob({
+      toolId: 'affected_ad_vendors_hosts',
+      scanId,
+      provider,
+      model,
+      promptNotes,
+      evidencePack: {
+        version: '1.0',
+        createdAt: new Date().toISOString(),
+        target: { domain: publisherId },
+        findings: [],
+        telemetry: {
+          evidence_type: evidencePayload.evidence_type,
+          semantics: evidencePayload.semantics,
+          payload: evidencePayload
+        },
+        artifacts: []
+      }
+    });
+
+    updateAffectedVendorsVerdict(scanId, publisherId, {
+      ai_verdict_status: 'pending',
+      ai_rationale: null,
+      ai_validator_model: model,
+      ai_verdict_at: null,
+      ai_job_id: job.id
+    });
+
+    res.status(202).json({
+      jobId: job.id,
+      status: job.status,
+      provider,
+      model
+    });
+  } catch (error) {
+    console.error('AI validation (affected vendors) error:', error);
+    res.status(500).json({ error: error.message });
   }
 });
 

@@ -1,0 +1,39 @@
+{
+  "runId": "atlantic",
+  "targetUrl": "https://www.theatlantic.com/",
+  "scannedAt": "2025-12-27T12:00:00Z",
+  "summaryFlags": {
+    "phantomScroll": { "count": 0, "evidenceRefs": [] },
+    "duplicateAdImpression": { "count": 0, "evidenceRefs": [] },
+    "autoRefreshInflation": { "count": 0, "evidenceRefs": [] },
+    "multipleGa4Ids": { "count": 0, "ids": [], "evidenceRefs": [] },
+    "multipleGtmContainers": { "count": 0, "ids": [], "evidenceRefs": [] },
+    "adStacking": { "count": 0, "evidenceRefs": [] },
+    "hiddenTinyFrames": { "count": 0, "evidenceRefs": [] }
+  },
+  "analytics": {
+    "ga4": {
+      "ids": ["G-ATLANTIC"],
+      "events": [
+        { "name": "zephr_paywall", "ts": "2025-12-27T12:00:01Z", "params": {}, "source": "ga4", "evidenceRef": { "type": "analytics", "id": "evt1", "pointer": "analytics.ga4.events[0]" } },
+        { "name": "page_view", "ts": "2025-12-27T12:00:02Z", "params": {}, "source": "ga4", "evidenceRef": { "type": "analytics", "id": "evt2", "pointer": "analytics.ga4.events[1]" } }
+      ]
+    }
+  },
+  "ads": {
+    "gam": {
+      "gptSlots": [],
+      "requests": [],
+      "impressions": []
+    }
+  },
+  "dom": {
+    "iframes": []
+  },
+  "network": {
+    "requests": [
+      { "url": "https://cdn.zephr.com/script.js", "method": "GET", "ts": "2025-12-27T12:00:01Z", "initiator": "zephr", "type": "script", "status": 200, "evidenceRef": { "type": "network", "id": "req1", "pointer": "network.requests[0]" } }
+    ]
+  }
+}
+

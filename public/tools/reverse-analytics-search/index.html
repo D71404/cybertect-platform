@@ -560,6 +560,30 @@
             }
         }
 
+        const VERIFIED_CONTEXTS = new Set([
+            'network_collect',
+            'network_script_src',
+            'gtag_js',
+            'gtag_config',
+            'tag_parity_network',
+            'gtm_config'
+        ]);
+
+        function normalizeGa4Entry(entry) {
+            if (!entry || !entry.id) return null;
+            const upper = entry.id.toUpperCase();
+            if (!/^G-[A-Z0-9]{8,12}$/.test(upper)) return null;
+            const source = (entry.source || '').toLowerCase();
+            const explicit = (entry.classification || '').toLowerCase();
+            if (explicit === 'non_ga') return null;
+            if (explicit === 'verified' || explicit === 'unverified') {
+                return { ...entry, id: upper, classification: explicit || 'verified' };
+            }
+            if (VERIFIED_CONTEXTS.has(source)) return { ...entry, id: upper, classification: 'verified' };
+            if (source.includes('script')) return { ...entry, id: upper, classification: 'unverified' };
+            return null; // drop non-GA tokens
+        }
+
         function extractAnalyticsIds(scanResult) {
             const ids = [];
             
@@ -567,14 +591,18 @@
             if (scanResult.tagInventoryDetailed) {
                 const detailed = scanResult.tagInventoryDetailed;
                 
-                // GA4 IDs
-                if (detailed.ga4 && Array.isArray(detailed.ga4)) {
-                    detailed.ga4.forEach(item => {
-                        if (item && item.id) {
-                            ids.push({ type: 'GA4', value: item.id.toUpperCase() });
-                        }
-                    });
-                }
+                // GA4 IDs (verified only; drop non-GA tokens)
+                const gaPools = [
+                    ...(detailed.ga4 || []),
+                    ...(detailed.ga4_unverified || []),
+                    ...(detailed.ga4_false || [])
+                ];
+                gaPools.forEach(item => {
+                    const normalized = normalizeGa4Entry(item);
+                    if (normalized && normalized.classification === 'verified') {
+                        ids.push({ type: 'GA4', value: normalized.id });
+                    }
+                });
                 
                 // UA IDs
                 if (detailed.ua && Array.isArray(detailed.ua)) {
@@ -619,8 +647,11 @@
                 
                 if (parity.ga4_ids && Array.isArray(parity.ga4_ids)) {
                     parity.ga4_ids.forEach(id => {
-                        if (id && !ids.some(existing => existing.type === 'GA4' && existing.value === id.toUpperCase())) {
-                            ids.push({ type: 'GA4', value: id.toUpperCase() });
+                        if (!id) return;
+                        const upper = id.toUpperCase();
+                        if (!/^G-[A-Z0-9]{8,12}$/.test(upper)) return;
+                        if (!ids.some(existing => existing.type === 'GA4' && existing.value === upper)) {
+                            ids.push({ type: 'GA4', value: upper });
                         }
                     });
                 }

@@ -647,7 +647,7 @@
                         allowedPartnersCount: allowedPartners.length
                     });
                     
-                    const response = await fetch('http://localhost:3000/api/cms-monitor/run', {
+                    const response = await fetch('/api/cms-monitor/run', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
@@ -728,7 +728,7 @@
                     }
                     
                     try {
-                        const response = await fetch(`http://localhost:3000/api/cms-monitor/evidence/${currentScanId}`);
+                        const response = await fetch(`/api/cms-monitor/evidence/${currentScanId}`);
                         if (!response.ok) {
                             throw new Error('Failed to download evidence pack');
                         }

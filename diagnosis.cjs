@@ -4,7 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 // ID Extractors
-const GA4_REGEX = /G-[A-Z0-9]{10}/gi;
+// GA4 IDs: G- + 10 alphanumerics with at least one digit
+const GA4_REGEX = /G-(?=[A-Z0-9]{10}\b)(?=.*\d)[A-Z0-9]{10}/gi;
 const UA_REGEX = /UA-\d{4,10}-\d+/gi;
 const GTM_REGEX = /GTM-[A-Z0-9]+/gi;
 const GOOGLE_ADS_REGEX = /AW-\d{6,12}/gi;
@@ -16,7 +17,7 @@ const ADOBE_ANALYTICS_REGEX = /s\.account\s*=\s*['"]([^'"]+)['"]|s_account\s*=\s
 function normalizeGa4Id(id) {
   if (!id) return null;
   const upper = id.toUpperCase();
-  return /^G-[A-Z0-9]{10}$/.test(upper) ? upper : null;
+  return /^G-(?=[A-Z0-9]{10}$)(?=.*\d)[A-Z0-9]{10}$/.test(upper) ? upper : null;
 }
 
 function normalizeUaId(id) {
@@ -819,6 +820,37 @@ async function diagnoseAnalytics(url, options = {}) {
   pagesData.forEach(pageData => {
     if (pageData.telemetrySteps) {
       allTelemetrySteps.push(...pageData.telemetrySteps);
+    }
+  });
+
+  // Promote critical telemetry anomalies into findings
+  allTelemetrySteps.forEach(step => {
+    const anomalies = Array.isArray(step.anomalies) ? step.anomalies : [];
+    const stepName = step.step || 'unknown_step';
+
+    // Critical Rule 1: Phantom Scroll
+    if (anomalies.includes('phantom_scroll_event')) {
+      allFindings.push({
+        severity: 'critical',
+        type: 'telemetry',
+        title: 'Phantom Scroll / Telemetry Fraud Detected',
+        details: 'Scripted scroll events detected during baseline_no_interaction phase.',
+        evidence: { page: step.page, step: stepName, anomalies }
+      });
+    }
+
+    // Critical Rule 2: Ad Stacking (duplicate bursts)
+    const duplicateBurstCount = anomalies.filter(
+      a => typeof a === 'string' && a.startsWith('duplicate_burst_')
+    ).length;
+    if (duplicateBurstCount > 5) {
+      allFindings.push({
+        severity: 'critical',
+        type: 'telemetry',
+        title: 'Ad Stacking / Request Flooding',
+        details: 'High-frequency burst of duplicate ad requests detected (>5 in <1s).',
+        evidence: { page: step.page, step: stepName, anomalies }
+      });
     }
   });
 

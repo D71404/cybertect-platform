@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import LandingPage from './components/LandingPage';
-import Dashboard from './components/Dashboard';
+import Scanner from './components/Scanner';
 import Videotect from './components/Videotect';
 import AIValidation from './components/AIValidation';
 import './index.css';
@@ -12,7 +12,7 @@ function App() {
     if (base === '/ai-validation/') {
       return 'ai-validation';
     }
-    return 'landing';
+    return 'scanner';
   };
   
   const [currentView, setCurrentView] = useState(getInitialView());
@@ -36,14 +36,15 @@ function App() {
         : fullPath;
       
       if (path === '/videotect' || path === '/tools/videotect' || path === 'videotect' || path === 'tools/videotect') {
-      setCurrentView('videotect');
+        setCurrentView('videotect');
       } else if (path === '/ai-validation' || path === '/tools/ai-validation' || path === 'ai-validation' || path === 'tools/ai-validation') {
         setCurrentView('ai-validation');
-      } else if (path === '/dashboard' || path === '/scanner' || path === 'dashboard' || path === 'scanner') {
-      setCurrentView('dashboard');
-    } else {
-      setCurrentView('landing');
-    }
+      } else if (path === '/landing' || path === 'landing') {
+        setCurrentView('landing');
+      } else {
+        // default route and /dashboard or /scanner render the main scanner UI
+        setCurrentView('scanner');
+      }
     };
 
     // Initial route check
@@ -57,7 +58,7 @@ function App() {
       const link = e.target.closest('a');
       if (link && link.href && link.origin === window.location.origin) {
         const href = link.getAttribute('href');
-        if (href && (href.startsWith('/videotect') || href.startsWith('/ai-validation') || href.startsWith('/dashboard'))) {
+        if (href && (href.startsWith('/videotect') || href.startsWith('/ai-validation') || href.startsWith('/dashboard') || href.startsWith('/scanner') || href.startsWith('/landing'))) {
           e.preventDefault();
           window.history.pushState({}, '', href);
           updateView();
@@ -76,16 +77,14 @@ function App() {
     <div className="bg-white min-h-screen">
       {currentView === 'landing' ? (
         <LandingPage 
-          onNavigateToDashboard={() => setCurrentView('dashboard')}
+          onNavigateToDashboard={() => setCurrentView('scanner')}
         />
       ) : currentView === 'videotect' ? (
         <Videotect />
       ) : currentView === 'ai-validation' ? (
         <AIValidation />
       ) : (
-        <Dashboard 
-          onNavigateToLanding={() => setCurrentView('landing')}
-        />
+        <Scanner />
       )}
     </div>
   );
