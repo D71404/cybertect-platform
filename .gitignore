@@ -30,4 +30,24 @@ yarn-error.log*
 evidence_*.png
 scan_results_*.json
 scan_history.json
+/data/ai-validation.db*
+
+
+# Generated scan outputs / evidence (do not version)
+data/cms-monitor/scans/
+**/cms_*.json
+**/telemetry*.json
+**/gpt_events*.json
+**/iframes*.json
+**/tags*.json
+**/run_metadata*.json
+**/network*.har
+dom_*.html
+
+# Build/cache
+tmp-npm-cache/
+vite.config.js.timestamp-*.mjs
+
+# Evidence exports
+*.zip
 
