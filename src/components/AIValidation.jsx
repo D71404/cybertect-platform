@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Upload, FileCheck, Brain, Download, AlertCircle, CheckCircle, AlertTriangle } from 'lucide-react';
+import { API_BASE } from '../config';
 
 function AIValidation() {
   const [evidencePack, setEvidencePack] = useState(null);
@@ -34,7 +35,7 @@ function AIValidation() {
 
   const loadTemplates = async () => {
     try {
-      const response = await fetch('/api/ai-validation/templates');
+      const response = await fetch(`${API_BASE}/api/ai-validation/templates`);
       const data = await response.json();
       if (data.success) {
         setTemplates(data.templates);
@@ -46,7 +47,7 @@ function AIValidation() {
 
   const loadProviders = async () => {
     try {
-      const response = await fetch('/api/ai-validation/providers');
+      const response = await fetch(`${API_BASE}/api/ai-validation/providers`);
       const data = await response.json();
       if (data.success) {
         setProviders(data.providers);
@@ -94,7 +95,7 @@ function AIValidation() {
       const formData = new FormData();
       formData.append('evidencePack', evidencePack);
 
-      const uploadResponse = await fetch('/api/ai-validation/upload', {
+      const uploadResponse = await fetch(`${API_BASE}/api/ai-validation/upload`, {
         method: 'POST',
         body: formData
       });
@@ -121,7 +122,7 @@ function AIValidation() {
         runPayload.findingsJson = findingsText;
       }
 
-      const runResponse = await fetch('/api/ai-validation/run', {
+      const runResponse = await fetch(`${API_BASE}/api/ai-validation/run`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -148,7 +149,7 @@ function AIValidation() {
     if (!uploadId) return;
 
     try {
-      const response = await fetch(`/api/ai-validation/result/${uploadId}`);
+      const response = await fetch(`${API_BASE}/api/ai-validation/result/${uploadId}`);
       const data = await response.json();
 
       if (response.ok && data.success) {

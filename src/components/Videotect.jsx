@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { Upload, FileText, AlertTriangle, CheckCircle2, XCircle, Download, Copy, Loader2 } from 'lucide-react';
 import Footer from './Footer';
 import AIValidateButton from './ai-validation/AIValidateButton';
+import { API_BASE } from '../config';
 
 const Videotect = () => {
   const [uploading, setUploading] = useState(false);
@@ -26,7 +27,7 @@ const Videotect = () => {
       if (filters.search) params.append('q', filters.search);
       params.append('sort', 'score_desc');
 
-      const response = await fetch(`/api/videotect/items?${params}`);
+      const response = await fetch(`${API_BASE}/api/videotect/items?${params}`);
       const data = await response.json();
       if (data.success) {
         setItems(data.items);
@@ -50,7 +51,7 @@ const Videotect = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('/api/videotect/import', {
+      const response = await fetch(`${API_BASE}/api/videotect/import`, {
         method: 'POST',
         body: formData
       });
@@ -82,7 +83,7 @@ const Videotect = () => {
     const urlList = urls.split('\n').map(u => u.trim()).filter(u => u.length > 0);
 
     try {
-      const response = await fetch('/api/videotect/manual', {
+      const response = await fetch(`${API_BASE}/api/videotect/manual`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ urls: urlList })
@@ -105,7 +106,7 @@ const Videotect = () => {
 
   const updateItemStatus = async (id, status) => {
     try {
-      const response = await fetch(`/api/videotect/items/${id}`, {
+      const response = await fetch(`${API_BASE}/api/videotect/items/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status })
@@ -122,7 +123,7 @@ const Videotect = () => {
 
   const exportExclusions = async (type, minScore = 70) => {
     try {
-      const response = await fetch(`/api/videotect/export?type=${type}&minScore=${minScore}`);
+      const response = await fetch(`${API_BASE}/api/videotect/export?type=${type}&minScore=${minScore}`);
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -139,7 +140,7 @@ const Videotect = () => {
 
   const copyExclusions = async (type, minScore = 70) => {
     try {
-      const response = await fetch(`/api/videotect/export?type=${type}&minScore=${minScore}`);
+      const response = await fetch(`${API_BASE}/api/videotect/export?type=${type}&minScore=${minScore}`);
       const text = await response.text();
       const urls = text.split('\n').slice(1).filter(u => u.trim());
       await navigator.clipboard.writeText(urls.join('\n'));
@@ -180,7 +181,7 @@ const Videotect = () => {
         if (filters.search) params.append('q', filters.search);
         params.append('sort', 'score_desc');
 
-        const response = await fetch(`/api/videotect/items?${params}`);
+        const response = await fetch(`${API_BASE}/api/videotect/items?${params}`);
         const data = await response.json();
         if (data.success) {
           setItems(data.items);

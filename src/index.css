@@ -31,6 +31,10 @@ body {
   background-color: #FFFFFF;
 }
 
+html.dark body {
+  background-color: #0f172a;
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
@@ -86,3 +90,15 @@ body {
   font-weight: 500;
 }
 
+/* Dark mode logo adjustments */
+html.dark .cyber-text {
+  background: linear-gradient(to bottom, #e2e8f0, #cbd5e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}html.dark .com-text {
+  background: linear-gradient(to bottom, #94a3b8, #64748b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

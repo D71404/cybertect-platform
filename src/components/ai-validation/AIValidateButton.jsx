@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Brain, ShieldCheck, Loader2 } from 'lucide-react';
 import AIValidateModal from './AIValidateModal';
 import ValidationReportPanel from './ValidationReportPanel';
+import { API_BASE } from '../../config';
 
 const pollIntervalMs = 2500;
 
@@ -28,7 +29,7 @@ export function AIValidateButton({ toolId, scanId, evidencePackGetter, className
     (job) => {
       const interval = setInterval(async () => {
         try {
-          const res = await fetch(`/api/ai/validate/${job}`);
+          const res = await fetch(`${API_BASE}/api/ai/validate/${job}`);
           const data = await res.json();
           if (data.status === 'done') {
             setStatus('done');
@@ -67,7 +68,7 @@ export function AIValidateButton({ toolId, scanId, evidencePackGetter, className
       const evidencePack = await evidencePackGetter();
       // Use backend endpoint; it will fall back to mock if no API key
       const payload = { toolId, scanId, provider, model, promptNotes: notes, evidencePack };
-      const res = await fetch('/api/ai/validate', {
+      const res = await fetch(`${API_BASE}/api/ai/validate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -90,7 +91,7 @@ export function AIValidateButton({ toolId, scanId, evidencePackGetter, className
     if (!jobId) return;
     setExporting(true);
     try {
-      const res = await fetch(`/api/ai/validate/${jobId}/pdf`, { method: 'POST' });
+      const res = await fetch(`${API_BASE}/api/ai/validate/${jobId}/pdf`, { method: 'POST' });
       if (!res.ok) {
         const msg = await res.json().catch(() => ({}));
         throw new Error(msg.error || 'PDF not ready');

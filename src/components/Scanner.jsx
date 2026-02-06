@@ -15,10 +15,13 @@ import {
   ChevronRight,
   Clock
 } from 'lucide-react';
+import { useNavigate, Link } from 'react-router-dom';
 import Footer from './Footer';
+import { ThemeToggle } from './ui/ThemeToggle';
+import { useAuth } from '../contexts/AuthContext';
 
 const scannerVersion = 'ui-1.0.0';
-const API_BASE = 'http://localhost:3001';
+import { API_BASE } from '../config';
 
 const severityFromRisk = (risk) => {
   if (risk === 'High') return 'Critical';
@@ -29,6 +32,8 @@ const severityFromRisk = (risk) => {
 const formatTimestamp = (ts) => (ts ? new Date(ts).toLocaleString() : 'Not scanned yet');
 
 const Scanner = () => {
+  const navigate = useNavigate();
+  const { user, signOut } = useAuth();
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
   const [adSpend, setAdSpend] = useState(1000);
@@ -36,6 +41,8 @@ const Scanner = () => {
   const [aiValidating, setAiValidating] = useState(false);
   const [aiResults, setAiResults] = useState(null);
   const [data, setData] = useState([]);
+  const [latestScanId, setLatestScanId] = useState(null);
+  const [latestScanData, setLatestScanData] = useState(null);
   const [affectedVendors, setAffectedVendors] = useState({});
   const [expandedPublishers, setExpandedPublishers] = useState({});
   const [vendorSort, setVendorSort] = useState({ key: 'impressions', direction: 'desc' });
@@ -79,6 +86,8 @@ const Scanner = () => {
     setRowAdSpend({});
     setAiResults(null);
     setEvidencePack(null);
+    setLatestScanId(null);
+    setLatestScanData(null);
   };
 
   // Shared evidence builder used once per scan and reused for download + AI validation
@@ -205,7 +214,10 @@ const Scanner = () => {
 
         result.results.forEach((scanResult) => {
           if (scanResult.error) {
-            alert(`Scan failed for ${scanResult.url}: ${scanResult.error}`);
+            const errMsg = typeof scanResult.error === 'object' && scanResult.error !== null
+              ? (scanResult.error.message || scanResult.error.error || JSON.stringify(scanResult.error))
+              : String(scanResult.error);
+            alert(`Scan failed for ${scanResult.url}: ${errMsg}`);
             return;
           }
 
@@ -344,8 +356,17 @@ const Scanner = () => {
         setData(tableRows);
         setEvidencePack(sharedEvidence);
         setLastScanTimestamp(scanStartedAt);
+
+        // Store the first scan result for AI validation
+        const firstResult = result.results[0];
+        const generatedScanId = `scan-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+        setLatestScanId(generatedScanId);
+        setLatestScanData(firstResult);
       } else if (result.error) {
-        alert(result.error || 'Scan failed to return data');
+        const errMsg = typeof result.error === 'object' && result.error !== null
+          ? (result.error.message || result.error.error || JSON.stringify(result.error))
+          : String(result.error);
+        alert(errMsg || 'Scan failed to return data');
       } else {
         alert('No results returned from scan');
       }
@@ -465,8 +486,13 @@ const Scanner = () => {
   };
 
   const handleAIValidation = async () => {
+    if (!latestScanData) {
+      alert('Run a scan first before sending to AI validation.');
+      return;
+    }
+
     if (!evidencePack) {
-      alert('Run a scan before sending to AI validation.');
+      alert('No evidence pack available. Please run a scan first.');
       return;
     }
 
@@ -476,19 +502,30 @@ const Scanner = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          scanId: latestScanId || null,
+          evidenceData: latestScanData,
           scan_type: evidencePack.scan_type,
           domain: evidencePack.domain,
           scanner_version: evidencePack.scanner_version,
-          evidence_pack: evidencePack
+          evidence_pack: evidencePack,
+          provider: 'chatgpt',
+          template: 'analytics_inflation'
         })
       });
 
       if (!response.ok) {
-        throw new Error('AI validation request failed');
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'AI validation request failed');
       }
 
       const result = await response.json();
       setAiResults(result);
+
+      if (result.jobId) {
+        alert(`AI Validation submitted successfully! Job ID: ${result.jobId}`);
+      } else if (result.runId) {
+        alert(`AI Validation submitted successfully! Run ID: ${result.runId}`);
+      }
     } catch (error) {
       console.error('AI Validation error:', error);
       alert('AI Validation failed: ' + error.message);
@@ -590,7 +627,7 @@ const Scanner = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
       {/* HEADER */}
       <header className="flex justify-between items-center py-5 px-6 max-w-screen-xl mx-auto">
         <div className="flex items-center gap-2">
@@ -600,11 +637,29 @@ const Scanner = () => {
             <span className="com-text">.com</span>
           </div>
         </div>
-        <button className="text-slate-600 font-medium hover:text-slate-900 transition">Sign in</button>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          {user ? (
+            <button
+              onClick={async () => {
+                await signOut();
+                localStorage.removeItem('cybertect_rememberMe');
+                navigate('/', { replace: true });
+              }}
+              className="text-slate-600 font-medium hover:text-slate-900 transition"
+            >
+              Sign out
+            </button>
+          ) : (
+            <Link to="/auth" className="text-slate-600 font-medium hover:text-slate-900 transition">
+              Sign in
+            </Link>
+          )}
+        </div>
       </header>
 
       {/* ACTION BAR */}
-      <div className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+      <div className="sticky top-0 z-40 bg-white backdrop-blur border-b border-slate-200 shadow-sm">
         <div className="max-w-screen-xl mx-auto px-4 py-3 flex flex-wrap gap-3 items-center justify-between">
           <div className="flex items-center gap-2 text-sm text-slate-600">
             <Clock size={16} className="text-slate-500" />
@@ -622,7 +677,7 @@ const Scanner = () => {
             </button>
             <button
               onClick={handleDownloadEvidence}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-blue-200 bg-blue-50 text-blue-800 shadow-sm hover:bg-blue-100 disabled:opacity-60"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-[#2563EB] bg-white text-[#2563EB] shadow-sm hover:bg-blue-50 disabled:opacity-60"
               disabled={!evidencePack || loading}
             >
               <Download size={16} />
@@ -630,8 +685,8 @@ const Scanner = () => {
             </button>
             <button
               onClick={handleAIValidation}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-purple-200 bg-purple-50 text-purple-800 shadow-sm hover:bg-purple-100 disabled:opacity-60"
-              disabled={!evidencePack || aiValidating}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-[#2563EB] text-white shadow-sm hover:bg-[#1d4ed8] disabled:opacity-60"
+              disabled={!evidencePack || !latestScanData || aiValidating}
             >
               <Send size={16} className={aiValidating ? 'animate-pulse' : ''} />
               <span>Send to AI Validation</span>
@@ -675,7 +730,7 @@ const Scanner = () => {
             <button
               onClick={handleScan}
               disabled={loading}
-              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold text-base hover:opacity-90 transition shadow-md flex items-center justify-center gap-2 min-w-[150px] self-start md:self-auto"
+              className="bg-[#2563EB] text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-[#1d4ed8] transition shadow-md flex items-center justify-center gap-2 min-w-[150px] self-start md:self-auto"
             >
               {loading ? <RefreshCw className="animate-spin" size={18} /> : <ShieldCheck size={18} />}
               {loading ? 'Analyzing...' : 'Run Scan'}
@@ -830,7 +885,7 @@ const Scanner = () => {
                                     <button
                                       onClick={() => sendVendorAiValidation(row.domain)}
                                       disabled={!vendorEntry.scanId || vendorEntry.aiLoading}
-                                      className="flex items-center gap-1 text-xs px-3 py-1.5 rounded-md border border-purple-200 bg-purple-50 text-purple-800 hover:bg-purple-100 disabled:opacity-50"
+                                      className="flex items-center gap-1 text-xs px-3 py-1.5 rounded-md bg-[#2563EB] text-white hover:bg-[#1d4ed8] disabled:opacity-50"
                                     >
                                       <Send size={14} className={vendorEntry.aiLoading ? 'animate-pulse' : ''} />
                                       <span>Send to AI Validation</span>

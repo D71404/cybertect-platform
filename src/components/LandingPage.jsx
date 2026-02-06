@@ -1,8 +1,22 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Shield, Zap, Sparkles, Radar, Download, Loader2, RefreshCw } from 'lucide-react';
 import Footer from './Footer';
+import HeroSection from './ui/hero-section';
+import { useAuth } from '../contexts/AuthContext';
+import { API_BASE } from '../config';
 
-const LandingPage = ({ onNavigateToDashboard }) => {
+const LandingPage = () => {
+  const navigate = useNavigate();
+  const { user } = useAuth();
+
+  const handleRunForensicScan = () => {
+    if (user) {
+      navigate('/dashboard');
+    } else {
+      navigate('/auth');
+    }
+  };
   // Scanner state
   const [urls, setUrls] = useState('');
   const [loading, setLoading] = useState(false);
@@ -26,7 +40,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
     
     setDownloadingEvidence(true);
     try {
-      const response = await fetch('http://localhost:3000/api/scans/evidence-pack', {
+      const response = await fetch(`${API_BASE}/api/scans/evidence-pack`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
       });
@@ -54,116 +68,11 @@ const LandingPage = ({ onNavigateToDashboard }) => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <div className="flex items-center">
-              <div className="cybertect-logo">
-                <span className="cyber-text">cyber</span>
-                <span className="tect-text">tect</span>
-                <span className="com-text">.com</span>
-              </div>
-            </div>
-
-            {/* Center Links */}
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#product" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
-                Product
-              </a>
-              
-              {/* Tools Dropdown */}
-              <div className="relative group">
-                <button className="text-gray-700 hover:text-gray-900 text-sm font-medium flex items-center gap-1">
-                  Tools
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <a href="/videotect" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-100">
-                    <div className="font-medium text-gray-900">Videotect</div>
-                    <div className="text-xs text-gray-500 mt-0.5">Video ad waste detection & analytics</div>
-                  </a>
-                  <a href="/ai-validation" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
-                    <div className="font-medium text-gray-900">AI Validation</div>
-                    <div className="text-xs text-gray-500 mt-0.5">Validate AI-generated content</div>
-                  </a>
-                </div>
-              </div>
-              
-              <a href="#solutions" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
-                Solutions
-              </a>
-              <a href="#pricing" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
-                Pricing
-              </a>
-            </div>
-
-            {/* Dashboard Link */}
-            {onNavigateToDashboard && (
-              <a 
-                href="/scanner"
-                className="bg-[#2563EB] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#1d4ed8] transition-colors"
-              >
-                Dashboard
-              </a>
-            )}
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h1 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6 leading-tight">
-              Stop Paying for Phantom Impressions
-            </h1>
-            <p className="text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed">
-              Most fraud tools hunt bots. Cybertect audits the page itself—verifying which ad slots actually rendered, which beacons were real impressions, and where inflated telemetry quietly burns budget.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <a 
-                href="/scanner"
-                className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] transition-colors shadow-sm text-center"
-              >
-                Run Forensic Scan
-              </a>
-              <button
-                onClick={() => {
-                  // Scroll to sample section or open placeholder modal
-                  const sampleSection = document.getElementById('sample-report');
-                  if (sampleSection) {
-                    sampleSection.scrollIntoView({ behavior: 'smooth' });
-                  } else {
-                    alert('Sample report coming soon');
-                  }
-                }}
-                className="bg-white text-gray-700 px-8 py-3 rounded-full text-base font-medium border-2 border-gray-300 hover:border-gray-400 transition-colors text-center"
-              >
-                View Sample Report
-              </button>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="animate-float">
-              <img 
-                src="/hero-house.svg" 
-                alt="Illustration of a cracked house with blue door" 
-                className="w-full h-auto rounded-3xl shadow-2xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero with integrated nav */}
+      <HeroSection />
 
       {/* Outcome Strip */}
-      <section className="bg-[#F8F9FA] py-8">
+      <section className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-gray-700 mb-4">What you get in minutes:</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -184,7 +93,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
       </section>
 
       {/* Problem Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-light text-gray-900 mb-6">
             The biggest waste isn't bots. It's bad measurement.
@@ -206,7 +115,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
               value={urls}
               onChange={(e) => setUrls(e.target.value)}
               placeholder="https://example.com"
-              className="w-full h-32 p-4 border border-gray-300 rounded-xl font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
+              className="w-full h-32 p-4 border border-gray-300 bg-white text-gray-900 rounded-xl font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent placeholder:text-gray-500"
             />
             <p className="text-xs text-gray-500 mt-2">
               One per line. We'll crawl each page, map ad slots + tags, and generate proof-grade evidence (timelines, requests, slot geometry, screenshots).
@@ -214,58 +123,18 @@ const LandingPage = ({ onNavigateToDashboard }) => {
             
             <div className="flex items-center gap-4 mt-6">
               <button
-                onClick={async () => {
-                  if (!urls.trim()) {
-                    alert("Please enter URLs");
-                    return;
-                  }
-
-                  setLoading(true);
-                  const urlList = urls.split(/[\n,]+/).map(u => u.trim()).filter(u => u.length > 0);
-
-                  try {
-                    const res = await fetch('http://localhost:3000/api/scan', {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({ urls: urlList })
-                    });
-                    const data = await res.json();
-                    
-                    // Merge with existing results
-                    const newHistory = [...globalHistory, ...data.results];
-                    const uniqueMap = new Map();
-                    newHistory.forEach(item => uniqueMap.set(item.url, item));
-                    const deduplicated = Array.from(uniqueMap.values());
-                    
-                    setGlobalHistory(deduplicated);
-                    setResults(data.results);
-                  } catch (err) {
-                    alert("Connection Error: " + err.message);
-                  } finally {
-                    setLoading(false);
-                  }
-                }}
-                disabled={loading}
-                className="bg-[#2563EB] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1d4ed8] transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
+                onClick={handleRunForensicScan}
+                className="bg-[#2563EB] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1d4ed8] flex items-center gap-2"
               >
-                {loading ? (
-                  <>
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                    Scanning...
-                  </>
-                ) : (
-                  <>
-                    <Radar className="w-4 h-4" />
-                    Run Forensic Scan
-                  </>
-                )}
+                <Radar className="w-4 h-4" />
+                Run Forensic Scan
               </button>
 
               {globalHistory.length > 0 && (
                 <>
                   <button
                     onClick={handleClearHistory}
-                    className="bg-gray-500 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-600 transition-colors flex items-center gap-2"
+                    className="bg-gray-500 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-600 flex items-center gap-2"
                     title="Clear scanned domains"
                   >
                     <RefreshCw className="w-4 h-4" />
@@ -274,7 +143,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
                   <button
                     onClick={handleDownloadEvidencePack}
                     disabled={downloadingEvidence}
-                    className="bg-purple-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
+                    className="bg-purple-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
                     title="Download evidence pack"
                   >
                     {downloadingEvidence ? (
@@ -310,19 +179,17 @@ const LandingPage = ({ onNavigateToDashboard }) => {
                       document.body.appendChild(link);
                       link.click();
                     }}
-                    className="bg-green-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-green-700 transition-colors flex items-center gap-2 ml-auto"
+                    className="bg-green-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-green-700 flex items-center gap-2 ml-auto"
                   >
                     <Download className="w-4 h-4" />
                     Save Report
                   </button>
-                  {onNavigateToDashboard && (
-                    <button
-                      onClick={onNavigateToDashboard}
-                      className="bg-gray-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-700 transition-colors"
-                    >
-                      View Dashboard
-                    </button>
-                  )}
+                  <button
+                    onClick={() => navigate('/dashboard')}
+                    className="bg-gray-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-700"
+                  >
+                    View Dashboard
+                  </button>
                 </>
               )}
             </div>
@@ -343,7 +210,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
             <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-sm">
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-[#F8F9FA]">
+                  <thead className="bg-gray-50">
                     <tr>
                       <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">DOMAIN</th>
                       <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">RISK LEVEL</th>
@@ -480,7 +347,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Card 1 */}
-          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all">
             <div className="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
               <Radar className="w-6 h-6 text-red-600" />
             </div>
@@ -493,7 +360,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all">
             <div className="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
               <Zap className="w-6 h-6 text-[#2563EB]" />
             </div>
@@ -506,7 +373,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all">
             <div className="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
               <Shield className="w-6 h-6 text-green-600" />
             </div>
@@ -519,7 +386,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all">
             <div className="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
               <Sparkles className="w-6 h-6 text-purple-600" />
             </div>
@@ -534,7 +401,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
       </section>
 
       {/* Verified Impression Section */}
-      <section className="bg-[#F8F9FA] py-20">
+      <section className="bg-white/50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-light text-gray-900 mb-6">
             Verified Impression = evidence-backed, not just a request fired.
@@ -592,18 +459,18 @@ const LandingPage = ({ onNavigateToDashboard }) => {
             </div>
           </div>
           <div className="text-center mt-12">
-            <a 
-              href="/scanner"
-              className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] transition-colors shadow-sm inline-block"
+            <button
+              onClick={handleRunForensicScan}
+              className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] shadow-sm"
             >
               Run a scan now
-            </a>
+            </button>
           </div>
         </div>
       </section>
 
       {/* Forensics Engine Section */}
-      <section className="bg-[#F8F9FA] py-20">
+      <section className="bg-white/50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-light text-gray-900 mb-6 text-center">
             The forensics engine that updates live as you scan
@@ -651,12 +518,12 @@ const LandingPage = ({ onNavigateToDashboard }) => {
             Run a scan and get a proof-grade report you can use to pause waste, dispute inflated delivery, and push remediation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/scanner"
-              className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] transition-colors shadow-sm"
+            <button
+              onClick={handleRunForensicScan}
+              className="bg-[#2563EB] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#1d4ed8] shadow-sm"
             >
               Run Forensic Scan
-            </a>
+            </button>
             <button
               onClick={async () => {
                 try {
@@ -680,7 +547,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
                   alert('Sample report coming soon');
                 }
               }}
-              className="bg-white text-gray-700 px-8 py-3 rounded-full text-base font-medium border-2 border-gray-300 hover:border-gray-400 transition-colors"
+              className="bg-white text-gray-700 px-8 py-3 rounded-full text-base font-medium border-2 border-gray-300 hover:border-gray-400"
             >
               Download Sample Report
             </button>
@@ -689,7 +556,7 @@ const LandingPage = ({ onNavigateToDashboard }) => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-[#F8F9FA] py-20">
+      <section className="bg-white/50 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-light text-gray-900 mb-12 text-center">
             Frequently Asked Questions
