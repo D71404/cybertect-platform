@@ -12,7 +12,8 @@
     "start:server": "node server.cjs",
     "start:client": "vite --port 5173",
     "dev": "npm run start:server & npm run start:client",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npx playwright install chromium"
   },
   "bin": {
     "cybertect-scan": "./dist/cli.js"
